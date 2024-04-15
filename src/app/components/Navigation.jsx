@@ -4,8 +4,8 @@ import { twMerge } from "tailwind-merge";
 import routes from "../routes";
 import NavModal from "./NavModal";
 import Logo from "../../assets/main logo black (Custom).png";
-import LightLogo from "../../assets/Logo-TSYP12_withoutBckg.png";
-import LogoOnBlack from "../../assets/small_11logo_on_black_custom.png";
+import LightLogo from "../../assets/dark_lightBG_blue_minimal.png";
+import DarkLogo from "../../assets/darkBG-minimal.png";
 import ThemeToggle from "./ThemeToggle";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
@@ -48,9 +48,14 @@ export default function Navigation() {
 						<CustomImage
 							loading="eager"
 							src={LightLogo}
-							className={` h-20  `}
-							alt="TSYP 11"
-			
+							className={` h-20 dark:hidden `}
+							alt="TSYP 12"
+						/>
+						<CustomImage
+							loading="eager"
+							src={DarkLogo}
+							className={` h-20 hidden dark:block`}
+							alt="TSYP 12"
 						/>
 						{/* <svg
 							className="mr-3 h-6 fill-gray-900 dark:fill-gray-100 sm:h-9"

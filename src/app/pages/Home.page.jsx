@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import LogoOnBlack from "../../assets/Logo-TSYP12_withoutBckg.png";
+import LogoOnBlack from "../../assets/main logo black (Custom).png";
 import LightLogo from "../../assets/Logo-TSYP12_withoutBckg_white.png";
 import Logo from "../../assets/main logo black (Custom).png";
 import SBGroupPic from "../../assets/sb-group-pic3.jpg";
@@ -24,7 +24,7 @@ import memory7 from "../../assets/memories/356882005_272016892113248_64699250216
 import memory8 from "../../assets/memories/321296201_1206807523592277_5346561523774336230_n.jpg";
 import memory9 from "../../assets/memories/358218740_2128948947437461_3099469010629116758_n.jpg";
 import memory10 from "../../assets/memories/358619396_222649417397966_6373005098322693727_n.jpg";
-import memory11 from "../../assets/memories/cover.png";
+import memory11 from "../../assets/memories/cover.jpg";
 
 import { Link } from "react-router-dom";
 import TSYP2021Dark from "../../assets/tsyp-editions/tsyp-2021-dark.png";
@@ -88,7 +88,7 @@ export default function HomePage() {
 
 						{/* <h1 className="mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none"> */}
 						<h1 className="mb-8 text-center text-4xl font-bold tracking-tight lg:mb-8 lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
-							<span className="text-red-700 dark:text-red-700">12th</span>{" "}
+							<span className="text-[#11638F] dark:text-[#BF0A19]">12th</span>{" "}
 							IEEE Tunisian Students & Young Professionals Congress
 						</h1>
 
@@ -114,7 +114,7 @@ export default function HomePage() {
 						</div>
 						<div className="flex flex-wrap items-center justify-center gap-8">
 							<div className="xtext-[#3a55b4] ">
-								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-red-600 dark:text-red-600 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
+								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#11638F] dark:text-red-600 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
 									1400+
 								</h1>
 								<span className="mt-1 font-bold uppercase">Participants</span>
@@ -137,7 +137,7 @@ export default function HomePage() {
 							</div> */}
 							<div className="xbg-[#3a55b4] hidden h-20 w-0.5 bg-black dark:bg-gray-300 md:block"></div>
 							<div className="">
-								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-red-600 dark:text-red-600 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
+								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#11638F] dark:text-red-600 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
 									50+
 								</h1>
 								<span className="mt-1 font-bold uppercase">Speakers</span>

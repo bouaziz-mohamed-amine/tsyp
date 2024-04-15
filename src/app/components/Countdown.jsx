@@ -100,7 +100,7 @@ const SVGCircle = ({ radius }) => {
 	return (
 		<svg className="absolute top-0 left-0 h-[100px] w-[100px]">
 			<motion.path
-				className="stroke-red-600 dark:stroke-gray-400"
+				className="stroke-[#11638F] dark:stroke-gray-400"
 				// className="stroke-[#3a55b4] dark:stroke-gray-400"
 				fill="none"
 				// stroke="#333"

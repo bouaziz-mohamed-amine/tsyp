@@ -101,13 +101,13 @@ export default function TunisiaPage() {
 									alt=""
 								/>
 							</div>
-							<div>
+							{/* <div>
 								<CustomImage
 									className="h-full w-full rounded-lg object-cover"
 									src="https://www.tunisia-desert-challenge.com/storage/images/content/gr_tdc2021-jan-64.jpg?4"
 									alt=""
 								/>
-							</div>
+							</div> */}
 							<div>
 								<CustomImage
 									className="h-full w-full rounded-lg object-cover"
