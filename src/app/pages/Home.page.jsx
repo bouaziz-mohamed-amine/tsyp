@@ -92,18 +92,17 @@ export default function HomePage() {
 							IEEE Tunisian Students & Young Professionals Congress
 						</h1>
 
-						{false && (
+						{true && (
 							<h1 className="mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
 								Medina Congress Center, Yasmine Hammamet
 							</h1>
 						)}
 
-						<h1 className="mb-4 hidden text-center text-xl font-bold tracking-tight md:block lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-							{/* <q> </q> */}
+						{/* <h1 className="mb-4 hidden text-center text-xl font-bold tracking-tight md:block lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
 							<h1 className="mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
 								Inspire The Future !
 							</h1>
-						</h1>
+						</h1> */}
 						<div className="mb-8 text-center lg:mb-7">
 							<span className="text-xl font-bold tracking-tight lg:text-2xl lg:font-extrabold lg:leading-none">
 								16 - 18 December <span className="xtext-[#3a55b4]">2024</span>
@@ -115,7 +114,7 @@ export default function HomePage() {
 						<div className="flex flex-wrap items-center justify-center gap-8">
 							<div className="xtext-[#3a55b4] ">
 								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#11638F] dark:text-red-600 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-									1400+
+									1000+
 								</h1>
 								<span className="mt-1 font-bold uppercase">Participants</span>
 							</div>
@@ -380,12 +379,12 @@ export default function HomePage() {
 					<section className="py-8 md:py-28">
 						<div className="mx-auto">
 							<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
-								Find us here.
+								Find us here
 							</h1>
 							<iframe
 								loading="lazy"
 								title="tsyp location"
-								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12851.062625886407!2d10.5328555!3d36.3664548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13029e020677bc0d%3A0x82fe8c3faf57e873!2sDiar%20Lemdina!5e0!3m2!1sen!2stn!4v1682280141809!5m2!1sen!2stn"
+								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4871.091984775575!2d10.531334003138053!3d36.36716367037959!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd6386597ae125%3A0x9bb64df24a0c4fc1!2sMedina%20of%20Yasmine%20Hammamet!5e0!3m2!1sen!2stn!4v1714774967429!5m2!1sen!2stn"
 								className="w-full rounded-2xl shadow-lg"
 								height="500"
 								style={{
@@ -417,7 +416,7 @@ export function AboutESSTHSSB(params) {
 			</div>
 			<div className="col-span-6">
 				<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
-					IEEE ENET'COM Student Branch.
+					IEEE ENET'COM Student Branch
 				</h1>
 				<h1 className="mb-4 text-lg font-medium   lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
 					Established on May 8, 2013, the IEEE ENETCOM Student Branch has been steadfast in promoting the IEEE and its mission
@@ -459,7 +458,7 @@ export function AboutTunisiaSection(params) {
 			</div>
 			<div className="col-span-6">
 				<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
-					About IEEE Tunisia Section.
+					About IEEE Tunisia Section
 				</h1>
 				<h1 className="mb-4 text-lg font-medium  lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
 					Founded in 2008, the IEEE Tunisia Section is dedicated to spreading IEEE initiatives throughout Tunisia.
@@ -506,7 +505,7 @@ export function AboutTSYP() {
 			</div>
 			<div className="col-span-6">
 				<h1 className="mb-4 text-4xl font-bold tracking-tight lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
-					About IEEE TSYP Congress.
+					About IEEE TSYP Congress
 				</h1>
 				<p className="mb-4  text-lg font-medium lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
 
