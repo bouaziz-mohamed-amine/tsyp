@@ -7,6 +7,10 @@ const routes = [
 		title: "Tunisia",
 		href: "/tunisia",
 	},
+	{
+		title: "TN 2056",
+		href: "/tn2056",
+	},
 	// {
 	// 	title: "Game",
 	// 	href: "/virtual-game",

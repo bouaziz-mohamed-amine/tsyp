@@ -33,6 +33,7 @@ import SessionsPage from "./app/pages/Sessions.page.jsx";
 import EventSatisfactionFormPage from "./app/pages/EventSatisfactionForm.page.jsx";
 import WinnersList from "./app/components/WinnersList.jsx";
 import { WinnersPage } from "./app/pages/Winners.jsx";
+import { TNChallengePage } from "./app/pages/TNChallenge.page.jsx";
 
 setInitialTheme();
 
@@ -139,9 +140,14 @@ const router = createBrowserRouter([
 				element: <Phase />,
 			},
 			{
+				path: "tn2056",
+				element: <TNChallengePage/>
+			},
+			{
 				path: "*",
 				element: <HomePage />,
 			},
+
 		],
 	},
 	{
