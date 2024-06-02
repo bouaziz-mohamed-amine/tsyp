@@ -12,15 +12,7 @@ export function TNChallengePage() {
 					Tunisia and envision its future by 2056 through the launch of innovative
 					start-ups.
 				</div>
-				<div className="text-gray-600 dark:text-gray-400 my-4">
-					Join us in tackling the TN2056 challenge and be a
-					part of shaping Tunisia's future!
-					Your innovative ideas and solutions can make a real
-					difference. Best of luck to all participants.
-					We can't wait to see the transformative impact
-					you'll create!
-
-				</div>
+				
 			</div>
 		</div>
 	);
