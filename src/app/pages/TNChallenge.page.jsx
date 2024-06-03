@@ -1,22 +1,9 @@
-import ChallengesList from "../components/ChallengesList";
-import "./TNChallenge.css";
+
 import ChallengeImage from "../components/ChallengeImage";
-import React, { useState } from 'react';
-import { Worker, Viewer } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import pdfTN2056 from "../../pdf/TN_2056_Program_RD-copy1.pdf";
 import { Link } from 'react-router-dom';
 
 export function TNChallengePage() {
-	{/*const [showPdf, setShowPdf] = useState(false);
-
-	const handleButtonClick = () => {
-		setShowPdf(true);
-	};
-
-const defaultLayoutPluginInstance = defaultLayoutPlugin();*/}
 
 	return (
 		<div className="h-full py-8 lg:py-8">
@@ -34,14 +21,14 @@ const defaultLayoutPluginInstance = defaultLayoutPlugin();*/}
 
 			<div className="mb-8">
 				<div className="mb-4 text-4xl font-bold">Tunisia 2056 Challenge :</div>
-				<div className="text-gray-600 dark:text-gray-400">
+				<div className="mb-4 text-gray-600 dark:text-gray-400">
 					<strong>The Tunisia 2056 Challenge (TN2056 Challenge) </strong>
 					embodies the transformative vision for TSYP in its 12th edition,
 					emphasizing collaboration among Tunisia Student Branches to tackle
 					critical challenges facing Tunisia and envision its future by 2056
 					through the launch of innovative start-ups.
 				</div>
-				<div className="tnpdf">
+				<div>
 				
 					<Link
 						// type="button"
