@@ -7,12 +7,12 @@ export function TNChallengePage() {
 
 	return (
 		<div className="h-full  items-center justify-center" >
-			<div className="col-span-12 md:mx-auto py-6">
+			<div className="col-span-12 md:mx-auto py-8">
 				<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
 					Tunisia 2056 Challenge
 				</h1>
 			</div>
-			<div className="col-span-6 mx-auto ">
+			<div className="col-span-6 mx-auto my-2 ">
 
 
 				<CustomImage
