@@ -164,7 +164,7 @@ function Scene() {
 					// font="/fonts/Inter_Bold_full_set.json"
 					font="/fonts/Inter_Bold_tsyp11.json"
 				>
-					TSYP 11
+					TSYP 12
 					{/* {d} */}
 					<meshStandardMaterial color="white" />
 				</Text3D>

@@ -82,7 +82,7 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 									>
 										<div className="px-4 sm:px-6">
 											<Dialog.Title className="text-lg font-bold">
-												TSYP 11
+												TSYP 12
 											</Dialog.Title>
 										</div>
 										<div className="mt-6 flex-1 px-4 sm:px-6">
