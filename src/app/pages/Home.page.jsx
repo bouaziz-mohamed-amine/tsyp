@@ -142,7 +142,7 @@ export default function HomePage() {
 								<span className="mt-1 font-bold uppercase">Speakers</span>
 							</div>
 						</div>
-						<div className="flex flex-wrap items-center justify-center gap-8 mt-5">
+						<div className="mt-5 flex flex-wrap items-center justify-center gap-8">
 							{/* <div className="xtext-[#3a55b4] ">
 								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#3a55b4] dark:text-[#4967d0] lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
 									1400+
@@ -211,7 +211,7 @@ export default function HomePage() {
 											<FontAwesomeIcon
 												className="-rotate-45"
 												icon={faTicket}
-											// icon={faVrCardboard}
+												// icon={faVrCardboard}
 											/>
 										}
 									/>
@@ -234,7 +234,7 @@ export default function HomePage() {
 								<Link to={"/sponsor-us"} className="flex justify-center">
 									<StyledButton
 										message={"Become a Sponsor"}
-									// icon={<FontAwesomeIcon icon={faExternalLink} />}
+										// icon={<FontAwesomeIcon icon={faExternalLink} />}
 									/>
 								</Link>
 							)}
@@ -265,7 +265,7 @@ export default function HomePage() {
 				</section>
 			</Fade>
 
-			{false &&
+			{false && (
 				<Fade triggerOnce>
 					{/* <CustomImage
 					src={logoBar}
@@ -278,35 +278,37 @@ export default function HomePage() {
 						className="mx-auto hidden h-28 object-contain invert dark:invert-0 lg:block"
 					/>
 				</Fade>
-			}
+			)}
 
-			{false && <Fade triggerOnce>
-				<h1 className="mt-8 mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold">
-					In Conjunction with IES African Continent Chapter Workshop
-					<br />&{" "}
-					<Link
-						to={
-							"https://public-forum.embs.org/tunisia-na-healthcare-innovations-forum/"
-						}
-						target="_blank"
-						className="hover:underline"
-					>
-						IEEE EMBS Tunisia North Africa Forum on Healthcare Innovations
-					</Link>
-				</h1>
-				<div className="flex items-center justify-center gap-4">
-					<CustomImage
-						src={"https://i.imgur.com/Usd3WQr.png"}
-						alt=""
-						className="hidden aspect-video h-40 rounded-lg bg-white object-contain p-4 lg:block"
-					/>
-					<CustomImage
-						src={"https://i.imgur.com/Gu6u9NO.png"}
-						alt=""
-						className="hidden aspect-video h-40 rounded-lg bg-white object-contain p-4 lg:block"
-					/>
-				</div>
-			</Fade>}
+			{false && (
+				<Fade triggerOnce>
+					<h1 className="mt-8 mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold">
+						In Conjunction with IES African Continent Chapter Workshop
+						<br />&{" "}
+						<Link
+							to={
+								"https://public-forum.embs.org/tunisia-na-healthcare-innovations-forum/"
+							}
+							target="_blank"
+							className="hover:underline"
+						>
+							IEEE EMBS Tunisia North Africa Forum on Healthcare Innovations
+						</Link>
+					</h1>
+					<div className="flex items-center justify-center gap-4">
+						<CustomImage
+							src={"https://i.imgur.com/Usd3WQr.png"}
+							alt=""
+							className="hidden aspect-video h-40 rounded-lg bg-white object-contain p-4 lg:block"
+						/>
+						<CustomImage
+							src={"https://i.imgur.com/Gu6u9NO.png"}
+							alt=""
+							className="hidden aspect-video h-40 rounded-lg bg-white object-contain p-4 lg:block"
+						/>
+					</div>
+				</Fade>
+			)}
 
 			<Fade triggerOnce>
 				<AboutTSYP />
@@ -419,14 +421,19 @@ export function AboutESSTHSSB(params) {
 					IEEE ENET'COM Student Branch
 				</h1>
 				<h1 className="mb-4 text-lg font-medium   lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-					Established on May 8, 2013, the IEEE ENETCOM Student Branch has been steadfast in promoting the IEEE and its mission
-					within the realm of engineering students at ENET'Com. Our core focus is to invest in these students, aiding them in
-					honing their general skills and fostering their development into future leaders and change-makers.
-					With a membership exceeding 472 individuals, including engineers, degree holders, and master's degree holders, our
-					Student Branch proudly stands as the largest in Sfax, ranking 3rd in the Tunisia Section and 3rd in Region 8. Our
-					influence extends through 6 Technical Chapters: CAS, CS, IAS, PES, RAS, EMBS, and an Affinity Group: WIE.
-					We take great pride in our global recognition, having received numerous IEEE Awards across various fields. This success
-					is a testament to the dedication and commitment exhibited by each of our members.
+					Established on May 8, 2013, the IEEE ENETCOM Student Branch has been
+					steadfast in promoting the IEEE and its mission within the realm of
+					engineering students at ENET'Com. Our core focus is to invest in these
+					students, aiding them in honing their general skills and fostering
+					their development into future leaders and change-makers. With a
+					membership exceeding 472 individuals, including engineers, degree
+					holders, and master's degree holders, our Student Branch proudly
+					stands as the largest in Sfax, ranking 3rd in the Tunisia Section and
+					3rd in Region 8. Our influence extends through 6 Technical Chapters:
+					CAS, CS, IAS, PES, RAS, EMBS, and an Affinity Group: WIE. We take
+					great pride in our global recognition, having received numerous IEEE
+					Awards across various fields. This success is a testament to the
+					dedication and commitment exhibited by each of our members.
 				</h1>
 				<div>
 					<Link
@@ -461,12 +468,15 @@ export function AboutTunisiaSection(params) {
 					About IEEE Tunisia Section
 				</h1>
 				<h1 className="mb-4 text-lg font-medium  lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-					Founded in 2008, the IEEE Tunisia Section is dedicated to spreading IEEE initiatives throughout Tunisia.
-					This is achieved through educational and technical programs, networking opportunities, and the advancement
-					of technology and its applications to address humanitarian challenges. The section actively supports chapters,
-					special interest groups, student activities, and student awards. IEEE has firmly established its presence
-					in the Tunisian engineering community, with over 43 Student Branches located across various engineering
-					schools, faculties, and universities.
+					Founded in 2008, the IEEE Tunisia Section is dedicated to spreading
+					IEEE initiatives throughout Tunisia. This is achieved through
+					educational and technical programs, networking opportunities, and the
+					advancement of technology and its applications to address humanitarian
+					challenges. The section actively supports chapters, special interest
+					groups, student activities, and student awards. IEEE has firmly
+					established its presence in the Tunisian engineering community, with
+					over 43 Student Branches located across various engineering schools,
+					faculties, and universities.
 				</h1>
 				<div>
 					<Link
@@ -488,12 +498,16 @@ export function AboutTunisiaSection(params) {
 
 export function AboutTSYP() {
 	return (
-		<section style={{ padding: "20px 0px" }} className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28">
+		<section
+			style={{ padding: "20px 0px" }}
+			className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28"
+		>
 			<div className="col-span-6 ">
 				<CustomImage
 					src={LogoOnBlack || Logo}
-					className={`mx-auto mb-8 hidden  object-contain dark:block ${LogoOnBlack ? "" : "dark:invert"
-						} `}
+					className={`mx-auto mb-8 hidden  object-contain dark:block ${
+						LogoOnBlack ? "" : "dark:invert"
+					} `}
 					alt="TSYP 11"
 				/>
 
@@ -508,13 +522,17 @@ export function AboutTSYP() {
 					About IEEE TSYP Congress
 				</h1>
 				<p className="mb-4  text-lg font-medium lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-
-					The Tunisian Students and Young Professionals (TSYP) Congress, organized by IEEE ENETCOM Student Branch and IEEE Tunisia
-					Section, annually brings together IEEE members in Tunisia. The 12th edition, themed "TUNISIA 2056," provides a unique
-					platform for participants to delve into current and future challenges in science and engineering. The congress fosters
-					connections within the national and international IEEE network, encouraging knowledge exchange and the sharing of
-					experiences. "TUNISIA 2056" signifies a commitment to addressing challenges and envisioning a technologically advanced
-					future for Tunisia, making the congress a dynamic forum for ideas, innovation, and collaboration.
+					The Tunisian Students and Young Professionals (TSYP) Congress,
+					organized by IEEE ENETCOM Student Branch and IEEE Tunisia Section,
+					annually brings together IEEE members in Tunisia. The 12th edition,
+					themed "TUNISIA 2056," provides a unique platform for participants to
+					delve into current and future challenges in science and engineering.
+					The congress fosters connections within the national and international
+					IEEE network, encouraging knowledge exchange and the sharing of
+					experiences. "TUNISIA 2056" signifies a commitment to addressing
+					challenges and envisioning a technologically advanced future for
+					Tunisia, making the congress a dynamic forum for ideas, innovation,
+					and collaboration.
 				</p>
 			</div>
 		</section>
@@ -529,7 +547,7 @@ function Memories() {
 			</h2>
 			<div className="grid grid-cols-1 gap-6 md:grid-cols-3">
 				<div className="grid gap-6">
-				<div>
+					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
 							src={memory11}
@@ -665,7 +683,6 @@ function PreviousEditions() {
 					Previous Editions
 				</h2>
 				<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-
 					<div className="transition hover:scale-105">
 						<a
 							href={"https://2023-tsyp.ieee.tn/"}
@@ -676,8 +693,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2023}
 								alt="TSYP2023"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2023</h1>
@@ -692,8 +709,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2022}
 								alt="TSYP2022"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2022</h1>
@@ -708,8 +725,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2021Dark}
 								alt="TSYP2021Dark"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2021</h1>
@@ -724,8 +741,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-cover shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2020}
 								alt="TSYP2020"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2020</h1>
@@ -741,8 +758,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2019}
 								alt="TSYP2019"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2019</h1>
@@ -757,8 +774,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain p-4 shadow-md shadow-gray-200 transition dark:invert sm:col-start-2 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2018}
 								alt="TSYP2018"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2018</h1>
@@ -773,8 +790,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:invert sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2017}
 								alt="TSYP2017"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2017</h1>
@@ -789,8 +806,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:invert sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2016}
 								alt="TSYP2016"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2016</h1>
@@ -805,8 +822,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={"https://i.imgur.com/EpXVkCB.png"}
 								alt="IeeeTunisia"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2015</h1>
@@ -821,8 +838,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-900 invert transition dark:invert-0 sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2014}
 								alt="TSYP2014"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2014</h1>
@@ -833,8 +850,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={"https://i.imgur.com/EpXVkCB.png"}
 								alt="IeeeTunisia"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2013</h1>
@@ -860,8 +877,8 @@ function PoweredBy() {
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={"https://i.imgur.com/EpXVkCB.png"}
 						alt="IeeeTunisia"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				{false && (
@@ -875,8 +892,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/0JYgUki.png"}
 							alt="YpTunisia"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -890,26 +907,26 @@ function PoweredBy() {
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={enetcomlogo}
 						alt="enetcomLogo"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
-				{false && 
+				{false && (
 					<a
-					href="https://uso.rnu.tn/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
-				>
-					<CustomImage
-						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-						src={"https://i.imgur.com/HalSgE1.png"}
-						alt="university of sousse"
-					// width={200}
-					// height={200}
-					/>
-				</a>
-				}
+						href="https://uso.rnu.tn/"
+						target="_blank"
+						rel="noreferrer"
+						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
+					>
+						<CustomImage
+							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+							src={"https://i.imgur.com/HalSgE1.png"}
+							alt="university of sousse"
+							// width={200}
+							// height={200}
+						/>
+					</a>
+				)}
 				{false && (
 					<a
 						href="https://ieeer8.org/"
@@ -921,8 +938,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/mFTrYL2.png"}
 							alt="IEEE Region 8"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -937,8 +954,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/mFTrYL2.png"}
 							alt="IEEE"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -968,8 +985,8 @@ function SponsorsPreview() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
 						src={"https://i.imgur.com/FkG6VVq.png"}
 						alt="Orange"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
@@ -982,8 +999,8 @@ function SponsorsPreview() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
 						src={"https://i.imgur.com/2AKS7s7.png"}
 						alt="polytecsousse"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 			</div>
@@ -994,7 +1011,9 @@ function SponsorsPreview() {
 function IEEEPartners() {
 	return (
 		<div className="mx-auto max-w-7xl px-6 lg:px-8">
-			<h2 className="mb-12 text-center text-4xl font-bold">IEEE Partners From The Last Edition</h2>
+			<h2 className="mb-12 text-center text-4xl font-bold">
+				IEEE Partners From The Last Edition
+			</h2>
 			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
 				{false && (
 					<a
@@ -1007,8 +1026,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/mFTrYL2.png"}
 							alt="IEEE"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -1023,8 +1042,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/0JYgUki.png"}
 							alt="YpTunisia"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -1038,8 +1057,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/mFTrYL2.png"}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
@@ -1052,8 +1071,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] rounded-full bg-white object-contain p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/uO5riCW.png"}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
@@ -1066,8 +1085,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/cV1QOQg.png"}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
@@ -1080,8 +1099,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/rJu8XVi.png"}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				{false && (
@@ -1095,8 +1114,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/y2PtVJQ.png"}
 							alt="Transistor"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -1110,8 +1129,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/zGQmYnj.jpg"}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
@@ -1124,8 +1143,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/Usd3WQr.png"}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
@@ -1138,8 +1157,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/y3Ulw1e.png"}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
@@ -1152,8 +1171,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/cpdzd8G.png"}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				{false && (
@@ -1167,8 +1186,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/ABdMAlo.png"}
 							alt="Transistor"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -1183,7 +1202,7 @@ export function SparrowSurvey() {
 			/*add custom params here*/
 		});
 
-		return () => { };
+		return () => {};
 	}, []);
 
 	return (
