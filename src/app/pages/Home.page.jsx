@@ -522,7 +522,7 @@ export function AboutTSYP() {
 					About IEEE TSYP Congress
 				</h1>
 				<p className="mb-4  text-lg font-medium lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-					The Tunisian Students and Young Professionals (TSYP) Congress,
+					The Tunisian Student and Young Professional (TSYP) Congress,
 					organized by IEEE ENETCOM Student Branch and IEEE Tunisia Section,
 					annually brings together IEEE members in Tunisia. The 12th edition,
 					themed "TUNISIA 2056," provides a unique platform for participants to
