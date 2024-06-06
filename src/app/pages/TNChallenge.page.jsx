@@ -16,7 +16,7 @@ export function TNChallengePage() {
 
 
 				<CustomImage
-				    className="rounded-lg my-10"
+				    className="rounded-2xl my-10  object-cover"
 					src={TNimage}
 					alt={"TN2056image"}
 				/>

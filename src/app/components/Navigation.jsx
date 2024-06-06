@@ -48,13 +48,13 @@ export default function Navigation() {
 						<CustomImage
 							loading="eager"
 							src={LightLogo}
-							className={` h-20 dark:hidden `}
+							className={` h-16 dark:hidden `}
 							alt="TSYP 12"
 						/>
 						<CustomImage
 							loading="eager"
 							src={DarkLogo}
-							className={` h-20 hidden dark:block`}
+							className={` h-16 hidden dark:block`}
 							alt="TSYP 12"
 						/>
 						{/* <svg
