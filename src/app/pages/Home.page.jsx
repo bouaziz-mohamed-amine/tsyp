@@ -366,16 +366,16 @@ export default function HomePage() {
 					<Speakers limit={8} />
 				</section>
 			</Fade>
-			{/* <Fade triggerOnce>
+			<Fade triggerOnce>
 				<div className="hidden md:mt-8 md:block">
 					<ScheduleOverview />
 				</div>
-			</Fade> */}
-			{/* <Fade triggerOnce>
+			</Fade> 
+			<Fade triggerOnce>
 				<section className="py-8 md:py-28">
 					<Team limit={5} />
 				</section>
-			</Fade> */}
+			</Fade> 
 			{true && (
 				<Fade triggerOnce>
 					<section className="py-8 md:py-28">
