@@ -1,15 +1,15 @@
 import { useEffect } from "react";
-import LogoOnBlack from "../../assets/main logo black (Custom).png";
-import LightLogo from "../../assets/Logo-TSYP12_withoutBckg_white.png";
-import Logo from "../../assets/main logo black (Custom).png";
-import SBGroupPic from "../../assets/sb-group-pic3.jpg";
+import LogoOnBlack from "../../assets/images/main logo black (Custom).png";
+import LightLogo from "../../assets/images/Logo-TSYP12_withoutBckg_white.png";
+import Logo from "../../assets/images/main logo black (Custom).png";
+import SBGroupPic from "../../assets/images/sb-group-pic3.jpg";
 import TSYP2014 from "../../assets/tsyp-editions/tsyp-2014.jpg";
 import TSYP2016 from "../../assets/tsyp-editions/tsyp-2016.jpg";
 import TSYP2017 from "../../assets/tsyp-editions/tsyp-2017.jpg";
 import TSYP2018 from "../../assets/tsyp-editions/tsyp-2018.png";
 import TSYP2019 from "../../assets/tsyp-editions/tsyp-2019.jpg";
 import TSYP2020 from "../../assets/tsyp-editions/tsyp-2020.jpg";
-import enetcomlogo from "../../assets/logosb10final.png";
+import enetcomlogo from "../../assets/images/logosb10final.png";
 // memories assets
 // import memory2 from "../../assets/memories/356551992_226751036434551_8933123460754285924_n.jpg";
 import memory2 from "../../assets/memories/320777930_2311490175678507_4343281339549131430_n.jpg";
@@ -29,7 +29,7 @@ import memory11 from "../../assets/memories/cover.jpg";
 import { Link } from "react-router-dom";
 import TSYP2021Dark from "../../assets/tsyp-editions/tsyp-2021-dark.png";
 import TSYP2022 from "../../assets/tsyp-editions/tsyp-2022.png";
-import TSYP2023 from "../../assets/main logo (3) (Custom).png";
+import TSYP2023 from "../../assets/tsyp-editions/main logo (3) (Custom).png";
 import Team from "../components/Team";
 // import ThreeExperience from "../components/ThreeExperience";
 import {

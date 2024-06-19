@@ -9,7 +9,7 @@ import tn_flag from "../../assets/Flag_of_Tunisia.svg";
 import CustomImage from "./CustomImage";
 import ExpoDetailsResources from "./ExpoDetailsResources";
 import StyledButton from "./StyledButton";
-import enetcom from "../../assets/logosb10final.png"
+import enetcom from "../../assets/images/logosb10final.png"
 export default function ExpoItemDetails() {
 	const { companySlug } = useParams();
 

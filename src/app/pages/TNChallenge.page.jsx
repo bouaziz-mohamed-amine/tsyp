@@ -1,5 +1,5 @@
 import CustomImage from "../components/CustomImage";
-import TNimage from "../../assets/tn2056.png"
+import TNimage from "../../assets/images/tn2056.png"
 import pdfTN2056 from "../../pdf/TN_2056_Program_RD-copy1.pdf";
 import { Link } from 'react-router-dom';
 
