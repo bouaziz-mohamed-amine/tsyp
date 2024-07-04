@@ -1,5 +1,5 @@
-import LightLogo from "../../assets/main logo (3) (Custom).png";
-import Logo from "../../assets/main logo black (Custom).png";
+import LightLogo from "../../assets/tsyp-editions/tsyp-2023.png";
+import Logo from "../../assets/images/main logo black (Custom).png";
 
 // memories assets
 // import memory2 from "../../assets/memories/356551992_226751036434551_8933123460754285924_n.jpg";

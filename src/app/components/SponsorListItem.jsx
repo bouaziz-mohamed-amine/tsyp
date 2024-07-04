@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 import CustomImage from "./CustomImage";
-import enetcom from "../../assets/logosb10final.png"
+import enetcom from "../../assets/images/logosb10final.png"
 export default function SponsorListItem({ data, classNames, imgClassNames }) {
 	return (
 		<Link
