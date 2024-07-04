@@ -2,6 +2,7 @@ import CustomImage from "../components/CustomImage";
 import TNimage from "../../assets/images/tn2056.png"
 import pdfTN2056 from "../../pdf/TN_2056_Program_RD-copy1.pdf";
 import { Link } from 'react-router-dom';
+import ContactDetails from './Contact.page'
 
 export function TNChallengePage() {
 
@@ -12,11 +13,11 @@ export function TNChallengePage() {
 					Tunisia 2056 Challenge
 				</h1>
 			</div>
-			<div className="col-span-6 mx-auto my-2 ">
+			<div className="col-span-6 mx-2 my-2 ">
 
 
 				<CustomImage
-				    className="rounded-2xl my-10  object-cover"
+				    className="rounded-2xl my-10 object-cover w-full"
 					src={TNimage}
 					alt={"TN2056image"}
 				/>
@@ -24,7 +25,7 @@ export function TNChallengePage() {
 
 			<div className="mb-8">
 				
-				<div className="mb-6 text-gray-600 dark:text-gray-400">
+				<div className="mb-6 text-gray-600 dark:text-gray-400 ">
 					<strong>The Tunisia 2056 Challenge (TN2056 Challenge) </strong>
 					embodies the transformative vision for TSYP in its 12th edition,
 					emphasizing collaboration among Tunisia Student Branches to tackle

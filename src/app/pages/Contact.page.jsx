@@ -8,7 +8,7 @@ export default function ContactPage() {
 		<div className="h-full">
 			<ContactForm />
 
-			{/* <ContactDetails /> */}
+			<ContactDetails />
 
 			<section className="py-8 lg:py-8">
 				<div className="max-w-8xl mx-auto">
@@ -107,7 +107,7 @@ export function ContactDetails({ title = "Reach us" }) {
 				<div className="md:col-span-6">
 					<iframe
 						title="tsyp location"
-						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12935.840417133557!2d10.5974361!3d35.8499818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8a6826eca57b%3A0xf698bd059d8e2d13!2s%C3%89cole%20sup%C3%A9rieure%20des%20sciences%20et%20de%20la%20technologie%20de%20Hammam%20Sousse!5e0!3m2!1sen!2stn!4v1688595702507!5m2!1sen!2stn"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1855888648197!2d10.75497610884798!3d34.83903016772566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13002cd2cef7333d%3A0xaa3a1cf6d7fb55b0!2sEcole%20nationale%20d&#39;Electronique%20et%20des%20T%C3%A9l%C3%A9communications%20de%20Sfax%D8%8C%20Technopole%20Sfax%2C%20Route%20Tunis%20km%2011%2C%20cite%20Ons%2C%20Sfax!5e0!3m2!1sfr!2stn!4v1720109358670!5m2!1sfr!2stn" 
 						className="aspect-video w-full rounded-2xl shadow-lg"
 						// height="400"
 						style={{

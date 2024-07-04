@@ -371,11 +371,11 @@ export default function HomePage() {
 					<ScheduleOverview />
 				</div>
 			</Fade> 
-			<Fade triggerOnce>
+			{/*<Fade triggerOnce>
 				<section className="py-8 md:py-28">
 					<Team limit={5} />
 				</section>
-			</Fade> 
+			</Fade> */}
 			{true && (
 				<Fade triggerOnce>
 					<section className="py-8 md:py-28">
