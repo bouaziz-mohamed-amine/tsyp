@@ -29,7 +29,7 @@ import memory11 from "../../assets/memories/cover.jpg";
 import { Link } from "react-router-dom";
 import TSYP2021Dark from "../../assets/tsyp-editions/tsyp-2021-dark.png";
 import TSYP2022 from "../../assets/tsyp-editions/tsyp-2022.png";
-import TSYP2023 from "../../assets/tsyp-editions/main logo (3) (Custom).png";
+import TSYP2023 from "../../assets/tsyp-editions/tsyp-2023.png";
 import Team from "../components/Team";
 // import ThreeExperience from "../components/ThreeExperience";
 import {
