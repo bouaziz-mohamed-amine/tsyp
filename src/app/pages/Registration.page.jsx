@@ -1,4 +1,4 @@
-import LightLogo from "../../assets/tsyp-editions/main logo (3) (Custom).png";
+import LightLogo from "../../assets/tsyp-editions/tsyp-2023.png";
 import Logo from "../../assets/images/main logo black (Custom).png";
 
 // memories assets
