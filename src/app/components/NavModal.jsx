@@ -12,7 +12,7 @@ import {
 	faInstagram,
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import hich from "../../assets/favicon.ico";
+
 
 export default function NavModal({ setToggleModal, toggleModal }) {
 	return (
@@ -119,7 +119,7 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 
 										<div className="flex items-center justify-between">
 											<div className="px-4 sm:px-6">
-												<Dialog.Title className="text-sm font-semibold md:text-base">
+												{/* <Dialog.Title className="text-sm font-semibold md:text-base">
 													{false && (
 														<Link
 															to="https://hichemfantar.com/"
@@ -134,8 +134,8 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 															/>
 														</Link>
 													)}
-													{/* TSYP 11 © 2023 */}
-												</Dialog.Title>
+													{/* TSYP 11 © 2023 
+												</Dialog.Title> */}
 											</div>
 
 											<div className="flex items-center gap-4 px-4 sm:px-6">

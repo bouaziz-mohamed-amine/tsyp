@@ -1,5 +1,5 @@
 import React from "react";
-import tsypCollabFilePreview from "../../assets/dossier-collab-tsyp.png";
+// import tsypCollabFilePreview from "../../assets/dossier-collab-tsyp.png";
 // import tsypCollabPDF_EN from "../../assets/pdf/19.07.ENGLISH-PDF-DOSSIER-Collaboration.pdf";
 // import tsypCollabPDF_FR from "../../assets/pdf/19.07.FRENCH-PDF-DOSSIER-Collaboration-compressed.pdf";
 import { Link } from "react-router-dom";
@@ -12,7 +12,7 @@ export default function SponsorUsPage() {
 			<section className="grid items-center justify-center gap-12 py-8 md:grid-cols-12 md:py-6">
 				<div className="col-span-6 mx-auto md:order-last">
 					<div className="">
-						<Link
+						{/* <Link
 							to={
 								"https://drive.google.com/file/d/1mnUz3fwT11dLj0fs0xxR8PdFKa9QxqCp/view?usp=sharing"
 							}
@@ -25,7 +25,7 @@ export default function SponsorUsPage() {
 								className="mx-auto h-[32rem] rounded-2xl object-cover shadow-lg transition hover:scale-105"
 								alt="TSYP 11"
 							/>
-						</Link>
+						</Link> */}
 					</div>
 				</div>
 
