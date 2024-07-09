@@ -47,12 +47,17 @@ import CustomImage from "../components/CustomImage";
 import Speakers from "../components/Speakers";
 import StyledButton from "../components/StyledButton";
 import { ScheduleOverview } from "../components/schedule/ScheduleList";
-
+import Back from "../../assets/images/Untitled_design_3.png";
 export default function HomePage() {
 	const matches = useMediaQuery("(min-width: 768px)");
 
 	return (
-		<div className="h-full">
+		<div className="h-full ">
+			 <img
+				src={Back}
+				className="absolute top-20 bottom-0 my-0 mb-0 w-screen py-0   h-screen sx:hidden"
+			></img> 
+
 			{/* {false && matches && (
 				<Suspense fallback={null}>
 					<div className="hidden h-[40rem] overflow-auto rounded-2xl md:block md:h-[45rem]">
@@ -61,8 +66,8 @@ export default function HomePage() {
 				</Suspense>
 			)} */}
 
-			<Fade triggerOnce>
-				<section className="grid grid-cols-12 items-center justify-center py-10 md:py-12">
+			<div className="lg:ml-32  sm:ml-8  sx:mx-8"><Fade triggerOnce>
+				<section className=" mt-10 grid grid-cols-12 items-center justify-center mb-20 py-10 md:py-12">
 					<div className="col-span-12 mx-auto">
 						{false && (
 							<>
@@ -401,7 +406,7 @@ export default function HomePage() {
 				</Fade>
 			)}
 
-			{/* <SparrowSurvey /> */}
+			{/* <SparrowSurvey /> */}</div>
 		</div>
 	);
 }
@@ -522,12 +527,12 @@ export function AboutTSYP() {
 					About IEEE TSYP Congress
 				</h1>
 				<p className="mb-4  text-lg font-medium lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-					The Tunisian Student and Young Professional (TSYP) Congress,
-					organized by IEEE ENETCOM Student Branch and IEEE Tunisia Section,
-					annually brings together IEEE members in Tunisia. The 12th edition,
-					themed "TUNISIA 2056," provides a unique platform for participants to
-					delve into current and future challenges in science and engineering.
-					The congress fosters connections within the national and international
+					The Tunisian Student and Young Professional (TSYP) Congress, organized
+					by IEEE ENETCOM Student Branch and IEEE Tunisia Section, annually
+					brings together IEEE members in Tunisia. The 12th edition, themed
+					"TUNISIA 2056," provides a unique platform for participants to delve
+					into current and future challenges in science and engineering. The
+					congress fosters connections within the national and international
 					IEEE network, encouraging knowledge exchange and the sharing of
 					experiences. "TUNISIA 2056" signifies a commitment to addressing
 					challenges and envisioning a technologically advanced future for
