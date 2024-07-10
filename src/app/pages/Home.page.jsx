@@ -55,7 +55,7 @@ export default function HomePage() {
 		<div className="h-full ">
 			 <img
 				src={Back}
-				className="absolute top-20 bottom-0 my-0 mb-0 w-screen py-0   h-screen sx:hidden"
+				className="absolute top-20 bottom-0 left-0 my-0 mb-0 w-screen py-0   h-screen sx:hidden"
 			></img> 
 
 			{/* {false && matches && (
@@ -66,7 +66,7 @@ export default function HomePage() {
 				</Suspense>
 			)} */}
 
-			<div className="lg:ml-32  sm:ml-8  sx:mx-8"><Fade triggerOnce>
+			<div className=""><Fade triggerOnce>
 				<section className=" mt-10 grid grid-cols-12 items-center justify-center mb-20 py-10 md:py-12">
 					<div className="col-span-12 mx-auto">
 						{false && (
