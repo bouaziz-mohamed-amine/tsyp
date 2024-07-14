@@ -60,10 +60,9 @@ export function Countdown(props) {
 					Starting in:
 				</h1> */}
 			<div className=" text-center block items-center justify-center gap-4 p-4">
-				<div className="flex   mb-4 mt-8 ">
-					{" "}
-					{"days" && (
-						<div className=" flex   items-center justify-center  text-2xl font-bold leading-[30px]">
+				
+					{"days" && "hours"&& "minutes" &&"seconds" &&(
+						<div className="  grid grid-cols-[1fr_auto_1fr_auto]  items-center justify-center  text-2xl font-bold leading-[30px]">
 							{/* <SVGCircle radius={daysRadius} />
 						{days}
 						<span className="text-xs font-bold uppercase">days</span> */}
@@ -73,40 +72,39 @@ export function Countdown(props) {
 							<div className="">
 								<h1 className="mx-2 rotate-90 text-xl   xs:text-md font-bold"> Day</h1>
 							</div>
-						</div>
-					)}
-					{"hours" && (
-						<div className=" flex    items-center justify-center pt-[0px] text-2xl font-bold leading-[30px]">
 							<div>
 								<h1 className="mx-2 text-9xl xs:text-5xl ms:text-7xl font-bold">{hours}</h1>
 							</div>
 							<div className="">
 								<h1 className="mx-2 rotate-90 text-xl  xs:text-md font-bold"> Hour</h1>
 							</div>
-						</div>
-					)}
-				</div>
-
-				<div className=" flex  my-4   ">
-					{" "}
-					{"minutes" && (
-						<div className=" flex    items-center justify-center pt-[0px] text-2xl font-bold leading-[30px]">
 							<div>
 								<h1 className=" mx-2  text-9xl  xs:text-5xl ms:text-7xl font-bold">{minutes}</h1>
 							</div>
 							<div className="">
 								<h1 className=" mx-2 rotate-90 text-xl xs:text-md font-bold"> Minute</h1>
 							</div>
-						</div>
-					)}
-					{"seconds" && (
-						<div className=" flex    items-center justify-center pt-[0px] text-2xl font-bold leading-[30px]">
 							<div className="">
 								<h1 className=" mx-2 text-9xl xs:text-5xl ms:text-7xl font-bold">{seconds}</h1>
 							</div>
 							<div className="">
 								<h1 className=" mx-2 rotate-90 text-xl xs:text-md font-bold"> second</h1>
 							</div>
+						</div>
+					)}
+					
+				
+
+				<div className=" flex  my-4   ">
+					{" "}
+					{"minutes" &&"seconds" && (
+						<div className=" grid grid-cols-[1fr_auto_1fr_auto]    items-center justify-center pt-[0px] text-2xl font-bold leading-[30px]">
+							
+						</div>
+					)}
+					{"seconds" && (
+						<div className=" flex    items-center justify-center pt-[0px] text-2xl font-bold leading-[30px]">
+							
 						</div>
 					)}
 				</div>

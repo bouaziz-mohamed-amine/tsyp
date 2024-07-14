@@ -85,17 +85,7 @@ export default function HomePage() {
 										12th Edition
 									</h1>
 								</div>
-							</div>
-							<div className=" flex items-center justify-center">
-								{true && (
-									<Countdown
-										timeTillDate="12 18 2024, 6:00 am"
-										timeFormat="MM DD YYYY, h:mm a"
-									/>
-								)}
-							</div>
-						</div>
-						<div className="my-8 flex ms:items-center ms:justify-center">
+								<div className="my-8 flex ms:items-center ms:justify-center">
 							<div className="block   ">
 								<h1 className="text-md font-bold">
 									EL MADINA CONGRESS CENTER{" "}
@@ -104,6 +94,17 @@ export default function HomePage() {
 								<h1 className="text-2xl font-bold">18,19,20 dec 2024</h1>
 							</div>
 						</div>
+							</div>
+							<div className=" my-4 flex items-center justify-center">
+								{true && (
+									<Countdown
+										timeTillDate="12 18 2024, 6:00 am"
+										timeFormat="MM DD YYYY, h:mm a"
+									/>
+								)}
+							</div>
+						</div>
+						
 						<div className="my-8 flex items-center  justify-center">
 							<div className="w-full border border-white"></div>
 							<div className="mx-4 block text-center">
