@@ -6,10 +6,12 @@ module.exports = {
 		extend: {	
 			screens: {
 				
-				'xs': {'max': '655px'},
+				'xs': {'max': '650px'},
+				'ms':{'max':'770px'}
 			  },
 			  height:{
-				'plus':'130%',
+				'plus':'110%',
+				'plus+':'130%'
 			  }
 		},
 	},

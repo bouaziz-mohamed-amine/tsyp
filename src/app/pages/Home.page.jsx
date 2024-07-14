@@ -52,11 +52,11 @@ export default function HomePage() {
 	const matches = useMediaQuery("(min-width: 768px)");
 
 	return (
-		<div className="h-full ">
-			 <img
+		<div className="h-full  ">
+			<img
 				src={Back}
-				className="absolute object-cover top-24 bottom-0 left-0  my-0 w-screen xs:top-12 h-screen xs:h-plus "
-			></img> 
+				className="absolute top-24 bottom-0 left-0 my-0  h-plus w-screen object-cover xs:top-12 xs:h-plus ms:h-plus+ "
+			></img>
 
 			{/* {false && matches && (
 				<Suspense fallback={null}>
@@ -66,207 +66,57 @@ export default function HomePage() {
 				</Suspense>
 			)} */}
 
-			<div className=""><Fade triggerOnce>
-				<section className=" mt-20 xs:mt-28 grid grid-cols-12 items-center justify-center  mb-20  py-10 md:py-12">
-					<div className="col-span-12 mx-auto">
-						{false && (
-							<>
-								{" "}
-								<CustomImage
-									src={Logo}
-									className="mx-auto mb-8 hidden h-52 object-contain dark:block dark:invert sm:h-48"
-									alt="TSYP 11"
-								/>
-								<CustomImage
-									src={LightLogo}
-									className="mx-auto h-56 object-contain dark:hidden sm:h-52"
-									alt="TSYP 11"
-								/>
-							</>
-						)}
-
-						{false && (
-							<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
-								Bringing Silicon Valley to Tunisia.
-							</h1>
-						)}
-
-						{/* <h1 className="mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none"> */}
-						<h1 className="mb-8 text-center text-4xl font-bold tracking-tight lg:mb-8 lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
-							<span className="text-[#11638F] dark:text-[#BF0A19]">12th</span>{" "}
-							IEEE Tunisian Student & Young Professional Congress
-						</h1>
-
-						{true && (
-							<h1 className="mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-								Medina Congress Center, Yasmine Hammamet
-							</h1>
-						)}
-
-						{/* <h1 className="mb-4 hidden text-center text-xl font-bold tracking-tight md:block lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-							<h1 className="mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-								Inspire The Future !
-							</h1>
-						</h1> */}
-						<div className="mb-8 text-center lg:mb-7">
-							<span className="text-xl font-bold tracking-tight lg:text-2xl lg:font-extrabold lg:leading-none">
-								16 - 18 December <span className="xtext-[#3a55b4]">2024</span>
-							</span>
-							{/* <span className="text-xl font-bold tracking-tight lg:text-2xl lg:font-extrabold lg:leading-none">
-								Registration Opening Soon
-							</span> */}
-						</div>
-						<div className="flex flex-wrap items-center justify-center gap-8">
-							<div className="xtext-[#3a55b4] ">
-								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#11638F] dark:text-red-600 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-									1000+
-								</h1>
-								<span className="mt-1 font-bold uppercase">Participants</span>
+			<Fade triggerOnce>
+				<section className=" py-8 my-16 grid grid-cols-12 items-center justify-center py-10 text-white md:py-12">
+					<div className="col-span-12 mx-auto ">
+						<div className="my-8  md:flex xs:block ">
+							<div className=" mx-4 block ">
+								<div className=" my-4 ">
+									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
+										IEEE Tunisian Student
+									</h1>
+									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
+										and Young
+									</h1>
+									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
+										Professional
+									</h1>
+									<h1 className="mb-4  text-center text-4xl font-bold tracking-tight text-[#D90411] lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
+										12th Edition
+									</h1>
+								</div>
 							</div>
-							<div className="w-full md:hidden">
-								<div className="xbg-[#3a55b4] mx-auto h-0.5 w-3/6 bg-black dark:bg-gray-300 md:block"></div>
-							</div>
-							{/* <div className="xbg-[#3a55b4] hidden h-20 w-0.5 bg-black dark:bg-gray-300 md:block"></div>
-							<div className="text-center text-xl font-bold tracking-tight lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-								We're Live!
-							</div> */}
-							{false && (
-								<Countdown
-									timeTillDate="12 18 2024, 6:00 am"
-									timeFormat="MM DD YYYY, h:mm a"
-								/>
-							)}
-							{/* <div className="w-full md:hidden">
-								<div className="xbg-[#3a55b4] mx-auto h-0.5 w-3/6 bg-black dark:bg-gray-300 md:block"></div>
-							</div> */}
-							<div className="xbg-[#3a55b4] hidden h-20 w-0.5 bg-black dark:bg-gray-300 md:block"></div>
-							<div className="">
-								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#11638F] dark:text-red-600 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-									50+
-								</h1>
-								<span className="mt-1 font-bold uppercase">Speakers</span>
+							<div className=" flex items-center justify-center">
+								{true && (
+									<Countdown
+										timeTillDate="12 18 2024, 6:00 am"
+										timeFormat="MM DD YYYY, h:mm a"
+									/>
+								)}
 							</div>
 						</div>
-						<div className="mt-5 flex flex-wrap items-center justify-center gap-8">
-							{/* <div className="xtext-[#3a55b4] ">
-								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#3a55b4] dark:text-[#4967d0] lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-									1400+
+						<div className="my-8 flex ms:items-center ms:justify-center">
+							<div className="block   ">
+								<h1 className="text-md font-bold">
+									EL MADINA CONGRESS CENTER{" "}
 								</h1>
-								<span className="mt-1 font-bold uppercase">Participants</span>
+								<h1 className="text-md font-bold">YESSMINE HAMMEMET </h1>
+								<h1 className="text-2xl font-bold">18,19,20 dec 2024</h1>
 							</div>
-							<div className="w-full md:hidden">
-								<div className="xbg-[#3a55b4] mx-auto h-0.5 w-3/6 bg-black dark:bg-gray-300 md:block"></div>
-							</div> */}
-							{/* <div className="xbg-[#3a55b4] hidden h-20 w-0.5 bg-black dark:bg-gray-300 md:block"></div>
-							<div className="text-center text-xl font-bold tracking-tight lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-								We're Live!
-							</div> */}
-							{true && (
-								<Countdown
-									timeTillDate="12 18 2024, 6:00 am"
-									timeFormat="MM DD YYYY, h:mm a"
-								/>
-							)}
-							{/* <div className="w-full md:hidden">
-								<div className="xbg-[#3a55b4] mx-auto h-0.5 w-3/6 bg-black dark:bg-gray-300 md:block"></div>
-							</div> */}
-							{/* <div className="xbg-[#3a55b4] hidden h-20 w-0.5 bg-black dark:bg-gray-300 md:block"></div>
-							<div className="">
-								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#3a55b4] dark:text-[#4967d0] lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-									50+
-								</h1>
-								<span className="mt-1 font-bold uppercase">Speakers</span>
-							</div> */}
 						</div>
-						<div className="mt-8 flex flex-wrap justify-center gap-6">
-							{/* <Link to={"/sponsor-us"} className="flex justify-center">
-								<StyledButton
-									message={"Registration Opening Soon"}
-									// icon={<FontAwesomeIcon icon={faExternalLink} />}
-								/>
-							</Link> */}
-							{false && (
-								<Link
-									to={"https://forms.gle/ahXMJsQGwxHS9Hac6"}
-									className="flex justify-center"
-									target="_blank"
-								>
-									<StyledButton
-										message={"Register a startup"}
-										icon={<FontAwesomeIcon icon={faRocket} />}
-									/>
-								</Link>
-							)}
-							{false && (
-								<Link to={"/registration"} className="flex justify-center">
-									<StyledButton
-										message={"Register Now"}
-										icon={
-											<FontAwesomeIcon className="-rotate-45" icon={faTicket} />
-										}
-									/>
-								</Link>
-							)}
-
-							{false && (
-								<Link to={"/virtual-game"} className="flex justify-center">
-									<StyledButton
-										message={"Virtual Space Registration"}
-										icon={
-											<FontAwesomeIcon
-												className="-rotate-45"
-												icon={faTicket}
-												// icon={faVrCardboard}
-											/>
-										}
-									/>
-								</Link>
-							)}
-
-							{false && (
-								<Link
-									to={"https://forms.gle/YnGcgjhZnKmSK3p37"}
-									target="_blank"
-									className="flex justify-center"
-								>
-									<StyledButton
-										message={"Talent Show Registration"}
-										icon={<FontAwesomeIcon icon={faMasksTheater} />}
-									/>
-								</Link>
-							)}
-							{false && (
-								<Link to={"/sponsor-us"} className="flex justify-center">
-									<StyledButton
-										message={"Become a Sponsor"}
-										// icon={<FontAwesomeIcon icon={faExternalLink} />}
-									/>
-								</Link>
-							)}
-
-							{false && (
-								<Link
-									to={"https://forms.gle/Q88TpsVymyvDYQPBA"}
-									target="_blank"
-									className="flex justify-center"
-								>
-									<StyledButton
-										message={"Become an ambassador"}
-										icon={<FontAwesomeIcon icon={faExternalLink} />}
-									/>
-								</Link>
-							)}
+						<div className="my-8 flex items-center  justify-center">
+							<div className="w-full border border-white"></div>
+							<div className="mx-4 block text-center">
+								<h1 className="text-3xl font-bold">1200+</h1>
+								<h1>Participants</h1>
+							</div>
+							<div className="mx-4 block text-center">
+								<h1 className="text-3xl font-bold">50+</h1>
+								<h1>Speakers</h1>
+							</div>
+							<div className="w-full border border-white"></div>
 						</div>
 					</div>
-					{/* <div className="col-span-6">
-				<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
-					Welcome to our Silicon Valley.
-				</h1>
-				<h1 className="mb-4 text-4xl font-medium tracking-tight   lg:mb-7 lg:text-start lg:text-2xl lg:font-extrabold lg:leading-none">
-					IEEE Tunisian Students and Young Professionals in Conjunction with
-					IEEE ESSTHS in Silicon Valley congress.
-				</h1>
-			</div> */}
 				</section>
 			</Fade>
 
@@ -287,7 +137,7 @@ export default function HomePage() {
 
 			{false && (
 				<Fade triggerOnce>
-					<h1 className="mt-8 mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold">
+					<h1 className="mt-8 mb-4 text-start text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold">
 						In Conjunction with IES African Continent Chapter Workshop
 						<br />&{" "}
 						<Link
@@ -406,7 +256,7 @@ export default function HomePage() {
 				</Fade>
 			)}
 
-			{/* <SparrowSurvey /> */}</div>
+			{/* <SparrowSurvey /> */}
 		</div>
 	);
 }
