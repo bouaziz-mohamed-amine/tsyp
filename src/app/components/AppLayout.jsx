@@ -59,7 +59,7 @@ export default function AppLayout({ children }) {
 			>
 				<Navigation />
 
-				<main className="mx-auto container flex flex-1 p-4  pb-8 2xl:px-24">
+				<main className="mx-auto container flex flex-1 px-4  pb-8 2xl:px-24">
 					<motion.div
 						className="flex-1"
 						key={pathname}

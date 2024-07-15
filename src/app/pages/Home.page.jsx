@@ -52,11 +52,13 @@ export default function HomePage() {
 	const matches = useMediaQuery("(min-width: 768px)");
 
 	return (
-		<div className="h-full  ">
-			<img
+		<div className="h-full    ">
+			<div className=""><img
 				src={Back}
-				className="absolute top-24 bottom-0 left-0 my-0  h-plus w-screen object-cover xs:top-12 xs:h-plus ms:h-plus+ "
+				className="   absolute top-24 bottom-0 left-0  h-plus w-screen object-cover xs:top-12 xs:h-plus ms:h-plus+ "
 			></img>
+			</div>
+			
 
 			{/* {false && matches && (
 				<Suspense fallback={null}>
@@ -67,11 +69,11 @@ export default function HomePage() {
 			)} */}
 
 			<Fade triggerOnce>
-				<section className=" py-8 my-16 grid grid-cols-12 items-center justify-center py-10 text-white md:py-12">
-					<div className="col-span-12 mx-auto ">
-						<div className="my-8  md:flex xs:block ">
-							<div className=" mx-4 block ">
-								<div className=" my-4 ">
+				<section className=" my-12 grid grid-cols-12 items-center justify-center py-4 text-white ">
+					<div className="col-span-12 gap-4  ">
+						<div className="my-4  md:flex  xs:block ">
+							<div className="  block  ">
+								<div className="my-8 ">
 									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
 										IEEE Tunisian Student
 									</h1>
@@ -85,17 +87,17 @@ export default function HomePage() {
 										12th Edition
 									</h1>
 								</div>
-								<div className="my-8 flex ms:items-center ms:justify-center">
-							<div className="block   ">
-								<h1 className="text-md font-bold">
-									EL MADINA CONGRESS CENTER{" "}
-								</h1>
-								<h1 className="text-md font-bold">YESSMINE HAMMEMET </h1>
-								<h1 className="text-2xl font-bold">18,19,20 dec 2024</h1>
+								<div className="my-8 block ms:items-center ms:justify-center">
+									
+										<h1 className="text-md font-bold">
+											EL MADINA CONGRESS CENTER{" "}
+										</h1>
+										<h1 className="text-md font-bold">YESSMINE HAMMEMET </h1>
+										<h1 className="text-2xl font-bold">18,19,20 dec 2024</h1>
+									
+								</div>
 							</div>
-						</div>
-							</div>
-							<div className=" my-4 flex items-center justify-center">
+							<div className="   my-8 items-center justify-center">
 								{true && (
 									<Countdown
 										timeTillDate="12 18 2024, 6:00 am"
@@ -104,7 +106,7 @@ export default function HomePage() {
 								)}
 							</div>
 						</div>
-						
+
 						<div className="my-8 flex items-center  justify-center">
 							<div className="w-full border border-white"></div>
 							<div className="mx-4 block text-center">
@@ -117,6 +119,18 @@ export default function HomePage() {
 							</div>
 							<div className="w-full border border-white"></div>
 						</div>
+						<Fade triggerOnce>
+					{/* <CustomImage
+					src={logoBar}
+					alt=""
+					className="hidden h-52 object-contain dark:invert lg:block"
+				/> */}
+					<CustomImage
+						src={"https://i.imgur.com/PQwQnYb.png"}
+						alt=""
+						className="mx-auto hidden h-28 object-contain invert dark:invert-0 lg:block"
+					/>
+				</Fade>
 					</div>
 				</section>
 			</Fade>

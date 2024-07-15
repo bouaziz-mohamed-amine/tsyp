@@ -10,7 +10,7 @@ module.exports = {
 				'ms':{'max':'770px'}
 			  },
 			  height:{
-				'plus':'110%',
+				'plus':'120%',
 				'plus+':'130%'
 			  }
 		},
