@@ -30,7 +30,6 @@ import { Link } from "react-router-dom";
 import TSYP2021Dark from "../../assets/tsyp-editions/tsyp-2021-dark.png";
 import TSYP2022 from "../../assets/tsyp-editions/tsyp-2022.png";
 import TSYP2023 from "../../assets/tsyp-editions/tsyp-2023.png";
-import Team from "../components/Team";
 // import ThreeExperience from "../components/ThreeExperience";
 import {
 	faExternalLink,
@@ -45,34 +44,17 @@ import { useMediaQuery } from "usehooks-ts";
 import { Countdown } from "../components/Countdown";
 import CustomImage from "../components/CustomImage";
 import Speakers from "../components/Speakers";
-import StyledButton from "../components/StyledButton";
-import { ScheduleOverview } from "../components/schedule/ScheduleList";
-import Back from "../../assets/images/Untitled_design_3.png";
+import ofcPartners from "../../assets/images/ofc_partners.png";
 export default function HomePage() {
 	const matches = useMediaQuery("(min-width: 768px)");
 
 	return (
-		<div className="h-full    ">
-			<div className=""><img
-				src={Back}
-				className="   absolute top-24 bottom-0 left-0  h-plus w-screen object-cover xs:top-12 xs:h-plus ms:h-plus+ "
-			></img>
-			</div>
-			
-
-			{/* {false && matches && (
-				<Suspense fallback={null}>
-					<div className="hidden h-[40rem] overflow-auto rounded-2xl md:block md:h-[45rem]">
-						<ThreeExperience />
-					</div>
-				</Suspense>
-			)} */}
-
-			<Fade triggerOnce>
-				<section className=" my-12 grid grid-cols-12 items-center justify-center py-4 text-white ">
-					<div className="col-span-12 gap-4  ">
-						<div className="my-4  md:flex  xs:block ">
-							<div className="  block  ">
+		<div className="h-full">
+			<Fade triggerOnce className="dark:text-slate-200" >
+				<section className="grid grid-cols-12 items-center justify-center py-4">
+					<div className="col-span-12 gap-4">
+						<div className="md:flex xs:block justify-between">
+							<div className="block">
 								<div className="my-8 ">
 									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
 										IEEE Tunisian Student
@@ -83,21 +65,19 @@ export default function HomePage() {
 									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
 										Professional
 									</h1>
-									<h1 className="mb-4  text-center text-4xl font-bold tracking-tight text-[#D90411] lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
+									<h1 className="mb-4  text-center text-4xl font-bold tracking-tight text-[#115D85] dark:text-[#BA0D15] lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
 										12th Edition
 									</h1>
 								</div>
 								<div className="my-8 block ms:items-center ms:justify-center">
-									
-										<h1 className="text-md font-bold">
-											EL MADINA CONGRESS CENTER{" "}
-										</h1>
-										<h1 className="text-md font-bold">YESSMINE HAMMEMET </h1>
-										<h1 className="text-2xl font-bold">18,19,20 dec 2024</h1>
-									
+
+									{/* <h1 className="text-md font-bold">
+										EL MADINA CONGRESS CENTER{" "} YESSMINE HAMMEMET
+									</h1> */}
+									<h1 className="text-2xl font-bold text-black  dark:text-slate-200  text-center lg:text-start">18,19,20 dec 2024</h1>
 								</div>
 							</div>
-							<div className="   my-8 items-center justify-center">
+							<div className="my-8 items-center justify-center ">
 								{true && (
 									<Countdown
 										timeTillDate="12 18 2024, 6:00 am"
@@ -106,9 +86,8 @@ export default function HomePage() {
 								)}
 							</div>
 						</div>
-
-						<div className="my-8 flex items-center  justify-center">
-							<div className="w-full border border-white"></div>
+						<div className="my-8 flex items-center justify-center text-[#115D85] dark:text-slate-200">
+							<div className="w-full border border-[#115D85] dark:border-[#BA0D15]"></div>
 							<div className="mx-4 block text-center">
 								<h1 className="text-3xl font-bold">1200+</h1>
 								<h1>Participants</h1>
@@ -117,20 +96,20 @@ export default function HomePage() {
 								<h1 className="text-3xl font-bold">50+</h1>
 								<h1>Speakers</h1>
 							</div>
-							<div className="w-full border border-white"></div>
+							<div className="w-full border border-[#115D85] dark:border-[#BA0D15]"></div>
 						</div>
 						<Fade triggerOnce>
-					{/* <CustomImage
+							{/* <CustomImage
 					src={logoBar}
 					alt=""
 					className="hidden h-52 object-contain dark:invert lg:block"
 				/> */}
-					<CustomImage
-						src={"https://i.imgur.com/PQwQnYb.png"}
-						alt=""
-						className="mx-auto hidden h-28 object-contain invert dark:invert-0 lg:block"
-					/>
-				</Fade>
+							<CustomImage
+								src={ofcPartners}
+								alt=""
+								className="mx-auto hidden h-38 object-contain invert-1 dark:invert lg:block"
+							/>
+						</Fade>
 					</div>
 				</section>
 			</Fade>
@@ -246,7 +225,7 @@ export default function HomePage() {
 					<Team limit={5} />
 				</section>
 			</Fade> */}
-			{true && (
+			{false && (
 				<Fade triggerOnce>
 					<section className="py-8 md:py-28">
 						<div className="mx-auto">
@@ -375,9 +354,8 @@ export function AboutTSYP() {
 			<div className="col-span-6 ">
 				<CustomImage
 					src={LogoOnBlack || Logo}
-					className={`mx-auto mb-8 hidden  object-contain dark:block ${
-						LogoOnBlack ? "" : "dark:invert"
-					} `}
+					className={`mx-auto mb-8 hidden  object-contain dark:block ${LogoOnBlack ? "" : "dark:invert"
+						} `}
 					alt="TSYP 11"
 				/>
 
@@ -563,8 +541,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2023}
 								alt="TSYP2023"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2023</h1>
@@ -579,8 +557,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2022}
 								alt="TSYP2022"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2022</h1>
@@ -595,8 +573,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2021Dark}
 								alt="TSYP2021Dark"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2021</h1>
@@ -611,8 +589,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-cover shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2020}
 								alt="TSYP2020"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2020</h1>
@@ -628,8 +606,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2019}
 								alt="TSYP2019"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2019</h1>
@@ -644,8 +622,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain p-4 shadow-md shadow-gray-200 transition dark:invert sm:col-start-2 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2018}
 								alt="TSYP2018"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2018</h1>
@@ -660,8 +638,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:invert sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2017}
 								alt="TSYP2017"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2017</h1>
@@ -676,8 +654,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:invert sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2016}
 								alt="TSYP2016"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2016</h1>
@@ -692,8 +670,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={"https://i.imgur.com/EpXVkCB.png"}
 								alt="IeeeTunisia"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2015</h1>
@@ -708,8 +686,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-900 invert transition dark:invert-0 sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2014}
 								alt="TSYP2014"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2014</h1>
@@ -720,8 +698,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={"https://i.imgur.com/EpXVkCB.png"}
 								alt="IeeeTunisia"
-								// width={200}
-								// height={200}
+							// width={200}
+							// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2013</h1>
@@ -747,8 +725,8 @@ function PoweredBy() {
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={"https://i.imgur.com/EpXVkCB.png"}
 						alt="IeeeTunisia"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				{false && (
@@ -762,8 +740,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/0JYgUki.png"}
 							alt="YpTunisia"
-							// width={200}
-							// height={200}
+						// width={200}
+						// height={200}
 						/>
 					</a>
 				)}
@@ -777,8 +755,8 @@ function PoweredBy() {
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={enetcomlogo}
 						alt="enetcomLogo"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				{false && (
@@ -792,8 +770,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/HalSgE1.png"}
 							alt="university of sousse"
-							// width={200}
-							// height={200}
+						// width={200}
+						// height={200}
 						/>
 					</a>
 				)}
@@ -808,8 +786,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/mFTrYL2.png"}
 							alt="IEEE Region 8"
-							// width={200}
-							// height={200}
+						// width={200}
+						// height={200}
 						/>
 					</a>
 				)}
@@ -824,8 +802,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/mFTrYL2.png"}
 							alt="IEEE"
-							// width={200}
-							// height={200}
+						// width={200}
+						// height={200}
 						/>
 					</a>
 				)}
@@ -855,8 +833,8 @@ function SponsorsPreview() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
 						src={"https://i.imgur.com/FkG6VVq.png"}
 						alt="Orange"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				<a
@@ -869,8 +847,8 @@ function SponsorsPreview() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
 						src={"https://i.imgur.com/2AKS7s7.png"}
 						alt="polytecsousse"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 			</div>
@@ -896,8 +874,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/mFTrYL2.png"}
 							alt="IEEE"
-							// width={200}
-							// height={200}
+						// width={200}
+						// height={200}
 						/>
 					</a>
 				)}
@@ -912,8 +890,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/0JYgUki.png"}
 							alt="YpTunisia"
-							// width={200}
-							// height={200}
+						// width={200}
+						// height={200}
 						/>
 					</a>
 				)}
@@ -927,8 +905,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/mFTrYL2.png"}
 						alt="Transistor"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				<a
@@ -941,8 +919,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] rounded-full bg-white object-contain p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/uO5riCW.png"}
 						alt="Transistor"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				<a
@@ -955,8 +933,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/cV1QOQg.png"}
 						alt="Transistor"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				<a
@@ -969,8 +947,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/rJu8XVi.png"}
 						alt="Transistor"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				{false && (
@@ -984,8 +962,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/y2PtVJQ.png"}
 							alt="Transistor"
-							// width={200}
-							// height={200}
+						// width={200}
+						// height={200}
 						/>
 					</a>
 				)}
@@ -999,8 +977,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/zGQmYnj.jpg"}
 						alt="Transistor"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				<a
@@ -1013,8 +991,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/Usd3WQr.png"}
 						alt="Transistor"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				<a
@@ -1027,8 +1005,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/y3Ulw1e.png"}
 						alt="Transistor"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				<a
@@ -1041,8 +1019,8 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/cpdzd8G.png"}
 						alt="Transistor"
-						// width={200}
-						// height={200}
+					// width={200}
+					// height={200}
 					/>
 				</a>
 				{false && (
@@ -1056,8 +1034,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/ABdMAlo.png"}
 							alt="Transistor"
-							// width={200}
-							// height={200}
+						// width={200}
+						// height={200}
 						/>
 					</a>
 				)}
@@ -1072,7 +1050,7 @@ export function SparrowSurvey() {
 			/*add custom params here*/
 		});
 
-		return () => {};
+		return () => { };
 	}, []);
 
 	return (

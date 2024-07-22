@@ -70,25 +70,25 @@ export function Countdown(props) {
 								<h1 className=" text-9xl xs:text-5xl ms:text-7xl  font-bold">{days}</h1>
 							</div>
 							<div className="">
-								<h1 className=" rotate-90 text-xl   xs:text-md font-bold"> Day</h1>
+								<h1 className=" rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Day</h1>
 							</div>
 							<div>
 								<h1 className=" text-9xl xs:text-5xl ms:text-7xl font-bold">{hours}</h1>
 							</div>
 							<div className="">
-								<h1 className=" rotate-90 text-xl  xs:text-md font-bold"> Hour</h1>
+								<h1 className=" rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Hour</h1>
 							</div>
 							<div>
 								<h1 className="   text-9xl  xs:text-5xl ms:text-7xl font-bold">{minutes}</h1>
 							</div>
 							<div className="">
-								<h1 className="  rotate-90 text-xl xs:text-md font-bold"> Minute</h1>
+								<h1 className="  rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Minute</h1>
 							</div>
 							<div className="">
 								<h1 className="  text-9xl xs:text-5xl ms:text-7xl font-bold">{seconds}</h1>
 							</div>
 							<div className="">
-								<h1 className="  rotate-90 text-xl xs:text-md font-bold"> second</h1>
+								<h1 className="  rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> second</h1>
 							</div>
 						</div>
 					)}
