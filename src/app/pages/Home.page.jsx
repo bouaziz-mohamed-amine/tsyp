@@ -74,7 +74,7 @@ export default function HomePage() {
 									{/* <h1 className="text-md font-bold">
 										EL MADINA CONGRESS CENTER{" "} YESSMINE HAMMEMET
 									</h1> */}
-									<h1 className="text-2xl font-bold text-black  dark:text-slate-200  text-center lg:text-start">18,19,20 dec 2024</h1>
+									<h1 className="text-2xl font-bold text-black  dark:text-slate-200  text-center lg:text-start">16, 17, 18 dec 2024</h1>
 								</div>
 							</div>
 							<div className="my-8 items-center justify-center ">

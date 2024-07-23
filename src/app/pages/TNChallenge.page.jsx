@@ -77,22 +77,8 @@ export function TNChallengePage() {
 			<div className="col-span-6 ml-12">
 			
 				<h1 className="mb-4 text-lg font-medium   lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-					Established on May 8, 2013, the IEEE ENETCOM Student Branch has been
-					steadfast in promoting the IEEE and its mission within the realm of
-					engineering students at ENET'Com. Our core focus is to invest in these
-					students, aiding them in honing their general skills and fostering
-					their development into future leaders and change-makers. With a
-					membership exceeding 472 individuals, including engineers, degree
-					holders, and master's degree holders, our Student Branch proudly
-					stands as the largest in Sfax, ranking 3rd in the Tunisia Section and
-					3rd in Region 8. Our influence extends through 6 Technical Chapters:
-					CAS, CS, IAS, PES, RAS, EMBS, and an Affinity Group: WIE. We take
-					great pride in our global recognition, having received numerous IEEE
-					Awards across various fields. This success is a testament to the
-					dedication and commitment exhibited by each of our members.
+				Our first step in the TN2056 Challenge was the info sessions phase. We began with a chair meeting where we introduced the 12th edition of TSYP and explained the concept of this new challenge. We then asked the chairs to hold info sessions for their student branches, as they are now our representatives. Following this, we held three Webex sessions, each focusing on one of our three sectors: Health Tech, Agritech, and Creative & Cultural Industries. These sessions were assisted by outstanding experts from these domains, providing valuable insights and guidance.
 				</h1>
-				
-				
 			</div>
 		</section>
 				
