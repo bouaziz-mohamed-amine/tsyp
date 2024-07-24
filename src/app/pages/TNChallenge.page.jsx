@@ -87,9 +87,9 @@ export function TNChallengePage() {
 					</div>
 				</div>
 			</section>
-			{/* <div className="col-span-12 pb-16 md:mx-auto">
+			<div className="col-span-12 pb-16 md:mx-auto">
 				<h1 className=" text-center text-4xl font-bold tracking-tight  lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
-					Meet our experts
+					Meet Our Experts
 				</h1>
 			</div>
 			<section className="py-8 md:py-28">
@@ -97,7 +97,7 @@ export function TNChallengePage() {
 						<div className="grid gap-4">
 						<iframe
 						className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
-						src="https://www.youtube.com/embed/lCOTmTw0DWA?si=Xdw5N58MXQ7Y30JT"
+						src="https://www.youtube.com/embed/fGtaovfEMsk?si=qeKhTqVvShbma6Hi"
 						title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -108,7 +108,7 @@ export function TNChallengePage() {
 						<div className="grid gap-4">
 						<iframe
 						className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
-						src="https://www.youtube.com/embed/lCOTmTw0DWA?si=Xdw5N58MXQ7Y30JT"
+						src="https://www.youtube.com/embed/yQifdi5ayzk?si=U_JuQwftTdTBmR4O"
 						title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -119,7 +119,7 @@ export function TNChallengePage() {
 						<div className="grid gap-4">
 						<iframe
 						className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
-						src="https://www.youtube.com/embed/lCOTmTw0DWA?si=Xdw5N58MXQ7Y30JT"
+						src="https://www.youtube.com/embed/jYsry2bVTto?si=fwG37715PnjpIL7t"
 						title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -128,7 +128,7 @@ export function TNChallengePage() {
 					></iframe>
 						</div>
 					</div>
-				</section> */}
+				</section> 
 		</div>
 		
 	);
