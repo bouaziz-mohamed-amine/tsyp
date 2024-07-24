@@ -87,7 +87,7 @@ export function TNChallengePage() {
 					</div>
 				</div>
 			</section>
-			<div className="col-span-12 pb-16 md:mx-auto">
+			{/* <div className="col-span-12 pb-16 md:mx-auto">
 				<h1 className=" text-center text-4xl font-bold tracking-tight  lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
 					Meet our experts
 				</h1>
@@ -128,7 +128,7 @@ export function TNChallengePage() {
 					></iframe>
 						</div>
 					</div>
-			</section>
+				</section> */}
 		</div>
 		
 	);

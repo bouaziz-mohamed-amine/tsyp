@@ -270,7 +270,7 @@ export function AboutESSTHSSB(params) {
 					IEEE ENET'COM Student Branch
 				</h1>
 				<h1 className="mb-4 text-lg font-medium   lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-					Established on May 8, 2013, the IEEE ENETCOM Student Branch has been
+					Established on November 2013, the IEEE ENETCOM Student Branch has been
 					steadfast in promoting the IEEE and its mission within the realm of
 					engineering students at ENET'Com. Our core focus is to invest in these
 					students, aiding them in honing their general skills and fostering
