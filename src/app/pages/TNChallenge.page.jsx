@@ -7,7 +7,7 @@ import ContactDetails from "./Contact.page";
 export function TNChallengePage() {
 	return (
 		<div className="h-full  ">
-			<div className="col-span-12 py-20 md:mx-auto">
+			<div className="col-span-12 lg:py-20 md:mx-auto">
 				<h1 className=" text-center text-4xl font-bold tracking-tight  lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
 					Tunisia 2056 Challenge
 				</h1>
@@ -61,7 +61,7 @@ export function TNChallengePage() {
 						allowfullscreen
 					></iframe>
 				</div>
-				<div className="col-span-6 ml-12">
+				<div className="col-span-6 lg:ml-12">
 					<h1 className="mb-4  text-lg font-medium   lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
 						Our first step in the TN2056 Challenge was the info sessions phase.
 						We began with a chair meeting where we introduced the 12th edition
@@ -92,11 +92,11 @@ export function TNChallengePage() {
 					Meet our experts
 				</h1>
 			</div>
-			<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28">
-				<div className="col-span-4 mx-auto w-full ">
-					<iframe
-						className="mx-auto"
-						height="316"
+			<section className="py-8 md:py-28">
+					<div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+						<div className="grid gap-4">
+						<iframe
+						className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
 						src="https://www.youtube.com/embed/lCOTmTw0DWA?si=Xdw5N58MXQ7Y30JT"
 						title="YouTube video player"
 						frameborder="0"
@@ -104,11 +104,10 @@ export function TNChallengePage() {
 						referrerpolicy="strict-origin-when-cross-origin"
 						allowfullscreen
 					></iframe>
-				</div>
-				<div className="col-span-4 mx-auto w-full ">
-					<iframe
-						className="mx-auto"
-						height="316"
+						</div>
+						<div className="grid gap-4">
+						<iframe
+						className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
 						src="https://www.youtube.com/embed/lCOTmTw0DWA?si=Xdw5N58MXQ7Y30JT"
 						title="YouTube video player"
 						frameborder="0"
@@ -116,11 +115,10 @@ export function TNChallengePage() {
 						referrerpolicy="strict-origin-when-cross-origin"
 						allowfullscreen
 					></iframe>
-				</div>
-				<div className="col-span-4 mx-auto w-full ">
-					<iframe
-						className="mx-auto"
-						height="316"
+						</div>
+						<div className="grid gap-4">
+						<iframe
+						className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
 						src="https://www.youtube.com/embed/lCOTmTw0DWA?si=Xdw5N58MXQ7Y30JT"
 						title="YouTube video player"
 						frameborder="0"
@@ -128,8 +126,10 @@ export function TNChallengePage() {
 						referrerpolicy="strict-origin-when-cross-origin"
 						allowfullscreen
 					></iframe>
-				</div>
+						</div>
+					</div>
 			</section>
 		</div>
+		
 	);
 }

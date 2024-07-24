@@ -62,7 +62,7 @@ export default function Footer() {
 						</Link>
 					)} */}
 					<Link
-						to={"https://enetcom.ieee.tn/"}
+						to={"https://hichemfantar.com/"}
 						target="_blank"
 						className="font-semibold"
 					>

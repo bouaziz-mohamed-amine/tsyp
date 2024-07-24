@@ -67,28 +67,28 @@ export function Countdown(props) {
 						{days}
 						<span className="text-xs font-bold uppercase">days</span> */}
 							<div>
-								<h1 className=" text-9xl xs:text-5xl ms:text-7xl  font-bold">{days}</h1>
+								<h1 className="  xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{days}</h1>
 							</div>
 							<div className="">
 								<h1 className=" rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Day</h1>
 							</div>
 							<div>
-								<h1 className=" text-9xl xs:text-5xl ms:text-7xl font-bold">{hours}</h1>
+								<h1 className="  xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{hours}</h1>
 							</div>
 							<div className="">
 								<h1 className=" rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Hour</h1>
 							</div>
 							<div>
-								<h1 className="   text-9xl  xs:text-5xl ms:text-7xl font-bold">{minutes}</h1>
+								<h1 className="  xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{minutes}</h1>
 							</div>
 							<div className="">
 								<h1 className="  rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Minute</h1>
 							</div>
 							<div className="">
-								<h1 className="  text-9xl xs:text-5xl ms:text-7xl font-bold">{seconds}</h1>
+								<h1 className="xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{seconds}</h1>
 							</div>
 							<div className="">
-								<h1 className="  rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> second</h1>
+								<h1 className="rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> second</h1>
 							</div>
 						</div>
 					)}

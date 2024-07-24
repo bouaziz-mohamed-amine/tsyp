@@ -56,7 +56,7 @@ export default function HomePage() {
 						<div className="md:flex xs:block justify-between">
 							<div className="block">
 								<div className="my-8 ">
-									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
+									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none ">
 										IEEE Tunisian Student
 									</h1>
 									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
