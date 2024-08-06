@@ -21,15 +21,19 @@ const useCountdown = (targetDate) => {
 };
 
 const getReturnValues = (countDown) => {
-	// calculate time left
-	const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
-	const hours = Math.floor(
-		(countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-	);
-	const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
-	const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
+    // calculate time left
+    const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
 
-	return [days, hours, minutes, seconds];
+    // format numbers to add leading zero if less than 10
+    const formattedDays = days.toString().padStart(2, '0');
+    const formattedHours = hours.toString().padStart(2, '0');
+    const formattedMinutes = minutes.toString().padStart(2, '0');
+    const formattedSeconds = seconds.toString().padStart(2, '0');
+
+    return [formattedDays, formattedHours, formattedMinutes, formattedSeconds];
 };
 
 export function Countdown(props) {
@@ -51,39 +55,47 @@ export function Countdown(props) {
 	}
 
 	return (
-		<div className="xtext-[#2d459e]">
+		<div className="  xtext-[#2d459e]">
 			{/* <h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-7 lg:text-5xl lg:font-extrabold lg:leading-none">
 					Starting in:
 				</h1> */}
-			<div className="flex flex-wrap items-center justify-center gap-4">
-				{"days" && (
-					<div className="relative flex h-[100px] w-[100px] flex-col items-center justify-center pt-[0px] text-2xl font-bold leading-[30px]">
-						<SVGCircle radius={daysRadius} />
+			<div className=" text-center block items-center justify-center gap-4 p-4 my-8">
+				
+					{"days" && "hours"&& "minutes" &&"seconds" &&(
+						<div className="  grid grid-cols-[1fr_auto_1fr_auto]  items-center justify-center  text-2xl font-bold leading-[30px]">
+							{/* <SVGCircle radius={daysRadius} />
 						{days}
-						<span className="text-xs font-bold uppercase">days</span>
-					</div>
-				)}
-				{"hours" && (
-					<div className="relative flex h-[100px] w-[100px] flex-col items-center justify-center pt-[0px] text-2xl font-bold leading-[30px]">
-						<SVGCircle radius={hoursRadius} />
-						{hours}
-						<span className="text-xs font-bold uppercase">hours</span>
-					</div>
-				)}
-				{"minutes" && (
-					<div className="relative flex h-[100px] w-[100px] flex-col items-center justify-center pt-[0px] text-2xl font-bold leading-[30px]">
-						<SVGCircle radius={minutesRadius} />
-						{minutes}
-						<span className="text-xs font-bold uppercase">minutes</span>
-					</div>
-				)}
-				{"seconds" && (
-					<div className="relative flex h-[100px] w-[100px] flex-col items-center justify-center pt-[0px] text-2xl font-bold leading-[30px]">
-						<SVGCircle radius={secondsRadius} />
-						{seconds}
-						<span className="text-xs font-bold uppercase">seconds</span>
-					</div>
-				)}
+						<span className="text-xs font-bold uppercase">days</span> */}
+							<div>
+								<h1 className="  xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{days}</h1>
+							</div>
+							<div className="">
+								<h1 className=" rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Day</h1>
+							</div>
+							<div>
+								<h1 className="  xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{hours}</h1>
+							</div>
+							<div className="">
+								<h1 className=" rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Hour</h1>
+							</div>
+							<div>
+								<h1 className="  xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{minutes}</h1>
+							</div>
+							<div className="">
+								<h1 className="  rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Minute</h1>
+							</div>
+							<div className="">
+								<h1 className="xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{seconds}</h1>
+							</div>
+							<div className="">
+								<h1 className="rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> second</h1>
+							</div>
+						</div>
+					)}
+					
+				
+
+				
 			</div>
 		</div>
 	);

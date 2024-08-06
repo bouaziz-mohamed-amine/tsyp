@@ -79,10 +79,10 @@ const router = createBrowserRouter([
 				path: "speakers",
 				element: <Speakers />,
 			},
-			{
-				path: "venue",
-				element: <VenuePage />,
-			},
+			// {
+			// 	path: "venue",
+			// 	element: <VenuePage />,
+			// },
 			{
 				path: "speakers/:speakerSlug",
 				element: <Speaker />,
@@ -95,14 +95,14 @@ const router = createBrowserRouter([
 			// 	path: "team",
 			// 	element: <Team />,
 			// },
-			{
-				path: "virtual",
-				element: <Schedule />,
-			},
-			{
-				path: "live-event-space",
-				element: <LiveEventSpacePage />,
-			},
+			// {
+			// 	path: "virtual",
+			// 	element: <Schedule />,
+			// },
+			// {
+			// 	path: "live-event-space",
+			// 	element: <LiveEventSpacePage />,
+			// },
 			{
 				path: "sessions",
 				element: <SessionsPage />,
@@ -131,14 +131,14 @@ const router = createBrowserRouter([
 				path: "awards",
 				element: <WinnersPage />,
 			},
-			{
-				path: "ticket",
-				element: <TicketPage />,
-			},
-			{
-				path: "stage",
-				element: <Phase />,
-			},
+			// {
+			// 	path: "ticket",
+			// 	element: <TicketPage />,
+			// },
+			// {
+			// 	path: "stage",
+			// 	element: <Phase />,
+			// },
 			{
 				path: "tn2056",
 				element: <TNChallengePage/>

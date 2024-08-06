@@ -3,7 +3,17 @@ module.exports = {
 	darkMode: "class",
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
-		extend: {},
+		extend: {	
+			screens: {
+				
+				'xs': {'max': '650px'},
+				'ms':{'max':'770px'}
+			  },
+			  height:{
+				'plus':'120%',
+				'plus+':'130%'
+			  }
+		},
 	},
 	plugins: [
 		require("@tailwindcss/forms"),

@@ -9,7 +9,7 @@ import Ticket from "../components/Ticket";
 import TicketDesktop from "../components/TicketDesktop";
 import ticketModule from "../components/ticket.module.css";
 
-import DiarLemdinaPoolNight from "./Diar-Lemdina-pool-night.png";
+import DiarLemdinaPoolNight from "../../assets/images/Diar-Lemdina-pool-night.png";
 import tsypfavicon from "./Asset 10.svg";
 import CustomImage from "../components/CustomImage";
 

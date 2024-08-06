@@ -7,6 +7,7 @@ import twentyTnd from "../../assets/currency/products-17494.jpg";
 import fiftyTnd from "../../assets/currency/1_200505150513_1.jpg";
 import CustomImage from "../components/CustomImage";
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 export default function TunisiaPage() {
 	const [usdToTnd, setUsdToTnd] = useState(100);
@@ -63,6 +64,9 @@ export default function TunisiaPage() {
 						alt="TSYP 11"
 					
 					/> */}
+					 <div>
+					 
+    </div>
 					</div>
 				</section>
 			</Fade>
@@ -71,13 +75,13 @@ export default function TunisiaPage() {
 				<section className="py-8 md:py-28">
 					<div className="grid grid-cols-1 gap-4 md:grid-cols-3">
 						<div className="grid gap-4">
-							<div>
+							{/* <div>
 								<CustomImage
 									className="h-full w-full rounded-lg object-cover"
 									src="https://www.nationsonline.org/gallery/Tunisia/Super_moon_over_Medina_of_Tunis.jpg"
 									alt=""
 								/>
-							</div>
+							</div> */}
 							<div>
 								<CustomImage
 									className="h-full w-full rounded-lg object-cover"
@@ -187,7 +191,7 @@ export default function TunisiaPage() {
 									Tunisian Dinar (TND)
 								</label>
 								<input
-									value={Math.floor(usdToTnd * 3.09)}
+									value={Math.floor(usdToTnd * 3.10)}
 									readOnly
 									type="number"
 									id="tnd"

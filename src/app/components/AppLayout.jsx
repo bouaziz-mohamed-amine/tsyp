@@ -49,7 +49,7 @@ export default function AppLayout({ children }) {
 			</div> */}
 
 			<div
-				className="flex min-h-full flex-col"
+				className=" flex min-h-full flex-col"
 				style={
 					{
 						// relative position to show on top of canvas
@@ -59,7 +59,7 @@ export default function AppLayout({ children }) {
 			>
 				<Navigation />
 
-				<main className="container mx-auto flex flex-1 p-4 py-8 2xl:px-24">
+				<main className="mx-auto container flex flex-1 px-4  pb-8 2xl:px-24">
 					<motion.div
 						className="flex-1"
 						key={pathname}
