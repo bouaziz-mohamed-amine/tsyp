@@ -71,7 +71,7 @@ export function TNChallengePage() {
 						Webex sessions, each focusing on one of our three sectors: Health
 						Tech, Agritech, and Creative & Cultural Industries. These sessions
 						were assisted by outstanding experts from these domains, providing
-						valuable insights and guidance.n
+						valuable insights and guidance.
 					</h1>
 					<div>
 						<Link
