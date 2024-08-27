@@ -11,6 +11,10 @@ const routes = [
 		title: "TN 2056",
 		href: "/tn2056",
 	},
+	{
+		title: "Challenges",
+		href: "/challenges",
+	},
 	// {
 	// 	title: "Game",
 	// 	href: "/virtual-game",
