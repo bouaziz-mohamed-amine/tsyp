@@ -34,6 +34,7 @@ import EventSatisfactionFormPage from "./app/pages/EventSatisfactionForm.page.js
 import WinnersList from "./app/components/WinnersList.jsx";
 import { WinnersPage } from "./app/pages/Winners.jsx";
 import { TNChallengePage } from "./app/pages/TNChallenge.page.jsx";
+import AmbassadorPage from "./app/pages/CallAmbassador.page.jsx";
 
 setInitialTheme();
 
@@ -147,6 +148,10 @@ const router = createBrowserRouter([
 				path: "*",
 				element: <HomePage />,
 			},
+			{
+				path: "call-ambassador",
+				element : <AmbassadorPage/>
+			}
 
 		],
 	},

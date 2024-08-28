@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ChallengeListItem from "./ChallengeListItem";
-
+import TNimage from "../../assets/images/tn2056/tn2056.png";
 export default function ChallengesList() {
 	const [challengesData, setChallengesData] = useState([]);
 
@@ -25,13 +25,18 @@ export default function ChallengesList() {
 	return (
 		<div>
 			<div className="mb-8">
-				<div className="mb-4 text-4xl font-bold">Challenges</div>
-				<div className="text-gray-600 dark:text-gray-400">
-					Learn more about our technical and non-technical challenges.
+				<div className="mb-4 text-4xl font-bold   lg:mb-7 lg:text-center lg:text-5xl lg:font-extrabold lg:leading-none">Challenges</div>
+				<div className="text-center text-lg text-gray-600 dark:text-gray-400">
+				Check out the TSYP12 technical and non-technical Challenges. 
+				<br/>
+Participants are encouraged to review these requirements carefully to understand the expectations and prepare effectively.
+<br/> 
+Best of luck to all participants!
 				</div>
 			</div>
 
 			<div className="flex flex-col gap-8">
+				
 				{/* {!!hostedBy?.length && (
 					<div>
 						<div className="sticky top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
@@ -46,6 +51,7 @@ export default function ChallengesList() {
 						</div>
 					</div>
 				)} */}
+				
 				{!!enabledChallenges?.length && (
 					<div>
 						{/* <div className="sticky top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
@@ -57,7 +63,7 @@ export default function ChallengesList() {
 								.reverse()
 								.map((e) => {
 									return (
-										<div className="col-span-12 md:col-span-4" key={e.slug}>
+										<div className="col-span-12 md:col-span-6" key={e.slug}>
 											<ChallengeListItem data={e} />
 										</div>
 									);

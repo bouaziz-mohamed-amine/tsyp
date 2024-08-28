@@ -108,7 +108,7 @@ export default function Navigation() {
 														leaveFrom="transform opacity-100 scale-100"
 														leaveTo="transform opacity-0 scale-95"
 													>
-														<Menu.Items className="absolute left-0 z-10 mt-2 w-48 origin-top-right divide-y divide-gray-100 rounded-xl bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-gray-900">
+														<Menu.Items className="absolute left-0 z-10 mt-2 w-48 origin-top-right divide-y divide-gray-100 rounded-xl bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hover:text-[#115D85] focus:text-[#115D85] dark:bg-gray-900">
 															<div className="px-1 py-1 ">
 																{route?.items?.map((e) => (
 																	<Menu.Item>
@@ -116,10 +116,10 @@ export default function Navigation() {
 																			<NavLink
 																				className={({ isActive, isPending }) =>
 																					twMerge(
-																						"text-gray-600 transition-all duration-75 hover:font-bold focus:font-bold dark:text-gray-400 dark:hover:text-gray-200",
+																						"text-gray-600 transition-all duration-75 hover:font-bold focus:font-bold  hover:text-[#115D85] focus:text-[#115D85] dark:text-gray-400 dark:hover:text-gray-200",
 																						"group flex w-full items-center rounded-md px-2 py-2 text-sm",
 																						isActive
-																							? "font-bold text-black dark:text-gray-200"
+																							? "font-bold text-black dark:text-gray-200 "
 																							: isPending
 																								? ""
 																								: ""
@@ -265,6 +265,23 @@ export default function Navigation() {
 									{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
 									<span className="hidden md:block">We're Live!</span>
 									<span className="md:hidden">We're Live!</span>
+								</div>
+								{/* </button> */}
+							</Link>
+						)}
+						{true && (
+							<Link
+								to="/call-ambassador"
+								className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-sky-900 to-sky-500 dark:from-[#BA0D15] dark:to-red-700  p-0.5 text-sm font-medium  transition-shadow text-white focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-red-400 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
+							>
+								{/* <button
+								type="button"
+								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
+							> */}
+								<div className="relative flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in bg-opacity-0  hover:font-bold focus:font-bold">
+									{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
+									<span className="hidden md:block">Call For Ambassadors</span>
+									<span className="md:hidden">Call For Ambassadors</span>
 								</div>
 								{/* </button> */}
 							</Link>
