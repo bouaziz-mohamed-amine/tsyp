@@ -29,13 +29,13 @@ export default function AmbassadorPage() {
 				<div className="mb-6 flex flex-wrap justify-center gap-4">
 					<Link
 						to={
-							"https://docs.google.com/forms/d/e/1FAIpQLSdWzT28HrTniMtPlQetXLeG9hBr6ccADzIYM4GunDost_5TxQ/viewform"
+							"https://docs.google.com/forms/d/e/1FAIpQLSdeI9aeTxOk1BvE1mVM75IlwKPlljm5cWa64aW2Z6ObtTGedw/viewform"
 						}
 						target="_blank"
 						rel="noreferrer"
 						className="inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 					>
-						<span className="">Speaker Suggestions</span>
+						<span className="">Form Link</span>
 					</Link>
 				</div>
 			</section>
