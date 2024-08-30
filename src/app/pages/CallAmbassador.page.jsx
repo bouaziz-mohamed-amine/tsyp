@@ -21,8 +21,7 @@ export default function AmbassadorPage() {
 				</div>
 				<div className="col-span-6">
 					<h1 className=" text-lg font-medium  lg:mb-3 lg:text-start  lg:font-normal">
-					The countdown has begun for the 12th TSYP, themed "TUNISIA 2056".<br/>
-As we celebrate 100 years of Tunisia’s independence, we invite passionate and visionary IEEE members to join us as TSYP 12 Ambassadors and play a crucial role in this transformative journey.<br/>
+					The countdown has begun for the 12th Tunisian Student and Young Professional Congress (TSYP12), themed "TUNISIA 2056." As we anticipate Tunisia’s centennial of independence in 2056, we invite passionate and visionary IEEE members to join us as TSYP 12 Ambassadors and play a crucial role in this transformative journey.<br/>
 					</h1>
 					<p className="mb-3 text-lg font-bold text-gray-700 dark:text-gray-400 ">Important Notes:</p>
 						
@@ -35,13 +34,13 @@ As we celebrate 100 years of Tunisia’s independence, we invite passionate and 
 					<div className="flex flex-wrap justify-center ">
 					<Link
 						to={
-							"https://docs.google.com/forms/d/e/1FAIpQLSdeI9aeTxOk1BvE1mVM75IlwKPlljm5cWa64aW2Z6ObtTGedw/viewform"
+							"https://ieee.surveysparrow.com/s/call-for-ambassadors-tsyp12/tt-drJSk"
 						}
 						target="_blank"
 						rel="noreferrer"
 						className="inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 					>
-						<span className="">Form Link</span>
+						<span className="">Survey Link</span>
 					</Link>
 					</div>
 				</div>

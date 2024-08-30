@@ -32,11 +32,13 @@ export default function ChallengeListItem({ data, classNames, imgClassNames }) {
 			</div> */}
 		</Link>}
 		<Link href="#" class="flex flex-col items-center  border border-gray-200 dark:border-gray-700  rounded-xl border-2 shadow md:flex-row  hover:bg-gray-100 dark:hover:bg-black">
-    <img class="object-contain md:object-cover w-4/5 h-20 md:h-auto md:w-48 rounded-lg m-4" src="https://media.discordapp.net/attachments/1199074591268667483/1278504779479515177/Design_sans_titre_5.png?ex=66d10bdc&is=66cfba5c&hm=157709d127bdd1ddaa82594179245b319ebb2884fb79606afafafecb4fba15c0&=&format=webp&quality=lossless&width=442&height=442" alt="tt"/>
-    <div class="flex flex-col justify-between p-4 leading-normal Link">
+    {/* <img class="object-contain md:object-cover w-4/5 h-20 md:h-auto md:w-48 rounded-lg m-4" src="https://media.discordapp.net/attachments/1199074591268667483/1278504779479515177/Design_sans_titre_5.png?ex=66d10bdc&is=66cfba5c&hm=157709d127bdd1ddaa82594179245b319ebb2884fb79606afafafecb4fba15c0&=&format=webp&quality=lossless&width=442&height=442" alt="tt"/> */}
+    <img class="object-contain md:object-cover w-4/5 h-20 md:h-auto md:w-40 rounded-lg m-4" src={data.logo.url || data.logo} alt="tt"/>
+    
+	<div class="flex flex-col justify-between p-4 leading-normal Link">
         <h4 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">BIoTI’2023: Best Project
 		IoT and Industry 4.0</h4>
-        <p class="mb-3 text-center  font-bold text-gray-600 dark:text-gray-400">IEEE CASS Tunisia Section Technical Challege.</p>
+        <p class="mb-3 text-center  font-bold text-gray-600 dark:text-gray-400">{data.name}</p>
     </div>
 </Link>
 			</div>
