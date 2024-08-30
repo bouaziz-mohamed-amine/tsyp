@@ -11,10 +11,10 @@ const routes = [
 		title: "TN 2056",
 		href: "/tn2056",
 	},
-	{
+	...(new Date() >= new Date('2024-09-02') ? [{
 		title: "Challenges",
 		href: "/challenges",
-	},
+	  }] : []),
 	// {
 	// 	title: "Game",
 	// 	href: "/virtual-game",

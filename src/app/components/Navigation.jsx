@@ -32,8 +32,10 @@ export default function Navigation() {
 		};
 		getData();
 	}, []);
+	
 
 	return (
+		
 		<div>
 			<nav className="rounded border-gray-200 px-4 py-2.5 sm:px-8">
 				<div className="container mx-auto flex flex-wrap items-center justify-between">
@@ -272,7 +274,7 @@ export default function Navigation() {
 						{true && (
 							<Link
 								to="/call-ambassador"
-								className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-sky-900 to-sky-500 dark:from-[#BA0D15] dark:to-red-700  p-0.5 text-sm font-medium  transition-shadow text-white focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-red-400 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
+								className=" mx-4 fgroup relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-sky-900 to-sky-500 dark:from-[#BA0D15] dark:to-red-700  p-0.5 text-sm font-medium  transition-shadow text-white focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-red-400 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
 							>
 								{/* <button
 								type="button"
@@ -280,7 +282,7 @@ export default function Navigation() {
 							> */}
 								<div className="relative flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in bg-opacity-0  hover:font-bold focus:font-bold">
 									{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
-									<span className="hidden md:block">Call For Ambassadors</span>
+									<span className=" hidden md:block">Call For Ambassadors</span>
 									<span className="md:hidden">Call For Ambassadors</span>
 								</div>
 								{/* </button> */}
