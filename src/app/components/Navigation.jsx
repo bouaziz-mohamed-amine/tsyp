@@ -280,7 +280,7 @@ export default function Navigation() {
 								type="button"
 								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
 							> */}
-								<div className="relative flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in bg-opacity-0  hover:font-bold focus:font-bold">
+								<div className=" relative flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in bg-opacity-0  hover:font-bold focus:font-bold">
 									{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
 									<span className=" hidden md:block">Call For Ambassadors</span>
 									<span className="md:hidden">Call For Ambassadors</span>

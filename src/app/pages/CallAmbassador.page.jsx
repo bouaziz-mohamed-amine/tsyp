@@ -14,7 +14,7 @@ export default function AmbassadorPage() {
 			<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 mb-12">
 				<div className="col-span-6 mx-auto md:order-last mb-4">
 					<CustomImage
-						src="https://media.discordapp.net/attachments/1199074591268667483/1278494608531128422/f551370b-9d40-4f3f-bd31-407ca0151ef6.jpg?ex=66d10263&is=66cfb0e3&hm=3661071bcb08fb25b04ed96737460f0904a54e3824aafb43ae2f00abb74ea776&=&format=webp&width=1440&height=360"
+						src={'https://i.imgur.com/q0UjTWg.jpeg'}
 						className="object-cover mx-auto h-52  rounded-2xl sm:h-96"
 						alt="call"
 					/>

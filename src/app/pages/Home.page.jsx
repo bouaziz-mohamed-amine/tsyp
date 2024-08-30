@@ -24,7 +24,7 @@ import memory7 from "../../assets/memories/356882005_272016892113248_64699250216
 import memory8 from "../../assets/memories/321296201_1206807523592277_5346561523774336230_n.jpg";
 import memory9 from "../../assets/memories/358218740_2128948947437461_3099469010629116758_n.jpg";
 import memory10 from "../../assets/memories/358619396_222649417397966_6373005098322693727_n.jpg";
-import memory11 from "../../assets/memories/cover.jpg";
+
 
 import { Link } from "react-router-dom";
 import TSYP2021Dark from "../../assets/tsyp-editions/tsyp-2021-dark.png";
@@ -398,7 +398,7 @@ function Memories() {
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory11}
+							src="https://i.imgur.com/wGbAmaH.jpeg"
 							alt=""
 						/>
 					</div>
