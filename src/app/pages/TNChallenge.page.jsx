@@ -1,5 +1,5 @@
 import CustomImage from "../components/CustomImage";
-import TNimage from "../../assets/images/tn2056/tn2056.png";
+
 import { Link } from "react-router-dom";
 import ContactDetails from "./Contact.page";
 
@@ -15,7 +15,7 @@ export function TNChallengePage() {
 			<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 mb-12">
 				<div className="col-span-6 mx-auto md:order-last mb-4">
 					<CustomImage
-						src={TNimage}
+						src={"https://i.imgur.com/jaV94we.png"}
 						className=" mx-auto h-52  rounded-2xl sm:h-96"
 						alt="tn2056"
 					/>
