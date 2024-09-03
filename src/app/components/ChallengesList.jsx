@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ChallengeListItem from "./ChallengeListItem";
-import TNimage from "../../assets/images/tn2056/tn2056.png";
 export default function ChallengesList() {
 	const [challengesData, setChallengesData] = useState([]);
 
