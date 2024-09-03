@@ -9,14 +9,13 @@ import Ticket from "../components/Ticket";
 import TicketDesktop from "../components/TicketDesktop";
 import ticketModule from "../components/ticket.module.css";
 
-import DiarLemdinaPoolNight from "../../assets/images/Diar-Lemdina-pool-night.png";
 import tsypfavicon from "./Asset 10.svg";
 import CustomImage from "../components/CustomImage";
 
 export default function TicketPage() {
 	return (
 		<div className="flex h-full items-center justify-center">
-			<div className="flex flex-col gap-8">
+			{false && <div className="flex flex-col gap-8">
 				<div className="w-full">
 					<Tab.Group>
 						<Tab.List className="mx-auto flex max-w-md space-x-1 rounded-full bg-white p-1 shadow-lg dark:bg-blue-900/20">
@@ -175,75 +174,6 @@ export default function TicketPage() {
 								</div>
 
 								<div className="hidden md:block">
-									<AnimatedTicket>
-										<div
-											className={`${
-												ticketModule["ticket"]
-											} bg-blackk  relative mx-auto w-80 overflow-hidden rounded-2xl ${"text-gray-300"} shadow-lg`}
-											style={{
-												background: `linear-gradient(45deg, rgba(0,0,0,.85), rgba(0,0,0,.4)), url(${DiarLemdinaPoolNight}) no-repeat center`,
-
-												// backgroundImage: `url(${ticket?.ticketLandscapeBackgroundImgUrl})`,
-												backgroundSize: "cover",
-												backgroundRepeat: "no-repeat",
-												backgroundPosition: "center",
-
-												width: "680px",
-												minHeight: "340px",
-											}}
-										>
-											<div className={`${ticketModule["holes-top"]}`} />
-
-											<div className="flex min-h-[inherit] justify-between gap-4 py-10 px-10">
-												<div className="flex flex-1 flex-col gap-2">
-													<div className="flex items-center gap-2">
-														<CustomImage
-															src="https://avatars.githubusercontent.com/hichemfantar"
-															alt=""
-															className="h-20 w-20 rounded-full border border-gray-400 object-cover p-[0.12rem]"
-														/>
-														<div>
-															<div className="text-3xl font-bold">
-																Hichem Fantar
-															</div>
-															<div className="font-['space_mono']">
-																/hichemfantar
-															</div>
-														</div>
-													</div>
-
-													<div className="flex-1"></div>
-
-													<div className="font-medium">
-														<div>8:30am PT, Dec 18, 2023.</div>
-														<div>Hosted by IEEE ESSTHS, Diar Lemdina</div>
-													</div>
-												</div>
-
-												<div className="flex gap-4">
-													{/* <div className="holes-lower" /> */}
-
-													{false && (
-														<div
-															className={`h-full border border-dashed ${"border-gray-300"}`}
-														></div>
-													)}
-
-													<div
-														className="px-8 text-center font-['space_mono'] text-5xl"
-														style={{
-															writingMode: "vertical-rl",
-															textOrientation: "mixed",
-														}}
-													>
-														#031548
-													</div>
-												</div>
-											</div>
-
-											<div className={`${ticketModule["holes-bottom"]}`} />
-										</div>
-									</AnimatedTicket>
 								</div>
 							</Tab.Panel>
 						</Tab.Panels>
@@ -267,7 +197,7 @@ export default function TicketPage() {
 					</div>
 					<StyledButton message={"Go and explore"}></StyledButton>
 				</div>
-			</div>
+			</div>}
 		</div>
 	);
 }

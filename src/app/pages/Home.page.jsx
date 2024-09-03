@@ -10,27 +10,10 @@ import TSYP2018 from "../../assets/tsyp-editions/tsyp-2018.png";
 import TSYP2019 from "../../assets/tsyp-editions/tsyp-2019.jpg";
 import TSYP2020 from "../../assets/tsyp-editions/tsyp-2020.jpg";
 import enetcomlogo from "../../assets/images/logosb10final.png";
-// memories assets
-// import memory2 from "../../assets/memories/356551992_226751036434551_8933123460754285924_n.jpg";
-import memory2 from "../../assets/memories/320777930_2311490175678507_4343281339549131430_n.jpg";
-import memory3 from "../../assets/memories/356597928_284785967424808_4014952816457019128_n.jpg";
-// import memory4 from "../../assets/memories/356638153_1045852983243072_6319438153536457058_n.jpg";
-import memory4 from "../../assets/memories/320890318_2005696479633031_3916944159098055484_n.jpg";
-import memory5 from "../../assets/memories/356779690_1021512152540830_7436088057197797763_n.jpg";
-// import memory6 from "../../assets/memories/356870057_205006965857961_5503311855628802179_n.jpg";
-import memory6 from "../../assets/memories/322250720_721543699171031_4597921719413023052_n.jpg";
-import memory7 from "../../assets/memories/356882005_272016892113248_6469925021621114931_n.jpg";
-// import memory8 from "../../assets/memories/357311497_1034866187885516_4807505043687124219_n.jpg";
-import memory8 from "../../assets/memories/321296201_1206807523592277_5346561523774336230_n.jpg";
-import memory9 from "../../assets/memories/358218740_2128948947437461_3099469010629116758_n.jpg";
-import memory10 from "../../assets/memories/358619396_222649417397966_6373005098322693727_n.jpg";
-
-
 import { Link } from "react-router-dom";
 import TSYP2021Dark from "../../assets/tsyp-editions/tsyp-2021-dark.png";
 import TSYP2022 from "../../assets/tsyp-editions/tsyp-2022.png";
 import TSYP2023 from "../../assets/tsyp-editions/tsyp-2023.png";
-// import ThreeExperience from "../components/ThreeExperience";
 import {
 	faExternalLink,
 	faMasksTheater,
@@ -44,7 +27,7 @@ import { useMediaQuery } from "usehooks-ts";
 import { Countdown } from "../components/Countdown";
 import CustomImage from "../components/CustomImage";
 import Speakers from "../components/Speakers";
-import ofcPartners from "../../assets/images/ofc_partners.png";
+
 export default function HomePage() {
 	const matches = useMediaQuery("(min-width: 768px)");
 
@@ -105,7 +88,7 @@ export default function HomePage() {
 					className="hidden h-52 object-contain dark:invert lg:block"
 				/> */}
 							<CustomImage
-								src={ofcPartners}
+								src={"https://i.imgur.com/OHgF9e3.png"}
 								alt=""
 								className="mx-auto hidden h-38 object-contain invert-1 dark:invert lg:block"
 							/>
@@ -405,44 +388,21 @@ function Memories() {
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory10}
+							src={"https://i.imgur.com/xqwrboq.jpeg"}
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory2}
+							src={"https://i.imgur.com/RdnsgRQ.jpeg"}
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory3}
-							alt=""
-						/>
-					</div>
-				</div>
-				<div className="grid gap-6">
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory4}
-							alt=""
-						/>
-					</div>
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory5}
-							alt=""
-						/>
-					</div>
-					<div>
-						<CustomImage
-							className="h-full w-full rounded-2xl object-cover"
-							src={memory6}
+							src={"https://i.imgur.com/lYz1tZI.jpeg"}
 							alt=""
 						/>
 					</div>
@@ -451,21 +411,44 @@ function Memories() {
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory7}
+							src={"https://i.imgur.com/9WxfPuY.jpeg"}
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory8}
+							src={"https://i.imgur.com/QCHQWE4.jpeg"}
+							alt=""
+						/>
+					</div>
+					<div>
+						<CustomImage
+							className="h-full w-full rounded-2xl object-cover"
+							src={"https://i.imgur.com/nPXqChl.jpeg"}
+							alt=""
+						/>
+					</div>
+				</div>
+				<div className="grid gap-6">
+					<div>
+						<CustomImage
+							className="h-full w-full rounded-2xl object-cover"
+							src={"https://i.imgur.com/g0i8OVM.jpeg"}
+							alt=""
+						/>
+					</div>
+					<div>
+						<CustomImage
+							className="h-full w-full rounded-2xl object-cover"
+							src={"https://i.imgur.com/CvZUCld.jpeg"}
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="hidden h-full w-full rounded-2xl object-cover md:block "
-							src={memory9}
+							src={"https://i.imgur.com/O3PguYL.jpeg"}
 							alt=""
 						/>
 					</div>
