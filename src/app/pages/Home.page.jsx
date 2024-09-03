@@ -445,13 +445,13 @@ function Memories() {
 							alt=""
 						/>
 					</div>
-					<div>
+					{/* <div>
 						<CustomImage
 							className="hidden h-full w-full rounded-2xl object-cover md:block "
 							src={"https://i.imgur.com/O3PguYL.jpeg"}
 							alt=""
 						/>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
