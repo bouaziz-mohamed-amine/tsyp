@@ -102,14 +102,14 @@ export default function Footer() {
 							<ThemeToggle />
 						</div>
 					)}
-					{/* <Link
+					<Link
 						to="https://github.com/hichemfantar/TSYP-11-Official-Website"
 						aria-label="github repo"
 						target="_blank"
 					>
 						<FontAwesomeIcon icon={faGithub} className="block h-5 w-5 p-2" />
-					</Link> */}
-					{/* <a
+					</Link> 
+					 <a
 						href="https://www.facebook.com/ieee.tsyp"
 						target="_blank"
 						rel="noreferrer"
@@ -135,7 +135,7 @@ export default function Footer() {
 						aria-label="linkedin page"
 					>
 						<FontAwesomeIcon icon={faLinkedin} />
-					</a> */}
+					</a> 
 				</div>
 			</div>
 		</footer>

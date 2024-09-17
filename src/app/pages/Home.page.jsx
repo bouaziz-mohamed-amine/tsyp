@@ -54,16 +54,17 @@ export default function HomePage() {
 								</div>
 								<div className="my-8 block ms:items-center ms:justify-center">
 
-									{/* <h1 className="text-md font-bold">
+									
+									<h1 className="text-2xl font-bold text-black  dark:text-slate-200  text-center lg:text-start">22, 23, 24 dec 2024</h1>
+									<h1 className="text-md text-center font-bold lg:text-start">
 										EL MADINA CONGRESS CENTER{" "} YESSMINE HAMMEMET
-									</h1> */}
-									<h1 className="text-2xl font-bold text-black  dark:text-slate-200  text-center lg:text-start">16, 17, 18 dec 2024</h1>
+									</h1>
 								</div>
 							</div>
 							<div className="my-8 items-center justify-center ">
 								{true && (
 									<Countdown
-										timeTillDate="12 18 2024, 6:00 am"
+										timeTillDate="12 22 2024, 12:00 pm"
 										timeFormat="MM DD YYYY, h:mm a"
 									/>
 								)}

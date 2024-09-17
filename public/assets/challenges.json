@@ -25,5 +25,46 @@
 		"logo": { "url": "https://i.imgur.com/oa2gFZH.png" },
 		"link": "https://drive.google.com/file/d/1LIi6lWvOjZ_yyR7ddra2APrF3eA_QtFg/view?usp=sharing",
 		"winnerImg": ""
+	}, {
+		"enabled": true,
+		"name": "ICs for climate change sustainability",
+		"description": "IEEE SSCS Tunisia Section Chapter",
+		"slug": "IEEE SSCS Tunisia Section Chapter",
+		"logo": { "url": "https://i.imgur.com/XAwAcsv.png" },
+		"link": "https://drive.google.com/file/d/1F5M9tiKRMAVuYBsctaN4ckvIUO871js7/view",
+		"winnerImg": ""
+	},{
+		"enabled": true,
+		"name": "AI for Mental Health Advancement",
+		"description": "IEEE EMBS Tunisia Section Chapter",
+		"slug": "IEEE EMBS Tunisia Section Chapter",
+		"logo": { "url": "https://i.imgur.com/HNN7h4A.png" },
+		"link": "https://drive.google.com/file/d/1_qqCFMrJU4aLVk02YetuBjDb8dimoTZR/view",
+		"winnerImg": ""
+	},{
+		"enabled": true,
+		"name": "SMARTSHIELD",
+		"description": "IEEE EMBS Tunisia Section Chapter",
+		"slug": "IEEE CS Tunisia Section Chapter & IEEE Tunisia YP Affinity Group",
+		"logo": { "url": "https://i.imgur.com/zXwIwjr.png" },
+		"link": "https://drive.google.com/file/d/1r2J-To6qXe62mGIrbUn_USfbrSlflr01/view",
+		"winnerImg": ""
+	},{
+		"enabled": true,
+		"name": "WIE STAR PROGRAM",
+		"description": "IEEE EMBS Tunisia Section Chapter",
+		"slug": "IEEE WIE Tunisia Section Affinity Group",
+		"logo": { "url": "https://i.imgur.com/tk5Fn8A.png" },
+		"link": "https://drive.google.com/file/d/1C6hf6eCxgyjof_8S9YwYHh0uKQmosNFk/view",
+		"winnerImg": ""
+	},
+	{
+		"enabled": true,
+		"name": "Smart and Sustainable Industrial Zones",
+		"description": "IEEE EMBS Tunisia Section Chapter",
+		"slug": "IEEE IAS Tunisia Section Chapter",
+		"logo": { "url": "https://i.imgur.com/mdV4jVh.png" },
+		"link": "https://drive.google.com/file/d/12Vc7n04nVxixna2_QPQ5HE5c22uj3BdA/view?usp=sharing",
+		"winnerImg": ""
 	}
 ]

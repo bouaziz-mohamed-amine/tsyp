@@ -196,7 +196,7 @@ export default function Navigation() {
 						<div className="hidden lg:block">
 							<ThemeToggle />
 						</div>
-						{/* <Link
+						 {/* <Link
 							to="https://github.com/hichemfantar/TSYP-11-Official-Website"
 							target="_blank"
 						>
@@ -271,7 +271,7 @@ export default function Navigation() {
 								{/* </button> */}
 							</Link>
 						)}
-						{true && (
+						{false && (
 							<Link
 								to="/call-ambassador"
 								className=" mx-4 fgroup relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-sky-900 to-sky-500 dark:from-[#BA0D15] dark:to-red-700  p-0.5 text-sm font-medium  transition-shadow text-white focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-red-400 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
