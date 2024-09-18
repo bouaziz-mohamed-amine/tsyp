@@ -107,7 +107,7 @@ export default function Footer() {
 						aria-label="github repo"
 						target="_blank"
 					>
-						<FontAwesomeIcon icon={faGithub} className="block h-5 w-5 p-2" />
+						<FontAwesomeIcon icon={faGithub} />
 					</Link> 
 					 <a
 						href="https://www.facebook.com/ieee.tsyp"
