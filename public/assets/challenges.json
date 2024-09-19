@@ -66,5 +66,14 @@
 		"logo": { "url": "https://i.imgur.com/mdV4jVh.png" },
 		"link": "https://drive.google.com/file/d/12Vc7n04nVxixna2_QPQ5HE5c22uj3BdA/view?usp=sharing",
 		"winnerImg": ""
+	},
+	{
+		"enabled": true,
+		"name": "SECI'2024: Smart Energy and Circuits Innovation",
+		"description": "IEEE EMBS Tunisia Section Chapter",
+		"slug": "IEEE CASS Tunisia Section Chapter & IEEE CRFID Tunisia Section Chapter",
+		"logo": { "url": "https://i.imgur.com/irf2zTE.png" },
+		"link": "https://drive.google.com/file/d/12Vc7n04nVxixna2_QPQ5HE5c22uj3BdA/view?usp=sharing",
+		"winnerImg": ""
 	}
 ]

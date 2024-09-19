@@ -57,7 +57,7 @@ export default function HomePage() {
 									
 									<h1 className="text-2xl font-bold text-black  dark:text-slate-200  text-center lg:text-start">22, 23, 24 dec 2024</h1>
 									<h1 className="text-md text-center font-bold lg:text-start">
-										EL MADINA CONGRESS CENTER{" "} YESSMINE HAMMEMET
+									Medina Congress Center, Yasmine Hammamet
 									</h1>
 								</div>
 							</div>
