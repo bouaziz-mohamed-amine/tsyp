@@ -27,6 +27,7 @@ import { useMediaQuery } from "usehooks-ts";
 import { Countdown } from "../components/Countdown";
 import CustomImage from "../components/CustomImage";
 import Speakers from "../components/Speakers";
+import { ScheduleOverview } from "../components/schedule/ScheduleList";
 
 export default function HomePage() {
 	const matches = useMediaQuery("(min-width: 768px)");
@@ -199,12 +200,12 @@ export default function HomePage() {
 					<Speakers limit={8} />
 				</section>
 			</Fade>
-			{/* <Fade triggerOnce>
-				<div className="hidden md:mt-8 md:block">
+			 <Fade triggerOnce>
+				<div className="md:mt-8 md:block">
 					<ScheduleOverview />
 				</div>
-			</Fade>  */}
-			{/*<Fade triggerOnce>
+			</Fade>  
+			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-28">
 					<Team limit={5} />
 				</section>

@@ -1259,7 +1259,9 @@ export function ScheduleOverview({ showTimeline }) {
 					<div className="text-4xl font-bold">Schedule Overview</div>
 				</div>
 
-				<div className="flex">
+				{false && 
+				<div>
+					<div className="flex">
 					{/* <StyledButton
 						onClick={() => setIsTimeLineView(!isTimeLineView)}
 						icon={
@@ -1321,6 +1323,7 @@ export function ScheduleOverview({ showTimeline }) {
 					<FontAwesomeIcon className="text-xl" icon={faFilePdf} />
 					Download PDF
 				</a>
+				</div>}
 				{/* <button
 					className="flex items-center justify-center gap-4 font-medium md:flex"
 					onClick={() => setIsTimeLineView(!isTimeLineView)}
@@ -1348,9 +1351,9 @@ export function ScheduleOverview({ showTimeline }) {
 				/>
 				{isTimeLineView ? "Timeline View" : "List View"}
 			</button> */}
-			{viewMode === "timeline" && <TimelineSchedule />}
+			{ viewMode === "timeline" && <TimelineSchedule />}
 
-			{viewMode === "list" && (
+			{false &&viewMode === "list" && (
 				<div className="flex flex-col gap-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
 					<section className="flex flex-col">
 						<h3 className="sticky top-0 bg-gray-50 py-4 text-center text-2xl font-semibold tracking-tight dark:bg-black">
@@ -1525,7 +1528,7 @@ export function ScheduleOverview({ showTimeline }) {
 				</div>
 			)}
 
-			{viewMode === "session" && <SessionsSchedule />}
+			{false && viewMode === "session" && <SessionsSchedule />}
 		</section>
 	);
 }
