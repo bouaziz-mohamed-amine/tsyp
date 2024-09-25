@@ -54,7 +54,7 @@ export default function TimelineSchedule() {
             </svg>
         </span>            
         <div className="p-8  border-2 border-blue-800  border-r-0 border-t-0 border-b-0">
-		<h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Check-in<span class="ml-4 bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h3>
+		<h2 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Check-in<span class="ml-4 bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h2>
         <time class="block mb-2 text-sm font-bold leading-none text-blue-800  dark:text-gray-500">8:00 AM To 1:00 PM</time>
         <p class=" text-base font-normal text-gray-500 dark:text-gray-400">Medina Hall “Espace Jardin”</p>
 		</div>
@@ -66,7 +66,7 @@ export default function TimelineSchedule() {
             </svg>
         </span>            
         <div className="p-8  border-2 border-r-0 border-t-0 border-b-0">
-		<h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Check-in<span class="ml-4 bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h3>
+		<h1 class="flex items-center mb-1 text-2xl font-bold text-gray-900 dark:text-white">Check-in<span class="ml-4 bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h1>
         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">8:00 AM To 1:00 PM</time>
         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Medina Hall “Espace Jardin”</p>
 		</div>
