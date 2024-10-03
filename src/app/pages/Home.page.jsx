@@ -410,13 +410,13 @@ function Memories() {
 					</div>
 				</div>
 				<div className="grid gap-6">
-					<div>
+					  <div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
 							src={"https://i.imgur.com/9WxfPuY.jpeg"}
 							alt=""
 						/>
-					</div>
+					</div>  
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"

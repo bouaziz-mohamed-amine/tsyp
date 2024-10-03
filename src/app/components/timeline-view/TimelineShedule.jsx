@@ -10,6 +10,11 @@ export default function TimelineSchedule() {
 	const [dec18ScheduleRevamped, setDec18ScheduleRevamped] = useState([]);
 	const [dec19ScheduleRevamped, setDec19ScheduleRevamped] = useState([]);
 	const [dec20ScheduleRevamped, setDec20ScheduleRevamped] = useState([]);
+	const [Show, setShow] = useState(false);
+
+	const ShowMore = () => {
+		setShow(!Show);
+	};
 
 	useEffect(() => {
 		const getData = async () => {
@@ -46,11 +51,11 @@ export default function TimelineSchedule() {
 	return (
 		<div>
 			<div>
-				<ol class="border-s border-gray relative dark:border-gray-700 mb-8">
+				<ol class="border-s border-gray relative mb-8 dark:border-gray-700">
 					<li class="realtive ">
 						<div className="flex ">
 							<div className=" mx-8 ">
-							<span class=" flex flex-nowrap me-2 ms-3 ml-4 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+								<span class=" me-2 ms-3 ml-4 flex flex-nowrap rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
 									8:00 AM To 1:00 PM
 								</span>
 							</div>
@@ -69,7 +74,10 @@ export default function TimelineSchedule() {
 									</span>
 								</div>
 								<div className="  border-2  border-r-0 border-t-0  border-b-0 border-blue-800 p-8">
-									<h3 className="      font-cursive text-violet-500 text-lg  font-semibold"> Check-in</h3> 
+									<h3 className="      font-cursive text-lg font-semibold  text-violet-500">
+										{" "}
+										Check-in
+									</h3>
 
 									<h2 class="mb-1 flex items-center text-lg  text-gray-900 dark:text-white">
 										Check-in
@@ -90,7 +98,7 @@ export default function TimelineSchedule() {
 					<li class="realtive ">
 						<div className="flex ">
 							<div className=" mx-8 ">
-								<span class=" flex flex-nowrap me-2 ms-3 ml-4 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+								<span class=" me-2 ms-3 ml-4 flex flex-nowrap rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
 									8:00 AM To 1:00 PM
 								</span>
 							</div>
@@ -125,6 +133,181 @@ export default function TimelineSchedule() {
 							</div>
 						</div>
 					</li>
+					{Show && (
+						<div>
+							<li class="realtive ">
+								<div className="flex ">
+									<div className=" mx-8 ">
+										<span class=" me-2 ms-3 ml-4 flex flex-nowrap rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+											8:00 AM To 1:00 PM
+										</span>
+									</div>
+									<div className="    ">
+										<div className="relative">
+											<span class=" absolute top-0 left-[-10px] flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
+												<svg
+													class="h-2.5 w-2.5 text-blue-800 dark:text-blue-300"
+													aria-hidden="true"
+													xmlns="http://www.w3.org/2000/svg"
+													fill="currentColor"
+													viewBox="0 0 20 20"
+												>
+													<path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+												</svg>
+											</span>
+										</div>
+										<div className="  border-2  border-r-0 border-t-0  border-b-0 border-blue-800 p-8">
+											<h3 className="      font-cursive text-lg font-semibold  text-violet-500">
+												{" "}
+												Check-in
+											</h3>
+
+											<h2 class="mb-1 flex items-center text-lg  text-gray-900 dark:text-white">
+												Check-in
+												<span class="me-2 ms-3 ml-4 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+													Latest
+												</span>
+											</h2>
+											<time class="mb-2 block text-sm font-bold leading-none text-blue-800  dark:text-gray-500">
+												8:00 AM To 1:00 PM
+											</time>
+											<p class=" text-base font-normal text-gray-500 dark:text-gray-400">
+												Medina Hall “Espace Jardin”
+											</p>
+										</div>{" "}
+									</div>
+								</div>
+							</li>
+							<li class="realtive ">
+								<div className="flex ">
+									<div className=" mx-8 ">
+										<span class=" me-2 ms-3 ml-4 flex flex-nowrap rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+											8:00 AM To 1:00 PM
+										</span>
+									</div>
+									<div className="    ">
+										<div className="relative">
+											<span class=" absolute top-0 left-[-10px] flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
+												<svg
+													class="h-2.5 w-2.5 text-blue-800 dark:text-blue-300"
+													aria-hidden="true"
+													xmlns="http://www.w3.org/2000/svg"
+													fill="currentColor"
+													viewBox="0 0 20 20"
+												>
+													<path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+												</svg>
+											</span>
+										</div>
+										<div className="border-2  border-r-0 border-t-0  border-b-0 border-blue-800 p-8">
+											<h2 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+												Check-in
+												<span class="me-2 ms-3 ml-4 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+													Latest
+												</span>
+											</h2>
+											<time class="mb-2 block text-sm font-bold leading-none text-blue-800  dark:text-gray-500">
+												8:00 AM To 1:00 PM
+											</time>
+											<p class=" text-base font-normal text-gray-500 dark:text-gray-400">
+												Medina Hall “Espace Jardin”
+											</p>
+										</div>{" "}
+									</div>
+								</div>
+							</li>
+							<li class="realtive ">
+						<div className="flex ">
+							<div className=" mx-8 ">
+								<span class=" me-2 ms-3 ml-4 flex flex-nowrap rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+									8:00 AM To 1:00 PM
+								</span>
+							</div>
+							<div className="    ">
+								<div className="relative">
+									<span class=" absolute top-0 left-[-10px] flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
+										<svg
+											class="h-2.5 w-2.5 text-blue-800 dark:text-blue-300"
+											aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+										</svg>
+									</span>
+								</div>
+								<div className="  border-2  border-r-0 border-t-0  border-b-0 border-blue-800 p-8">
+									<h3 className="      font-cursive text-lg font-semibold  text-violet-500">
+										{" "}
+										Check-in
+									</h3>
+
+									<h2 class="mb-1 flex items-center text-lg  text-gray-900 dark:text-white">
+										Check-in
+										<span class="me-2 ms-3 ml-4 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+											Latest
+										</span>
+									</h2>
+									<time class="mb-2 block text-sm font-bold leading-none text-blue-800  dark:text-gray-500">
+										8:00 AM To 1:00 PM
+									</time>
+									<p class=" text-base font-normal text-gray-500 dark:text-gray-400">
+										Medina Hall “Espace Jardin”
+									</p>
+								</div>{" "}
+							</div>
+						</div>
+					</li>
+					<li class="realtive ">
+						<div className="flex ">
+							<div className=" mx-8 ">
+								<span class=" me-2 ms-3 ml-4 flex flex-nowrap rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+									8:00 AM To 1:00 PM
+								</span>
+							</div>
+							<div className="    ">
+								<div className="relative">
+									<span class=" absolute top-0 left-[-10px] flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
+										<svg
+											class="h-2.5 w-2.5 text-blue-800 dark:text-blue-300"
+											aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+										</svg>
+									</span>
+								</div>
+								<div className="border-2  border-r-0 border-t-0  border-b-0 border-blue-800 p-8">
+									<h2 class="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+										Check-in
+										<span class="me-2 ms-3 ml-4 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+											Latest
+										</span>
+									</h2>
+									<time class="mb-2 block text-sm font-bold leading-none text-blue-800  dark:text-gray-500">
+										8:00 AM To 1:00 PM
+									</time>
+									<p class=" text-base font-normal text-gray-500 dark:text-gray-400">
+										Medina Hall “Espace Jardin”
+									</p>
+								</div>{" "}
+							</div>
+						</div>
+					</li>
+							
+						</div>
+					)}
+					<button
+						type="button"
+						onClick={ShowMore}
+						class=" relative left-44 mt-2 items-center me-2 mb-2 rounded-lg border border-gray-200 bg-white py-2.5 px-5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+					>
+						{Show ? "Show Less" : "Show More"}
+					</button>
+
 					{/* <li class="realtive">
 						<span
 							style={{ left: "-11px" }}
