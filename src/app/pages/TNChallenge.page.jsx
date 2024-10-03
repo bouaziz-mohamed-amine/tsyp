@@ -118,12 +118,10 @@ export function TNChallengePage() {
 						</div>
 					</div>
 				</section> 
-				<div className="my-16">
+				<div className="">
 				<div
-					data-hs-carousel='{
-    "loadingClasses": "opacity-0"
-  }'
-					class=" relative h-3 /5"
+					data-hs-carousel='{"loadingClasses": "opacity-0"}'
+					class=" relative h-3/5"
 				>
 					<div class="hs-carousel flex space-x-2">
 						<div class="flex-none">
