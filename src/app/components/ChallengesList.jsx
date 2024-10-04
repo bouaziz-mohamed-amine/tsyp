@@ -64,7 +64,7 @@ export default function ChallengesList() {
 								.reverse()
 								.map((e) => {
 									return (
-										<div className="col-span-12 md:col-span-6" key={e.slug}>
+										<div className="col-span-12 md:col-span-6  " key={e.slug}>
 											<ChallengeListItem data={e} />
 										</div>
 									);

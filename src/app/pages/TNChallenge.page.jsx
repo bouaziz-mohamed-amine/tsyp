@@ -124,7 +124,7 @@ export function TNChallengePage() {
 					class=" relative h-3/5"
 				>
 					<div class="hs-carousel flex space-x-2">
-						<div class="flex-none">
+						<div class="flex-none gap-x-4">
 							<div class="hs-carousel-pagination  flex flex-col gap-y-2 overflow-y-auto">
 								<div class="hs-carousel-pagination-item h-[150px] w-[150px] shrink-0 cursor-pointer overflow-hidden rounded-md border hs-carousel-active:border-blue-400">
 									<div class="flex h-full justify-center bg-gray-100 p-2 dark:bg-neutral-900">
