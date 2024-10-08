@@ -75,5 +75,13 @@
 		"logo": { "url": "https://i.imgur.com/irf2zTE.png" },
 		"link": "https://drive.google.com/file/d/1SCmDEi62jGriL0ZeEfG4HZk2J5H9UeYD/view?usp=sharing",
 		"winnerImg": ""
+	},{
+		"enabled": true,
+		"name": "ZEN Virtual Dressing",
+		"description": "IEEE EMBS Tunisia Section Chapter",
+		"slug": "ZEN & IEEE CIS Tunisia Chapter",
+		"logo": { "url": "https://i.imgur.com/r6hixKM.png" },
+		"link": "https://drive.google.com/file/d/1TNqfiWa1kRer5-QyEisRIOpw6dG_E3zU/view?usp=sharing",
+		"winnerImg": ""
 	}
 ]
