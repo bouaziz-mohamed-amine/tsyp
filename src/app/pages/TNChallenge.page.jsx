@@ -145,9 +145,9 @@ export function TNChallengePage() {
 				</h1>
 			</div>
 			<div  className="flex flex-row gap-4 w-4/5  mx-auto">
-				<div className="basis-1/3">
+				<div className="basis-1/3 hidden md:block">
 				{tasksData.map((task,index) => 
-								<div class="cursor-pointer  border rounded-lg dark:bg-neutral-900 dark:border-neutral-900 my-4" onClick={()=>settaskSelected(index)}>
+								<div class="cursor-pointer  border rounded-lg dark:bg-neutral-900 dark:border-neutral-900 my-4 hover:bg-slate-100" onClick={()=>settaskSelected(index)}>
 								<div class="text-xs  text-center text-gray-800 transition duration-700 dark:text-white py-4">
 									<span class="">
 										{task.name}
@@ -156,8 +156,14 @@ export function TNChallengePage() {
 							</div>
 			)}
 				</div>
-				<div className="basis-2/3 py-4">
+				<div className="basis-3/3 md:basis-2/3 py-4">
+
+					<div className="hidden md:block">
 					{taskSelected != null && <img src={tasksData[taskSelected].url} alt=""  className="border rounded-lg h-3-5"/>}
+					</div>
+					<div className="block md:hidden ">
+					{tasksData.map((task,index) =><img src={task.url} alt=""  className="border rounded-lg h-3-5 my-2"/> )}
+					</div>
 				</div>
 			</div>
 		</div>
