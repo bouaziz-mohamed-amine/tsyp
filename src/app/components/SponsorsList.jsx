@@ -47,7 +47,7 @@ export default function SponsorsList() {
 			<div className="flex flex-col gap-8">
 				{!!hostedBy?.length && (
 					<div>
-						<div className="sticky top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
+						<div className="top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
 							Hosted By
 						</div>
 						<div className="grid grid-cols-12 gap-y-4 md:gap-4">
@@ -62,8 +62,8 @@ export default function SponsorsList() {
 
 				{!!hostedBy?.length && (
 					<div>
-						<div className="sticky top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
-							IEEE Global Partners
+						<div className=" top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
+							IEEE Partners
 						</div>
 						<div className="grid grid-cols-12 gap-y-4 md:gap-4">
 							{partners.map((e) => (
@@ -75,9 +75,9 @@ export default function SponsorsList() {
 					</div>
 				)}
 
-				{!!hostedBy?.length && (
+				{!!hostedBy?.length && false && (
 					<div>
-						<div className="sticky top-0 z-10 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
+						<div className=" top-0 z-10 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
 							IEEE Tunisia Section Partners
 						</div>
 						<div className="grid grid-cols-12 gap-y-4 md:gap-4">
@@ -102,7 +102,7 @@ export default function SponsorsList() {
 
 				{!!academicPartners?.length && (
 					<div id="ExclusiveAcademicPartner">
-						<div className="sticky top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
+						<div className=" top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
 						Previous Partners & Sponsors
 						</div>
 						<div className="grid grid-cols-12 gap-y-4 md:auto-rows-fr md:gap-4">

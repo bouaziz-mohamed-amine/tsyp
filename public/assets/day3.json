@@ -1,0 +1,62 @@
+[
+	{
+		"title": "Check-in & SBs booth setup",
+		"time":"08 To 13",
+		"children": [
+			{
+				"title": "Check-in",
+				"timeSlotStart": "08:00 AM",
+				"timeSlotEnd": "12:00 AM",
+				"location": "Medina Hall “Espace Jardin”"
+			},
+			{
+				"title": "SBs booth setup",
+				"timeSlotStart": "09:00 AM",
+				"timeSlotEnd": "12:00 AM",
+				"location": "Booths Hall"
+			}
+		]
+	},
+	{
+		"title": "Opening Ceremony",
+		"children": [
+			{
+				"title": "Opening Ceremony",
+				"location": "Hannibal Congress Room",
+				"timeSlotStart": "14:00 PM",
+				"timeSlotEnd": "16:00 PM"
+			},
+			{
+				"title": "Guest Interventions",
+				"timeSlotStart": "16:00 PM",
+				"timeSlotEnd": "18:00 PM",
+				"location": "Hannibal Congress Room"
+			},
+			{
+				"title": "Panel Discussions",
+				"timeSlotStart": "18:00 PM",
+				"timeSlotEnd": "20:00 PM",
+				"location": "Hannibal Congress Room"
+			}
+		]
+	},
+	{
+		"title": "Party and Social Activities",
+		"location": "Hannibal Congress Room - Booths Hall",
+		"children": [
+			{
+				"title": "Party, and Social Activities",
+				"timeSlotStart": "21:00 PM",
+				"timeSlotEnd": "00:00 PM",
+				"location": "Hannibal Congress Room - Booths Hall"
+			},
+			{
+				"title": "Surprise Challenge Announcement",
+				"timeSlotStart": "22:00 PM",
+				"timeSlotEnd": "00:00 AM",
+				"location": "Hannibal Congress Room - Booths Hall"
+			}
+		]
+	}
+
+]
