@@ -161,16 +161,6 @@ export default function HomePage() {
 			</Fade>
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
-					<PreviousEditions />
-				</section>
-			</Fade>
-			<Fade triggerOnce>
-				<section className="py-8 md:py-10">
-					<Memories />
-				</section>
-			</Fade>
-			<Fade triggerOnce>
-				<section className="py-8 md:py-10">
 					<PoweredBy />
 				</section>
 			</Fade>
@@ -179,6 +169,17 @@ export default function HomePage() {
 					<IEEEPartners />
 				</section>
 			</Fade>
+			<Fade triggerOnce>
+				<section className="py-8 md:py-10">
+					<PreviousEditions />
+				</section>
+			</Fade>
+			<Fade triggerOnce>
+				<section className="py-8 md:py-10">
+					<Memories />
+				</section>
+			</Fade>
+
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					{/* <SponsorsPreview /> */}
@@ -846,7 +847,7 @@ function IEEEPartners() {
 	return (
 		<div className="mx-auto max-w-7xl px-6 lg:px-8">
 			<h2 className="mb-12 text-center text-4xl font-bold">
-				IEEE Partners From The Last Edition
+				IEEE Partners 
 			</h2>
 			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
 				{false && (
@@ -882,56 +883,42 @@ function IEEEPartners() {
 					</a>
 				)}
 				<a
-					href="https://ieeer8.org/"
+					href="https://htb.ieee.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/mFTrYL2.png"}
+						src={"https://htb.ieee.org/wp-content/uploads/2023/06/cropped-HTB-Facebook-profile.png"}
 						alt="Transistor"
 						// width={200}
 						// height={200}
 					/>
 				</a>
 				<a
-					href="https://ieeer8.org/student-activities/sa-committee/sac/"
+					href="https://www.computer.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] rounded-full bg-white object-contain p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/uO5riCW.png"}
+						src={"https://ieeecs-media.computer.org/wp-media/2018/04/27230619/cropped-cs-favicon-512x512.png"}
 						alt="Transistor"
 						// width={200}
 						// height={200}
 					/>
 				</a>
 				<a
-					href="https://ieee-aess.org/"
+					href="https://ieeecsc.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/cV1QOQg.png"}
-						alt="Transistor"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://yp.ieee.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/rJu8XVi.png"}
+						src={"https://pbs.twimg.com/profile_images/1271535756008468480/QPKvgdiz_400x400.png"}
 						alt="Transistor"
 						// width={200}
 						// height={200}
@@ -968,47 +955,61 @@ function IEEEPartners() {
 					/>
 				</a>
 				<a
-					href="https://www.ieee-ies.org/"
+					href="https://ieeedeis.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/Usd3WQr.png"}
+						src={"https://i0.wp.com/ieeedeis.org/wp-content/uploads/2019/10/DEIS-Logo.png?fit=600%2C300&ssl=1"}
 						alt="Transistor"
 						// width={200}
 						// height={200}
 					/>
 				</a>
 				<a
-					href="https://life.ieee.org/"
+					href="https://ieee-aess.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/y3Ulw1e.png"}
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
+						src={"https://i.imgur.com/cV1QOQg.png"}
 						alt="Transistor"
 						// width={200}
 						// height={200}
 					/>
 				</a>
 				<a
-					href="https://entrepreneurship.ieee.org/"
+					href="https://ieeeaps.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/cpdzd8G.png"}
+						src={"https://ieee-aess.org/files/ieeeaess/styles/responsive_4_3_760w/public/images/media/photos/aps-logo.png?h=95f69879&itok=-6kw-OPF"}
 						alt="Transistor"
 						// width={200}
 						// height={200}
 					/>
 				</a>
+				<a
+					href="/partners-sponsors"
+					target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<p className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1 flex items-center justify-center" >
+					<div className="font-bold  text-center">
+					<FontAwesomeIcon icon={faExternalLink} className="mb-2 h-6 w-6" />
+					<p className="font-bold">See more</p>
+					</div>
+					</p>
+				</a>
+
 				{false && (
 					<a
 						href="https://www.ieeesmc.org/"
