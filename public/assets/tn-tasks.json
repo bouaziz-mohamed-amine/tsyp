@@ -1,26 +1,32 @@
 [
 	{
-		"url": "https://i.imgur.com/SKLwJjC.png",
-		"name": "Task 1: Customer Development"
+	  "name": "Task 1: Customer Development",
+	  "url": "https://i.imgur.com/SKLwJjC.png"
 	},
 	{
-		"url": "https://i.imgur.com/ie7WeeV.jpeg",
-		"name": "Task 2: Revenue & Business Models"
+	  "name": "Task 2: Revenue & Business Models",
+	  "url": "https://i.imgur.com/ie7WeeV.jpeg"
 	},
 	{
-		"url": "https://i.imgur.com/SdIsXYi.png",
-		"name": "Task 3: Product Development 1st Session"
+	  "name": "Task 3: Product Development",
+	  "sessions": [
+		{
+		  "sessionName": "1st Session",
+		  "url": "https://i.imgur.com/SdIsXYi.png"
+		},
+		{
+		  "sessionName": "2nd Session",
+		  "url": "https://i.imgur.com/KVnfyWF.jpeg"
+		},
+		{
+		  "sessionName": "3rd Session",
+		  "url": "https://i.imgur.com/5sSJMO6.png"
+		}
+	  ]
 	},
 	{
-		"url": "https://i.imgur.com/KVnfyWF.jpeg",
-		"name": "Task 3: Product Development 2st Session"
-	},
-	{
-		"url": "https://i.imgur.com/5sSJMO6.png",
-		"name": "Task 3: Product Development 3st Session"
-	},
-	{
-		"url": "https://i.imgur.com/DmwP8Tw.jpeg",
-		"name": "Task 4: Pitch Mastery"
+	  "name": "Task 4: Pitch Mastery",
+	  "url": "https://i.imgur.com/DmwP8Tw.jpeg"
 	}
-]
+  ]
+  
