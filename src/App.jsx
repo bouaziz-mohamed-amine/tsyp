@@ -35,6 +35,7 @@ import WinnersList from "./app/components/WinnersList.jsx";
 import { WinnersPage } from "./app/pages/Winners.jsx";
 import { TNChallengePage } from "./app/pages/TNChallenge.page.jsx";
 import AmbassadorPage from "./app/pages/CallAmbassador.page.jsx";
+import ForeignRegistrationPage from "./app/pages/CallForeignRegistrations.jsx";
 
 setInitialTheme();
 
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
 			{
 				path: "/registration",
 				element: <RegistrationPage />,
+			},
+			{
+				path: "/foreign-registration",
+				element: <ForeignRegistrationPage />,
 			},
 			{
 				path: "/virtual-game",

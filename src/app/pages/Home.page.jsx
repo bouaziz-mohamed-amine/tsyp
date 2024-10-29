@@ -16,10 +16,6 @@ import TSYP2022 from "../../assets/tsyp-editions/tsyp-2022.png";
 import TSYP2023 from "../../assets/tsyp-editions/tsyp-2023.png";
 import {
 	faExternalLink,
-	faMasksTheater,
-	faRocket,
-	faTicket,
-	faVrCardboard,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fade } from "react-awesome-reveal";
@@ -171,6 +167,11 @@ export default function HomePage() {
 			</Fade>
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
+					<Speakers limit={5} />
+				</section>
+			</Fade>
+			<Fade triggerOnce>
+				<section className="py-8 md:py-10">
 					<PreviousEditions />
 				</section>
 			</Fade>
@@ -196,16 +197,12 @@ export default function HomePage() {
 					)}
 				</section>
 			</Fade>
-			<Fade triggerOnce>
-				<section className="py-8 md:py-10">
-					<Speakers limit={8} />
-				</section>
-			</Fade>
-			<Fade triggerOnce>
+			
+			{/* <Fade triggerOnce>
 				<div className="md:mt-8 md:block">
 					<ScheduleOverview />
 				</div>
-			</Fade>
+			</Fade> */}
 			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-28">
 					<Team limit={5} />

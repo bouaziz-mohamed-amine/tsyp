@@ -37,7 +37,7 @@ export default function Navigation() {
 	return (
 		
 		<div>
-			<nav className="rounded border-gray-200 px-4 py-2.5 sm:px-8">
+			<nav className="rounded border-gray-200 px-2 py-2 md:px-8 md:py-2.5 ">
 				<div className="container mx-auto flex flex-wrap items-center justify-between">
 					<Link to="/" className="flex items-center">
 						{/* <CustomImage
@@ -50,13 +50,13 @@ export default function Navigation() {
 						<CustomImage
 							loading="eager"
 							src={LightLogo}
-							className={` h-16 dark:hidden `}
+							className={`h-16 md:h-16 dark:hidden `}
 							alt="TSYP 12"
 						/>
 						<CustomImage
 							loading="eager"
 							src={DarkLogo}
-							className={` h-16 hidden dark:block`}
+							className={`h-16 md:h-16 hidden dark:block`}
 							alt="TSYP 12"
 						/>
 						{/* <svg
@@ -244,7 +244,7 @@ export default function Navigation() {
 								type="button"
 								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
 							> */}
-										<div className="relative flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900">
+										<div className="relative flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2.5  transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900">
 											{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
 											<span className="hidden md:block">Register Now</span>
 											<span className="md:hidden">Register Now</span>
@@ -284,6 +284,23 @@ export default function Navigation() {
 									{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
 									<span className=" hidden md:block">Call For Ambassadors</span>
 									<span className="md:hidden">Call For Ambassadors</span>
+								</div>
+								{/* </button> */}
+							</Link>
+						)}
+						{true && (
+							<Link
+								to="/foreign-registration"
+								className=" fgroup relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-sky-900 to-sky-500 dark:from-[#BA0D15] dark:to-red-700  p-0.5 text-sm font-medium  transition-shadow text-white focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-red-400 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
+							>
+								{/* <button
+								type="button"
+								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
+							> */}
+								<div className=" relative flex items-center justify-center rounded-md bg-white  transition-all duration-75 ease-in bg-opacity-0  hover:font-bold focus:font-bold">
+									{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
+									<span className=" hidden md:block px-5 py-2.5">Call for for Foreign Registration</span>
+									<span className="md:hidden px-2.5 py-1">Call for Registration</span>
 								</div>
 								{/* </button> */}
 							</Link>

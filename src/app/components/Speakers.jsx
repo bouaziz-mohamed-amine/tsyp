@@ -11,7 +11,7 @@ export default function Speakers({ limit = 0 }) {
 
 	useEffect(() => {
 		const getData = async () => {
-			fetch("/assets/speakers.json")
+			fetch("/assets/speakers1.json")
 				.then((response) => response.json())
 				.then((response) => {
 					setSpeakersData(response);
@@ -23,7 +23,7 @@ export default function Speakers({ limit = 0 }) {
 
 	return (
 		<div>
-			<div className="mb-8 text-4xl font-bold">Speakers From The Last Edition</div>
+			<div className="mb-8 text-4xl font-bold">Speakers</div>
 			<div className="grid grid-cols-12 gap-4 md:gap-4">
 				{speakersData
 					?.filter((e) => e?.enabled)
@@ -32,7 +32,7 @@ export default function Speakers({ limit = 0 }) {
 						if (idx >= limit && limit !== 0) return null;
 
 						return (
-							<Link
+							<span
 								key={speaker.name}
 								to={`/speakers/${speaker.slug}`}
 								className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"
@@ -51,7 +51,7 @@ export default function Speakers({ limit = 0 }) {
 								{/* <div className="text-sm">
 								{speaker.title}, {speaker.company.name}
 							</div> */}
-							</Link>
+							</span>
 						);
 					})}
 
