@@ -15,18 +15,48 @@
 		  "url": "https://i.imgur.com/SdIsXYi.png"
 		},
 		{
-		  "sessionName": "2nd Session",
-		  "url": "https://i.imgur.com/KVnfyWF.jpeg"
+			"sessionName": "1st Session",
+			"url": "https://i.imgur.com/k5zoDL0.jpeg"
+		  },
+		{
+			"sessionName": "2st Session",
+			"url": "https://i.imgur.com/lTFQ3FK.png"
 		},
 		{
-		  "sessionName": "3rd Session",
-		  "url": "https://i.imgur.com/5sSJMO6.png"
+			"sessionName": "2st Session",
+			"url": "https://i.imgur.com/nOQW1WV.png"
+		},
+		{
+			"sessionName": "3st Session",
+			"url": "https://i.imgur.com/N5hTAoa.png"
+		},
+		{
+			"sessionName": "3st Session",
+			"url": "https://i.imgur.com/SJPkSLy.png"
 		}
 	  ]
 	},
 	{
 	  "name": "Task 4: Pitch Mastery",
 	  "url": "https://i.imgur.com/DmwP8Tw.jpeg"
+	},
+	{
+		"name" : "Task 5: Legal Foundations for Startups",
+		"sessions": [ 
+			{
+				"name" : "Legal Foundations for Startups",
+				"url" : "https://i.imgur.com/tJ6lj1g.png"
+			},
+			{
+				"name" : "Legal Foundations for Startups",
+				"url" : "https://i.imgur.com/rhTmC13.png"
+			}
+		]
+		
+	},
+	{
+		"name" : "Task 6: Protect & Launch: IP and Market Strategy Essentials",
+		"url" : "https://i.imgur.com/zg2MZ7G.png"
 	}
   ]
   
