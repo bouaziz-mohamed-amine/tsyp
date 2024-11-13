@@ -165,7 +165,7 @@ export default function ForeignRegistrationPage() {
 								rel="noreferrer"
 								className="inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 							>
-								<span className="">Pre Register </span>
+								<span className="">Pre Registration </span>
 							</Link>
 						</div>
 					</div>
@@ -228,11 +228,14 @@ export default function ForeignRegistrationPage() {
 								
 							</li>
 						</ul>
-						<div className="my-2 flex flex-wrap justify-center">
-							<p className="ml-4 mr-3 mt-2 text-base font-normal text-gray-700 dark:text-gray-300">
+						<div className="my-2 flex flex-wrap ">
+							<p className=" mt-2 text-base font-normal text-gray-700 dark:text-gray-300">
 								For any inquiries, feel free to contact us at: tsyp@ieee.org
 							</p>
-							<Link
+						</div>
+
+						<div  className="flex items-center justify-center my-6">
+						<Link
 								to={"https://forms.gle/WJwqbzMPE8PGcTmv8"}
 								target="_blank"
 								rel="noreferrer"
