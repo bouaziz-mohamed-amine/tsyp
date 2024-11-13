@@ -83,5 +83,14 @@
 		"logo": { "url": "https://i.imgur.com/r6hixKM.png" },
 		"link": "https://drive.google.com/file/d/1TNqfiWa1kRer5-QyEisRIOpw6dG_E3zU/view?usp=sharing",
 		"winnerImg": ""
+	},
+	{
+		"enabled": true,
+		"name": "IEEE Tunisia Section Student Activities Committee Challenge",
+		"description": "IEEE EMBS Tunisia Section Chapter",
+		"slug": "2024 IEEE Tunisian Student and Young Professional (TSYP) Congress SAC Challenge",
+		"logo": { "url": "https://i.imgur.com/g89pDp3.png" },
+		"link": "https://drive.google.com/file/d/1aMrYzGkNFw5vO01bBUc0tfGcBxGW7bQ9/view",
+		"winnerImg": ""
 	}
 ]

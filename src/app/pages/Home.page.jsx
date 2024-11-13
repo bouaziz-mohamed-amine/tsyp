@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LogoOnBlack from "../../assets/images/main logo black (Custom).png";
 import LightLogo from "../../assets/images/Logo-TSYP12_withoutBckg_white.png";
 import Logo from "../../assets/images/main logo black (Custom).png";
@@ -14,9 +14,7 @@ import { Link } from "react-router-dom";
 import TSYP2021Dark from "../../assets/tsyp-editions/tsyp-2021-dark.png";
 import TSYP2022 from "../../assets/tsyp-editions/tsyp-2022.png";
 import TSYP2023 from "../../assets/tsyp-editions/tsyp-2023.png";
-import {
-	faExternalLink,
-} from "@fortawesome/free-solid-svg-icons";
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fade } from "react-awesome-reveal";
 import { useMediaQuery } from "usehooks-ts";
@@ -24,9 +22,28 @@ import { Countdown } from "../components/Countdown";
 import CustomImage from "../components/CustomImage";
 import Speakers from "../components/Speakers";
 import { ScheduleOverview } from "../components/schedule/ScheduleList";
+import SponsorListItem from "../components/SponsorListItem";
 
 export default function HomePage() {
 	const matches = useMediaQuery("(min-width: 768px)");
+	const [sponsorsData, setSponsorsData] = useState([]);
+	useEffect(() => {
+		const getData = async () => {
+			try {
+				const response = await fetch("/assets/partners_sponsors.json");
+				const data = await response.json();
+				setSponsorsData(data.slice(0, 7));
+			} catch (error) {
+				console.error("Erreur lors de la récupération des données:", error);
+			}
+		};
+		getData();
+	}, []);
+
+	const enabledPartners = sponsorsData?.filter((e) => e.enabled === true);
+	const partners = enabledPartners?.filter(
+		(e) => e.type === "global-ieee-partner"
+	);
 
 	return (
 		<div className="h-full">
@@ -51,7 +68,7 @@ export default function HomePage() {
 								</div>
 								<div className="my-8 block ms:items-center ms:justify-center">
 									<h1 className="text-center text-2xl font-bold  text-black  dark:text-slate-200 lg:text-start">
-										22, 23, 24 dec 2024
+										22, 23, 24 december 2024
 									</h1>
 									<h1 className="text-md text-center font-bold lg:text-start">
 										Medina Congress Center, Yasmine Hammamet
@@ -86,9 +103,14 @@ export default function HomePage() {
 					className="hidden h-52 object-contain dark:invert lg:block"
 				/> */}
 							<CustomImage
-								src={"https://i.imgur.com/OHgF9e3.png"}
+								src={"https://i.imgur.com/QSavGjq.png"}
 								alt=""
-								className="h-38 invert-1 mx-auto hidden object-contain dark:invert lg:block"
+								className=" h-38 invert-1 mx-auto hidden object-contain  lg:block dark:hidden"
+							/>
+							<CustomImage
+								src={"https://i.imgur.com/6o2xYh7.png"}
+								alt=""
+								className="h-38 invert-1 mx-auto hidden object-contain dark:block "
 							/>
 						</Fade>
 					</div>
@@ -165,6 +187,55 @@ export default function HomePage() {
 					<IEEEPartners />
 				</section>
 			</Fade>
+			{/* <Fade triggerOnce>
+				<section className="py-8 md:py-10">
+					<div>
+						<div className=" top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
+							IEEE Partners
+						</div>
+						<div className="grid grid-cols-12 gap-y-4 md:gap-4">
+							{partners.map((e) => (
+								<div className="col-span-12 md:col-span-3" key={e.slug}>
+									<SponsorListItem data={e} />
+								</div>
+							))}
+							<div>
+								<Link
+									to={`/partners-sponsors/`}
+									className={
+										"relative block rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:px-6 md:pt-6"
+										
+									}
+								>
+									<div
+										className={" mb-2 rounded-lg bg-gray-50 p-2 py-6"}
+									>
+										<FontAwesomeIcon
+										icon={faExternalLink}
+										className="h-40 w-full object-contain md:h-40" />
+									</div>
+
+									<div className=" h-16 text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300">
+										<div className=" flex  h-16 items-center justify-center">
+											<div>data.name</div>
+										</div>
+									</div>
+								</Link>
+								<Link
+									to={``}
+									className="col-span-6 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"
+								>
+									<FontAwesomeIcon
+										icon={faExternalLink}
+										className="mb-2 h-6 w-6"
+									/>
+									<div className="font-bold">See more</div>
+								</Link>
+							</div>
+						</div>
+					</div>
+				</section>
+			</Fade> */}
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<Speakers limit={5} />
@@ -197,7 +268,7 @@ export default function HomePage() {
 					)}
 				</section>
 			</Fade>
-			
+
 			{/* <Fade triggerOnce>
 				<div className="md:mt-8 md:block">
 					<ScheduleOverview />
@@ -843,9 +914,7 @@ function SponsorsPreview() {
 function IEEEPartners() {
 	return (
 		<div className="mx-auto max-w-7xl px-6 lg:px-8">
-			<h2 className="mb-12 text-center text-4xl font-bold">
-				IEEE Partners 
-			</h2>
+			<h2 className="mb-12 text-center text-4xl font-bold">IEEE Partners</h2>
 			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
 				{false && (
 					<a
@@ -887,7 +956,9 @@ function IEEEPartners() {
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://htb.ieee.org/wp-content/uploads/2023/06/cropped-HTB-Facebook-profile.png"}
+						src={
+							"https://htb.ieee.org/wp-content/uploads/2023/06/cropped-HTB-Facebook-profile.png"
+						}
 						alt="Transistor"
 						// width={200}
 						// height={200}
@@ -901,7 +972,9 @@ function IEEEPartners() {
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] rounded-full bg-white object-contain p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://ieeecs-media.computer.org/wp-media/2018/04/27230619/cropped-cs-favicon-512x512.png"}
+						src={
+							"https://ieeecs-media.computer.org/wp-media/2018/04/27230619/cropped-cs-favicon-512x512.png"
+						}
 						alt="Transistor"
 						// width={200}
 						// height={200}
@@ -915,7 +988,9 @@ function IEEEPartners() {
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://pbs.twimg.com/profile_images/1271535756008468480/QPKvgdiz_400x400.png"}
+						src={
+							"https://pbs.twimg.com/profile_images/1271535756008468480/QPKvgdiz_400x400.png"
+						}
 						alt="Transistor"
 						// width={200}
 						// height={200}
@@ -959,7 +1034,9 @@ function IEEEPartners() {
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i0.wp.com/ieeedeis.org/wp-content/uploads/2019/10/DEIS-Logo.png?fit=600%2C300&ssl=1"}
+						src={
+							"https://i0.wp.com/ieeedeis.org/wp-content/uploads/2019/10/DEIS-Logo.png?fit=600%2C300&ssl=1"
+						}
 						alt="Transistor"
 						// width={200}
 						// height={200}
@@ -987,7 +1064,9 @@ function IEEEPartners() {
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://ieee-aess.org/files/ieeeaess/styles/responsive_4_3_760w/public/images/media/photos/aps-logo.png?h=95f69879&itok=-6kw-OPF"}
+						src={
+							"https://ieee-aess.org/files/ieeeaess/styles/responsive_4_3_760w/public/images/media/photos/aps-logo.png?h=95f69879&itok=-6kw-OPF"
+						}
 						alt="Transistor"
 						// width={200}
 						// height={200}
@@ -999,11 +1078,11 @@ function IEEEPartners() {
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
-					<p className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1 flex items-center justify-center" >
-					<div className="font-bold  text-center">
-					<FontAwesomeIcon icon={faExternalLink} className="mb-2 h-6 w-6" />
-					<p className="font-bold">See more</p>
-					</div>
+					<p className="col-span-2 flex h-[115px] w-[115px] items-center justify-center bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1">
+						<div className="text-center  font-bold">
+							<FontAwesomeIcon icon={faExternalLink} className="mb-2 h-6 w-6" />
+							<p className="font-bold">See more</p>
+						</div>
 					</p>
 				</a>
 
