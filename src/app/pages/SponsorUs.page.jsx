@@ -76,7 +76,7 @@ export default function SponsorUsPage() {
 							rel="noreferrer"
 							className="inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 						>
-							<span className="">Télécharger le dossier de collaboration</span>
+							<span className=""> Dossier de collaboration</span>
 						</Link>
 					</div>
 					</div>
