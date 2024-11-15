@@ -105,7 +105,7 @@ export default function HomePage() {
 							<CustomImage
 								src={"https://i.imgur.com/QSavGjq.png"}
 								alt=""
-								className=" h-38 invert-1 mx-auto hidden object-contain  lg:block dark:hidden"
+								className=" h-38 invert-1 mx-auto hidden object-contain  dark:hidden lg:block"
 							/>
 							<CustomImage
 								src={"https://i.imgur.com/6o2xYh7.png"}
@@ -182,60 +182,51 @@ export default function HomePage() {
 					<PoweredBy />
 				</section>
 			</Fade>
-			<Fade triggerOnce>
+			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<IEEEPartners />
 				</section>
-			</Fade>
-			{/* <Fade triggerOnce>
+			</Fade> */}
+			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<div>
-						<div className=" top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
-							IEEE Partners
-						</div>
-						<div className="grid grid-cols-12 gap-y-4 md:gap-4">
+						<div className="mb-8 text-4xl text-center font-bold ">IEEE Partners</div>
+						<div className="grid grid-cols-12 gap-4 md:gap-4">
 							{partners.map((e) => (
-								<div className="col-span-12 md:col-span-3" key={e.slug}>
-									<SponsorListItem data={e} />
-								</div>
-							))}
-							<div>
-								<Link
-									to={`/partners-sponsors/`}
-									className={
-										"relative block rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:px-6 md:pt-6"
-										
-									}
+								<span
+									to={`/speakers/${e.slug}`}
+									className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3  md:pt-6 md:px-6"
 								>
-									<div
-										className={" mb-2 rounded-lg bg-gray-50 p-2 py-6"}
-									>
-										<FontAwesomeIcon
-										icon={faExternalLink}
-										className="h-40 w-full object-contain md:h-40" />
+									<div  className="rounded-lg bg-gray-50 p-2 py-6 mb-2">
+									<CustomImage
+										src={e.logo.url || e.logo}
+										alt=""
+										className="h-40 w-full object-contain md:h-40 py-6"
+										loading="lazy"
+									/>
 									</div>
-
 									<div className=" h-16 text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300">
 										<div className=" flex  h-16 items-center justify-center">
-											<div>data.name</div>
+											<div>{e.name}</div>
 										</div>
 									</div>
-								</Link>
-								<Link
-									to={``}
-									className="col-span-6 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"
-								>
-									<FontAwesomeIcon
-										icon={faExternalLink}
-										className="mb-2 h-6 w-6"
-									/>
-									<div className="font-bold">See more</div>
-								</Link>
-							</div>
+								</span>
+							))}
+
+							<Link
+								to={`/speakers`}
+								className="col-span-6 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 "
+							>
+								<FontAwesomeIcon
+									icon={faExternalLink}
+									className="mb-2 h-6 w-6"
+								/>
+								<div className="font-bold">See more</div>
+							</Link>
 						</div>
 					</div>
 				</section>
-			</Fade> */}
+			</Fade>
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<Speakers limit={5} />
@@ -311,7 +302,7 @@ export default function HomePage() {
 
 export function AboutESSTHSSB(params) {
 	return (
-		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28">
+		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-14">
 			<div className="col-span-6 mx-auto">
 				<CustomImage
 					src={SBGroupPic}
@@ -358,7 +349,7 @@ export function AboutESSTHSSB(params) {
 
 export function AboutTunisiaSection(params) {
 	return (
-		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28">
+		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-14">
 			<div className="col-span-6 mx-auto md:order-last">
 				<CustomImage
 					src={"https://i.imgur.com/EpXVkCB.png"}

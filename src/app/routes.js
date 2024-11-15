@@ -84,6 +84,10 @@ const routes = [
 	// 	href: "/expo",
 	// },
 	{
+		title: "Call For Sponsors",
+		href: "/sponsor-us",
+	},
+	{
 		title: "About us",
 		href: "/about-us",
 	},
