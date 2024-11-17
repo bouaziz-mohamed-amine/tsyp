@@ -214,7 +214,7 @@ export default function HomePage() {
 							))}
 
 							<Link
-								to={`/speakers`}
+								to={`/partners-sponsors`}
 								className="col-span-6 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 "
 							>
 								<FontAwesomeIcon
