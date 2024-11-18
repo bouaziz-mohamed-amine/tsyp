@@ -198,11 +198,11 @@ export default function HomePage() {
 				</section>
 			</Fade>
 			
-			{/* <Fade triggerOnce>
+			<Fade triggerOnce>
 				<div className="md:mt-8 md:block">
 					<ScheduleOverview />
 				</div>
-			</Fade> */}
+			</Fade>
 			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-28">
 					<Team limit={5} />

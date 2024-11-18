@@ -1273,109 +1273,136 @@ export function ScheduleOverview({ showTimeline }) {
 
 	function renderActivities() {
 		console.log(subSlotKey);
-		if(subSlotKey.length>0){
-			return	program[slotIndex].children.filter(el => el.key == subSlotKey);
+		if (subSlotKey.length > 0) {
+			return program[slotIndex].children.filter((el) => el.key == subSlotKey);
 		}
-		return program[slotIndex].children
+		return program[slotIndex].children;
 	}
 
-	function setProgramSlot(index,key="") {
-			setSlotIndex(index);
-			setsubSlotKey("");
-	} 
+	function setProgramSlot(index, key = "") {
+		setSlotIndex(index);
+		setsubSlotKey("");
+	}
 
 	return (
 		<section>
 			<div className="mb-14 flex flex-col items-center justify-center gap-8">
-				<div className="flex justify-center gap-2">
-					<div className="text-4xl font-bold">Schedule Overview</div>
-				</div>
-				<div>
-					<div class="inline-flex">
-						<a
-							onClick={() => setDay(1)}
-							aria-current="page"
-							class="text-md cursor-pointer rounded-l-lg border border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
-						>
-							December 22
-						</a>
-						<a
-							onClick={() => setDay(2)}
-							class="text-md cursor-pointer border-t border-b border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
-						>
-							December 23
-						</a>
-						<a
-							onClick={() => setDay(3)}
-							class="text-md cursor-pointer rounded-r-lg border border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
-						>
-							December 24
-						</a>
-					</div>
-				</div>
-				<div className="mx-auto flex w-4/5 flex-row  gap-4">
-					<div className="hidden basis-1/3 md:block">
-						{program.map((slot, index) => (
-							<div>
-								<div
-									class=" cursor-pointer rounded-lg border shadow hover:bg-slate-100 dark:border-neutral-900 dark:bg-neutral-900"
-									onClick={() => setProgramSlot(index)}
-								>
-									<div class="py-4  text-center text-xs text-gray-800 transition duration-700 dark:text-white">
-										<span class="">{slot.title}</span>
-									</div>
-								</div>
-								<div>
-									{slot.subSlot &&
-										index == slotIndex &&
-										slot.subSlot.map((sub) => (
-											<div
-												onClick={() => {
-													setsubSlotKey(sub.key);
-												}}
-											>
-												<div class="ml-4 cursor-pointer rounded-lg border shadow hover:bg-slate-100 dark:border-neutral-900 dark:bg-neutral-900">
-													<div class=" py-2  text-center text-xs text-gray-800 transition duration-700 dark:text-white">
-														<span class="">{sub.title}</span>
-													</div>
-												</div>
-											</div>
-										))}
-								</div>
-							</div>
-						))}
-					</div>
-					<div className="basis-3/3 md:basis-2/3">
-						<div class="w-full rounded-lg border border-gray-200 shadow ">
-							<div class="flow-root">
-								<ul
-									role="list"
-									class="divide-y divide-gray-200 dark:divide-gray-700"
-								>
-									{program[slotIndex] &&
-										 renderActivities().map((activity) => (
-											<li class="p-3 sm:py-4">
-												<div class="flex items-center">
-													<div class="ms-4 min-w-0 flex-1">
-														<p class="truncate text-base font-bold text-gray-900 dark:text-white">
-															{activity.title}
-														</p>
-														<p class="truncate text-sm font-bold text-[#115D85] dark:text-gray-400">
-															{activity.location}
-														</p>
-													</div>
-													<div class="items-end text-base font-semibold text-gray-900 dark:text-white">
-														<p class="items-end" >{activity.timeSlotStart}</p>
-														<p class="items-end" >{activity.timeSlotEnd}</p>
-													</div>
-												</div>
-											</li>
-										))}
-								</ul>
-							</div>
+				{/* desktop et tablette  */}
+				<div className="">
+					<div className="">
+						<div class="m-4 inline-flex ">
+							<a
+								onClick={() => setDay(1)}
+								aria-current="page"
+								class="text-md cursor-pointer rounded-l-lg border border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
+							>
+								December 22
+							</a>
+							<a
+								onClick={() => setDay(2)}
+								class="text-md cursor-pointer border-t border-b border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
+							>
+								December 23
+							</a>
+							<a
+								onClick={() => setDay(3)}
+								class="text-md cursor-pointer rounded-r-lg border border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
+							>
+								December 24
+							</a>
 						</div>
 					</div>
+					<div className="mx-auto flex w-4/5 flex-row  gap-4">
+						<div className="hidden basis-1/3 md:block">
+							{program.map((slot, index) => (
+								<div>
+									<div
+										class=" cursor-pointer rounded-lg border shadow hover:bg-slate-100 dark:border-neutral-900 dark:bg-neutral-900"
+										onClick={() => setProgramSlot(index)}
+									>
+										<div class="py-4  text-center text-xs text-gray-800 transition duration-700 dark:text-white">
+											<span class="">{slot.title}</span>
+										</div>
+									</div>
+									<div>
+										{slot.subSlot &&
+											index == slotIndex &&
+											slot.subSlot.map((sub) => (
+												<div
+													onClick={() => {
+														setsubSlotKey(sub.key);
+													}}
+												>
+													<div class="ml-4 cursor-pointer rounded-lg border shadow hover:bg-slate-100 dark:border-neutral-900 dark:bg-neutral-900">
+														<div class=" py-2  text-center text-xs text-gray-800 transition duration-700 dark:text-white">
+															<span class="">{sub.title}</span>
+														</div>
+													</div>
+												</div>
+											))}
+									</div>
+								</div>
+							))}
+						</div>
+						<div className="basis-3/3 md:basis-2/3">
+							<div class="w-full rounded-lg border border-gray-200 shadow ">
+								<div class="flow-root">
+									<ul
+										role="list"
+										class="divide-y divide-gray-200 dark:divide-gray-700"
+									>
+										{program[slotIndex] &&
+											renderActivities().map((activity) => (
+												<li class="p-3 sm:py-4">
+													<div class="flex items-center">
+														<div class="ms-4 min-w-0 flex-1">
+															<p class="truncate text-base font-bold text-gray-900 dark:text-white">
+																{activity.title}
+															</p>
+															<p class="truncate text-sm font-bold text-[#115D85] dark:text-gray-400">
+																{activity.location}
+															</p>
+														</div>
+														<div class="items-end text-base font-semibold text-gray-900 dark:text-white">
+															<p class="items-end">{activity.timeSlotStart}</p>
+															<p class="items-end">{activity.timeSlotEnd}</p>
+														</div>
+													</div>
+												</li>
+											))}
+									</ul>
+								</div>
+							</div>
+						</div> 
+					</div>
 				</div>
+				{/* mobile carousel */}
+				<div className="md:hidden">
+				<div class="m-4 inline-flex ">
+							<a
+								onClick={() => setDay(1)}
+								aria-current="page"
+								class="text-md cursor-pointer rounded-l-lg border border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
+							>
+								December 22
+							</a>
+							<a
+								onClick={() => setDay(2)}
+								class="text-md cursor-pointer border-t border-b border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
+							>
+								December 23
+							</a>
+							<a
+								onClick={() => setDay(3)}
+								class="text-md cursor-pointer rounded-r-lg border border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
+							>
+								December 24
+							</a>
+						</div>
+					
+					   
+				</div>
+
 				{false && (
 					<span className="me-2 ms-3 ml-4 flex flex-nowrap rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
 						{"item1.time1"}
