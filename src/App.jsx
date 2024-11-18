@@ -49,12 +49,12 @@ const router = createBrowserRouter([
 				// index: true,
 				element: <HomePage />,
 			},
+			// {
+			// 	path: "/registration",
+			// 	element: <RegistrationPage />,
+			// },
 			{
 				path: "/registration",
-				element: <RegistrationPage />,
-			},
-			{
-				path: "/foreign-registration",
 				element: <ForeignRegistrationPage />,
 			},
 			{

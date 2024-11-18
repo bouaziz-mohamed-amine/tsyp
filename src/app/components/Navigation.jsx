@@ -38,7 +38,7 @@ export default function Navigation() {
 		
 		<div>
 			<nav className="rounded border-gray-200 px-2 py-2 md:px-8 md:py-2.5 ">
-				<div className="container mx-auto flex flex-wrap items-center justify-between">
+				<div className="container mx-auto flex  items-center justify-between">
 					<Link to="/" className="flex items-center">
 						{/* <CustomImage
 							loading="eager"
@@ -50,13 +50,13 @@ export default function Navigation() {
 						<CustomImage
 							loading="eager"
 							src={LightLogo}
-							className={`h-16 md:h-16 dark:hidden `}
+							className={`h-12 md:h-16 dark:hidden `}
 							alt="TSYP 12"
 						/>
 						<CustomImage
 							loading="eager"
 							src={DarkLogo}
-							className={`h-16 md:h-16 hidden dark:block`}
+							className={`h-12 md:h-16 hidden dark:block`}
 							alt="TSYP 12"
 						/>
 						{/* <svg
@@ -290,7 +290,7 @@ export default function Navigation() {
 						)}
 						{true && (
 							<Link
-								to="/foreign-registration"
+								to="/registration"
 								className=" fgroup relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-sky-900 to-sky-500 dark:from-[#BA0D15] dark:to-red-700  p-0.5 text-sm font-medium  transition-shadow text-white focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-red-400 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
 							>
 								{/* <button
@@ -299,8 +299,8 @@ export default function Navigation() {
 							> */}
 								<div className=" relative flex items-center justify-center rounded-md bg-white  transition-all duration-75 ease-in bg-opacity-0  hover:font-bold focus:font-bold">
 									{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
-									<span className=" hidden md:block px-5 py-2.5">Call for for Foreign Registration</span>
-									<span className="md:hidden px-2.5 py-1">Call for Registration</span>
+									<span className=" hidden md:block px-5 py-2.5 text-center"> Registration</span>
+									<span className="md:hidden px-2.5 text-center py-1"> Registration</span>
 								</div>
 								{/* </button> */}
 							</Link>

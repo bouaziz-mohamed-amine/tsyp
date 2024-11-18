@@ -29,7 +29,7 @@ export default function SponsorUsPage() {
 					</div>
 				</div>
 
-				<div className="col-span-6">
+				<div className="col-span-12">
 					<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
 						Collaborate with us
 					</h1>
@@ -54,29 +54,31 @@ export default function SponsorUsPage() {
 							this opportunity.
 						</p>
 					</h1>
-					<div className="mb-6">
+					<div  className="flex flex-wrap justify-center">
+					<div className="mb-6 mx-6">
 						<Link
 							to={
-								"https://drive.google.com/file/d/1mnUz3fwT11dLj0fs0xxR8PdFKa9QxqCp/view?usp=sharing"
+								"https://drive.google.com/file/d/1SFIhEWqglYQlxTlkW9YaUtVo4IVtKkH_/view?usp=sharing"
 							}
 							target="_blank"
 							rel="noreferrer"
 							className="inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 						>
-							<span className="">Download collaboration proposal</span>
+							<span className=""> collaboration proposal</span>
 						</Link>
 					</div>
-					<div>
+					<div className="mx-6 ">
 						<Link
 							to={
-								"https://drive.google.com/file/d/1k4yUOoSRc7APLeAK_NDzptpxXEKMWa4l/view?usp=sharing"
+								"https://drive.google.com/file/d/1QtuBBhCNR2zLPubOMriVKYqsjztrqniM/view?usp=sharing"
 							}
 							target="_blank"
 							rel="noreferrer"
 							className="inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 						>
-							<span className="">Télécharger le dossier de collaboration</span>
+							<span className=""> Dossier de collaboration</span>
 						</Link>
+					</div>
 					</div>
 				</div>
 			</section>
