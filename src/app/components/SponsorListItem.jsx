@@ -5,14 +5,15 @@ import CustomImage from "./CustomImage";
 import enetcom from "../../assets/images/logosb10final.png"
 export default function SponsorListItem({ data, classNames, imgClassNames }) {
 	return (
-		<Link
+		<div className="" >
+			<Link
 			to={`/partners-sponsors/${data.slug}`}
-			className={twMerge(
-				"block rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:p-6",
+			className={twMerge( 
+				"relative block rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:pt-6 md:px-6",
 				classNames
 			)}
 		>
-			<div className={twMerge("mb-4 rounded-lg bg-gray-50 p-6 py-8")}>
+			<div className={twMerge(" rounded-lg bg-gray-50 p-2 py-6 mb-2")}>
 				<CustomImage
 					src={  data.name== "IEEE ENET'COM SB"? enetcom  : data.logo.url || data.logo}
 					alt=""
@@ -23,9 +24,12 @@ export default function SponsorListItem({ data, classNames, imgClassNames }) {
 				/>
 			</div>
 
-			<div className="text-gray-600 line-clamp-3 dark:text-gray-300">
-				{data.description}
+			<div className=" h-16 text-black text-center font-bold text-lg line-clamp-2 dark:text-gray-300">
+				<div className=" h-16  flex items-center justify-center">
+				<div>{data.name}</div>
+				</div>
 			</div>
 		</Link>
+		</div>
 	);
 }

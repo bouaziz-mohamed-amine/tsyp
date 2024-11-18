@@ -42,7 +42,7 @@ export function Countdown(props) {
 	const NOW_IN_MS = new Date().getTime();
 	const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
-	var date = new Date("12/18/2024 06:00:00"); // some mock date
+	var date = new Date("12/22/2024 00:00:00"); // some mock date
 	var milliseconds = date.getTime();
 	const [days, hours, minutes, seconds] = useCountdown(milliseconds);
 	const daysRadius = mapNumber(days, 365, 0, 0, 360);

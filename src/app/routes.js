@@ -11,6 +11,10 @@ const routes = [
 		title: "TN 2056",
 		href: "/tn2056",
 	},
+	...(new Date() >= new Date('2024-09-02') ? [{
+		title: "Challenges",
+		href: "/challenges",
+	  }] : []),
 	// {
 	// 	title: "Game",
 	// 	href: "/virtual-game",
@@ -79,6 +83,10 @@ const routes = [
 	// 	title: "Expo",
 	// 	href: "/expo",
 	// },
+	{
+		title: "Call For Sponsors",
+		href: "/sponsor-us",
+	},
 	{
 		title: "About us",
 		href: "/about-us",

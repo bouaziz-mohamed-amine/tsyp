@@ -1,0 +1,62 @@
+[
+	{
+	  "name": "Task 1: Customer Development",
+	  "url": "https://i.imgur.com/SKLwJjC.png"
+	},
+	{
+	  "name": "Task 2: Revenue & Business Models",
+	  "url": "https://i.imgur.com/ie7WeeV.jpeg"
+	},
+	{
+	  "name": "Task 3: Product Development",
+	  "sessions": [
+		{
+		  "sessionName": "1st Session",
+		  "url": "https://i.imgur.com/SdIsXYi.png"
+		},
+		{
+			"sessionName": "1st Session",
+			"url": "https://i.imgur.com/k5zoDL0.jpeg"
+		  },
+		{
+			"sessionName": "2st Session",
+			"url": "https://i.imgur.com/lTFQ3FK.png"
+		},
+		{
+			"sessionName": "2st Session",
+			"url": "https://i.imgur.com/nOQW1WV.png"
+		},
+		{
+			"sessionName": "3st Session",
+			"url": "https://i.imgur.com/N5hTAoa.png"
+		},
+		{
+			"sessionName": "3st Session",
+			"url": "https://i.imgur.com/SJPkSLy.png"
+		}
+	  ]
+	},
+	{
+	  "name": "Task 4: Pitch Mastery",
+	  "url": "https://i.imgur.com/DmwP8Tw.jpeg"
+	},
+	{
+		"name" : "Task 5: Legal Foundations for Startups",
+		"sessions": [ 
+			{
+				"name" : "Legal Foundations for Startups",
+				"url" : "https://i.imgur.com/tJ6lj1g.png"
+			},
+			{
+				"name" : "Legal Foundations for Startups",
+				"url" : "https://i.imgur.com/rhTmC13.png"
+			}
+		]
+		
+	},
+	{
+		"name" : "Task 6: Protect & Launch: IP and Market Strategy Essentials",
+		"url" : "https://i.imgur.com/zg2MZ7G.png"
+	}
+  ]
+  

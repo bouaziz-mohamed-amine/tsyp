@@ -139,7 +139,7 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 											</div>
 
 											<div className="flex items-center gap-4 px-4 sm:px-6">
-												{/* <a
+												<a
 													href="https://github.com/hichemfantar/TSYP-11-Official-Website"
 													target="_blank"
 													rel="noreferrer"
@@ -147,9 +147,9 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 												>
 													<FontAwesomeIcon
 														icon={faGithub}
-														className="block h-5 w-5"
+														
 													/>
-												</a> */}
+												</a>
 
 												<a
 													href="https://www.facebook.com/ieee.tsyp"

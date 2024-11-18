@@ -1,0 +1,60 @@
+[
+	{
+		"time1":"08:00 TO 13:00",
+		"activities": [
+			{
+				"title": "Check-in",
+                "time":"08 To 10",
+				"location": "Medina Hall “Espace Jardin”"
+			},
+			{
+				"title": "SBs booth setup",
+                "time":"10 To 12",
+				"location": "Booths Hall"
+			}
+		]
+	},
+    {
+		"time1":"13:00 TO 18:00",
+		"activities": [
+			{
+				"title": "Coffee Break",
+                 "time":"08 To 10",
+				"location": "Booths Hall  and “Espace Jardin” "
+			},
+			{
+				"title": "Booths Expo and Job Fair",
+                     "time":"08 To 10",
+				"location": "Booths Hall  and “Espace Jardin” "
+			},{
+				"title": "Dinner",
+                "time":"08 To 10",
+				"location": "Medina Restaurants"
+			}
+		]
+	},
+    {
+		"time1":"18:00 TO 22:00",
+		"activities": [
+			{
+				"title": "partyyyyyyyyyyyyy",
+                 "time":"08 To 10",
+				"location": "Booths Hall  and “Espace Jardin” "
+			},
+			{
+				"title": "Booths Expo and Job Fair",
+                     "time":"08 To 10",
+				"location": "Booths Hall  and “Espace Jardin” "
+			},{
+				"title": "Dinner",
+                "time":"08 To 10",
+				"location": "Medina Restaurants"
+			}
+		]
+	}
+
+
+
+
+
+]

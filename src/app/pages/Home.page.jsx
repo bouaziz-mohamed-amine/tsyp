@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LogoOnBlack from "../../assets/images/main logo black (Custom).png";
 import LightLogo from "../../assets/images/Logo-TSYP12_withoutBckg_white.png";
 import Logo from "../../assets/images/main logo black (Custom).png";
@@ -10,50 +10,47 @@ import TSYP2018 from "../../assets/tsyp-editions/tsyp-2018.png";
 import TSYP2019 from "../../assets/tsyp-editions/tsyp-2019.jpg";
 import TSYP2020 from "../../assets/tsyp-editions/tsyp-2020.jpg";
 import enetcomlogo from "../../assets/images/logosb10final.png";
-// memories assets
-// import memory2 from "../../assets/memories/356551992_226751036434551_8933123460754285924_n.jpg";
-import memory2 from "../../assets/memories/320777930_2311490175678507_4343281339549131430_n.jpg";
-import memory3 from "../../assets/memories/356597928_284785967424808_4014952816457019128_n.jpg";
-// import memory4 from "../../assets/memories/356638153_1045852983243072_6319438153536457058_n.jpg";
-import memory4 from "../../assets/memories/320890318_2005696479633031_3916944159098055484_n.jpg";
-import memory5 from "../../assets/memories/356779690_1021512152540830_7436088057197797763_n.jpg";
-// import memory6 from "../../assets/memories/356870057_205006965857961_5503311855628802179_n.jpg";
-import memory6 from "../../assets/memories/322250720_721543699171031_4597921719413023052_n.jpg";
-import memory7 from "../../assets/memories/356882005_272016892113248_6469925021621114931_n.jpg";
-// import memory8 from "../../assets/memories/357311497_1034866187885516_4807505043687124219_n.jpg";
-import memory8 from "../../assets/memories/321296201_1206807523592277_5346561523774336230_n.jpg";
-import memory9 from "../../assets/memories/358218740_2128948947437461_3099469010629116758_n.jpg";
-import memory10 from "../../assets/memories/358619396_222649417397966_6373005098322693727_n.jpg";
-import memory11 from "../../assets/memories/cover.jpg";
-
 import { Link } from "react-router-dom";
 import TSYP2021Dark from "../../assets/tsyp-editions/tsyp-2021-dark.png";
 import TSYP2022 from "../../assets/tsyp-editions/tsyp-2022.png";
 import TSYP2023 from "../../assets/tsyp-editions/tsyp-2023.png";
-// import ThreeExperience from "../components/ThreeExperience";
-import {
-	faExternalLink,
-	faMasksTheater,
-	faRocket,
-	faTicket,
-	faVrCardboard,
-} from "@fortawesome/free-solid-svg-icons";
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fade } from "react-awesome-reveal";
 import { useMediaQuery } from "usehooks-ts";
 import { Countdown } from "../components/Countdown";
 import CustomImage from "../components/CustomImage";
 import Speakers from "../components/Speakers";
-import ofcPartners from "../../assets/images/ofc_partners.png";
+import { ScheduleOverview } from "../components/schedule/ScheduleList";
+import SponsorListItem from "../components/SponsorListItem";
+
 export default function HomePage() {
 	const matches = useMediaQuery("(min-width: 768px)");
+	const [sponsorsData, setSponsorsData] = useState([]);
+	useEffect(() => {
+		const getData = async () => {
+			try {
+				const response = await fetch("/assets/partners_sponsors.json");
+				const data = await response.json();
+				setSponsorsData(data.slice(0, 7));
+			} catch (error) {
+				console.error("Erreur lors de la récupération des données:", error);
+			}
+		};
+		getData();
+	}, []);
+
+	const enabledPartners = sponsorsData?.filter((e) => e.enabled === true);
+	const partners = enabledPartners?.filter(
+		(e) => e.type === "global-ieee-partner"
+	);
 
 	return (
 		<div className="h-full">
-			<Fade triggerOnce className="dark:text-slate-200" >
+			<Fade triggerOnce className="dark:text-slate-200">
 				<section className="grid grid-cols-12 items-center justify-center py-4">
 					<div className="col-span-12 gap-4">
-						<div className="md:flex xs:block justify-between">
+						<div className="justify-between md:flex xs:block">
 							<div className="block">
 								<div className="my-8 ">
 									<h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none ">
@@ -70,17 +67,18 @@ export default function HomePage() {
 									</h1>
 								</div>
 								<div className="my-8 block ms:items-center ms:justify-center">
-
-									{/* <h1 className="text-md font-bold">
-										EL MADINA CONGRESS CENTER{" "} YESSMINE HAMMEMET
-									</h1> */}
-									<h1 className="text-2xl font-bold text-black  dark:text-slate-200  text-center lg:text-start">16, 17, 18 dec 2024</h1>
+									<h1 className="text-center text-2xl font-bold  text-black  dark:text-slate-200 lg:text-start">
+										22, 23, 24 december 2024
+									</h1>
+									<h1 className="text-md text-center font-bold lg:text-start">
+										Medina Congress Center, Yasmine Hammamet
+									</h1>
 								</div>
 							</div>
 							<div className="my-8 items-center justify-center ">
 								{true && (
 									<Countdown
-										timeTillDate="12 18 2024, 6:00 am"
+										timeTillDate="12 22 2024, 12:00 pm"
 										timeFormat="MM DD YYYY, h:mm a"
 									/>
 								)}
@@ -105,9 +103,14 @@ export default function HomePage() {
 					className="hidden h-52 object-contain dark:invert lg:block"
 				/> */}
 							<CustomImage
-								src={ofcPartners}
+								src={"https://i.imgur.com/QSavGjq.png"}
 								alt=""
-								className="mx-auto hidden h-38 object-contain invert-1 dark:invert lg:block"
+								className=" h-38 invert-1 mx-auto hidden object-contain  dark:hidden lg:block"
+							/>
+							<CustomImage
+								src={"https://i.imgur.com/6o2xYh7.png"}
+								alt=""
+								className="h-38 invert-1 mx-auto hidden object-contain dark:block "
 							/>
 						</Fade>
 					</div>
@@ -176,6 +179,61 @@ export default function HomePage() {
 			</Fade>
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
+					<PoweredBy />
+				</section>
+			</Fade>
+			{/* <Fade triggerOnce>
+				<section className="py-8 md:py-10">
+					<IEEEPartners />
+				</section>
+			</Fade> */}
+			<Fade triggerOnce>
+				<section className="py-8 md:py-10">
+					<div>
+						<div className="mb-8 text-4xl text-center font-bold ">IEEE Partners</div>
+						<div className="grid grid-cols-12 gap-4 md:gap-4">
+							{partners.map((e) => (
+								<span
+									to={`/speakers/${e.slug}`}
+									className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3  md:pt-6 md:px-6"
+								>
+									<div  className="rounded-lg bg-gray-50 p-2 py-6 mb-2">
+									<CustomImage
+										src={e.logo.url || e.logo}
+										alt=""
+										className="h-40 w-full object-contain md:h-40 py-6"
+										loading="lazy"
+									/>
+									</div>
+									<div className=" h-16 text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300">
+										<div className=" flex  h-16 items-center justify-center">
+											<div>{e.name}</div>
+										</div>
+									</div>
+								</span>
+							))}
+
+							<Link
+								to={`/partners-sponsors`}
+								className="col-span-6 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 "
+							>
+								<FontAwesomeIcon
+									icon={faExternalLink}
+									className="mb-2 h-6 w-6"
+								/>
+								<div className="font-bold">See more</div>
+							</Link>
+						</div>
+					</div>
+				</section>
+			</Fade>
+			<Fade triggerOnce>
+				<section className="py-8 md:py-10">
+					<Speakers limit={5} />
+				</section>
+			</Fade>
+			<Fade triggerOnce>
+				<section className="py-8 md:py-10">
 					<PreviousEditions />
 				</section>
 			</Fade>
@@ -184,16 +242,7 @@ export default function HomePage() {
 					<Memories />
 				</section>
 			</Fade>
-			<Fade triggerOnce>
-				<section className="py-8 md:py-10">
-					<PoweredBy />
-				</section>
-			</Fade>
-			<Fade triggerOnce>
-				<section className="py-8 md:py-10">
-					<IEEEPartners />
-				</section>
-			</Fade>
+
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					{/* <SponsorsPreview /> */}
@@ -210,17 +259,13 @@ export default function HomePage() {
 					)}
 				</section>
 			</Fade>
-			<Fade triggerOnce>
-				<section className="py-8 md:py-10">
-					<Speakers limit={8} />
-				</section>
-			</Fade>
+
 			{/* <Fade triggerOnce>
-				<div className="hidden md:mt-8 md:block">
+				<div className="md:mt-8 md:block">
 					<ScheduleOverview />
 				</div>
-			</Fade>  */}
-			{/*<Fade triggerOnce>
+			</Fade> */}
+			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-28">
 					<Team limit={5} />
 				</section>
@@ -257,7 +302,7 @@ export default function HomePage() {
 
 export function AboutESSTHSSB(params) {
 	return (
-		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28">
+		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-14">
 			<div className="col-span-6 mx-auto">
 				<CustomImage
 					src={SBGroupPic}
@@ -304,7 +349,7 @@ export function AboutESSTHSSB(params) {
 
 export function AboutTunisiaSection(params) {
 	return (
-		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28">
+		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-14">
 			<div className="col-span-6 mx-auto md:order-last">
 				<CustomImage
 					src={"https://i.imgur.com/EpXVkCB.png"}
@@ -354,8 +399,9 @@ export function AboutTSYP() {
 			<div className="col-span-6 ">
 				<CustomImage
 					src={LogoOnBlack || Logo}
-					className={`mx-auto mb-8 hidden  object-contain dark:block ${LogoOnBlack ? "" : "dark:invert"
-						} `}
+					className={`mx-auto mb-8 hidden  object-contain dark:block ${
+						LogoOnBlack ? "" : "dark:invert"
+					} `}
 					alt="TSYP 11"
 				/>
 
@@ -398,28 +444,28 @@ function Memories() {
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory11}
+							src="https://i.imgur.com/wGbAmaH.jpeg"
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory10}
+							src={"https://i.imgur.com/xqwrboq.jpeg"}
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory2}
+							src={"https://i.imgur.com/RdnsgRQ.jpeg"}
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory3}
+							src={"https://i.imgur.com/lYz1tZI.jpeg"}
 							alt=""
 						/>
 					</div>
@@ -428,21 +474,21 @@ function Memories() {
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory4}
+							src={"https://i.imgur.com/9WxfPuY.jpeg"}
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory5}
+							src={"https://i.imgur.com/QCHQWE4.jpeg"}
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory6}
+							src={"https://i.imgur.com/nPXqChl.jpeg"}
 							alt=""
 						/>
 					</div>
@@ -451,24 +497,24 @@ function Memories() {
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory7}
+							src={"https://i.imgur.com/g0i8OVM.jpeg"}
 							alt=""
 						/>
 					</div>
 					<div>
 						<CustomImage
 							className="h-full w-full rounded-2xl object-cover"
-							src={memory8}
+							src={"https://i.imgur.com/CvZUCld.jpeg"}
 							alt=""
 						/>
 					</div>
-					<div>
+					{/* <div>
 						<CustomImage
 							className="hidden h-full w-full rounded-2xl object-cover md:block "
-							src={memory9}
+							src={"https://i.imgur.com/O3PguYL.jpeg"}
 							alt=""
 						/>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
@@ -541,8 +587,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2023}
 								alt="TSYP2023"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2023</h1>
@@ -557,8 +603,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2022}
 								alt="TSYP2022"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2022</h1>
@@ -573,8 +619,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2021Dark}
 								alt="TSYP2021Dark"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2021</h1>
@@ -589,8 +635,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-cover shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2020}
 								alt="TSYP2020"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2020</h1>
@@ -606,8 +652,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2019}
 								alt="TSYP2019"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2019</h1>
@@ -622,8 +668,8 @@ function PreviousEditions() {
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain p-4 shadow-md shadow-gray-200 transition dark:invert sm:col-start-2 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2018}
 								alt="TSYP2018"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2018</h1>
@@ -638,8 +684,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:invert sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2017}
 								alt="TSYP2017"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2017</h1>
@@ -654,8 +700,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition dark:invert sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2016}
 								alt="TSYP2016"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2016</h1>
@@ -670,8 +716,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={"https://i.imgur.com/EpXVkCB.png"}
 								alt="IeeeTunisia"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2015</h1>
@@ -686,8 +732,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-900 invert transition dark:invert-0 sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2014}
 								alt="TSYP2014"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2014</h1>
@@ -698,8 +744,8 @@ function PreviousEditions() {
 								className="col-span-2 col-start-2 h-[120px] w-[120px] rounded-full object-contain shadow-md shadow-gray-200 transition sm:col-start-auto md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={"https://i.imgur.com/EpXVkCB.png"}
 								alt="IeeeTunisia"
-							// width={200}
-							// height={200}
+								// width={200}
+								// height={200}
 							/>
 						</a>
 						<h1 className="mt-4 text-center font-extrabold">2013</h1>
@@ -725,8 +771,8 @@ function PoweredBy() {
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={"https://i.imgur.com/EpXVkCB.png"}
 						alt="IeeeTunisia"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				{false && (
@@ -740,8 +786,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/0JYgUki.png"}
 							alt="YpTunisia"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -755,8 +801,8 @@ function PoweredBy() {
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={enetcomlogo}
 						alt="enetcomLogo"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				{false && (
@@ -770,8 +816,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/HalSgE1.png"}
 							alt="university of sousse"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -786,8 +832,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/mFTrYL2.png"}
 							alt="IEEE Region 8"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -802,8 +848,8 @@ function PoweredBy() {
 							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/mFTrYL2.png"}
 							alt="IEEE"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -833,8 +879,8 @@ function SponsorsPreview() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
 						src={"https://i.imgur.com/FkG6VVq.png"}
 						alt="Orange"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
@@ -847,8 +893,8 @@ function SponsorsPreview() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
 						src={"https://i.imgur.com/2AKS7s7.png"}
 						alt="polytecsousse"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 			</div>
@@ -859,9 +905,7 @@ function SponsorsPreview() {
 function IEEEPartners() {
 	return (
 		<div className="mx-auto max-w-7xl px-6 lg:px-8">
-			<h2 className="mb-12 text-center text-4xl font-bold">
-				IEEE Partners From The Last Edition
-			</h2>
+			<h2 className="mb-12 text-center text-4xl font-bold">IEEE Partners</h2>
 			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
 				{false && (
 					<a
@@ -874,8 +918,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/mFTrYL2.png"}
 							alt="IEEE"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -890,65 +934,57 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/0JYgUki.png"}
 							alt="YpTunisia"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
 				<a
-					href="https://ieeer8.org/"
+					href="https://htb.ieee.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/mFTrYL2.png"}
+						src={
+							"https://htb.ieee.org/wp-content/uploads/2023/06/cropped-HTB-Facebook-profile.png"
+						}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
-					href="https://ieeer8.org/student-activities/sa-committee/sac/"
+					href="https://www.computer.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] rounded-full bg-white object-contain p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/uO5riCW.png"}
+						src={
+							"https://ieeecs-media.computer.org/wp-media/2018/04/27230619/cropped-cs-favicon-512x512.png"
+						}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
-					href="https://ieee-aess.org/"
+					href="https://ieeecsc.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/cV1QOQg.png"}
+						src={
+							"https://pbs.twimg.com/profile_images/1271535756008468480/QPKvgdiz_400x400.png"
+						}
 						alt="Transistor"
-					// width={200}
-					// height={200}
-					/>
-				</a>
-				<a
-					href="https://yp.ieee.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/rJu8XVi.png"}
-						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				{false && (
@@ -962,8 +998,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/y2PtVJQ.png"}
 							alt="Transistor"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -977,52 +1013,70 @@ function IEEEPartners() {
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 						src={"https://i.imgur.com/zGQmYnj.jpg"}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
-					href="https://www.ieee-ies.org/"
+					href="https://ieeedeis.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/Usd3WQr.png"}
+						src={
+							"https://i0.wp.com/ieeedeis.org/wp-content/uploads/2019/10/DEIS-Logo.png?fit=600%2C300&ssl=1"
+						}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
-					href="https://life.ieee.org/"
+					href="https://ieee-aess.org/"
+					target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
+						src={"https://i.imgur.com/cV1QOQg.png"}
+						alt="Transistor"
+						// width={200}
+						// height={200}
+					/>
+				</a>
+				<a
+					href="https://ieeeaps.org/"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/y3Ulw1e.png"}
+						src={
+							"https://ieee-aess.org/files/ieeeaess/styles/responsive_4_3_760w/public/images/media/photos/aps-logo.png?h=95f69879&itok=-6kw-OPF"
+						}
 						alt="Transistor"
-					// width={200}
-					// height={200}
+						// width={200}
+						// height={200}
 					/>
 				</a>
 				<a
-					href="https://entrepreneurship.ieee.org/"
+					href="/partners-sponsors"
 					target="_blank"
 					rel="noreferrer"
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
-						src={"https://i.imgur.com/cpdzd8G.png"}
-						alt="Transistor"
-					// width={200}
-					// height={200}
-					/>
+					<p className="col-span-2 flex h-[115px] w-[115px] items-center justify-center bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1">
+						<div className="text-center  font-bold">
+							<FontAwesomeIcon icon={faExternalLink} className="mb-2 h-6 w-6" />
+							<p className="font-bold">See more</p>
+						</div>
+					</p>
 				</a>
+
 				{false && (
 					<a
 						href="https://www.ieeesmc.org/"
@@ -1034,8 +1088,8 @@ function IEEEPartners() {
 							className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition dark:shadow-gray-800 md:h-[180px] md:w-[180px] lg:col-span-1"
 							src={"https://i.imgur.com/ABdMAlo.png"}
 							alt="Transistor"
-						// width={200}
-						// height={200}
+							// width={200}
+							// height={200}
 						/>
 					</a>
 				)}
@@ -1050,7 +1104,7 @@ export function SparrowSurvey() {
 			/*add custom params here*/
 		});
 
-		return () => { };
+		return () => {};
 	}, []);
 
 	return (
