@@ -191,11 +191,11 @@ export default function HomePage() {
 				<section className="py-8 md:py-10">
 					<div>
 						<div className="mb-8 text-4xl text-center font-bold ">IEEE Partners</div>
-						<div className="grid grid-cols-12 gap-4 md:gap-4">
+						<div className="grid grid-cols-12 gap-4 md:gap-4 ">
 							{partners.map((e) => (
 								<span
 									to={`/speakers/${e.slug}`}
-									className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3  md:pt-6 md:px-6"
+									className="col-span-12 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 lg:col-span-3  md:pt-6 md:px-6"
 								>
 									<div  className="rounded-lg bg-gray-50 p-2 py-6 mb-2">
 									<CustomImage
@@ -205,8 +205,8 @@ export default function HomePage() {
 										loading="lazy"
 									/>
 									</div>
-									<div className=" h-16 text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300">
-										<div className=" flex  h-16 items-center justify-center">
+									<div className=" h-16  md:h-24 lg:h-16 text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300 ">
+										<div className=" flex  items-center justify-center">
 											<div>{e.name}</div>
 										</div>
 									</div>
@@ -215,7 +215,7 @@ export default function HomePage() {
 
 							<Link
 								to={`/partners-sponsors`}
-								className="col-span-6 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 "
+								className="col-span-6 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 lg:col-span-3"
 							>
 								<FontAwesomeIcon
 									icon={faExternalLink}

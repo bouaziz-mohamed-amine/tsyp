@@ -24,8 +24,8 @@ export default function SponsorListItem({ data, classNames, imgClassNames }) {
 				/>
 			</div>
 
-			<div className=" h-16 text-black text-center font-bold text-lg line-clamp-2 dark:text-gray-300">
-				<div className=" h-16  flex items-center justify-center">
+			<div className=" h-12  md:h-24 lg:h-16 text-black text-center font-bold text-lg line-clamp-2 dark:text-gray-300">
+				<div className="   flex items-center justify-center">
 				<div>{data.name}</div>
 				</div>
 			</div>

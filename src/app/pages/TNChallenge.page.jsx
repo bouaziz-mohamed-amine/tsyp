@@ -6,6 +6,7 @@ export function TNChallengePage() {
 	const [tasksData, setTasksData] = useState([]);
 	const [taskSelected, settaskSelected] = useState(null);
 	const [currentSlide, setCurrentSlide] = useState(0);
+	const [mentorsdata, setmentorsdata] = useState([]);
 
 	useEffect(() => {
 		const getData = async () => {
@@ -16,6 +17,18 @@ export function TNChallengePage() {
 					settaskSelected(0);
 				})
 				.catch((err) => console.error(err));
+		};
+		getData();
+	}, []);
+	useEffect(() => {
+		const getData = async () => {
+			try {
+				const response = await fetch("/assets/TNmentors.json");
+				const data = await response.json();
+				setmentorsdata(data);
+			} catch (error) {
+				console.error("Erreur lors de la récupération des données:", error);
+			}
 		};
 		getData();
 	}, []);
@@ -188,30 +201,9 @@ export function TNChallengePage() {
 										className="h-3-5 rounded-lg border"
 									/>
 									<button
-                    onClick={handlePrevSlide}
+										onClick={handlePrevSlide}
 										type="button"
-										class="absolute left-2 top-1/2 me-2 rotate-180 inline-flex items-center rounded-lg bg-stone-400 dark:bg-gray-800 p-2.5 text-center text-sm font-medium text-white"
-									>
-										<svg
-											class="h-5 w-5"
-											aria-hidden="true"
-											xmlns="http://www.w3.org/2000/svg"
-											fill="none"
-											viewBox="0 0 14 10"
-										>
-											<path
-												stroke="currentColor"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
-												d="M1 5h12m0 0L9 1m4 4L9 9"
-											/>
-										</svg>					
-									</button>
-                  <button
-                    onClick={handleNextSlide}
-										type="button"
-										class="absolute right-2 top-1/2  me-2 inline-flex items-center rounded-lg bg-stone-400 dark:bg-gray-800 p-2.5 text-center text-sm font-medium text-white "
+										class="me-2 absolute left-2 top-1/2 inline-flex rotate-180 items-center rounded-lg bg-stone-400 p-2.5 text-center text-sm font-medium text-white dark:bg-gray-800"
 									>
 										<svg
 											class="h-5 w-5"
@@ -228,7 +220,28 @@ export function TNChallengePage() {
 												d="M1 5h12m0 0L9 1m4 4L9 9"
 											/>
 										</svg>
-                    
+									</button>
+									<button
+										onClick={handleNextSlide}
+										type="button"
+										class="me-2 absolute right-2  top-1/2 inline-flex items-center rounded-lg bg-stone-400 p-2.5 text-center text-sm font-medium text-white dark:bg-gray-800 "
+									>
+										<svg
+											class="h-5 w-5"
+											aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 14 10"
+										>
+											<path
+												stroke="currentColor"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M1 5h12m0 0L9 1m4 4L9 9"
+											/>
+										</svg>
+
 										<span class="sr-only">Icon description</span>
 									</button>
 								</div>
@@ -264,6 +277,23 @@ export function TNChallengePage() {
 							)
 						)}
 					</div>
+				</div>
+			</div>
+			<div className="my-8">
+			<h2 className="mb-12 text-center text-4xl font-bold">
+				Mentors
+			</h2>
+
+				<div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+					{mentorsdata.map((item0, index0) => (
+						<div className="grid-cols-1" key={index0}>
+							<CustomImage
+								className="h-full w-full rounded-2xl object-cover"
+								src={item0.url}
+								alt=""
+							/>
+						</div>
+					))}
 				</div>
 			</div>
 		</div>

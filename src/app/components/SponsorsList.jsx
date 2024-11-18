@@ -67,7 +67,7 @@ export default function SponsorsList() {
 						</div>
 						<div className="grid grid-cols-12 gap-y-4 md:gap-4">
 							{partners.map((e) => (
-								<div className="col-span-12 md:col-span-3" key={e.slug}>
+								<div className="col-span-12 md:col-span-4 lg:col-span-3" key={e.slug}>
 									<SponsorListItem data={e} />
 								</div>
 							))}
