@@ -75,7 +75,24 @@ export function TNChallengePage() {
 						challenges facing Tunisia and envision its future by 2056 through
 						the launch of innovative start-ups.
 					</h1>
-					<div></div>
+					
+					<Link
+								to="https://docs.google.com/forms/d/e/1FAIpQLSfsOJqhd7wq-B0Yh34CdIcBx5N64BQuj0gsyyuqqIMyYvm9Xg/viewform"
+								id="Final-Submission"
+								className=" fgroup relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-sky-900 to-sky-500 dark:from-[#BA0D15] dark:to-red-700  p-0.5 text-sm font-medium  transition-shadow text-white focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-red-400 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
+							>
+								{/* <button
+								type="button"
+								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
+							> */}
+								<div className=" relative flex items-center justify-center rounded-md bg-white  transition-all duration-75 ease-in bg-opacity-0  hover:font-bold focus:font-bold">
+									{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
+									<span className=" hidden md:block px-5 py-2.5 text-center"> Final Submission Form</span>
+									<span className="md:hidden px-2.5 text-center py-1">Final Submission Form </span>
+								</div>
+								{/* </button> */}
+							</Link>
+					
 				</div>
 			</section>
 
@@ -280,9 +297,11 @@ export function TNChallengePage() {
 				</div>
 			</div>
 			<div className="my-8">
-			<h2 className="mb-12 text-center text-4xl font-bold">
-				Mentors
-			</h2>
+			<div className="col-span-12 pb-16 md:mx-auto">
+				<h1 className=" text-center text-4xl font-bold tracking-tight  lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
+					Mentors
+				</h1>
+			</div>
 
 				<div className="grid grid-cols-1 gap-6 md:grid-cols-3">
 					{mentorsdata.map((item0, index0) => (
@@ -292,6 +311,7 @@ export function TNChallengePage() {
 								src={item0.url}
 								alt=""
 							/>
+						
 						</div>
 					))}
 				</div>

@@ -58,7 +58,7 @@ export default function SponsorUsPage() {
 					<div className="mb-6 mx-6">
 						<Link
 							to={
-								"https://drive.google.com/file/d/1SFIhEWqglYQlxTlkW9YaUtVo4IVtKkH_/view?usp=sharing"
+								"https://drive.google.com/file/d/1uyct5RHU64DSff2b48nZMkM4dSXU817f/view"
 							}
 							target="_blank"
 							rel="noreferrer"
@@ -70,7 +70,7 @@ export default function SponsorUsPage() {
 					<div className="mx-6 ">
 						<Link
 							to={
-								"https://drive.google.com/file/d/1QtuBBhCNR2zLPubOMriVKYqsjztrqniM/view?usp=sharing"
+								"https://drive.google.com/file/d/1eqg4J8ol1BSjqOAjiEfAs5k_qWMpdyXc/view"
 							}
 							target="_blank"
 							rel="noreferrer"

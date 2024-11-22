@@ -63,6 +63,17 @@
 	{
 		"enabled": true,
 		"type": "global-ieee-partner",
+		"name": "IEEE IES Tunisia Section Chapter ",
+		"description": "The IEEE Industrial Electronics Society (IES) Tunisia Section is dedicated to advancing industrial electronics and automation technologies in Tunisia. It promotes innovation, research, and professional development by organizing conferences, workshops, and technical events. The section serves as a platform for collaboration among students, professionals, and researchers in the field.",
+		"slug": "IES Fund",
+		"logo": { "url": "https://scontent.ftun16-1.fna.fbcdn.net/v/t39.30808-6/375966460_10227260033077861_6306953153192251178_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=8_Z1_BbbtIAQ7kNvgF0Yr6r&_nc_zt=23&_nc_ht=scontent.ftun16-1.fna&_nc_gid=AWNlGOn9RfqdwA5NOaONiWi&oh=00_AYDGOJtmg4qSeNpXFTLOI7ey23I30WaDqw8p5TBVksWUBg&oe=6746CB29" },
+		"website": "https://ies.ieee.tn/?fbclid=IwY2xjawGt8hxleHRuA2FlbQIxMAABHc8hN5VYPWtmUwap0W7IHstu8wZ5yeG2uHPxxYV0e_PmmSDBBTTpqk6u0A_aem_xIQjxpg9jPynEXz1bh3zjA",
+		"pack":"premuim"
+	},
+
+	{
+		"enabled": true,
+		"type": "global-ieee-partner",
 		"name": "IEEE Antennas and Propagation Society",
 		"description": "The IEEE Aerospace and Electronic Systems Society (AESS) is dedicated to advancing technologies related to complex systems for space, air, ocean, and ground applications. Now celebrating its 50th anniversary, AESS aims to engage the global technical community, with particular focus on underrepresented regions. The society offers a broad range of professional development activities, including publications, conferences, technical panels, and special interest groups, all designed to foster collaboration and knowledge sharing.<br>AESS provides continuing education opportunities through Distinguished Lectures and Short Courses, available both in-person and virtually. In 2023, the society introduced the Distributed Sensing Technology and Education Initiative, a competition designed to encourage students and YPs to drive innovation and contribute to the technical growth of their regions.<br>To honor exceptional achievements, AESS recognizes individuals and groups with awards for significant contributions in its fields of interest. The society also offers scholarships to undergraduate and graduate student members, supporting their academic and professional journeys. Also, AESS organizes engaging activities at conferences, local chapters, and student branches to promote networking and skills development.<br>For more information on AESS resources, events, and how to become a member, visit the AESS website and discover how the society can support your professional growth.",
 		"slug": "IEEE-APS",

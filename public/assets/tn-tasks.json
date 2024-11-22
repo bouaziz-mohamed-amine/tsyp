@@ -57,6 +57,24 @@
 	{
 		"name" : "Task 6: Protect & Launch: IP and Market Strategy Essentials",
 		"url" : "https://i.imgur.com/zg2MZ7G.png"
+	},
+	{
+		"name" : "Task 7: Equity & Fundraising",
+		"sessions": [ 
+			{
+				"name" : "Legal Foundations for Startups",
+				"url" : "https://i.imgur.com/fITglJj.png"
+			},
+			{
+				"name" : "Legal Foundations for Startups",
+				"url" : "https://i.imgur.com/ivXmYnv.png"
+			},
+			{
+				"name" : "Legal Foundations for Startups",
+				"url" : "https://i.imgur.com/KeoFJll.png"
+			}
+		]
+		
 	}
   ]
   
