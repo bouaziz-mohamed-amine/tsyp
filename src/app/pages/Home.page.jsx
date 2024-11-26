@@ -23,6 +23,7 @@ import CustomImage from "../components/CustomImage";
 import Speakers from "../components/Speakers";
 import { ScheduleOverview } from "../components/schedule/ScheduleList";
 import SponsorListItem from "../components/SponsorListItem";
+import Team from "../components/Team";
 
 export default function HomePage() {
 	const matches = useMediaQuery("(min-width: 768px)");
@@ -232,11 +233,11 @@ export default function HomePage() {
 					<Speakers limit={5} />
 				</section>
 			</Fade>
-			<Fade triggerOnce>
+			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<PreviousEditions />
 				</section>
-			</Fade>
+			</Fade> */}
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<Memories />
@@ -264,8 +265,8 @@ export default function HomePage() {
 				<div className="md:mt-8 md:block">
 					<ScheduleOverview />
 				</div>
-			</Fade> */}
-			{/* <Fade triggerOnce>
+			</Fade> 
+			 <Fade triggerOnce>
 				<section className="py-8 md:py-28">
 					<Team limit={5} />
 				</section>

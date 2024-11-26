@@ -63,23 +63,24 @@
 	{
 		"enabled": true,
 		"type": "global-ieee-partner",
-		"name": "IEEE IES Tunisia Section Chapter ",
-		"description": "The IEEE Industrial Electronics Society (IES) Tunisia Section is dedicated to advancing industrial electronics and automation technologies in Tunisia. It promotes innovation, research, and professional development by organizing conferences, workshops, and technical events. The section serves as a platform for collaboration among students, professionals, and researchers in the field.",
-		"slug": "IES Fund",
-		"logo": { "url": "https://scontent.ftun16-1.fna.fbcdn.net/v/t39.30808-6/375966460_10227260033077861_6306953153192251178_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=8_Z1_BbbtIAQ7kNvgF0Yr6r&_nc_zt=23&_nc_ht=scontent.ftun16-1.fna&_nc_gid=AWNlGOn9RfqdwA5NOaONiWi&oh=00_AYDGOJtmg4qSeNpXFTLOI7ey23I30WaDqw8p5TBVksWUBg&oe=6746CB29" },
-		"website": "https://ies.ieee.tn/?fbclid=IwY2xjawGt8hxleHRuA2FlbQIxMAABHc8hN5VYPWtmUwap0W7IHstu8wZ5yeG2uHPxxYV0e_PmmSDBBTTpqk6u0A_aem_xIQjxpg9jPynEXz1bh3zjA",
-		"pack":"premuim"
-	},
-
-	{
-		"enabled": true,
-		"type": "global-ieee-partner",
 		"name": "IEEE Antennas and Propagation Society",
-		"description": "The IEEE Aerospace and Electronic Systems Society (AESS) is dedicated to advancing technologies related to complex systems for space, air, ocean, and ground applications. Now celebrating its 50th anniversary, AESS aims to engage the global technical community, with particular focus on underrepresented regions. The society offers a broad range of professional development activities, including publications, conferences, technical panels, and special interest groups, all designed to foster collaboration and knowledge sharing.<br>AESS provides continuing education opportunities through Distinguished Lectures and Short Courses, available both in-person and virtually. In 2023, the society introduced the Distributed Sensing Technology and Education Initiative, a competition designed to encourage students and YPs to drive innovation and contribute to the technical growth of their regions.<br>To honor exceptional achievements, AESS recognizes individuals and groups with awards for significant contributions in its fields of interest. The society also offers scholarships to undergraduate and graduate student members, supporting their academic and professional journeys. Also, AESS organizes engaging activities at conferences, local chapters, and student branches to promote networking and skills development.<br>For more information on AESS resources, events, and how to become a member, visit the AESS website and discover how the society can support your professional growth.",
+		"description": "The IEEE Antennas and Propagation Society (APS) is a specialized division of the IEEE, dedicated to advancing the theory, design, development, and applications of antennas and electromagnetic wave propagation. Its core mission is to foster knowledge exchange and technological progress in these areas through research, collaboration, and educational activities. The society covers a broad range of topics, including antenna theory and design, electromagnetic wave propagation, computational electromagnetics, and electromagnetic interference (EMI) and compatibility. These areas are crucial for the development of modern technologies such as wireless communication systems, satellite communications, radar, and remote sensing.Through conferences, workshops, and its flagship publications like the IEEE Transactions on Antennas and Propagation, the APS provides a platform for professionals, researchers, and students to present and discuss the latest findings in antenna and propagation technology. It plays a significant role in standardizing best practices and promoting interdisciplinary cooperation. The society also supports initiatives to bridge gaps between academia and industry, ensuring that new innovations can effectively transition into practical applications. By advancing these fields, the IEEE APS contributes to critical sectors like telecommunications, defense, and space exploration, where antennas and propagation technologies are foundational to innovation and progress",
 		"slug": "IEEE-APS",
 		"logo": { "url": "https://ieeeaps.org/images/home/main-logo-2024.svg" },
 		"website": "https://ieeeaps.org/"
 	},
+	{
+		"enabled": true,
+		"type": "global-ieee-partner",
+		"name": "The IEEE Industrial Electronics Society ",
+		"description": "The IEEE Industrial Electronics Society (IES) is dedicated to advancing industrial electronics and automation technologies . It promotes innovation, research, and professional development by organizing conferences, workshops, and technical events. The section serves as a platform for collaboration among students, professionals, and researchers in the field.",
+		"slug": "IES Fund",
+		"logo": { "url": "https://www.ieee-ies.org/images/files/ies-header.png" },
+		"website": "https://www.ieee-ies.org/",
+		"pack":"premuim"
+	},
+
+	
 	{
 		"enabled": true,
 		"type": "global-ieee-partner",
@@ -160,5 +161,77 @@
 		"tierRank": 0,
 		"logo": { "url": "https://i.imgur.com/EpXVkCB.png" },
 		"website": "https://ieee.tn/"
+	},{
+		"enabled": true,
+		"name": "The IEEE Africa Council",
+		"description": "The IEEE Africa Council represents IEEE members in Africa, promoting growth in engineering and technology. It supports networking, education, and professional development through events, workshops, and local collaborations. The council aims to address regional challenges, enhance knowledge-sharing, and foster innovation, advancing IEEE’s mission across the African continent.",
+		"slug": "IEEE-Africa-council",
+		"type": "global-ieee-partner",
+		"logo": { "url": "https://r8.ieee.org/africa-council/wp-content/uploads/sites/155/2022/06/cropped-IEEE-Africa-Council-logo-2.jpg" },
+		"website": "https://r8.ieee.org/africa-council/"
+	},
+	
+	{
+		"enabled": true,
+		"name": "IEEE Transportation Electrification Council",
+		"description": "The IEEE Transportation Electrification Council (TEC) fosters advancements in the electrification of transportation, covering electric and hybrid vehicles, ships, aircraft, rail systems, and personal transport. It supports technologies like energy storage, power grids, and control systems while promoting leadership, professional development, standards creation, and opportunities for IEEE members in electric transportation.",
+		"slug": "IEEE-TEC",
+		"type": "global-ieee-partner",
+		"logo": { "url": "https://i.imgur.com/Vc1rKpq.png" },
+		"website": "https://tec.ieee.org/"
+	},{
+		"enabled": true,
+		"type": "global-ieee-partner",
+		"name": "IEEE Women in Engineering  ",
+		"description": "IEEE Women in Engineering (WIE) is a global organization focused on empowering women in engineering and inspiring girls to pursue careers in technology. Its mission is to promote the recruitment, retention, and growth of women in technical fields, fostering a diverse community that collaborates to drive innovation and benefit humanity.",
+		"slug": "IEEE-WIE",
+		"logo": { "url": "https://wie.ieee.org/wp-content/uploads/ieee_women_in_engineering_wie-logo.png" },
+		"website": "https://wie.ieee.org/"
+	},
+
+	
+	{
+		"enabled": true,
+		"name": "IEEE Life Members ",
+		"description": "IEEE Life Members are individuals honored for their long-standing dedication to IEEE, achieving this status through a combination of age and years of membership. This prestigious recognition celebrates their enduring commitment to the organization. Life Members actively engage with their peers, participate in educational initiatives, mentor future generations, and contribute meaningfully to their communities.",
+		"slug": "IEEE-Tunisia-Section",
+		"type": "global-ieee-partner",
+		"logo": { "url": "https://life.ieee.org/wp-content/uploads/ieee_life_members-logo.png" },
+		"website": "https://life.ieee.org/"
+	},
+	{
+		"enabled": true,
+		"type": "global-ieee-partner",
+		"name": "IEEE IES Tunisia Section Chapter ",
+		"description": "The IEEE Industrial Electronics Society (IES) Tunisia Section is dedicated to advancing industrial electronics and automation technologies in Tunisia. It promotes innovation, research, and professional development by organizing conferences, workshops, and technical events. The section serves as a platform for collaboration among students, professionals, and researchers in the field.",
+		"slug": "IES Fund",
+		"logo": { "url": "https://scontent.ftun16-1.fna.fbcdn.net/v/t39.30808-6/375966460_10227260033077861_6306953153192251178_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=8_Z1_BbbtIAQ7kNvgF0Yr6r&_nc_zt=23&_nc_ht=scontent.ftun16-1.fna&_nc_gid=AWNlGOn9RfqdwA5NOaONiWi&oh=00_AYDGOJtmg4qSeNpXFTLOI7ey23I30WaDqw8p5TBVksWUBg&oe=6746CB29" },
+		"website": "https://ies.ieee.tn/?fbclid=IwY2xjawGt8hxleHRuA2FlbQIxMAABHc8hN5VYPWtmUwap0W7IHstu8wZ5yeG2uHPxxYV0e_PmmSDBBTTpqk6u0A_aem_xIQjxpg9jPynEXz1bh3zjA",
+		"pack":"premuim"
+	},{
+		"enabled": true,
+		"type": "global-ieee-partner",
+		"name": "IEEE Students  ",
+		"description": "IEEE Students is a global network of over 450,000 engineering and technology professionals, offering membership benefits, professional growth, and networking opportunities. It encourages impactful volunteering and provides resources to stay ahead in technology. The community fosters innovation, collaboration, and learning, empowering future engineers and technologists worldwide.",
+		"slug": "IEEE-Students",
+		"logo": { "url": "https://students.ieee.org/wp-content/uploads/2022/02/logo.png" },
+		"website": "https://students.ieee.org/"
+	},{
+		"enabled": true,
+		"type": "global-ieee-partner",
+		"name": "IEEE Systems, Man, and Cybernetics  Tunisia Section Chapter ",
+		"description": "The IEEE Systems, Man, and Cybernetics Society (SMC) is dedicated to advancing the theory and application of systems science, human-machine systems, and cybernetics. Its mission is to serve members and the broader community by promoting interdisciplinary collaboration and professional development through conferences, publications, and activities. SMC values membership engagement, professionalism, excellence, integrity, collaboration, and open communication. The Society emphasizes diversity, empowerment, equality, and respect, providing equal opportunities for all members while fostering a supportive environment for innovation and teamwork in systems engineering and cybernetics.",
+		"slug": "IEEE-SMC-TN",
+		"logo": { "url": "https://smc.ieee.tn/wp-content/uploads/sites/198/2023/07/cropped-logoo.png" },
+		"website": "https://smc.ieee.tn/publications/"
+	},{
+		"enabled": true,
+		"type": "global-ieee-partner",
+		"name": "IEEE Collabratec ",
+		"description": "IEEE Collabratec is an online platform developed by IEEE to facilitate networking, collaboration, and knowledge sharing among members globally. It enables professionals, researchers, and students to connect, engage in technical communities, share resources, and enhance career development through events, discussions, and collaborative projects in the fields of engineering and technology.",
+		"slug": "IEEE-Collabratec",
+		"logo": { "url": "https://region8today.ieeer8.org/wp-content/uploads/sites/114/2020/01/collabratec_logo-e1602678565780.png" },
+		"website": "https://ieee-collabratec.ieee.org/"
 	}
+	
 ]
