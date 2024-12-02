@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import Programs from "../programs";
 import { twMerge } from "tailwind-merge";
-import { areAllLocationsSame } from "../schedule/scheduleItems";
+
 import "./TimelineSchedule.scss";
 
 export default function TimelineSchedule() {

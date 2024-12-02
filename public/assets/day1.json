@@ -1,7 +1,7 @@
 [
 	{
-		"title": "Check-in & SBs booth setup",
-		"time":"08 To 13",
+		"title": "Check-in, IEEE Student Branches booths set-up",
+		"time":"09 To 13",
 		"children": [
 			{
 				"title": "Check-in",
@@ -10,10 +10,10 @@
 				"location": "Medina Hall “Espace Jardin”"
 			},
 			{
-				"title": "SBs booth setup",
+				"title": "IEEE Student Branches booths set-up",
 				"timeSlotStart": "09:00 AM",
 				"timeSlotEnd": "12:00 AM",
-				"location": "Booths Hall"
+				"location": "Expo Hall 3"
 			}
 		]
 	},
@@ -21,23 +21,54 @@
 		"title": "Opening Ceremony",
 		"children": [
 			{
-				"title": "Opening Ceremony",
+				"title": "Opening Words",
 				"location": "Hannibal Congress Room",
 				"timeSlotStart": "14:00 PM",
-				"timeSlotEnd": "16:00 PM"
+				"timeSlotEnd": "14:50 PM"
 			},
 			{
-				"title": "Guest Interventions",
-				"timeSlotStart": "16:00 PM",
-				"timeSlotEnd": "18:00 PM",
+				"title": "IEEE Word",
+				"timeSlotStart": "14:50 PM",
+				"timeSlotEnd": "15:20 PM",
 				"location": "Hannibal Congress Room"
 			},
 			{
-				"title": "Panel Discussions",
-				"timeSlotStart": "18:00 PM",
-				"timeSlotEnd": "20:00 PM",
+				"title": "IEEE Leaders Perceptions Panel",
+				"timeSlotStart": "15:20 PM",
+				"timeSlotEnd": "15:50 PM",
+				"location": "Hannibal Congress Room"
+			},
+			{
+				"title": "Presentation of Sponsors",
+				"timeSlotStart": "15:50 PM",
+				"timeSlotEnd": "16:20 PM",
+				"location": "Hannibal Congress Room"
+			},
+			{
+				"title": "Benefits of joining IEEE units",
+				"timeSlotStart": "16:20 PM",
+				"timeSlotEnd": "17:05 PM",
+				"location": "Hannibal Congress Room"
+			},
+			{
+				"title": "Unlocking Opportunities",
+				"timeSlotStart": "17:05 PM",
+				"timeSlotEnd": "17:15 PM",
 				"location": "Hannibal Congress Room"
 			}
+		]
+	},
+	{
+		"title": "Networking break and Opening of exhibition area ",
+		"location": "Hannibal Congress Room - Booths Hall",
+		"children": [
+			{
+				"title": "Networking break and Opening of exhibition area ",
+				"timeSlotStart": "17:30 PM",
+				"timeSlotEnd": "19:00 PM",
+				"location": "Expo Hall 3"
+			}
+			
 		]
 	},
 	{
@@ -45,7 +76,7 @@
 		"location": "Hannibal Congress Room - Booths Hall",
 		"children": [
 			{
-				"title": "Party, and Social Activities",
+				"title": "Party, Social Activities",
 				"timeSlotStart": "21:00 PM",
 				"timeSlotEnd": "00:00 PM",
 				"location": "Hannibal Congress Room - Booths Hall"

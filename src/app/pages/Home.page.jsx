@@ -173,11 +173,16 @@ export default function HomePage() {
 			<Fade triggerOnce>
 				<AboutESSTHSSB />
 			</Fade>
-			<Fade triggerOnce>
+			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<AboutCongress />
 				</section>
-			</Fade>
+			</Fade> */}
+			<Fade triggerOnce>
+				<div className="">
+					<ScheduleOverview />
+				</div>
+			</Fade> 
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<PoweredBy />
@@ -244,10 +249,10 @@ export default function HomePage() {
 				</section>
 			</Fade>
 
-			<Fade triggerOnce>
+			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-10">
-					{/* <SponsorsPreview /> */}
-					{false && (
+					 <SponsorsPreview /> 
+					
 						<div className="hadow-xl bbg-white rounded-2xl py-24 sm:py-10">
 							<Link
 								className="flex max-w-7xl items-center justify-center gap-3 px-6 lg:px-8"
@@ -257,20 +262,16 @@ export default function HomePage() {
 								<FontAwesomeIcon icon={faExternalLink} className="h-5 w-5" />
 							</Link>
 						</div>
-					)}
-				</section>
-			</Fade>
-
-			{/* <Fade triggerOnce>
-				<div className="md:mt-8 md:block">
-					<ScheduleOverview />
-				</div>
-			</Fade> 
-			 <Fade triggerOnce>
-				<section className="py-8 md:py-28">
-					<Team limit={5} />
+					
 				</section>
 			</Fade> */}
+
+
+			 {/* <Fade triggerOnce>
+				<section className="py-8 ">
+					<Team limit={5} />
+				</section>
+			</Fade>  */}
 			{false && (
 				<Fade triggerOnce>
 					<section className="py-8 md:py-28">
@@ -796,7 +797,7 @@ function PoweredBy() {
 					href="https://enetcom.ieee.tn/"
 					target="_blank"
 					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
+					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 "
 				>
 					<CustomImage
 						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"

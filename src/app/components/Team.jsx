@@ -21,9 +21,25 @@ export default function Team({ limit = 0 }) {
 
 	return (
 		<div id="team">
-			<div className="mb-8 text-4xl font-bold">Meet the Team</div>
+			<div className="mb-8 text-center text-4xl font-bold">Meet the Team</div>
 			<div className="grid grid-cols-12 gap-4 md:gap-4">
-				{ocTeam
+				{
+					ocTeam.map( oc => (<a
+						href="https://ieee.tn/"
+						target="_blank"
+						rel="noreferrer"
+						className="col-span-6 lg:col-span-2 overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
+					>
+						<CustomImage
+							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+							src={"https://i.imgur.com/EpXVkCB.png"}
+							alt="IeeeTunisia"
+							// width={200}
+							// height={200}
+						/>
+					</a>))
+				}
+				{ false && ocTeam
 					?.filter((s) => !!s?.active)
 					?.map((speaker, idx) => {
 						if (idx >= limit && limit !== 0) return null;
@@ -94,7 +110,7 @@ export default function Team({ limit = 0 }) {
 						);
 					})}
 
-				{limit ? (
+				{false && limit ? (
 					<Link
 						to={`/about-us#team`}
 						className="col-span-6 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"

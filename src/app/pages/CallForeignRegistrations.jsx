@@ -20,10 +20,10 @@ export default function ForeignRegistrationPage() {
 					</div>
 					<div className="mb-6 flex flex-wrap justify-center gap-4">
 						<Link
-							to={"#pre-registration"}
+							to={"#yp-registration"}
 							className="inline min-w-[216px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 						>
-							<span className="flex items-center justify-center">Pre Registration  <img src="/assets/tunisia.png" alt=""  className="h-6 w-6 ml-4"/> </span>
+							<span className="flex items-center justify-center">Registration <img src="/assets/tunisia.png" alt=""  className="h-6 w-6 ml-4"/> </span>
 						</Link>
 						
 						<Link
@@ -37,12 +37,12 @@ export default function ForeignRegistrationPage() {
 			</div>
 
 
-			<div id="pre-registration" className="my-2  ">
+			<div id="yp-registration" className="my-2  ">
 				<h1 className="mb-4 text-center text-4xl font-bold dark:text-gray-300 lg:mt-8 lg:text-5xl lg:font-extrabold lg:leading-none">
 					IEEE Tunisian SYP Congress 2024
 				</h1>
 				<h3 className="mb-4 text-center text-2xl font-bold dark:text-gray-300 lg:mb-8 lg:text-2xl lg:font-extrabold lg:leading-none">
-					Pre Registration for the IEEE Tunisian SYP Congress 2024 is NOW OPEN
+					Registration for the IEEE Tunisian SYP Congress 2024 is NOW OPEN
 				</h3>
 
 				<h1 className=" text-lg font-medium  dark:text-gray-300 lg:text-start lg:font-normal">
@@ -57,7 +57,7 @@ export default function ForeignRegistrationPage() {
 				<section className="mb-12 grid items-center justify-center gap-4 py-8 md:grid-cols-12">
 					<div className="col-span-6 mx-auto mb-4 md:order-last">
 						<CustomImage
-							src={"https://i.imgur.com/Gju0Eux.png"}
+							src={"https://i.imgur.com/b27Snpr.jpeg"}
 							className="mx-auto h-52 rounded-2xl  object-cover sm:h-96"
 							alt="call"
 						/>
@@ -67,11 +67,11 @@ export default function ForeignRegistrationPage() {
 						<span className="font-bold">TSYP12</span>{" "}is scheduled to take place from the 22nd to the 24th of December 2024, at El Medina Congress Center, Yasmine Hammamet, Tunisia.
 						</h1>
 						<h1 className=" text-base font-medium dark:text-gray-300 lg:mb-3 lg:text-start  lg:font-normal">
-						The Deadline to fill this form is November 20th at 11:59PM
+						The Deadline to fill this form is December 6th at 11:59PM
 						</h1>
-						<h1 className=" text-base font-medium dark:text-gray-300 lg:mb-3 lg:text-start  lg:font-normal">
-						Filling out this form will boost your chance to attend <span className="font-bold">TSYP12</span>{" "} but  your registration will be accepted, please contact your SB Officers for further details about your participation.
-						</h1>
+						{/* <h1 className=" text-base font-medium dark:text-gray-300 lg:mb-3 lg:text-start  lg:font-normal">
+						Filling <span className="font-bold">TSYP12</span>{" "}
+						</h1> */}
 						<div className="my-2 flex flex-wrap ">
 							<p className="mr-3 text-base font-normal text-gray-700 dark:text-gray-300">
 								For any inquiries, feel free to contact us at: tsyp@ieee.org
@@ -79,12 +79,12 @@ export default function ForeignRegistrationPage() {
 						</div>
 						<div  className="flex items-center justify-center my-6">
 						<Link
-								to={"https://forms.gle/WWHPrBPSYTE5M9Ps5"}
+								to={"https://forms.gle/1APodcvXPEhzVa9y6"}
 								target="_blank"
 								rel="noreferrer"
 								className="inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 							>
-								<span className="">Pre Registration </span>
+								<span className=""> Registration </span>
 							</Link>
 						</div>
 					</div>

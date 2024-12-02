@@ -1,25 +1,6 @@
 import { useEffect, useState } from "react";
 import ScheduleBox from "../ScheduleBox";
-import TimelineSchedule from "../timeline-view/TimelineShedule";
-import {
-	areAllLocationsSame,
-	dec18Schedule,
-	dec19Schedule,
-	dec20Schedule,
-} from "./scheduleItems";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faChalkboardUser,
-	faExternalLink,
-	faFilePdf,
-	faPlusCircle,
-	faTableColumns,
-	faTimeline,
-} from "@fortawesome/free-solid-svg-icons";
-import { twMerge } from "tailwind-merge";
-import StyledButton from "../StyledButton";
-import SessionsSchedule from "../SessionsSchedule";
-import { useSearchParams } from "react-router-dom";
+import ScheduleItem from "./ScheduleItem";
 
 export default function ScheduleList() {
 	return (
@@ -1172,48 +1153,10 @@ export const stagesData = [
 
 export function ScheduleOverview({ showTimeline }) {
 	const [isSeeMore, setIsSeeMore] = useState(false);
-	const [viewMode, setViewMode] = useState("timeline");
-	const [searchParams, setSearchParams] = useSearchParams();
-
-	const [dec18ScheduleRevamped, setDec18ScheduleRevamped] = useState([]);
-	const [dec19ScheduleRevamped, setDec19ScheduleRevamped] = useState([]);
-	const [dec20ScheduleRevamped, setDec20ScheduleRevamped] = useState([]);
 	const [program, setProgram] = useState([]);
 	const [day, setDay] = useState(1);
 	const [slotIndex, setSlotIndex] = useState(0);
 	const [subSlotKey, setsubSlotKey] = useState("");
-
-	useEffect(() => {
-		const getData = async () => {
-			await fetch("/assets/dec18ScheduleRevamped.json")
-				.then((response) => response.json())
-				.then((response) => {
-					setDec18ScheduleRevamped(response);
-				})
-				.catch((err) => console.error(err));
-			await fetch("/assets/dec19ScheduleRevamped.json")
-				.then((response) => response.json())
-				.then((response) => {
-					setDec19ScheduleRevamped(response);
-				})
-				.catch((err) => console.error(err));
-			await fetch("/assets/dec20ScheduleRevamped.json")
-				.then((response) => response.json())
-				.then((response) => {
-					setDec20ScheduleRevamped(response);
-				})
-				.catch((err) => console.error(err));
-		};
-		getData();
-	}, []);
-
-	useEffect(() => {
-		if (searchParams.get("speaker")) {
-			setViewMode("session");
-		}
-
-		return () => {};
-	}, [searchParams]);
 
 	function renderDaySchedule(day) {
 		return day?.slice(0, isSeeMore ? undefined : 5)?.map((e, idx) => {
@@ -1272,58 +1215,53 @@ export function ScheduleOverview({ showTimeline }) {
 	}, [day]);
 
 	function renderActivities() {
-		console.log(subSlotKey);
-		if(subSlotKey.length>0){
-			return	program[slotIndex].children.filter(el => el.key == subSlotKey);
+		if (subSlotKey.length > 0) {
+			return program[slotIndex].children.filter((el) => el.key == subSlotKey);
 		}
-		return program[slotIndex].children
+		return program[slotIndex].children;
 	}
 
-	function setProgramSlot(index,key="") {
-			setSlotIndex(index);
-			setsubSlotKey("");
-	} 
+	function setProgramSlot(index, key = "") {
+		setSlotIndex(index);
+		setsubSlotKey("");
+	}
 
 	return (
 		<section>
-			<div className="mb-14 flex flex-col items-center justify-center gap-8">
-				<div className="flex justify-center gap-2">
-					<div className="text-4xl font-bold">Schedule Overview</div>
+			<div className="my-4 flex justify-center gap-2 md:my-8">
+				<div className="text-4xl font-bold">Schedule Overview</div>
+			</div>
+			<div className="hidden md:block">
+				<div class="mb-8 flex justify-center">
+					<a
+						onClick={() => setDay(1)}
+						aria-current="page"
+						className="text-md cursor-pointer rounded-l-lg border-2 border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
+					>
+						December 22
+					</a>
+					<a
+						onClick={() => setDay(2)}
+						className="text-md cursor-pointer border-t-2 border-b-2 border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
+					>
+						December 23
+					</a>
+					<a
+						onClick={() => setDay(3)}
+						className="text-md cursor-pointer rounded-r-lg border-2 border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
+					>
+						December 24
+					</a>
 				</div>
-				<div>
-					<div class="inline-flex">
-						<a
-							onClick={() => setDay(1)}
-							aria-current="page"
-							class="text-md cursor-pointer rounded-l-lg border border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
-						>
-							December 22
-						</a>
-						<a
-							onClick={() => setDay(2)}
-							class="text-md cursor-pointer border-t border-b border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
-						>
-							December 23
-						</a>
-						<a
-							onClick={() => setDay(3)}
-							class="text-md cursor-pointer rounded-r-lg border border-gray-200 px-6 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
-						>
-							December 24
-						</a>
-					</div>
-				</div>
-				<div className="mx-auto flex w-4/5 flex-row  gap-4">
-					<div className="hidden basis-1/3 md:block">
+				<div className="flex">
+					<div className="m-2 basis-1/3">
 						{program.map((slot, index) => (
 							<div>
 								<div
-									class=" cursor-pointer rounded-lg border shadow hover:bg-slate-100 dark:border-neutral-900 dark:bg-neutral-900"
 									onClick={() => setProgramSlot(index)}
+									className="text-md cursor-pointer rounded-lg border border-gray-200 px-6 py-2 text-center font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
 								>
-									<div class="py-4  text-center text-xs text-gray-800 transition duration-700 dark:text-white">
-										<span class="">{slot.title}</span>
-									</div>
+									{slot.title}
 								</div>
 								<div>
 									{slot.subSlot &&
@@ -1334,10 +1272,8 @@ export function ScheduleOverview({ showTimeline }) {
 													setsubSlotKey(sub.key);
 												}}
 											>
-												<div class="ml-4 cursor-pointer rounded-lg border shadow hover:bg-slate-100 dark:border-neutral-900 dark:bg-neutral-900">
-													<div class=" py-2  text-center text-xs text-gray-800 transition duration-700 dark:text-white">
-														<span class="">{sub.title}</span>
-													</div>
+												<div className="text-sm cursor-pointer rounded-lg border border-gray-200 px-6 py-2 mx-8 text-center font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500">
+												{sub.title}
 												</div>
 											</div>
 										))}
@@ -1345,7 +1281,7 @@ export function ScheduleOverview({ showTimeline }) {
 							</div>
 						))}
 					</div>
-					<div className="basis-3/3 md:basis-2/3">
+					<div className="m-2 basis-2/3">
 						<div class="w-full rounded-lg border border-gray-200 shadow ">
 							<div class="flow-root">
 								<ul
@@ -1353,22 +1289,9 @@ export function ScheduleOverview({ showTimeline }) {
 									class="divide-y divide-gray-200 dark:divide-gray-700"
 								>
 									{program[slotIndex] &&
-										 renderActivities().map((activity) => (
-											<li class="p-3 sm:py-4">
-												<div class="flex items-center">
-													<div class="ms-4 min-w-0 flex-1">
-														<p class="truncate text-base font-bold text-gray-900 dark:text-white">
-															{activity.title}
-														</p>
-														<p class="truncate text-sm font-bold text-[#115D85] dark:text-gray-400">
-															{activity.location}
-														</p>
-													</div>
-													<div class="items-end text-base font-semibold text-gray-900 dark:text-white">
-														<p class="items-end" >{activity.timeSlotStart}</p>
-														<p class="items-end" >{activity.timeSlotEnd}</p>
-													</div>
-												</div>
+										renderActivities().map((activity) => (
+											<li class="p-3">
+												<ScheduleItem  activity={activity}/>
 											</li>
 										))}
 								</ul>
@@ -1376,282 +1299,115 @@ export function ScheduleOverview({ showTimeline }) {
 						</div>
 					</div>
 				</div>
-				{false && (
-					<span className="me-2 ms-3 ml-4 flex flex-nowrap rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-						{"item1.time1"}
-					</span>
-				)}
-				{false && (
+			</div>
+			<div className=" md:hidden">
+				<div class="flex justify-center">
 					<div>
-						<div className="flex">
-							{/* <StyledButton
-						onClick={() => setIsTimeLineView(!isTimeLineView)}
-						icon={
-							<FontAwesomeIcon
-								icon={!isTimeLineView ? faTimeline : faTableColumns}
-								className={twMerge(
-									`text-lg transition-all`,
-									!isTimeLineView ? "-rotate-90" : ""
-								)}
-							/>
-						}
-						message={!isTimeLineView ? "Timeline View" : "List View"}
-					/> */}
-							<StyledButton
-								className={twMerge(
-									"min-w-[1rem] rounded-l-md rounded-r-none border-r-[1px]"
-								)}
-								onClick={() => setViewMode("timeline")}
-								icon={
-									<FontAwesomeIcon
-										icon={faTimeline}
-										className={twMerge(`-rotate-90 text-base transition-all`)}
-									/>
-								}
-								message={viewMode === "timeline" && "Timeline View"}
-							/>
-							<StyledButton
-								className={twMerge("min-w-[1rem]  rounded-none border-l-[1px]")}
-								onClick={() => setViewMode("list")}
-								icon={
-									<FontAwesomeIcon
-										icon={faTableColumns}
-										className={twMerge(`text-lg transition-all`)}
-									/>
-								}
-								message={viewMode === "list" && "List View"}
-							/>
-							<StyledButton
-								className={twMerge(
-									"min-w-[1rem] rounded-r-md rounded-l-none border-l-[1px]"
-								)}
-								onClick={() => setViewMode("session")}
-								icon={
-									<FontAwesomeIcon
-										icon={faChalkboardUser}
-										className={twMerge(`text-lg transition-all`)}
-									/>
-								}
-								message={viewMode === "session" && "Session View"}
-							/>
-						</div>
-
 						<a
-							href="https://drive.google.com/file/d/13em2dUKV1UZfBJWmuhayoAy0ApT-I-8S/view?usp=sharing"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="flex items-center gap-2 font-bold"
+							onClick={() => setDay(1)}
+							aria-current="page"
+							class="text-md flex cursor-pointer justify-center rounded-l-lg border border-gray-200  py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:px-6"
 						>
-							<FontAwesomeIcon className="text-xl" icon={faFilePdf} />
-							Download PDF
+							<span className="px-2">December</span>{" "}
+							<span className="pr-2">22</span>
 						</a>
 					</div>
-				)}
-				{/* <button
-					className="flex items-center justify-center gap-4 font-medium md:flex"
-					onClick={() => setIsTimeLineView(!isTimeLineView)}
-				>
-					<FontAwesomeIcon
-						icon={!isTimeLineView ? faTimeline : faTableColumns}
-						className={twMerge(
-							`text-2xl transition-all`,
-							!isTimeLineView ? "-rotate-90" : ""
-						)}
-					/>
-					{!isTimeLineView ? "Timeline View" : "List View"}
-				</button> */}
-			</div>
-			{/* <button
-				className="mb-16 flex flex-col items-center justify-center gap-4 md:flex"
-				onClick={() => setIsTimeLineView(!isTimeLineView)}
-			>
-				<FontAwesomeIcon
-					icon={isTimeLineView ? faTimeline : faTableColumns}
-					className={twMerge(
-						`animate-pulse text-2xl transition-all`,
-						isTimeLineView ? "-rotate-90" : ""
-					)}
-				/>
-				{isTimeLineView ? "Timeline View" : "List View"}
-			</button> */}
-			{viewMode === "timeline" && <TimelineSchedule />}
-
-			{false && viewMode === "list" && (
-				<div className="flex flex-col gap-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
-					<section className="flex flex-col">
-						<h3 className="sticky top-0 bg-gray-50 py-4 text-center text-2xl font-semibold tracking-tight dark:bg-black">
-							<time dateTime="2022-04-04">December 18</time>
-						</h3>
-						{/* <p className="mt-1.5 text-base tracking-tight">
-						The first day of the conference is focused on ecommerce.
-					</p> */}
-						<ol className="bbackdrop-blur mt-10 flex-1 space-y-8 rounded-xl border-2 bg-white/60 p-2 px-10 py-14 text-center shadow-xl shadow-blue-900/5 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:bg-black dark:hover:border-gray-600 dark:focus:border-gray-500">
-							{renderDaySchedule(dec18ScheduleRevamped)}
-
-							{false &&
-								dec18Schedule?.map((e, idx) => (
-									<li aria-label="Steven McHail talking about one-time payments at 9:00AM - 10:00AM GMT+1">
-										{idx > 0 && (
-											<div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
-										)}
-										<h4 className="text-lg font-semibold tracking-tight ">
-											{e.title}
-										</h4>
-										{/* <p className="mt-1 tracking-tight ">One-time payments</p> */}
-										<p className="mt-1 font-mono text-sm text-slate-500">
-											<time dateTime="2022-04-04T9:00AM-08:00">
-												{e.startTime}
-											</time>{" "}
-											{/* */}-{/* */}{" "}
-											<time dateTime="2022-04-04T10:00AM-08:00">
-												{e.endTime}
-											</time>{" "}
-											{/* */}
-											{e.timeZone}
-										</p>
-									</li>
-								))}
-
-							{!isSeeMore && (
-								<li
-									className="flex justify-center"
-									onClick={() => setIsSeeMore(!isSeeMore)}
-								>
-									<StyledButton
-										message={"Load more"}
-										icon={
-											<FontAwesomeIcon
-												icon={faPlusCircle}
-												// icon={faVrCardboard}
-											/>
-										}
-									/>
-									{/* <button className="mx-auto mt-4 flex items-center justify-center gap-2 text-center text-gray-500 dark:text-gray-400">
-										<FontAwesomeIcon icon={faPlusCircle} />
-										Load more
-									</button> */}
-								</li>
-							)}
-						</ol>
-					</section>
-
-					<section className="flex flex-col">
-						<h3 className="sticky top-0 bg-gray-50 py-4 text-center text-2xl font-semibold tracking-tight dark:bg-black ">
-							<time dateTime="2022-04-05">December 19</time>
-						</h3>
-						{/* <p className="mt-1.5 text-base tracking-tight ">
-						Next we spend the day talking about people with technology.
-					</p> */}
-						<ol className="bbackdrop-blur mt-10 flex-1 space-y-8 rounded-xl border-2 bg-white/60 p-2 px-10 py-14 text-center shadow-xl shadow-blue-900/5 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:bg-black dark:hover:border-gray-600 dark:focus:border-gray-500">
-							{renderDaySchedule(dec19ScheduleRevamped)}
-
-							{false &&
-								dec19Schedule
-									?.slice(0, isSeeMore ? undefined : 6)
-									?.map((e, idx) => (
-										<li aria-label="Steven McHail talking about one-time payments at 9:00AM - 10:00AM GMT+1">
-											{idx > 0 && (
-												<div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
-											)}
-											<h4 className="text-lg font-semibold tracking-tight ">
-												{e.title}
-											</h4>
-											{/* <p className="mt-1 tracking-tight ">One-time payments</p> */}
-											<p className="mt-1 font-mono text-sm text-slate-500">
-												<time dateTime="2022-04-04T9:00AM-08:00">
-													{e.startTime}
-												</time>{" "}
-												{/* */}-{/* */}{" "}
-												<time dateTime="2022-04-04T10:00AM-08:00">
-													{e.endTime}
-												</time>{" "}
-												{/* */}
-												{e.timeZone}
-											</p>
-										</li>
-									))}
-							{!isSeeMore && (
-								<li
-									className="flex justify-center"
-									onClick={() => setIsSeeMore(!isSeeMore)}
-								>
-									<StyledButton
-										message={"Load more"}
-										icon={
-											<FontAwesomeIcon
-												icon={faPlusCircle}
-												// icon={faVrCardboard}
-											/>
-										}
-									/>
-									{/* <button className="mx-auto mt-4 flex items-center justify-center gap-2 text-center text-gray-500 dark:text-gray-400">
-										<FontAwesomeIcon icon={faPlusCircle} />
-										Load more
-									</button> */}
-								</li>
-							)}
-						</ol>
-					</section>
-
-					<section className="flex flex-col">
-						<h3 className="sticky top-0 bg-gray-50 py-4 text-center text-2xl font-semibold tracking-tight dark:bg-black ">
-							<time dateTime="2022-04-06">December 20</time>
-						</h3>
-						{/* <p className="mt-1.5 text-base tracking-tight ">
-						We close out the event previewing techniques in development.
-					</p> */}
-						<ol className="bbackdrop-blur mt-10 flex-1 space-y-8 rounded-xl border-2 bg-white/60 p-2 px-10 py-14 text-center shadow-xl shadow-blue-900/5 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:bg-black dark:hover:border-gray-600 dark:focus:border-gray-500">
-							{renderDaySchedule(dec20ScheduleRevamped)}
-
-							{false &&
-								dec20Schedule?.map((e, idx) => (
-									<li aria-label="Steven McHail talking about one-time payments at 9:00AM - 10:00AM GMT+1">
-										{idx > 0 && (
-											<div className="mx-auto mb-8 h-px w-48 bg-indigo-500/10" />
-										)}
-										<h4 className="text-lg font-semibold tracking-tight ">
-											{e.title}
-										</h4>
-										{/* <p className="mt-1 tracking-tight ">One-time payments</p> */}
-										<p className="mt-1 font-mono text-sm text-slate-500">
-											<time dateTime="2022-04-04T9:00AM-08:00">
-												{e.startTime}
-											</time>{" "}
-											{/* */}-{/* */}{" "}
-											<time dateTime="2022-04-04T10:00AM-08:00">
-												{e.endTime}
-											</time>{" "}
-											{/* */}
-											{e.timeZone}
-										</p>
-									</li>
-								))}
-							{!isSeeMore && (
-								<li
-									className="flex justify-center"
-									onClick={() => setIsSeeMore(!isSeeMore)}
-								>
-									<StyledButton
-										message={"Load more"}
-										icon={
-											<FontAwesomeIcon
-												icon={faPlusCircle}
-												// icon={faVrCardboard}
-											/>
-										}
-									/>
-									{/* <button className="mx-auto mt-4 flex items-center justify-center gap-2 text-center text-gray-500 dark:text-gray-400">
-										<FontAwesomeIcon icon={faPlusCircle} />
-										Load more
-									</button> */}
-								</li>
-							)}
-						</ol>
-					</section>
+					<div>
+						<a
+							onClick={() => setDay(2)}
+							class="text-md flex cursor-pointer justify-center border-t border-b border-gray-200  py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:px-6"
+						>
+							<span className="px-2">December</span>{" "}
+							<span className="pr-2">23</span>
+						</a>
+					</div>
+					<div>
+						<a
+							onClick={() => setDay(3)}
+							class="text-md flex cursor-pointer justify-center rounded-r-lg border border-gray-200  py-2 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:px-6"
+						>
+							<span className="px-2">December</span>{" "}
+							<span className="pr-2">24</span>
+						</a>
+					</div>
 				</div>
-			)}
-
-			{false && viewMode === "session" && <SessionsSchedule />}
+				<div className="flex items-center justify-between">
+					{program[slotIndex] && (
+						<p class="text-md mr-2 ml-2 flex justify-center truncate rounded-l-lg py-4 font-medium text-gray-900 dark:text-white">
+							{program[slotIndex].title}
+						</p>
+					)}
+					<div className="mx-2 flex">
+						<div className="mr-2">
+							<button
+								type="button"
+								class="inline-flex rotate-180 items-center rounded-lg border border-gray-300  py-2 px-1 text-center text-sm font-medium text-gray-400 dark:bg-gray-800"
+								onClick={() => {
+									let pre = slotIndex - 1;
+									if (program[pre]) setSlotIndex(pre);
+								}}
+							>
+								<svg
+									class="h-5 w-6"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 14 10"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M1 5h12m0 0L9 1m4 4L9 9"
+									/>
+								</svg>
+							</button>
+						</div>
+						<div className="mr-2">
+							<button
+								type="button"
+								class=" inline-flex items-center rounded-lg border border-gray-300  py-2 px-1 text-center text-sm font-medium text-gray-400 dark:bg-gray-800"
+								onClick={() => {
+									let next = slotIndex + 1;
+									if (program[next]) setSlotIndex(next);
+								}}
+							>
+								<svg
+									class="h-5 w-6"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 14 10"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M1 5h12m0 0L9 1m4 4L9 9"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="rounded-lg border border-gray-200 shadow ">
+					<div class="flow-root">
+						<ul
+							role="list"
+							class="max-w-5 divide-y divide-gray-200 dark:divide-gray-700"
+						>
+							{program[slotIndex] &&
+								renderActivities().map((activity) => (
+									<li class="p-1">
+										<ScheduleItem  activity={activity}/>
+									</li>
+								))}
+						</ul>
+					</div>
+				</div>
+			</div>
 		</section>
 	);
 }

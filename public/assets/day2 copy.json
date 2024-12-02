@@ -1,0 +1,88 @@
+[
+	{
+		"title": "Parallel Sessions 1",
+		"time":"08 To 12",
+		"subSlot" :[
+			{"title": "Sessions",
+			"key" :"s"},
+			{"title": "Workshops",
+			"key" :"w"},
+			{"title": "TN Challenge",
+			"key" :"tn"}
+		],
+		"children": [
+			{
+				"title": "Breakout Session 1",
+				"location": "Medina Conventions Center",
+				"timeSlotStart": "09:00 AM",
+				"timeSlotEnd": "12:00 AM",
+				"key" :"s"
+			},
+			{
+				"title": "Workshops",
+				"timeSlotStart": "09:00 AM",
+				"timeSlotEnd": "12:00 AM",
+				"location": "Medina Conventions Center",
+				"key" :"w"
+			}
+		]
+	},
+	{
+		"title": "Parallel Sessions 2",
+		"time":"08 To 12",
+		"subSlot" :[
+			{"title": "Sessions",
+			"key" :"s"},
+			{"title": "Workshops",
+			"key" :"w"},
+			{"title": "TN Challenge",
+			"key" :"tn"}
+		],
+		"children": [
+			{
+				"title": "Breakout Session 2",
+				"location": "Medina Conventions Center",
+				"timeSlotStart": "09:00 AM",
+				"timeSlotEnd": "12:00 AM",
+				"key" :"s"
+
+			},
+			{
+				"title": "Workshops 2",
+				"timeSlotStart": "09:00 AM",
+				"timeSlotEnd": "12:00 AM",
+				"location": "Medina Conventions Center",
+				"key" :"w"
+			}
+		]
+	},
+	{
+		"title": "Parallel Sessions 3",
+		"time":"08 To 12",
+		"subSlot" :[
+			{"title": "Sessions",
+			"key" :"s"},
+			{"title": "Workshops",
+			"key" :"w"},
+			{"title": "TN Challenge",
+			"key" :"tn"}
+		],
+		"children": [
+			{
+				"title": "Breakout Session 2",
+				"location": "Medina Conventions Center",
+				"timeSlotStart": "09:00 AM",
+				"timeSlotEnd": "12:00 AM",
+				"key" :"s"
+
+			},
+			{
+				"title": "Workshops 2",
+				"timeSlotStart": "09:00 AM",
+				"timeSlotEnd": "12:00 AM",
+				"location": "Medina Conventions Center",
+				"key" :"w"
+			}
+		]
+	}
+]

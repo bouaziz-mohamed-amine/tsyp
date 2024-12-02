@@ -23,7 +23,7 @@ export default function Speakers({ limit = 0 }) {
 
 	return (
 		<div>
-			<div className="mb-16 text-4xl text-center font-bold">Speakers</div>
+			<div className="mb-12 text-4xl text-center font-bold">Speakers</div>
 			<div className="grid grid-cols-12 gap-4 md:gap-4">
 				{speakersData
 					?.filter((e) => e?.enabled)

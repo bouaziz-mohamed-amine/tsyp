@@ -1,60 +1,61 @@
 [
 	{
-		"title": "Check-in & SBs booth setup",
+		"title": "IEEE Tunisia Section Awards",
 		"time":"08 To 13",
 		"children": [
 			{
-				"title": "Check-in",
-				"timeSlotStart": "08:00 AM",
-				"timeSlotEnd": "12:00 AM",
-				"location": "Medina Hall “Espace Jardin”"
-			},
-			{
-				"title": "SBs booth setup",
+				"title": "IEEE Tunisia Section Awards",
 				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "12:00 AM",
-				"location": "Booths Hall"
+				"timeSlotEnd": "10:30 AM",
+				"location": "Hannibal Congress Room"
 			}
 		]
 	},
 	{
-		"title": "Opening Ceremony",
+		"title": "Finalist Pitches ",
 		"children": [
 			{
-				"title": "Opening Ceremony",
+				"title": "Finalist Pitches",
 				"location": "Hannibal Congress Room",
-				"timeSlotStart": "14:00 PM",
-				"timeSlotEnd": "16:00 PM"
+				"timeSlotStart": "10:30 AM",
+				"timeSlotEnd": "12:00 PM"
 			},
 			{
-				"title": "Guest Interventions",
-				"timeSlotStart": "16:00 PM",
-				"timeSlotEnd": "18:00 PM",
-				"location": "Hannibal Congress Room"
+				"title": "Q&A",
+				"location": "Hannibal Congress Room",
+				"timeSlotStart": "10:30 AM",
+				"timeSlotEnd": "12:00 PM"
 			},
 			{
-				"title": "Panel Discussions",
-				"timeSlotStart": "18:00 PM",
-				"timeSlotEnd": "20:00 PM",
-				"location": "Hannibal Congress Room"
+				"title": "Voting",
+				"location": "Hannibal Congress Room",
+				"timeSlotStart": "12:00 AM",
+				"timeSlotEnd": "12:00 PM"
 			}
 		]
+
 	},
 	{
-		"title": "Party and Social Activities",
-		"location": "Hannibal Congress Room - Booths Hall",
+		"title": "Closing Ceremony",
+		"location": "Hannibal Congress Room",
 		"children": [
 			{
-				"title": "Party, and Social Activities",
-				"timeSlotStart": "21:00 PM",
-				"timeSlotEnd": "00:00 PM",
-				"location": "Hannibal Congress Room - Booths Hall"
+				"title": "Winner’s Announcement Celebration",
+				"timeSlotStart": "12:00 PM",
+				"timeSlotEnd": "13:00 PM",
+				"location": "Hannibal Congress Room"
 			},
 			{
-				"title": "Surprise Challenge Announcement",
-				"timeSlotStart": "22:00 PM",
-				"timeSlotEnd": "00:00 AM",
-				"location": "Hannibal Congress Room - Booths Hall"
+				"title": "Group Photo",
+				"timeSlotStart": "12:00 PM",
+				"timeSlotEnd": "13:00 PM",
+				"location": "Hannibal Congress Room"
+			},
+			{
+				"title": "Check-Out",
+				"timeSlotStart": "12:00 PM",
+				"timeSlotEnd": "13:00 PM",
+				"location": "Hannibal Congress Room"
 			}
 		]
 	}
