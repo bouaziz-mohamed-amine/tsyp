@@ -181,7 +181,7 @@ export default function HomePage() {
 			<Fade triggerOnce>
 				<div className="">
 					<ScheduleOverview />
-				</div>
+				</div> 
 			</Fade> 
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">

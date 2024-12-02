@@ -19,12 +19,12 @@ export default function ForeignRegistrationPage() {
 						</div>
 					</div>
 					<div className="mb-6 flex flex-wrap justify-center gap-4">
-						<Link
+						{/* <Link
 							to={"#yp-registration"}
 							className="inline min-w-[216px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 						>
 							<span className="flex items-center justify-center">Registration <img src="/assets/tunisia.png" alt=""  className="h-6 w-6 ml-4"/> </span>
-						</Link>
+						</Link> */}
 						
 						<Link
 							to={"#foreign-registration"}
@@ -37,7 +37,7 @@ export default function ForeignRegistrationPage() {
 			</div>
 
 
-			<div id="yp-registration" className="my-2  ">
+			{false && <div id="yp-registration" className="my-2  ">
 				<h1 className="mb-4 text-center text-4xl font-bold dark:text-gray-300 lg:mt-8 lg:text-5xl lg:font-extrabold lg:leading-none">
 					IEEE Tunisian SYP Congress 2024
 				</h1>
@@ -89,7 +89,7 @@ export default function ForeignRegistrationPage() {
 						</div>
 					</div>
 				</section>
-			</div>
+			</div>}
 			<div id="foreign-registration" className="my-2  ">
 				<h1 className="mb-4 text-center text-4xl font-bold dark:text-gray-300 lg:mt-8 lg:text-5xl lg:font-extrabold lg:leading-none">
 					IEEE Tunisian SYP Congress 2024

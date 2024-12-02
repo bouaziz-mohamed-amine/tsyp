@@ -1300,7 +1300,7 @@ export function ScheduleOverview({ showTimeline }) {
 					</div>
 				</div>
 			</div>
-			<div className=" md:hidden">
+			<div className="md:hidden">
 				<div class="flex justify-center">
 					<div>
 						<a
@@ -1333,7 +1333,7 @@ export function ScheduleOverview({ showTimeline }) {
 				</div>
 				<div className="flex items-center justify-between">
 					{program[slotIndex] && (
-						<p class="text-md mr-2 ml-2 flex justify-center truncate rounded-l-lg py-4 font-medium text-gray-900 dark:text-white">
+						<p class="text-xs mr-2 ml-2  truncate rounded-l-lg py-4 font-bold text-gray-900 dark:text-white">
 							{program[slotIndex].title}
 						</p>
 					)}
@@ -1406,7 +1406,7 @@ export function ScheduleOverview({ showTimeline }) {
 								))}
 						</ul>
 					</div>
-				</div>
+				</div> 
 			</div>
 		</section>
 	);
