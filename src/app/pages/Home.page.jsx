@@ -243,6 +243,11 @@ export default function HomePage() {
 					<PreviousEditions />
 				</section>
 			</Fade> */}
+			 <Fade triggerOnce>
+				<section className="py-8 ">
+					<Team limit={5} />
+				</section>
+			</Fade>
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<Memories />
@@ -267,11 +272,7 @@ export default function HomePage() {
 			</Fade> */}
 
 
-			  <Fade triggerOnce>
-				<section className="py-8 ">
-					<Team limit={5} />
-				</section>
-			</Fade>  
+			   
 			{false && (
 				<Fade triggerOnce>
 					<section className="py-8 md:py-28">

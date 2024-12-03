@@ -17,7 +17,7 @@ export default function AboutUs() {
 
 			{true && 
 				<Fade triggerOnce>
-				<Team />
+				<Team limit={100} />
 			</Fade>
 			}
 

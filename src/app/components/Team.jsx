@@ -23,104 +23,49 @@ export default function Team({ limit = 0 }) {
 		<div id="team">
 			<div className="mb-8 text-center text-4xl font-bold">Meet the Team</div>
 			<div className="grid grid-cols-12 gap-4 ">
-				{ocTeam.map((oc,index) =>{
-					if(index < limit && limit !== 0){
-						return <div className="col-span-2 flex justify-center ">
-						<div className="  rounded-full    ">
-						<CustomImage
-								className="object-cover bg-[#1da1f2] rounded-full h-[170px] w-[170px] mx-auto"
-								src={oc.image.url}
-								alt="IeeeTunisia"
-								// width={200}
-								// height={200}
-							/>
-							<p className="text-center text-md font-bold dark:bg-black">{oc.name}</p>
-							<p className="text-center text-md font-bold dark:bg-black">{oc.title}</p>
-						</div>
-						
-					</div>
-					}
-				})}
-				{false &&
-					ocTeam
-						?.filter((s) => !!s?.active)
-						?.map((speaker, idx) => {
-							if (idx >= limit && limit !== 0) return null;
-
-							if (speaker.link) {
-								return (
-									<Link
-										key={speaker.name}
-										to={speaker.link}
-										className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"
-										target="_blank"
-									>
+				{ocTeam.map((oc, index) => {
+					if (index < limit && limit !== 0) {
+						return (
+							<div className="col-span-6 md:col-span-4 lg:col-span-2 flex justify-center ">
+								<div className="  rounded-full    ">
+									<a href={oc.linkdin.url}>
 										<CustomImage
-											style={{
-												objectPosition: "center top",
-											}}
-											src={speaker.imageSmall.url}
-											alt=""
-											className="mb-2 aspect-[12/16] w-full rounded-lg object-cover sm:aspect-[12/16]"
-											loading="lazy"
+											className="mx-auto h-[120px] w-[120px] md:h-[170px] md:w-[170px] rounded-full bg-[#115D85] dark:bg-[#BA0D15] object-cover"
+											src={oc.image.url}
+											alt="IeeeTunisia"
+											// width={200}
+											// height={200}
 										/>
-										<div className="flex flex-wrap items-center gap-1">
-											<span className="font-bold">{speaker.name}</span>
-											<FontAwesomeIcon
-												icon={faExternalLink}
-												className="h-3 w-3"
-											/>
-										</div>
-										{/* <div className="mb-2 text-sm text-gray-600 dark:text-gray-400">
-			@{speaker.twitterUsername}
-		</div> */}
-										<div className="text-sm">
-											{speaker.title}
-											{false && `, ${speaker.company.name}`}
-										</div>
-									</Link>
-								);
-							}
+									</a>
 
-							return (
-								// <Link
-								// 	key={speaker.name}
-								// 	to={speaker.name}
-								// className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 lg:col-span-3 2xl:col-span-2"
-								// >
-								<div
-									key={speaker.name}
-									className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"
-								>
-									<CustomImage
-										style={{
-											objectPosition: "center top",
-										}}
-										src={speaker.imageSmall.url}
-										alt=""
-										className="mb-2 aspect-[12/16] w-full rounded-lg object-cover sm:aspect-[12/16]"
-									/>
-									<div className="font-bold">{speaker.name}</div>
-									{/* <div className="mb-2 text-sm text-gray-600 dark:text-gray-400">
-								@{speaker.twitterUsername}
-							</div> */}
-									<div className="text-sm">
-										{speaker.title}
-										{false && `, ${speaker.company.name}`}
+									<div data-tooltip-target="tooltip-default">
+										<a  href={ `mailto:${oc.email}` }>
+											<p className="text-md text-center font-bold dark:bg-black">
+												{oc.name}
+											</p>
+										</a>
+										<a  href={ `mailto:${oc.email}` }>
+											<p className="text-md text-center font-bold dark:bg-black">
+												{oc.title}
+											</p>
+										</a>
 									</div>
 								</div>
-								// </Link>
-							);
-						})}
+							</div>
+						);
+					}
+				})}
 
-				{false && limit ? (
-					<Link
+				{limit <= 5 ? (
+					<div className="col-span-6 md:col-span-4 lg:col-span-2 flex justify-center">
+						<Link
 						to={`/about-us#team`}
-						className="col-span-6 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"
+						className=" flex h-[120px] w-[120px] md:h-[170px] md:w-[170px] flex-col items-center justify-center rounded-full border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"
 					>
 						<FontAwesomeIcon icon={faExternalLink} className="mb-2 h-6 w-6" />
-						<div className="font-bold">See more</div>
+						<div className="font-bold text-center">See more</div>
 					</Link>
+					</div>
 				) : null}
 			</div>
 		</div>
