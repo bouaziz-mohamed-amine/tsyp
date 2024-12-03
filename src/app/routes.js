@@ -99,6 +99,10 @@ const routes = [
 	// 	href: "/expo",
 	// },
 	{
+		title: "Partners",
+		href: "/partners-sponsors",
+	},
+	{
 		title: "Call For Sponsors",
 		href: "/sponsor-us",
 	},
