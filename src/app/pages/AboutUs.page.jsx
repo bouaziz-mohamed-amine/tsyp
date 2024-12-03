@@ -15,7 +15,7 @@ export default function AboutUs() {
 				<AboutTSYP />
 			</Fade>
 
-			{false && 
+			{true && 
 				<Fade triggerOnce>
 				<Team />
 			</Fade>

@@ -11,36 +11,40 @@ const routes = [
 		title: "TN 2056",
 		href: "/tn2056",
 	},
-	...(new Date() >= new Date('2024-09-02') ? [{
-		title: "Challenges",
-		href: "/challenges",
-	  }] : []),
+	// ...(new Date() >= new Date('2024-09-02') ? [{
+	// 	title: "Challenges",
+	// 	href: "/challenges",
+	//   }] : []),
 	// {
 	// 	title: "Game",
 	// 	href: "/virtual-game",
 	// },
-	// {
-	// 	title: "Program",
-	// 	type: "group",
-	// 	items: [
-	// 		{
-	// 			title: "Challenges",
-	// 			href: "/challenges",
-	// 		},
-	// 		{
-	// 			title: "Schedule",
-	// 			href: "/schedule",
-	// 		},
-	// 		{
-	// 			title: "Speakers",
-	// 			href: "/speakers",
-	// 		},
-	// 		{
-	// 			title: "Venue",
-	// 			href: "/venue",
-	// 		},
-	// 	],
-	// },
+	{
+		title: "Speakers",
+		href: "/speakers",
+	},
+	{
+		title: "Program",
+		type: "group",
+		items: [
+			{
+				title: "Challenges",
+				href: "/challenges",
+			},
+			{
+				title: "Schedule",
+				href: "/schedule",
+			},
+			// {
+			// 	title: "Speakers",
+			// 	href: "/speakers",
+			// },
+			// {
+			// 	title: "Venue",
+			// 	href: "/venue",
+			// },
+		],
+	},
 	// {
 	// 	title: "Awards",
 	// 	href: "/awards",
@@ -65,10 +69,21 @@ const routes = [
 	// 	href: "/venue",
 	// 	mobileOnly: true,
 	// },
-	{
-		title: "Partners",
-		href: "/partners-sponsors",
-	},
+	// {
+	// 	title: "Partners",
+	// 	type: "group",
+	// 	items:[
+	// 		{
+	// 			title: "Partners",
+	// 			href: "/partners-sponsors",
+	// 		},
+	// 		{
+	// 			title: "Call For Sponsors",
+	// 			href: "/sponsor-us",
+	// 		},
+	// 	]
+	// },
+
 	// {
 	// 	title: "Registration",
 	// 	href: "/registration",

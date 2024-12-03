@@ -8,7 +8,7 @@ export default function SchedulePage() {
 		<>
 			<ScheduleList />
 
-			<Fade triggerOnce>
+			{/* <Fade triggerOnce>
 				<section className="grid items-center justify-center gap-16 py-8 md:grid-cols-12 md:py-16">
 					<div className="order-last col-span-6">
 						<iframe
@@ -384,7 +384,7 @@ export default function SchedulePage() {
 						</h1>
 					</div>
 				</section>{" "}
-			</Fade>
+			</Fade> */}
 		</>
 	);
 }

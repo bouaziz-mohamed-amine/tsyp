@@ -85,10 +85,10 @@ const router = createBrowserRouter([
 				path: "speakers",
 				element: <Speakers />,
 			},
-			// {
-			// 	path: "venue",
-			// 	element: <VenuePage />,
-			// },
+			{
+				path: "venue",
+				element: <VenuePage />,
+			},
 			{
 				path: "speakers/:speakerSlug",
 				element: <Speaker />,
