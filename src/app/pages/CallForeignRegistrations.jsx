@@ -31,7 +31,7 @@ export default function ForeignRegistrationPage() {
 								/>{" "}
 							</span>
 						</Link>
-						{false && <Link
+						{true && <Link
 							to={"#yp-registration"}
 							className="inline min-w-[216px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 						>
@@ -76,7 +76,7 @@ export default function ForeignRegistrationPage() {
 				</section>
 			</div>
 
-			{false && (
+			{true && (
 				<div id="yp-registration" className="my-2  ">
 					<h1 className="mb-4 text-center text-4xl font-bold dark:text-gray-300 lg:mt-8 lg:text-5xl lg:font-extrabold lg:leading-none">
 						IEEE Tunisian SYP Congress 2024
