@@ -104,12 +104,12 @@ export default function HomePage() {
 					className="hidden h-52 object-contain dark:invert lg:block"
 				/> */}
 							<CustomImage
-								src={"https://i.imgur.com/QSavGjq.png"}
+								src={"https://i.imgur.com/jUfIDHL.png"}
 								alt=""
 								className=" h-38 invert-1 mx-auto hidden object-contain  dark:hidden lg:block"
 							/>
 							<CustomImage
-								src={"https://i.imgur.com/6o2xYh7.png"}
+								src={"https://i.imgur.com/d9GnpSb.png"}
 								alt=""
 								className="h-38 invert-1 mx-auto hidden object-contain dark:block "
 							/>
@@ -181,8 +181,8 @@ export default function HomePage() {
 			<Fade triggerOnce>
 				<div className="">
 					<ScheduleOverview />
-				</div> 
-			</Fade> 
+				</div>
+			</Fade>
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<PoweredBy />
@@ -196,22 +196,24 @@ export default function HomePage() {
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<div>
-						<div className="mb-8 text-4xl text-center font-bold ">IEEE Partners</div>
+						<div className="mb-8 text-center text-4xl font-bold ">
+							IEEE Partners
+						</div>
 						<div className="grid grid-cols-12 gap-4 md:gap-4 ">
 							{partners.map((e) => (
 								<span
 									to={`/speakers/${e.slug}`}
-									className="col-span-12 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 lg:col-span-3  md:pt-6 md:px-6"
+									className="col-span-12 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 md:px-6  md:pt-6 lg:col-span-3"
 								>
-									<div  className="rounded-lg bg-gray-50 p-2 py-6 mb-2">
-									<CustomImage
-										src={e.logo.url || e.logo}
-										alt=""
-										className="h-40 w-full object-contain md:h-40 py-6"
-										loading="lazy"
-									/>
+									<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">
+										<CustomImage
+											src={e.logo.url || e.logo}
+											alt=""
+											className="h-40 w-full object-contain py-6 md:h-40"
+											loading="lazy"
+										/>
 									</div>
-									<div className=" h-16  md:h-24 lg:h-16 text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300 ">
+									<div className=" h-16  text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300 md:h-24 lg:h-16 ">
 										<div className=" flex  items-center justify-center">
 											<div>{e.name}</div>
 										</div>
@@ -234,6 +236,11 @@ export default function HomePage() {
 				</section>
 			</Fade>
 			<Fade triggerOnce>
+				<section className="">
+					<SponsorsPreview />
+				</section>
+			</Fade>
+			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<Speakers limit={5} />
 				</section>
@@ -243,7 +250,7 @@ export default function HomePage() {
 					<PreviousEditions />
 				</section>
 			</Fade> */}
-			 <Fade triggerOnce>
+			<Fade triggerOnce>
 				<section className="py-8 ">
 					<Team limit={5} />
 				</section>
@@ -254,25 +261,8 @@ export default function HomePage() {
 				</section>
 			</Fade>
 
-			{/* <Fade triggerOnce>
-				<section className="py-8 md:py-10">
-					 <SponsorsPreview /> 
-					
-						<div className="hadow-xl bbg-white rounded-2xl py-24 sm:py-10">
-							<Link
-								className="flex max-w-7xl items-center justify-center gap-3 px-6 lg:px-8"
-								to={`/partners-sponsors`}
-							>
-								<h2 className="text-center text-4xl font-bold">Our Sponsors</h2>
-								<FontAwesomeIcon icon={faExternalLink} className="h-5 w-5" />
-							</Link>
-						</div>
-					
-				</section>
-			</Fade> */}
+			
 
-
-			   
 			{false && (
 				<Fade triggerOnce>
 					<section className="py-8 md:py-28">
@@ -771,7 +761,7 @@ function PoweredBy() {
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
-						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+						className="col-span-2 mb-2 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={"https://i.imgur.com/EpXVkCB.png"}
 						alt="IeeeTunisia"
 						// width={200}
@@ -786,7 +776,7 @@ function PoweredBy() {
 						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 					>
 						<CustomImage
-							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[200px] md:w-[200px] lg:col-span-1"
+							className="col-span-2 mb-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/0JYgUki.png"}
 							alt="YpTunisia"
 							// width={200}
@@ -801,40 +791,40 @@ function PoweredBy() {
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 "
 				>
 					<CustomImage
-						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+						className="col-span-2 mb-2 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={enetcomlogo}
 						alt="enetcomLogo"
 						// width={200}
 						// height={200}
 					/>
 				</a>
-				{false && (
+				{true && (
 					<a
-						href="https://uso.rnu.tn/"
-						target="_blank"
-						rel="noreferrer"
-						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
-					>
-						<CustomImage
-							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"https://i.imgur.com/HalSgE1.png"}
-							alt="university of sousse"
-							// width={200}
-							// height={200}
-						/>
-					</a>
-				)}
-				{false && (
-					<a
-						href="https://ieeer8.org/"
+						href="https://enetcom.rnu.tn/fr"
 						target="_blank"
 						rel="noreferrer"
 						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 					>
 						<CustomImage
-							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"https://i.imgur.com/mFTrYL2.png"}
-							alt="IEEE Region 8"
+							className="col-span-2 mb-2 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+							src={"https://i.imgur.com/3ZwO2wH.png"}
+							alt="Enetcom"
+							// width={200}
+							// height={200}
+						/>
+					</a>
+				)}
+				{true && (
+					<a
+						href="https://univ-sfax.tn/"
+						target="_blank"
+						rel="noreferrer"
+						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
+					>
+						<CustomImage
+							className="col-span-2 mb-2 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px]  lg:col-span-1"
+							src={"https://i.imgur.com/qxaxKwk.png"}
+							alt="university of Sfax"
 							// width={200}
 							// height={200}
 						/>
@@ -864,43 +854,62 @@ function PoweredBy() {
 function SponsorsPreview() {
 	return (
 		<div className="mx-auto max-w-7xl px-6 lg:px-8">
-			<Link
-				className="flex max-w-7xl items-center justify-center gap-3 px-6 lg:px-8"
-				to={`/partners-sponsors#ExclusiveAcademicPartner`}
-			>
-				<h2 className="text-center text-4xl font-bold">Sponsored by</h2>
-				<FontAwesomeIcon icon={faExternalLink} className="h-5 w-5" />
-			</Link>
-			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-				<a
-					href="https://www.orangedigitalcenters.com/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
-						src={"https://i.imgur.com/FkG6VVq.png"}
-						alt="Orange"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-				<a
-					href="https://www.polytecsousse.tn/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
-						src={"https://i.imgur.com/2AKS7s7.png"}
-						alt="polytecsousse"
-						// width={200}
-						// height={200}
-					/>
-				</a>
-			</div>
+			<section className="">
+				<div>
+					<div className="mb-8 text-center text-4xl py-4 font-bold ">
+						Sponsored by
+					</div>
+					<div className="grid grid-cols-12  gap-4  md:gap-8 md:mx-8">
+						
+						<a
+							href="https://www.zen.com.tn/"
+							className="col-span-12 rounded-xl  border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 md:px-6  md:pt-6 lg:col-span-4"
+						>
+							<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">
+								<CustomImage
+									src={"https://i.imgur.com/OYpoxVJ.png"}
+									alt=""
+									className="h-40 w-full object-contain py-6 md:h-40"
+									loading="lazy"
+								/>
+							</div>
+							<div className="  text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300  ">
+								<div className=" flex  items-center justify-center">
+									<div>ZEN</div>
+								</div>
+							</div>
+						</a>
+						<a
+							href="https://nau.tn/"
+							className="col-span-12 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 md:px-6  md:pt-6 lg:col-span-4"
+						>
+							<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">
+								<CustomImage
+									src={"https://i.imgur.com/3qxvJTl.png"}
+									alt=""
+									className="h-40 w-full object-contain py-6 md:h-40"
+									loading="lazy"
+								/>
+							</div>
+							<div className=" text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300 ">
+								<div className=" flex  items-center justify-center">
+									<div>NORTH AMERICAN PRIVATE UNIVERSITY CO.</div>
+								</div>
+							</div>
+						</a>
+
+						<Link
+							to={`/partners-sponsors#sponsors`}
+							className=" col-span-12 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 lg:col-span-4"
+						>
+							<FontAwesomeIcon icon={faExternalLink} className="mb-2 h-6 w-6" />
+							<div className="font-bold">See more</div>
+						</Link>
+						
+					</div>
+				</div>
+			</section>
+			
 		</div>
 	);
 }

@@ -232,6 +232,23 @@
 		"slug": "IEEE-Collabratec",
 		"logo": { "url": "https://region8today.ieeer8.org/wp-content/uploads/sites/114/2020/01/collabratec_logo-e1602678565780.png" },
 		"website": "https://ieee-collabratec.ieee.org/"
+	},{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "ZEN ",
+		"description": "ZEN",
+		"slug": "ZEN",
+		"logo": { "url": "https://i.imgur.com/OYpoxVJ.png" },
+		"website": "https://www.zen.com.tn/"
+	},{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "NORTH AMERICAN PRIVATE UNIVERSITY CO. ",
+		"description": "NORTH AMERICAN PRIVATE UNIVERSITY CO.",
+		"slug": "NAU",
+		"logo": { "url": "https://i.imgur.com/3qxvJTl.png" },
+		"website": "https://nau.tn/"
 	}
+
 	
 ]

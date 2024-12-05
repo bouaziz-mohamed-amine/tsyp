@@ -24,17 +24,31 @@ const routes = [
 		href: "/speakers",
 	},
 	{
+		title: "Challenges",
+		href: "/challenges",
+		mobileOnly: true
+	},
+	{
+		title: "Schedule",
+		href: "/schedule",
+		mobileOnly: true
+		
+	},
+	{
 		title: "Program",
 		type: "group",
 		items: [
 			{
 				title: "Challenges",
 				href: "/challenges",
+				
 			},
 			{
 				title: "Schedule",
 				href: "/schedule",
+				
 			},
+			
 			// {
 			// 	title: "Speakers",
 			// 	href: "/speakers",
@@ -44,6 +58,7 @@ const routes = [
 			// 	href: "/venue",
 			// },
 		],
+		
 	},
 	// {
 	// 	title: "Awards",

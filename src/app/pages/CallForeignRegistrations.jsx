@@ -23,7 +23,7 @@ export default function ForeignRegistrationPage() {
 							className="inline min-w-[216px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 						>
 							<span className="flex items-center justify-center">
-								Pre Registration{" "}
+							IEEE Student Pre Registration - Tunisia Section{" "}
 								<img
 									src="/assets/tunisia.png"
 									alt=""
@@ -36,7 +36,7 @@ export default function ForeignRegistrationPage() {
 							className="inline min-w-[216px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 						>
 							<span className="flex items-center justify-center">
-							IEEE Professional's Registration{" "}
+							IEEE Professional Registration - Tunisia Section{" "}
 								<img
 									src="/assets/tunisia.png"
 									alt=""
@@ -50,7 +50,7 @@ export default function ForeignRegistrationPage() {
 							className="inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 						>
 							<span className="flex items-center justify-center">
-								International Participants{" "}
+							IEEE International Registration{" "}
 								<svg
 									class="ml-4 h-6 w-6 text-gray-600"
 									width="24"
@@ -109,7 +109,7 @@ export default function ForeignRegistrationPage() {
 								Congress Center, Yasmine Hammamet, Tunisia.
 							</h1>
 							<h1 className=" text-base font-medium dark:text-gray-300 lg:mb-3 lg:text-start  lg:font-normal">
-								The Deadline to fill this form is December 6th at 11:59PM
+								The Deadline to fill this form is December 8th at 11:59PM
 							</h1>
 							{/* <h1 className=" text-base font-medium dark:text-gray-300 lg:mb-3 lg:text-start  lg:font-normal">
 						Filling <span className="font-bold">TSYP12</span>{" "}
