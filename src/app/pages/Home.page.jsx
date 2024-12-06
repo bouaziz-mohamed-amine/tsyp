@@ -863,7 +863,7 @@ function SponsorsPreview() {
 						
 						<a
 							href="https://www.zen.com.tn/"
-							className="col-span-12 rounded-xl  border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 md:px-6  md:pt-6 lg:col-span-4"
+							className="col-span-12 rounded-xl  border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 md:px-6  md:pt-6 lg:col-span-3"
 						>
 							<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">
 								<CustomImage
@@ -881,7 +881,7 @@ function SponsorsPreview() {
 						</a>
 						<a
 							href="https://nau.tn/"
-							className="col-span-12 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 md:px-6  md:pt-6 lg:col-span-4"
+							className="col-span-12 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 md:px-6  md:pt-6 lg:col-span-3"
 						>
 							<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">
 								<CustomImage
@@ -897,10 +897,27 @@ function SponsorsPreview() {
 								</div>
 							</div>
 						</a>
-
+						<a
+							href="https://engageforchange.orange.com/fr/country/tn/programs/f3a15375-0399-4aa5-8be5-c2c513880b2f"
+							className="col-span-12 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 md:px-6  md:pt-6 lg:col-span-3"
+						>
+							<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">
+								<CustomImage
+									src={"https://i.imgur.com/zyL8iZx.png"}
+									alt=""
+									className="h-40 w-full object-contain py-6 md:h-30"
+									loading="lazy"
+								/>
+							</div>
+							<div className=" text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300 ">
+								<div className=" flex  items-center justify-center">
+									<div>Orange Digital Center Tunisie</div>
+								</div>
+							</div>
+						</a>
 						<Link
 							to={`/partners-sponsors#sponsors`}
-							className=" col-span-12 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-4 lg:col-span-4"
+							className=" col-span-12 flex flex-col items-center justify-center rounded-xl border-2 p-6 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-3"
 						>
 							<FontAwesomeIcon icon={faExternalLink} className="mb-2 h-6 w-6" />
 							<div className="font-bold">See more</div>
