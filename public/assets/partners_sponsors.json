@@ -12,6 +12,16 @@
 	{
 		"enabled": true,
 		"type": "global-ieee-partner",
+		"name": "Climate & Sustainability Task Force (CSTF)",
+		"description": "The IEEE Young Professionals Climate and Sustainability Task Force (CSTF) is a dedicated group of 25 young professionals working to empower early-career individuals in addressing challenges at the intersection of climate, sustainability, and technology. Representing a constituency of nearly 125,000 young practitioners, CSTF operates under the motto Young Professionals in Technology to Increase Global Resilience. The task force focuses on creating tools, resources, and support mechanisms to help young professionals engage in the Climate-Sustainability-Technology interface effectively. It serves as a centralized platform and network, facilitating active participation and collaboration among young professionals in this field. CSTF acts as a critical interface between IEEE’s young professionals and other organizational units within IEEE, supporting organization-wide efforts and fostering connections with external youth-driven entities, including UN processes, energy agencies, industrial organizations, and non-profit programs. By promoting engagement and collaboration across these sectors, the CSTF aims to enhance global resilience and advance sustainability through innovative technological solutions.",
+		"slug": "IEEE-CSTF",
+		"logo": { "url": "https://i.imgur.com/qMUwXYz.png" },
+		"website": "https://yp.ieee.org/climate-sustainability-task-force-cstf/",
+		"pack":"premuim +"
+		},
+	{
+		"enabled": true,
+		"type": "global-ieee-partner",
 		"name": "The IEEE Computer Society",
 		"description": "The IEEE Computer Society (IEEE CS) is the world’s largest and most respected organization dedicated to advancing the fields of computer science and engineering. As the premier professional society for computer engineers, scientists, academia, and industry professionals, IEEE CS plays a critical role in shaping the future of technology and innovation on a global scale. By fostering collaboration, dialogue, and knowledge-sharing, IEEE CS empowers its members to drive technological advancements that have a profound impact on society.<br>IEEE CS provides a wide range of resources, from conferences and publications to educational programs and committees, creating an environment where professionals at all stages of their careers can learn, grow, and contribute to the industry. Through its commitment to excellence in research and development, the Society sets the standard for education and engagement in computing, helping to guide the careers of its members and influence the future of computer science and technology.<br>For over 75 years, IEEE CS has been at the forefront of technological innovation, leading the development of new technologies and fostering the evolution of computer science. The Society's members are engaged in cutting-edge research and development, creating breakthroughs that have shaped the digital landscape. Through conferences, workshops, and professional networks, IEEE CS facilitates meaningful collaboration and knowledge exchange, ensuring that professionals from around the world can contribute to the rapid advancement of the field.<br>In addition to supporting its members, IEEE CS is committed to community outreach and the development of technologies that benefit humanity. By connecting professionals, providing leadership in key areas, and advancing technological opportunities, the IEEE Computer Society continues to be the driving force behind global advancements in computer science, setting the standard for the future of technology and its applications to better serve the world.",
 		"slug": "CS",
@@ -202,15 +212,6 @@
 	{
 		"enabled": true,
 		"type": "global-ieee-partner",
-		"name": "IEEE IES Tunisia Section Chapter ",
-		"description": "The IEEE Industrial Electronics Society (IES) Tunisia Section is dedicated to advancing industrial electronics and automation technologies in Tunisia. It promotes innovation, research, and professional development by organizing conferences, workshops, and technical events. The section serves as a platform for collaboration among students, professionals, and researchers in the field.",
-		"slug": "IES Fund",
-		"logo": { "url": "https://ies.ieee.tn/wp-content/uploads/sites/196/2023/12/for-websiet.png" },
-		"website": "https://ies.ieee.tn/?fbclid=IwY2xjawGt8hxleHRuA2FlbQIxMAABHc8hN5VYPWtmUwap0W7IHstu8wZ5yeG2uHPxxYV0e_PmmSDBBTTpqk6u0A_aem_xIQjxpg9jPynEXz1bh3zjA",
-		"pack":"premuim"
-	},{
-		"enabled": true,
-		"type": "global-ieee-partner",
 		"name": "IEEE Students  ",
 		"description": "IEEE Students is a global network of over 450,000 engineering and technology professionals, offering membership benefits, professional growth, and networking opportunities. It encourages impactful volunteering and provides resources to stay ahead in technology. The community fosters innovation, collaboration, and learning, empowering future engineers and technologists worldwide.",
 		"slug": "IEEE-Students",
@@ -232,15 +233,8 @@
 		"slug": "IEEE-Collabratec",
 		"logo": { "url": "https://region8today.ieeer8.org/wp-content/uploads/sites/114/2020/01/collabratec_logo-e1602678565780.png" },
 		"website": "https://ieee-collabratec.ieee.org/"
-	},{
-		"enabled": true,
-		"type": "tunisian-ieee-partner",
-		"name": "ZEN ",
-		"description": "ZEN",
-		"slug": "ZEN",
-		"logo": { "url": "https://i.imgur.com/OYpoxVJ.png" },
-		"website": "https://www.zen.com.tn/"
-	},{
+	},
+	{
 		"enabled": true,
 		"type": "tunisian-ieee-partner",
 		"name": "NORTH AMERICAN PRIVATE UNIVERSITY CO. ",
@@ -248,7 +242,50 @@
 		"slug": "NAU",
 		"logo": { "url": "https://i.imgur.com/3qxvJTl.png" },
 		"website": "https://nau.tn/"
+	},
+	{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "ZEN ",
+		"description": "ZEN Group is a leading name in the Tunisian fashion industry, recognized for delivering accessible, stylish, and high-quality clothing to all members of the family. Rooted in Mediterranean culture, ZEN’s collections span across categories, offering apparel for women, men, teens, children, and babies, ensuring a well-rounded range suitable for any age. The brand’s aesthetic marries Mediterranean inspiration with a touch of contemporary flair, featuring a balanced mix of trendy and classic designs that resonate with the diverse tastes of its clients. With more than 20 years of expertise, ZEN Group manages every stage of its production and distribution process, from design and manufacturing to retail. This control over the value chain, along with a focus on offering affordability without compromising quality, positions ZEN as a trusted name in accessible fashion. Operating through 32 stores across Tunisia and a dynamic online shopping platform, ZEN remains highly accessible to customers nationwide. Environmental consciousness is woven into ZEN’s ethos, with a commitment to renewable energy sources such as solar power at its headquarters and select stores. ZEN also reduces resource consumption by optimizing lighting and energy usage, reflecting its alignment with evolving environmental priorities. At the core of ZEN’s brand philosophy is a dedication to customer satisfaction. By launching new collections regularly—exceeding 5,000 models each year—ZEN keeps pace with shifting fashion trends and seasonal demands. For children, ZEN prioritizes comfortable, quality fabrics and playful designs to inspire joy and self-expression. For teens, ZEN offers bold, stylish apparel that appeals to their individual personalities, allowing them to embrace their unique sense of style. ZEN’s adult collections focus on timeless yet contemporary pieces, crafted with the same dedication to comfort and quality. In recent years, ZEN Group has extended its reach beyond Tunisia, bringing its franchise model to Libya and Algeria as an initial step toward broader African expansion. Franchise partners receive robust support in areas like product selection, store design, management, and marketing, ensuring consistency in the brand’s values across borders. This international growth reflects ZEN’s ambition to expand its presence while upholding the quality and service that customers have come to expect. Through its strong focus on family-oriented fashion, sustainable practices, and corporate social responsibility, ZEN continues to set itself apart in the Tunisian market and is well-positioned to become a prominent fashion name on the African continent.",
+		"slug": "ZEN",
+		"logo": { "url": "https://i.imgur.com/OYpoxVJ.png" },
+		"website": "https://www.zen.com.tn/"
+	},
+	{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "Orange Digital Center Tunisie",
+		"description": "Orange Digital Center (ODC) is a unique, open-access technology hub designed to empower Tunisian youth with essential digital skills, project resources, and a supportive community. Open to students, recent graduates, and aspiring entrepreneurs, ODC offers training, networking, and mentorship opportunities. Through this initiative, Orange aims to make technology accessible to all, cultivating a generation of digital talent ready to meet global demands. Innovative Training for Modern Careers ODC provides a range of training programs aligned with today’s job market needs, covering crucial fields such as Cloud Computing, Big Data, Data Science, UI/UX design, web and mobile development, artificial intelligence, and Power BI. With programs like the Summer Dev series, young people can acquire valuable skills and hands-on experience in high-demand areas, preparing them for successful careers. By emphasizing practical learning, ODC equips participants with job-ready skills that enhance their employability. Career-Enhancing Certifications Alongside training, ODC offers industry-recognized certifications, including Google Career Certificates, which provide participants with a competitive edge in the job market. These certificates validate expertise in specific fields and are highly regarded by employers, allowing participants to demonstrate their readiness for technology-driven careers. By offering certified training, ODC ensures that young people gain credentials that reflect their commitment and capability in essential skills. Opportunities for Real-World Projects and Networking ODC also hosts internships, collaborative projects, and networking events where participants can apply their skills in real-world contexts and expand their professional connections. Notable events, like the “Future of Work Africa Week,” bring together experts and innovators from various industries, offering valuable insights into global trends and opportunities. These gatherings allow young people to connect with professionals, explore new career paths, and build lasting relationships that can support their personal and professional growth. An Engaged Community of Support With a vibrant community of over 90,000 young professionals and students, and the support of 31 dedicated mentors and instructors, ODC cultivates a culture of collaboration, support, and continuous learning. This engaged environment encourages participants to share knowledge, work together, and learn from each other. Mentorship at ODC is a key aspect of its value, as mentors guide participants through challenges and help them develop confidence and expertise in their chosen fields. Orange Digital Center: Preparing Tomorrow’s Leaders More than just a training facility, Orange Digital Center is a place where young people can turn their ideas into action, gain new skills, and build a solid foundation for their careers. By fostering access to advanced digital tools and future-oriented knowledge, ODC empowers Tunisian youth to thrive in a globally connected, technology-driven world. Through this program, Orange is committed to building the next generation of leaders in technology, driving progress and innovation. Stay Updated and Join ODC To stay informed about upcoming training programs, events, and opportunities, follow Orange Digital Center on social media or sign up for the newsletter. Whether you’re looking for new skills, project experience, or a supportive tech community, ODC offers the perfect space for young talents to grow and achieve their full potential.",
+		"slug": "ORANGE",
+		"logo": { "url": "https://i.imgur.com/zyL8iZx.png" },
+		"website": "https://engageforchange.orange.com/fr/country/tn/programs/f3a15375-0399-4aa5-8be5-c2c513880b2f"
+	},
+	{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "Groupe Plastivoire",
+		"description": "Plastivoire, a subsidiary of the Plastivaloire Group (PVL), specializes in manufacturing plastic components for industries such as automotive, electronics, and household appliances. The company is renowned for its expertise in plastic injection molding, focusing on innovative and eco-friendly production techniques. By incorporating recycled materials and developing lightweight, eco-designed components, Plastivoire aims to reduce its environmental impact. As part of its customer-centric approach, Plastivoire emphasizes continuous improvement in product quality and invests in employee skill development. With production facilities in France and across international markets, the company remains competitive through advancements in material science and smart interior decorations for vehicles. Plastivoire's focus on technological progress and sustainability allows it to meet industry standards while pushing the boundaries of efficient and creative product design.",
+		"slug": "GPL",
+		"logo": { "url": "https://i.imgur.com/2t0LMoN.png" },
+		"website": "https://groupe-plastivaloire.com/"
+	},
+	{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "Olivesoft",
+		"description": "OliveSoft specializes in data and digital transformation, offering expertise in system integration, data management, business intelligence, and AI solutions across France and internationally. They design and implement custom strategies using technologies like Salesforce, Google Cloud, and Azure. Their agile and DevOps methodologies ensure efficient project delivery. Since 2018, OliveSoft has partnered with major brands like Kenzo, TotalEnergies, and Bouygues, supporting sectors such as luxury retail, telecom, and transport. Focused on innovation, excellence, and transparency, they provide tailored solutions to meet clients' needs. With offices in Paris and Sfax, they drive impactful transformations while maintaining quality and client satisfaction.",
+		"slug": "OLIVESOFT",
+		"logo": { "url": "https://i.imgur.com/AOgkDhs.png" },
+		"website": "https://olivesoft.fr/en/"
+	},
+	{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "Sopal",
+		"description": "SOPAL is a top Tunisian manufacturer specializing in sanitary, plumbing, and gas fittings. With over 40 years of experience, it offers products ranging from bathroom accessories to kitchen fittings. SOPAL prioritizes innovation, sustainability, and quality, holding certifications like ISO 9001 and ISO 14001 to ensure high standards and environmental responsibility.",
+		"slug": "Sopal",
+		"logo": { "url": "https://i.imgur.com/NGNAdOd.png" },
+		"website": "https://www.sopal.com/"
 	}
-
-	
 ]
