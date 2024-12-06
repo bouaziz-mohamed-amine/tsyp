@@ -761,29 +761,13 @@ function PoweredBy() {
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
-						className="col-span-2 mb-2 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+						className="col-span-2 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={"https://i.imgur.com/EpXVkCB.png"}
 						alt="IeeeTunisia"
 						// width={200}
 						// height={200}
 					/>
 				</a>
-				{false && (
-					<a
-						href="https://yp.ieee.tn/"
-						target="_blank"
-						rel="noreferrer"
-						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-					>
-						<CustomImage
-							className="col-span-2 mb-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"https://i.imgur.com/0JYgUki.png"}
-							alt="YpTunisia"
-							// width={200}
-							// height={200}
-						/>
-					</a>
-				)}
 				<a
 					href="https://enetcom.ieee.tn/"
 					target="_blank"
@@ -791,7 +775,7 @@ function PoweredBy() {
 					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 "
 				>
 					<CustomImage
-						className="col-span-2 mb-2 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+						className="col-span-2  h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 						src={enetcomlogo}
 						alt="enetcomLogo"
 						// width={200}
@@ -806,7 +790,7 @@ function PoweredBy() {
 						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
 					>
 						<CustomImage
-							className="col-span-2 mb-2 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+							className="col-span-2  h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"https://i.imgur.com/3ZwO2wH.png"}
 							alt="Enetcom"
 							// width={200}
@@ -819,28 +803,12 @@ function PoweredBy() {
 						href="https://univ-sfax.tn/"
 						target="_blank"
 						rel="noreferrer"
-						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
+						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 "
 					>
 						<CustomImage
-							className="col-span-2 mb-2 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px]  lg:col-span-1"
+							className="col-span-2 mb-0.5 h-[130px] w-[130px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px]  lg:col-span-1"
 							src={"https://i.imgur.com/qxaxKwk.png"}
 							alt="university of Sfax"
-							// width={200}
-							// height={200}
-						/>
-					</a>
-				)}
-				{false && (
-					<a
-						href="https://www.ieee.org/"
-						target="_blank"
-						rel="noreferrer"
-						className="overflow-hidden rounded-full p-4 shadow-md shadow-gray-200 transition hover:scale-105"
-					>
-						<CustomImage
-							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"https://i.imgur.com/mFTrYL2.png"}
-							alt="IEEE"
 							// width={200}
 							// height={200}
 						/>
