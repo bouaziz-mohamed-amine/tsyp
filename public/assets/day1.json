@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Check-in, IEEE Student Branches booths set-up",
-		"time":"09 To 13",
+		"time":"08:00 AM To 12:00 PM",
 		"children": [
 			{
 				"title": "Check-in",
@@ -19,6 +19,7 @@
 	},
 	{
 		"title": "Opening Ceremony",
+		"time":"14:00 PM To 17:30 PM",
 		"children": [
 			{
 				"title": "Opening Words",
@@ -61,6 +62,7 @@
 	{
 		"title": "Networking break and Opening of exhibition area ",
 		"location": "Hannibal Congress Room - Booths Hall",
+		"time":"17:30 PM To 19:00 PM",
 		"children": [
 			{
 				"title": "Networking break and Opening of exhibition area ",
@@ -74,6 +76,7 @@
 	{
 		"title": "Party and Social Activities",
 		"location": "Hannibal Congress Room - Booths Hall",
+		"time":"21:00 PM To 00:00 PM",
 		"children": [
 			{
 				"title": "Party, Social Activities",

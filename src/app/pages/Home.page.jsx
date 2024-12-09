@@ -178,15 +178,16 @@ export default function HomePage() {
 					<AboutCongress />
 				</section>
 			</Fade> */}
-			<Fade triggerOnce>
-				<div className="">
-					<ScheduleOverview />
-				</div>
-			</Fade>
+			
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<PoweredBy />
 				</section>
+			</Fade>
+			<Fade triggerOnce>
+				<div className="">
+					<ScheduleOverview  allDays={false}/>
+				</div>
 			</Fade>
 			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-10">
@@ -831,6 +832,7 @@ function SponsorsPreview() {
 						
 						<a
 							href="https://www.zen.com.tn/"
+							target="_blank"
 							className="col-span-12 rounded-xl  border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 md:px-6  md:pt-6 lg:col-span-3"
 						>
 							<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">
@@ -849,6 +851,7 @@ function SponsorsPreview() {
 						</a>
 						<a
 							href="https://nau.tn/"
+							target="_blank"
 							className="col-span-12 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 md:px-6  md:pt-6 lg:col-span-3"
 						>
 							<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">
@@ -867,6 +870,7 @@ function SponsorsPreview() {
 						</a>
 						<a
 							href="https://engageforchange.orange.com/fr/country/tn/programs/f3a15375-0399-4aa5-8be5-c2c513880b2f"
+							target="_blank"
 							className="col-span-12 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 md:px-6  md:pt-6 lg:col-span-3"
 						>
 							<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">

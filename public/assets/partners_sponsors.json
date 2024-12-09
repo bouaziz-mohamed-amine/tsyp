@@ -189,7 +189,17 @@
 		"type": "global-ieee-partner",
 		"logo": { "url": "https://i.imgur.com/Vc1rKpq.png" },
 		"website": "https://tec.ieee.org/"
-	},{
+	},
+	{
+		"enabled": true,
+		"type": "global-ieee-partner",
+		"name": "IEEE Electronics Packaging Society",
+		"description": "The IEEE Electronics Packaging Society (EPS) is the premier global platform for scientists and engineers driving innovations in microsystems packaging and manufacturing. Dedicated to advancing electrical and electronics engineering, EPS fosters excellence through scientific, literary, and educational initiatives.EPS facilitates knowledge sharing via technical conferences, workshops, peer-reviewed publications, and partnerships with leading organizations.",
+		"slug": "IEEE-EPS",
+		"logo": { "url": "https://i.imgur.com/QOv20BS.png" },
+		"website": "https://eps.ieee.org/"
+	},
+	{
 		"enabled": true,
 		"type": "global-ieee-partner",
 		"name": "IEEE Women in Engineering  ",
@@ -238,7 +248,7 @@
 		"enabled": true,
 		"type": "tunisian-ieee-partner",
 		"name": "NORTH AMERICAN PRIVATE UNIVERSITY CO. ",
-		"description": "NORTH AMERICAN PRIVATE UNIVERSITY CO.",
+		"description": "The Groupe NAU is a prestigious network of educational institutions in Tunisia, consisting of North American University (NAU), International Institute of Technology (IIT), International School of Business (ISB), and International School of Architecture (ISA). Each institution offers specialized programs designed to equip students with the skills and knowledge necessary to excel in today’s competitive job market. North American University (NAU) North American University (NAU) offers programs in Business Administration, Computer Science, and International Relations, providing a comprehensive education that combines theoretical knowledge with practical experience. NAU’s undergraduate and master’s programs are designed to help students develop strong analytical and problem-solving skills, with a focus on global perspectives. The university emphasizes critical thinking, communication, and leadership skills, ensuring that graduates are prepared for roles in both local and international markets. Through internships, real-world projects, and collaborations with industry leaders, NAU offers students valuable opportunities to apply classroom knowledge in practical settings. The curriculum is structured to help students become well-rounded professionals capable of adapting to a wide range of challenges in their careers. International Institute of Technology (IIT) The Institut International de Technologie (IIT) in Sfax offers a diverse academic curriculum, including preparatory cycles, architecture, bachelor's degrees in software engineering and industrial management, master's programs, and engineering cycles in civil, industrial, process, mechanical, and computer engineering. Students benefit from four types of scholarships: Excellence, Performance, Reputation, and Social Aid. IIT emphasizes an ambitious international strategy focused on sustainable development, leveraging its Mediterranean location to enhance regional and global collaborations. It actively fosters socio-economic growth, knowledge transfer, and international employability through a robust ecosystem of partnerships. Internships are integral to IIT’s curriculum, allowing students to gain practical insights, develop skills, and align their career goals with market needs. Guided by a dedicated internship service, students engage with professional environments and present their experiences in reports evaluated by a jury. This hands-on approach prepares IIT graduates for impactful careers. International School of Business (ISB) International School of Business (ISB) offers undergraduate and graduate programs focusing on Business Management, Finance, and Entrepreneurship. The curriculum is designed to develop students’ leadership, strategic thinking, and decision-making abilities, with an emphasis on global business practices. ISB students are exposed to a wide range of business disciplines, including finance, marketing, and supply chain management, which helps them build a solid foundation for a career in business. Through practical learning experiences such as internships, case studies, and business projects, students gain valuable insights into real-world business operations. ISB is dedicated to cultivating entrepreneurial thinking and fostering an understanding of ethical business practices, ensuring that its graduates are equipped to lead and innovate in the global business environment. International School of Architecture (ISA) International School of Architecture (ISA) offers a comprehensive program dedicated exclusively to the field of Architecture. The institution provides a Bachelor’s diploma in Architecture, focusing on both design and construction. The curriculum is structured to equip students with a thorough understanding of architectural principles, including urban planning, design theory, and construction technologies. ISA places a strong emphasis on sustainability and environmentally responsible design, preparing students to address the growing demand for eco-friendly and innovative architectural solutions. Students participate in design studios where they apply theoretical knowledge to real-world projects, developing both their creative and technical skills. ISA ensures that its graduates are capable of contributing to the future of architecture by emphasizing the integration of design innovation and sustainable building practices. In conclusion, Groupe NAU is committed to providing a diverse and high-quality education through its institutions. NAU prepares students for success in business and technology, IIT focuses on developing future technology professionals, ISB fosters leadership in business management, and ISA offers a specialized architecture program. Each institution ensures that students gain the practical skills and knowledge necessary to succeed in their chosen careers and contribute to global industries.",
 		"slug": "NAU",
 		"logo": { "url": "https://i.imgur.com/3qxvJTl.png" },
 		"website": "https://nau.tn/"
@@ -264,8 +274,17 @@
 	{
 		"enabled": true,
 		"type": "tunisian-ieee-partner",
-		"name": "Groupe Plastivoire",
-		"description": "Plastivoire, a subsidiary of the Plastivaloire Group (PVL), specializes in manufacturing plastic components for industries such as automotive, electronics, and household appliances. The company is renowned for its expertise in plastic injection molding, focusing on innovative and eco-friendly production techniques. By incorporating recycled materials and developing lightweight, eco-designed components, Plastivoire aims to reduce its environmental impact. As part of its customer-centric approach, Plastivoire emphasizes continuous improvement in product quality and invests in employee skill development. With production facilities in France and across international markets, the company remains competitive through advancements in material science and smart interior decorations for vehicles. Plastivoire's focus on technological progress and sustainability allows it to meet industry standards while pushing the boundaries of efficient and creative product design.",
+		"name": " Green Power Company",
+		"description" : "Founded in 2013, Green Power Company (GPC) is a leader in the installation of photovoltaic solutions in Tunisia. It provides the installation of photovoltaic panels for homes, businesses, industries, or agricultural projects. The company offers the solution best suited to your needs, allowing you to maximize the use of solar energy to produce your own electricity with the best value for money. Through its projects, GPC supports the transition towards a cleaner and more resilient energy model for a sustainable energy future in Tunisia.",
+		"slug": "GPC",
+		"logo": { "url": "https://i.imgur.com/uj2XglO.png" },
+		"website": " https://greenpower.com.tn/en/home/"
+	},
+	{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "Groupe Plastivaloire",
+		"description": "Plastivaloire, a subsidiary of the Plastivaloire Group (PVL), specializes in manufacturing plastic components for industries such as automotive, electronics, and household appliances. The company is renowned for its expertise in plastic injection molding, focusing on innovative and eco-friendly production techniques. By incorporating recycled materials and developing lightweight, eco-designed components, Plastivoire aims to reduce its environmental impact. As part of its customer-centric approach, Plastivoire emphasizes continuous improvement in product quality and invests in employee skill development. With production facilities in France and across international markets, the company remains competitive through advancements in material science and smart interior decorations for vehicles. Plastivoire's focus on technological progress and sustainability allows it to meet industry standards while pushing the boundaries of efficient and creative product design.",
 		"slug": "GPL",
 		"logo": { "url": "https://i.imgur.com/2t0LMoN.png" },
 		"website": "https://groupe-plastivaloire.com/"
@@ -287,5 +306,32 @@
 		"slug": "Sopal",
 		"logo": { "url": "https://i.imgur.com/NGNAdOd.png" },
 		"website": "https://www.sopal.com/"
+	},
+	{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "The Bridge",
+		"description": "Improve your skills on your own to prepare for a better future The Bridge, allows any student, staff or professional to acquire relevant online training to embark on the future employment opportunity with guaranteed follow-up",
+		"slug": "Bridge",
+		"logo": { "url": "https://i.imgur.com/w8eyupg.png" },
+		"website": "https://9antra.tn/"
+	},
+	{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "LBM",
+		"description": "LBM Industrie is a renowned Tunisian company specializing in the production of high-quality biscuits. With a commitment to excellence, LBM combines innovation and tradition to deliver delicious and diverse biscuit products. Their dedication to quality has made them a key player in the local food industry, satisfying customers nationwide",
+		"slug": "LBM",
+		"logo": { "url": "https://i.imgur.com/3S2ar8d.png" },
+		"website": "https://lbm-industrie.com.tn/"
+	},
+	{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "To Day",
+		"description": "",
+		"slug": "TODAY",
+		"logo": { "url": "https://i.imgur.com/nIF44M9.jpeg" },
+		"website": ""
 	}
 ]
