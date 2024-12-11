@@ -315,6 +315,22 @@
 		"slug": "Bridge",
 		"logo": { "url": "https://i.imgur.com/w8eyupg.png" },
 		"website": "https://9antra.tn/"
+	},{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "CodeQuest",
+		"description": "CodeQuest is a training center dedicated to learning and mastering the most sought-after skills in today's market. We offer tailored training programs for students, professionals, and businesses, focusing on practical, immediately applicable expertise. Our programs cover a wide range of fields, including web development, data analysis, Python programming, artificial intelligence, generative AI, and more. We also provide preparation for certifications such as Microsoft PL-300, AI-900, DP-900, DP-600, DP-500, and others.Our team of passionate experts and engineers provides personalized support for every learner, whether they aim to acquire foundational knowledge or specialize in advanced topics. Our methods combine theoretical courses, practical workshops, and real-world case studies, offering comprehensive immersion and an enriching learning experience.Choosing CodeQuest means joining a stimulating environment geared toward excellence and success. Our certification programs open promising professional opportunities while addressing the market's evolving demands. Whether you're a beginner or an expert seeking advanced training, we help you achieve your goals through innovative, high-quality programs.",
+		"slug": "CodeQuest",
+		"logo": { "url": "https://i.imgur.com/JYkGSHM.png" },
+		"website": "https://www.playcodequest.com/"
+	},{
+		"enabled": true,
+		"type": "tunisian-ieee-partner",
+		"name": "DataDoIt",
+		"description": "DataDoIt is a startup specializing in the development of AI-based solutions, with a strong focus on HealthTech, EdTech, Agritech, and Industry 4.0. We turn challenges into opportunities by providing cutting-edge technologies tailored to the needs of businesses.Our flagship solution: Bassira Bassira, our AI-powered retail analytics solution using computer vision, enables people counting and flow analysis within stores. It helps optimize space management and enhances the customer experience by providing reliable and actionable data.Industry 4.0: Towards Intelligent Automation We are actively involved in developing solutions for Industry 4.0 by integrating artificial intelligence and IoT to optimize industrial processes. Our solutions aim to improve productivity, quality, and sustainability by providing intelligent tools suited for modern production lines.Commitment to Research & Development With constant investment in R&D, we push the technological boundaries across all our areas of expertise, developing innovations that address current needs while anticipating future trends.Collaboration with the Academic World DataDoIt promotes collaboration with universities through Hackathons, Workshops, and supervision of Final Year Projects (PFE). These partnerships bridge industrial innovation and academic research, while providing students with unique opportunities to engage in real-world projects.",
+		"slug": "DataDoIt",
+		"logo": { "url": "https://i.imgur.com/vD1xvgk.png" },
+		"website": "https://datadoit.io/"
 	},
 	{
 		"enabled": true,
