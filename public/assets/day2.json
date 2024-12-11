@@ -1,7 +1,8 @@
 [
 	{
 		"title": "Parallel Sessions 1",
-		"time":"09:30 AM To 10:30 AM",
+		"timeStart":"09:30 AM",
+		"timeEnd":"10:30 AM",
 		"children": [
 			{
 				"title": "Sessions",
@@ -28,7 +29,8 @@
 	},
 	{
 		"title": "Parallel Sessions 2",
-		"time":"11:00 AM To 12:30 PM",
+		"timeStart":"11:00 AM",
+		"timeEnd":"12:30 PM",
 		"children": [
 			{
 				"title": "Sessions",
@@ -55,7 +57,8 @@
 	},
 	{
 		"title": "Parallel Sessions 3",
-		"time":"14:30 PM To 16:00 PM",
+		"timeStart":"14:30 PM",
+		"timeEnd":"16:00 PM",
 		"children": [
 			{
 				"title": "Sessions",

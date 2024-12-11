@@ -1,7 +1,8 @@
 [
 	{
 		"title": "IEEE Tunisia Section Awards",
-		"time":"09:30 AM To 10:30 AM",
+		"timeStart":"09:30 AM",
+		"timeEnd":"10:30 AM",
 		"children": [
 			{
 				"title": "IEEE Tunisia Section Awards",
@@ -13,7 +14,8 @@
 	},
 	{
 		"title": "Finalist Pitches ",
-		"time":"09:30 AM To 12:00 PM",
+		"timeStart":"09:30 AM",
+		"timeEnd":"12:00 PM",
 		"children": [
 			{
 				"title": "Finalist Pitches",
@@ -38,7 +40,8 @@
 	},
 	{
 		"title": "Closing Ceremony",
-		"time":"12:00 AM To 13:00 AM",
+		"timeStart":"12:00 AM",
+		"timeEnd":"13:00 AM",
 		"location": "Hannibal Congress Room",
 		"children": [
 			{

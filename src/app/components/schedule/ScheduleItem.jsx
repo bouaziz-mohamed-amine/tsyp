@@ -18,7 +18,7 @@ const ScheduleItem = ({activity}) => {
 															{activity.location}
 														</p> */}
 			</div>
-			{/* <div class="items-end text-base font-semibold text-gray-900 dark:text-white">
+			{/* <div class="items-end  text-xs md:text-base font-bold ml-2 text-gray-900 dark:text-white">
 				<p class="items-end">{activity.timeSlotStart}</p>
 				<p class="items-end">{activity.timeSlotEnd}</p>
 			</div> */}

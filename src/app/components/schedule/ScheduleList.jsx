@@ -42,7 +42,7 @@ export function ScheduleOverview({ allDays }) {
 						setDay2([...response]);
 					})
 					.catch((err) => console.error(err));
-				await fetch("/assets/day2.json")
+				await fetch("/assets/day3.json")
 					.then((response) => response.json())
 					.then((response) => {
 						setDay3([...response]);
@@ -79,11 +79,11 @@ export function ScheduleOverview({ allDays }) {
 	return (
 		<section>
 			<div className="my-4 flex justify-center gap-2 md:my-8">
-				<div className="text-4xl font-bold">Schedule Overview</div>
+				<div className="text-2xl font-bold md:text-4xl">Schedule Overview</div>
 			</div>
 			{/* descktop  */}
 			<div className="">
-				<div class="mb-4 md:mb-8 flex justify-center">
+				<div class="mb-4 flex justify-center md:mb-8">
 					<a
 						onClick={() => scrollToElement(1)}
 						aria-current="page"
@@ -94,37 +94,37 @@ export function ScheduleOverview({ allDays }) {
 					<a
 						onClick={() => scrollToElement(1)}
 						aria-current="page"
-						class="text-sm block flex cursor-pointer justify-center rounded-l-lg border border-gray-200 px-2 py-2 py-1 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+						class="block flex cursor-pointer justify-center rounded-l-lg border border-gray-200 px-2 py-2 py-1 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
 					>
 						Day One
 					</a>
 					<a
 						onClick={() => scrollToElement(2)}
-						className="text-md hidden cursor-pointer border-t-2 border-b-2 border-r-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+						className="text-md hidden cursor-pointer border-t-2 border-b-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 					>
 						Monday 23 December 2024
 					</a>
 					<a
 						onClick={() => scrollToElement(2)}
 						aria-current="page"
-						class="text-sm block flex cursor-pointer justify-center border-t border-b border-gray-200 px-2 py-2  py-1 font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+						class="block flex cursor-pointer justify-center border-t border-b border-gray-200 px-2 py-2 py-1  text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
 					>
 						Day Two
 					</a>
 					<a
 						onClick={() => scrollToElement(3)}
-						className="text-md hidden cursor-pointer border-t-2 border-b-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+						className="text-md hidden cursor-pointer  rounded-r-lg border-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 					>
 						Tuesday 24 December 2024
 					</a>
 					<a
 						onClick={() => scrollToElement(3)}
 						aria-current="page"
-						class="text-sm block flex cursor-pointer justify-center border-t border-b border-l border-gray-200 px-2 py-2 py-1  font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden md:px-6"
+						class="block flex cursor-pointer justify-center rounded-r-lg border border-gray-200 px-2 py-2 py-1 text-sm  font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden md:px-6"
 					>
 						Day Three
 					</a>
-					<a
+					{/* <a
 						onClick={() => {
 							if (allSlot) {
 								setDay(1);
@@ -155,10 +155,10 @@ export function ScheduleOverview({ allDays }) {
 						) : (
 							<img src="/assets/filter-results-6566.svg" width={20} />
 						)}
-					</a>
+					</a> */}
 				</div>
 				{/* list view  */}
-				{!allSlot && (
+				{false && !allSlot && (
 					<div className="flex">
 						<div className="m-2 basis-1/3">
 							{program.map((slot, index) => (
@@ -210,83 +210,23 @@ export function ScheduleOverview({ allDays }) {
 				{allSlot && allDays == true && (
 					<div>
 						<div className="my-4 flex justify-center gap-2 md:my-8">
-							<div id="day-1" className="text-2xl md:text-4xl font-bold">
+							<div id="day-1" className="text-2xl font-bold md:text-4xl">
 								Day One
 							</div>
 						</div>
-						<ul role="list">
-							{day1.map((slot) => (
-								<div>
-									<div className="my-3 flex text-lg font-bold">
-										<p className="ml-2 mr-4">{slot.time}</p>
-										<p>{slot.title}</p>
-									</div>
-									<div className="block md:hidden ml-2 my-3 text-md font-bold">
-									<p>{slot.title}</p>
-									<p className="">{slot.time}</p>
-									</div>
-									<div className="grid grid-cols-12 gap-4">
-										{slot.children.map((activity) => (
-											<li class="col-span-12 md:col-span-4 rounded-lg border-2 border-gray-200 p-3">
-												<ScheduleItem activity={activity} />
-											</li>
-										))}
-									</div>
-								</div>
-							))}
-						</ul>
+						<SLotInfo day={day1}/>
 						<div className="my-4 flex justify-center gap-2 md:my-8">
-							<div id="day-2" className="text-2xl md:text-4xl font-bold">
+							<div id="day-2" className="text-2xl font-bold md:text-4xl">
 								Day Two
 							</div>
 						</div>
-						<ul role="list">
-							{day2.map((slot) => (
-								<div>
-									<div className="hidden md:block my-3 flex text-lg font-bold">
-										<p className="ml-2 mr-4">{slot.time}</p>
-										<p>{slot.title}</p>
-									</div>
-									<div className="block md:hidden ml-2 my-3 text-md font-bold">
-									<p>{slot.title}</p>
-										<p className="">{slot.time}</p>
-									</div>
-									<div className="grid grid-cols-12 gap-4">
-										{slot.children.map((activity) => (
-											<li class="col-span-12 md:col-span-4 rounded-lg border-2 border-gray-200 p-3">
-												<ScheduleItem activity={activity} />
-											</li>
-										))}
-									</div>
-								</div>
-							))}
-						</ul>
+						<SLotInfo day={day2}/>
 						<div className="my-4 flex justify-center gap-2 md:my-8">
-							<div id="day-3" className="text-2xl md:text-4xl font-bold">
+							<div id="day-3" className="text-2xl font-bold md:text-4xl">
 								Day Three
 							</div>
 						</div>
-						<ul role="list">
-							{day3.map((slot) => (
-								<div>
-									<div className="hidden md:block my-3 flex text-lg font-bold">
-										<p className="ml-2 mr-4">{slot.time}</p>
-										<p>{slot.title}</p>
-									</div>
-									<div className="block md:hidden ml-2 my-3 text-md font-bold">
-									<p>{slot.title}</p>
-										<p className="">{slot.time}</p>
-									</div>
-									<div className="grid grid-cols-12 gap-4">
-										{slot.children.map((activity) => (
-											<li class="col-span-12 md:col-span-4 rounded-lg border-2 border-gray-200 p-3">
-												<ScheduleItem activity={activity} />
-											</li>
-										))}
-									</div>
-								</div>
-							))}
-						</ul>
+						<SLotInfo day={day3}/>
 					</div>
 				)}
 				{allSlot && allDays == false && (
@@ -299,7 +239,7 @@ export function ScheduleOverview({ allDays }) {
 								</div>
 								<div className="grid grid-cols-12 gap-4">
 									{slot.children.map((activity) => (
-										<li class="col-span-12 md:col-span-4 rounded-lg border-2 border-gray-200 p-3">
+										<li class="col-span-12 rounded-lg border-2 border-gray-200 md:col-span-4">
 											<ScheduleItem activity={activity} />
 										</li>
 									))}
@@ -310,86 +250,121 @@ export function ScheduleOverview({ allDays }) {
 				)}
 			</div>
 			{/* mobile */}
-			{ false && 
-			<div className="">
-				<div className="flex items-center justify-between">
-					{program[slotIndex] && (
-						<p class="mr-2 ml-2 truncate  rounded-l-lg py-4 text-xs font-bold text-gray-900 dark:text-white">
-							{program[slotIndex].title}
-						</p>
-					)}
-					<div className="mx-2 flex">
-						<div className="mr-2">
-							<button
-								type="button"
-								class="inline-flex rotate-180 items-center rounded-lg border border-gray-300  py-2 px-1 text-center text-sm font-medium text-gray-400 dark:bg-gray-800"
-								onClick={() => {
-									let pre = slotIndex - 1;
-									if (program[pre]) setSlotIndex(pre);
-								}}
-							>
-								<svg
-									class="h-5 w-6"
-									aria-hidden="true"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 14 10"
+			{false && (
+				<div className="">
+					<div className="flex items-center justify-between">
+						{program[slotIndex] && (
+							<p class="mr-2 ml-2 truncate  rounded-l-lg py-4 text-xs font-bold text-gray-900 dark:text-white">
+								{program[slotIndex].title}
+							</p>
+						)}
+						<div className="mx-2 flex">
+							<div className="mr-2">
+								<button
+									type="button"
+									class="inline-flex rotate-180 items-center rounded-lg border border-gray-300  py-2 px-1 text-center text-sm font-medium text-gray-400 dark:bg-gray-800"
+									onClick={() => {
+										let pre = slotIndex - 1;
+										if (program[pre]) setSlotIndex(pre);
+									}}
 								>
-									<path
-										stroke="currentColor"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M1 5h12m0 0L9 1m4 4L9 9"
-									/>
-								</svg>
-							</button>
+									<svg
+										class="h-5 w-6"
+										aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 14 10"
+									>
+										<path
+											stroke="currentColor"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M1 5h12m0 0L9 1m4 4L9 9"
+										/>
+									</svg>
+								</button>
+							</div>
+							<div className="mr-2">
+								<button
+									type="button"
+									class=" inline-flex items-center rounded-lg border border-gray-300  py-2 px-1 text-center text-sm font-medium text-gray-400 dark:bg-gray-800"
+									onClick={() => {
+										let next = slotIndex + 1;
+										if (program[next]) setSlotIndex(next);
+									}}
+								>
+									<svg
+										class="h-5 w-6"
+										aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 14 10"
+									>
+										<path
+											stroke="currentColor"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M1 5h12m0 0L9 1m4 4L9 9"
+										/>
+									</svg>
+								</button>
+							</div>
 						</div>
-						<div className="mr-2">
-							<button
-								type="button"
-								class=" inline-flex items-center rounded-lg border border-gray-300  py-2 px-1 text-center text-sm font-medium text-gray-400 dark:bg-gray-800"
-								onClick={() => {
-									let next = slotIndex + 1;
-									if (program[next]) setSlotIndex(next);
-								}}
+					</div>
+					<div class="rounded-lg border border-gray-200 shadow ">
+						<div class="flow-root">
+							<ul
+								role="list"
+								class="max-w-5 divide-y divide-gray-200 dark:divide-gray-700"
 							>
-								<svg
-									class="h-5 w-6"
-									aria-hidden="true"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 14 10"
-								>
-									<path
-										stroke="currentColor"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M1 5h12m0 0L9 1m4 4L9 9"
-									/>
-								</svg>
-							</button>
+								{program[slotIndex] &&
+									renderActivities().map((activity) => (
+										<li class="p-1">
+											<ScheduleItem activity={activity} />
+										</li>
+									))}
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="rounded-lg border border-gray-200 shadow ">
-					<div class="flow-root">
-						<ul
-							role="list"
-							class="max-w-5 divide-y divide-gray-200 dark:divide-gray-700"
-						>
-							{program[slotIndex] &&
-								renderActivities().map((activity) => (
-									<li class="p-1">
-										<ScheduleItem activity={activity} />
-									</li>
-								))}
-						</ul>
-					</div>
-				</div>
-			</div>
-			}
+			)}
 		</section>
+	);
+}
+
+export  function SLotInfo({ day }) {
+	return (
+		<ul role="list">
+							{day.map((slot) => (
+								<div>
+									<div className="hidden md:block">
+										<div className="my-3 flex w-2/4  justify-between text-lg font-bold">
+											<p>{slot.title}</p>
+											<p className="ml-2 mr-4">
+												{slot.timeStart} To {slot.timeEnd}
+											</p>
+										</div>
+									</div>
+									<div className="block md:hidden">
+									<div className="my-3 flex items-center justify-between text-sm font-bold">
+										<p>{slot.title}</p>
+										<div>
+										<p className="text-xs">{slot.timeStart}</p>
+										<p className="text-xs">{slot.timeEnd}</p>
+										</div>
+									</div>
+									</div>
+									<div className="grid grid-cols-12 gap-4">
+										{slot.children.map((activity) => (
+											<li class="col-span-12 rounded-lg border-2 border-gray-200 p-2 md:p-3 md:col-span-4">
+												<ScheduleItem activity={activity} />
+											</li>
+										))}
+									</div>
+								</div>
+							))}
+						</ul>
 	);
 }
