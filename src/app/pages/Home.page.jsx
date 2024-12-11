@@ -184,11 +184,11 @@ export default function HomePage() {
 					<PoweredBy />
 				</section>
 			</Fade>
-			<Fade triggerOnce>
+			{/* <Fade triggerOnce>
 				<div className="">
 					<ScheduleOverview  allDays={false}/>
 				</div>
-			</Fade>
+			</Fade> */}
 			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<IEEEPartners />
@@ -323,7 +323,7 @@ export function AboutESSTHSSB(params) {
 					Awards across various fields. This success is a testament to the
 					dedication and commitment exhibited by each of our members.
 				</h1>
-				<div>
+				<div className="flex justify-center md:justify-start">
 					<Link
 						// type="button"
 						to={"https://enetcom.ieee.tn"}
@@ -366,7 +366,7 @@ export function AboutTunisiaSection(params) {
 					over 43 Student Branches located across various engineering schools,
 					faculties, and universities.
 				</h1>
-				<div>
+				<div  className="flex justify-center md:justify-start">
 					<Link
 						// type="button"
 						to={"https://ieee.tn/"}
@@ -822,7 +822,7 @@ function PoweredBy() {
 
 function SponsorsPreview() {
 	return (
-		<div className="mx-auto max-w-7xl px-6 lg:px-8">
+		<div className="mx-auto max-w-7xl md:px-8">
 			<section className="">
 				<div>
 					<div className="mb-8 text-center text-4xl py-4 font-bold ">
