@@ -11,9 +11,11 @@ export default function Speakers({ limit = 0 }) {
 
 	useEffect(() => {
 		const getData = async () => {
-			fetch("/assets/speakers1.json")
+			fetch("/assets/all_speakers.json")
 				.then((response) => response.json())
 				.then((response) => {
+					console.log(response);
+					
 					setSpeakersData(response);
 				})
 				.catch((err) => console.error(err));
@@ -25,33 +27,37 @@ export default function Speakers({ limit = 0 }) {
 		<div>
 			<div className="mb-12 text-4xl text-center font-bold">Speakers</div>
 			<div className="grid grid-cols-12 gap-4 md:gap-4">
-				{speakersData
-					?.filter((e) => e?.enabled)
-					// ?.slice(0, limit)
-					?.map((speaker, idx) => {
+				{speakersData.map((speaker, idx) => {
 						if (idx >= limit && limit !== 0) return null;
-
 						return (
-							<span
-								key={speaker.name}
+							<Link
+								key={speaker.Full_Name}
 								to={`/speakers/${speaker.slug}`}
 								className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2"
 							>
+								{speaker.Photo == ""
+								?<CustomImage
+								alt=""
+								className="mb-2 aspect-[12/16] w-full sm:aspect-[12/16]"
+								loading="lazy"
+							/>
+								:
 								<CustomImage
-									src={speaker.imageSmall.url}
+									src={speaker.Photo}
 									alt=""
 									className="mb-2 aspect-[12/16] w-full rounded-lg object-cover sm:aspect-[12/16]"
 									loading="lazy"
 								/>
-								<div className="font-bold">{speaker.name}</div>
+							}
+								<div className="font-bold">{speaker.Full_Name}</div>
 								{/* <div className="mb-2 text-sm text-gray-600 dark:text-gray-400">
 								@{speaker.twitterUsername}
 							</div> */}
-								<div className="text-sm line-clamp-2">{speaker.title}</div>
+								<div className="text-sm line-clamp-2">{speaker.Position}</div>
 								{/* <div className="text-sm">
 								{speaker.title}, {speaker.company.name}
 							</div> */}
-							</span>
+							</Link>
 						);
 					})}
 

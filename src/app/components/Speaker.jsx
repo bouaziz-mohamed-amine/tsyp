@@ -18,7 +18,7 @@ export default function Speaker() {
 
 	useEffect(() => {
 		const getData = async () => {
-			fetch("/assets/speakers.json")
+			fetch("/assets/all_speakers.json")
 				.then((response) => response.json())
 				.then((response) => {
 					setSpeakersData(response);
@@ -43,7 +43,7 @@ export default function Speaker() {
 			<div className="grid grid-cols-12 gap-y-8 md:gap-x-8">
 				<div className="col-span-full md:col-span-4">
 					<CustomImage
-						src={currentSpeaker.imageSmall.url}
+						src={currentSpeaker.Photo}
 						alt=""
 						className="mx-auto h-60 rounded-lg object-cover"
 					/>
@@ -51,41 +51,24 @@ export default function Speaker() {
 				<div className="col-span-full flex flex-col gap-4 md:col-span-8">
 					<div className="">
 						<div className="flex justify-between">
-							<div className="text-2xl font-bold">{currentSpeaker.name}</div>
-							{false && (
-								<div className="flex gap-4 text-lg text-gray-600">
-									<button>
-										<FontAwesomeIcon
-											icon={faTwitter}
-											className="hover: transition hover:scale-125 active:scale-110 hover:dark:text-gray-400"
-										/>
-									</button>
-									<button>
-										<FontAwesomeIcon
-											icon={faGithub}
-											className="hover: transition hover:scale-125 active:scale-110 hover:dark:text-gray-400"
-										/>
-									</button>
-								</div>
-							)}
+							<div className="text-2xl font-bold">{currentSpeaker.Full_Name}</div>
 						</div>
-						{false && (
-							<div className="text-gray-600 dark:text-gray-400">
-								@{currentSpeaker.twitterUsername}
-							</div>
-						)}
-						<div>{currentSpeaker.title}</div>
-						{/* <div>
-							{currentSpeaker.title} at {currentSpeaker.company.name}
-						</div> */}
+						<div>{currentSpeaker.Position}</div>
 					</div>
 					<div>
 						<div className="font-semibold text-gray-600 dark:text-gray-400">
 							About
 						</div>
 						<p>
-							{currentSpeaker.bio ||
-								"Lydia Hallie is a Staff Developer Advocate who primarily works with JavaScript, React, Node, GraphQL, and serverless technologies. She also spends her time mentoring and doing in-person training sessions."}
+							{currentSpeaker.Bio ||
+								""}
+						</p>
+						<div className="font-semibold text-gray-600 dark:text-gray-400">
+							Email
+						</div>
+						<p>
+							{currentSpeaker.IEEE_Email ||
+								""}
 						</p>
 					</div>
 					<div>
