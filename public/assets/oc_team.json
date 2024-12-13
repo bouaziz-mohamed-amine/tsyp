@@ -137,6 +137,17 @@
 	},
 	{
 		"active": true,
+		"name": "Ramez Hadhri      ",
+		"title": "Webmaster       ",
+		"image": { "url": "https://i.imgur.com/OTwIyPf.png" },
+		"linkdin":{"url":"https://www.linkedin.com/in/ramez-hadhri/"},
+		"mail":"ramezhadhri@ieee.org "
+		
+	
+	},
+
+	{
+		"active": true,
 		"name": "Yasser Khemakhem      ",
 		"title": "Challenges manager       ",
 		"image": { "url": "https://i.imgur.com/aGzyQsh.png" },
@@ -152,6 +163,16 @@
 		"image": { "url": "https://i.imgur.com/dtq7WIi.png" },
 		"linkdin":{"url":"https://www.linkedin.com/in/karim-mednini/"},
 		"mail":"medkarim.mednini@ieee.org  "
+		
+	
+	},
+	{
+		"active": true,
+		"name": "Omar Marzouk      ",
+		"title": "ODC manager       ",
+		"image": { "url": "https://i.imgur.com/A0b7Lpl.png" },
+		"linkdin":{"url":"https://www.linkedin.com/in/omar-marzouk3"},
+		"mail":"marzouk.omar@ieee.org  "
 		
 	
 	}

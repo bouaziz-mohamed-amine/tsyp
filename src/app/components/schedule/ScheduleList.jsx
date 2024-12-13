@@ -85,40 +85,40 @@ export function ScheduleOverview({ allDays }) {
 				<a
 					onClick={() => scrollToElement(1)}
 					aria-current="page"
-					className="text-md hidden cursor-pointer rounded-l-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+					className="text-md hidden cursor-pointer rounded-l-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 				>
 					Sunday 22 December 2024
 				</a>
 				<a
 					onClick={() => scrollToElement(1)}
 					aria-current="page"
-					class="block flex cursor-pointer justify-center rounded-l-lg border border-gray-200 dark:border-gray-400 px-2 py-2 py-1 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+					class="block flex cursor-pointer justify-center rounded-l-lg border border-gray-200 dark:border-gray-400 px-2 py-2 py-1 text-sm font-medium text-gray-900 hover:bg-gray-200 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
 				>
 					Day One
 				</a>
 				<a
 					onClick={() => scrollToElement(2)}
-					className="text-md hidden cursor-pointer border-t-2 border-b-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+					className="text-md hidden cursor-pointer border-t-2 border-b-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 				>
 					Monday 23 December 2024
 				</a>
 				<a
 					onClick={() => scrollToElement(2)}
 					aria-current="page"
-					class="block flex cursor-pointer justify-center border-t border-b border-gray-200 dark:border-gray-400 px-2 py-2 py-1  text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+					class="block flex cursor-pointer justify-center border-t border-b border-gray-200 dark:border-gray-400 px-2 py-2 py-1  text-sm font-medium text-gray-900 hover:bg-gray-200 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
 				>
 					Day Two
 				</a>
 				<a
 					onClick={() => scrollToElement(3)}
-					className="text-md hidden cursor-pointer  rounded-r-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+					className="text-md hidden cursor-pointer  rounded-r-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 				>
 					Tuesday 24 December 2024
 				</a>
 				<a
 					onClick={() => scrollToElement(3)}
 					aria-current="page"
-					class="block flex cursor-pointer justify-center rounded-r-lg border border-gray-200 dark:border-gray-400 px-2 py-2 py-1 text-sm  font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden md:px-6"
+					class="block flex cursor-pointer justify-center rounded-r-lg border border-gray-200 dark:border-gray-400 px-2 py-2 py-1 text-sm  font-medium text-gray-900 hover:bg-gray-200 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden md:px-6"
 				>
 					Day Three
 				</a>
@@ -130,7 +130,7 @@ export function ScheduleOverview({ allDays }) {
 							}
 							setallSlot(!allSlot);
 						}}
-						className="text-md hidden cursor-pointer rounded-r-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+						className="text-md hidden cursor-pointer rounded-r-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 					>
 						{allSlot ? (
 							<img src="/assets/filter-6535.svg" width={25} />
@@ -146,7 +146,7 @@ export function ScheduleOverview({ allDays }) {
 							}
 							setallSlot(!allSlot);
 						}}
-						className="text-md block cursor-pointer rounded-r-lg border border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+						className="text-md block cursor-pointer rounded-r-lg border border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
 					>
 						{allSlot ? (
 							<img src="/assets/filter-6535.svg" width={20} />
@@ -155,6 +155,7 @@ export function ScheduleOverview({ allDays }) {
 						)}
 					</a> */}
 			</div>
+			<div className="hidden md:block">
 			<div className=" my-16 ">
 				<FullDate text={"Sunday 22 December 2024"} index={1} />
 				{day1.map((slot) => (
@@ -183,6 +184,7 @@ export function ScheduleOverview({ allDays }) {
 						<SlotAllActivities slot={slot} />
 					</div>
 				))}
+			</div>
 			</div>
 			<div className="block md:hidden">
 				{/* card view  */}
@@ -261,7 +263,7 @@ export function SlotAllActivities({ slot }) {
 	return (
 		<div className="col-span-10">
 			{slot.location && slot.location!= "-" && (
-				<p className="border-b-2 border-r-2 bg-gray-100 border-gray-200 dark:border-gray-400 dark:bg-transparent py-1 text-center text-base font-medium">
+				<p className="border-b-2 border-r-2 bg-gray-200 border-gray-200 dark:text-gray-400 dark:border-gray-400 dark:bg-transparent py-1 text-center text-base font-medium">
 					{slot.location}
 				</p>
 			)}
@@ -284,11 +286,11 @@ export function SlotActivity({ activity, location, slotchildren }) {
 				: 6} border-r-2 border-r-2 border-gray-200 dark:border-gray-400 text-center`}
 		>
 			{ !location && 
-				<p className="border-b-2 bg-gray-100 border-gray-200 dark:border-gray-400 dark:bg-transparent py-1 text-base font-medium">
+				<p className="border-b-2 bg-gray-200 border-gray-200 dark:border-gray-400 dark:text-gray-400 dark:bg-transparent py-1 text-base font-medium">
 				{activity.location}
 			</p>
 			}
-			<p className="border-b-2 py-2 border-gray-200 dark:border-gray-400 text-base font-bold ">{activity.title}</p>
+			<p className="border-b-2 py-2 border-gray-200 dark:text-gray-300 dark:border-gray-400 text-base font-bold ">{activity.title}</p>
 		</div>
 	);
 }
