@@ -1,76 +1,77 @@
 [
 	{
 		"title": "Check-in and Booths set-up",
-		"timeStart":"08:00 AM",
-		"timeEnd":"12:00 PM",
+		"timeStart":"08:00",
+		"timeEnd":"12:00",
 		"children": [
 			{
-				"title": "Check-in",
-				"timeSlotStart": "08:00 AM",
-				"timeSlotEnd": "12:00 AM",
+				"title": "Check In",
+				"timeSlotStart": "08:00 ",
+				"timeSlotEnd": "12:00 ",
 				"location": "Medina Hall “Espace Jardin”"
 			},
 			{
 				"title": "Booths set-up",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "12:00 AM",
+				"timeSlotStart": "09:00 ",
+				"timeSlotEnd": "12:00 ",
 				"location": "Expo Hall 3"
 			}
 		]
 	},
 	{
 		"title": "Opening Ceremony",
-		"timeStart":"14:00 PM",
-		"timeEnd":"17:30 PM",
+		"timeStart":"14:00",
+		"timeEnd":"17:30",
+		"location": "Hannibal Congress Room",
 		"children": [
 			{
 				"title": "Opening Words",
 				"location": "Hannibal Congress Room",
-				"timeSlotStart": "14:00 PM",
-				"timeSlotEnd": "14:50 PM"
+				"timeSlotStart": "14:00 ",
+				"timeSlotEnd": "14:50 "
 			},
 			{
 				"title": "IEEE Word",
-				"timeSlotStart": "14:50 PM",
-				"timeSlotEnd": "15:20 PM",
+				"timeSlotStart": "14:50 ",
+				"timeSlotEnd": "15:20 ",
 				"location": "Hannibal Congress Room"
 			},
 			{
 				"title": "IEEE Leaders Perceptions Panel",
-				"timeSlotStart": "15:20 PM",
-				"timeSlotEnd": "15:50 PM",
+				"timeSlotStart": "15:20 ",
+				"timeSlotEnd": "15:50 ",
 				"location": "Hannibal Congress Room"
 			},
 			{
 				"title": "Presentation of Sponsors",
-				"timeSlotStart": "15:50 PM",
-				"timeSlotEnd": "16:20 PM",
+				"timeSlotStart": "15:50 ",
+				"timeSlotEnd": "16:20 ",
 				"location": "Hannibal Congress Room"
 			},
 			{
 				"title": "Benefits of joining IEEE units",
-				"timeSlotStart": "16:20 PM",
-				"timeSlotEnd": "17:05 PM",
+				"timeSlotStart": "16:20 ",
+				"timeSlotEnd": "17:05 ",
 				"location": "Hannibal Congress Room"
 			},
 			{
 				"title": "Unlocking Opportunities",
-				"timeSlotStart": "17:05 PM",
-				"timeSlotEnd": "17:15 PM",
+				"timeSlotStart": "17:05 ",
+				"timeSlotEnd": "17:15 ",
 				"location": "Hannibal Congress Room"
 			}
 		]
 	},
 	{
 		"title": "Networking break and Opening of exhibition area ",
-		"location": "Hannibal Congress Room - Booths Hall",
-		"timeStart":"17:30 PM",
-		"timeEnd":"19:00 PM",
+		"location": "Expo Hall 3",
+		"timeStart":"17:30",
+		"timeEnd":"19:00",
 		"children": [
 			{
 				"title": "Networking break and Opening of exhibition area ",
-				"timeSlotStart": "17:30 PM",
-				"timeSlotEnd": "19:00 PM",
+				"timeSlotStart": "17:30 ",
+				"timeSlotEnd": "19:00 ",
 				"location": "Expo Hall 3"
 			}
 			
@@ -79,19 +80,19 @@
 	{
 		"title": "Party and Social Activities",
 		"location": "Hannibal Congress Room - Booths Hall",
-		"timeStart":"21:00 PM",
-		"timeEnd":"00:00 PM",
+		"timeStart":"21:00",
+		"timeEnd":"00:00",
 		"children": [
 			{
 				"title": "Party, Social Activities",
-				"timeSlotStart": "21:00 PM",
-				"timeSlotEnd": "00:00 PM",
+				"timeSlotStart": "21:00 ",
+				"timeSlotEnd": "00:00 ",
 				"location": "Hannibal Congress Room - Booths Hall"
 			},
 			{
 				"title": "Surprise Challenge Announcement",
-				"timeSlotStart": "22:00 PM",
-				"timeSlotEnd": "00:00 AM",
+				"timeSlotStart": "22:00 ",
+				"timeSlotEnd": "00:00 ",
 				"location": "Hannibal Congress Room - Booths Hall"
 			}
 		]

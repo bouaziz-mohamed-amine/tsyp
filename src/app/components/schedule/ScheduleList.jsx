@@ -81,50 +81,48 @@ export function ScheduleOverview({ allDays }) {
 			<div className="my-4 flex justify-center gap-2 md:my-8">
 				<div className="text-2xl font-bold md:text-4xl">Schedule Overview</div>
 			</div>
-			{/* descktop  */}
-			<div className="">
-				<div class="mb-4 flex justify-center md:mb-8">
-					<a
-						onClick={() => scrollToElement(1)}
-						aria-current="page"
-						className="text-md hidden cursor-pointer rounded-l-lg border-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
-					>
-						Sunday 22 December 2024
-					</a>
-					<a
-						onClick={() => scrollToElement(1)}
-						aria-current="page"
-						class="block flex cursor-pointer justify-center rounded-l-lg border border-gray-200 px-2 py-2 py-1 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
-					>
-						Day One
-					</a>
-					<a
-						onClick={() => scrollToElement(2)}
-						className="text-md hidden cursor-pointer border-t-2 border-b-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
-					>
-						Monday 23 December 2024
-					</a>
-					<a
-						onClick={() => scrollToElement(2)}
-						aria-current="page"
-						class="block flex cursor-pointer justify-center border-t border-b border-gray-200 px-2 py-2 py-1  text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
-					>
-						Day Two
-					</a>
-					<a
-						onClick={() => scrollToElement(3)}
-						className="text-md hidden cursor-pointer  rounded-r-lg border-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
-					>
-						Tuesday 24 December 2024
-					</a>
-					<a
-						onClick={() => scrollToElement(3)}
-						aria-current="page"
-						class="block flex cursor-pointer justify-center rounded-r-lg border border-gray-200 px-2 py-2 py-1 text-sm  font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden md:px-6"
-					>
-						Day Three
-					</a>
-					{/* <a
+			<div class="mb-4 flex justify-center md:mb-8">
+				<a
+					onClick={() => scrollToElement(1)}
+					aria-current="page"
+					className="text-md hidden cursor-pointer rounded-l-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+				>
+					Sunday 22 December 2024
+				</a>
+				<a
+					onClick={() => scrollToElement(1)}
+					aria-current="page"
+					class="block flex cursor-pointer justify-center rounded-l-lg border border-gray-200 dark:border-gray-400 px-2 py-2 py-1 text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+				>
+					Day One
+				</a>
+				<a
+					onClick={() => scrollToElement(2)}
+					className="text-md hidden cursor-pointer border-t-2 border-b-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+				>
+					Monday 23 December 2024
+				</a>
+				<a
+					onClick={() => scrollToElement(2)}
+					aria-current="page"
+					class="block flex cursor-pointer justify-center border-t border-b border-gray-200 dark:border-gray-400 px-2 py-2 py-1  text-sm font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+				>
+					Day Two
+				</a>
+				<a
+					onClick={() => scrollToElement(3)}
+					className="text-md hidden cursor-pointer  rounded-r-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+				>
+					Tuesday 24 December 2024
+				</a>
+				<a
+					onClick={() => scrollToElement(3)}
+					aria-current="page"
+					class="block flex cursor-pointer justify-center rounded-r-lg border border-gray-200 dark:border-gray-400 px-2 py-2 py-1 text-sm  font-medium text-gray-900 hover:bg-gray-100 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden md:px-6"
+				>
+					Day Three
+				</a>
+				{/* <a
 						onClick={() => {
 							if (allSlot) {
 								setDay(1);
@@ -132,7 +130,7 @@ export function ScheduleOverview({ allDays }) {
 							}
 							setallSlot(!allSlot);
 						}}
-						className="text-md hidden cursor-pointer rounded-r-lg border-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+						className="text-md hidden cursor-pointer rounded-r-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 					>
 						{allSlot ? (
 							<img src="/assets/filter-6535.svg" width={25} />
@@ -148,7 +146,7 @@ export function ScheduleOverview({ allDays }) {
 							}
 							setallSlot(!allSlot);
 						}}
-						className="text-md block cursor-pointer rounded-r-lg border border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+						className="text-md block cursor-pointer rounded-r-lg border border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
 					>
 						{allSlot ? (
 							<img src="/assets/filter-6535.svg" width={20} />
@@ -156,80 +154,73 @@ export function ScheduleOverview({ allDays }) {
 							<img src="/assets/filter-results-6566.svg" width={20} />
 						)}
 					</a> */}
-				</div>
-				{/* list view  */}
-				{false && !allSlot && (
-					<div className="flex">
-						<div className="m-2 basis-1/3">
-							{program.map((slot, index) => (
-								<div>
-									<div
-										onClick={() => setProgramSlot(index)}
-										className="text-md cursor-pointer rounded-lg border border-gray-200 px-6 py-2 text-center font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500"
-									>
-										{slot.title}
-									</div>
-									<div>
-										{slot.subSlot &&
-											index == slotIndex &&
-											slot.subSlot.map((sub) => (
-												<div
-													onClick={() => {
-														setsubSlotKey(sub.key);
-													}}
-												>
-													<div className="mx-8 cursor-pointer rounded-lg border border-gray-200 px-6 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500">
-														{sub.title}
-													</div>
-												</div>
-											))}
-									</div>
-								</div>
-							))}
-						</div>
-						<div className="m-2 basis-2/3">
-							<div class="w-full rounded-lg border border-gray-200 shadow ">
-								<div class="flow-root">
-									<ul
-										role="list"
-										class="divide-y divide-gray-200 dark:divide-gray-700"
-									>
-										{program[slotIndex] &&
-											renderActivities().map((activity) => (
-												<li class="p-3">
-													<ScheduleItem activity={activity} />
-												</li>
-											))}
-									</ul>
-								</div>
-							</div>
-						</div>
+			</div>
+			<div className=" my-16 ">
+				<FullDate text={"Sunday 22 December 2024"} index={1} />
+				{day1.map((slot) => (
+					<div className="grid grid-cols-12  text-gray-900 dark:text-white">
+						<SLotTime slot={slot} />
+						<SlotAllActivities slot={slot} />
 					</div>
-				)}
+				))}
+			</div>
+			<div className=" my-16">
+			<FullDate text={"Monday 23 December 2024"} index={2}/>
+				{day2.map((slot, slotindex) => (
+					<div className="grid grid-cols-12  text-gray-900 dark:text-white">
+						<SLotTime slot={slot} />
+
+						<SlotAllActivities slot={slot} />
+					</div>
+				))}
+			</div>
+			<div className=" my-16">
+			<FullDate text={"Tuesday 24 December 2024"} index={3}/>
+				{day3.map((slot, slotindex) => (
+					<div className="grid grid-cols-12  text-gray-900 dark:text-white">
+						<SLotTime slot={slot} />
+
+						<SlotAllActivities slot={slot} />
+					</div>
+				))}
+			</div>
+			<div className="block md:hidden">
 				{/* card view  */}
 				{allSlot && allDays == true && (
 					<div>
 						<div className="my-4 flex justify-center gap-2 md:my-8">
 							<div id="day-1">
-							<span className="text-2xl font-bold md:text-4xl text-[#115D85] dark:text-[#BA0D15]">Day One : </span>
-							<span className="text-lg font-bold md:text-2xl">Sunday 22 December 2024</span>
+								<span className="text-2xl font-bold text-[#115D85] dark:text-[#BA0D15] md:text-4xl">
+									Day One :{" "}
+								</span>
+								<span className="text-lg font-bold md:text-2xl">
+									Sunday 22 December 2024
+								</span>
 							</div>
 						</div>
-						<SLotInfo day={day1}/>
+						<SLotInfo day={day1} />
 						<div className="my-4 flex justify-center gap-2 md:my-8">
 							<div id="day-2" className="">
-							<span className="text-2xl font-bold md:text-4xl text-[#115D85] dark:text-[#BA0D15]">Day Two : </span>
-							<span className="text-lg font-bold md:text-2xl">Monday 23 December 2024</span>
+								<span className="text-2xl font-bold text-[#115D85] dark:text-[#BA0D15] md:text-4xl">
+									Day Two :{" "}
+								</span>
+								<span className="text-lg font-bold md:text-2xl">
+									Monday 23 December 2024
+								</span>
 							</div>
 						</div>
-						<SLotInfo day={day2}/>
+						<SLotInfo day={day2} />
 						<div className="my-4 flex justify-center gap-2 md:my-8">
-							<div id="day-3" >
-							<span className="text-2xl font-bold md:text-4xl text-[#115D85] dark:text-[#BA0D15]">Day Three : </span>
-							<span className="text-lg font-bold md:text-2xl">Tuesday 24 December 2024</span>
+							<div id="day-3">
+								<span className="text-2xl font-bold text-[#115D85] dark:text-[#BA0D15] md:text-4xl">
+									Day Three :{" "}
+								</span>
+								<span className="text-lg font-bold md:text-2xl">
+									Tuesday 24 December 2024
+								</span>
 							</div>
 						</div>
-						<SLotInfo day={day3}/>
+						<SLotInfo day={day3} />
 					</div>
 				)}
 				{allSlot && allDays == false && (
@@ -242,7 +233,7 @@ export function ScheduleOverview({ allDays }) {
 								</div>
 								<div className="grid grid-cols-12 gap-4">
 									{slot.children.map((activity) => (
-										<li class="col-span-12 rounded-lg border-2 border-gray-200 md:col-span-4">
+										<li class="col-span-12 rounded-lg border-2 border-gray-200 dark:border-gray-400 md:col-span-4">
 											<ScheduleItem activity={activity} />
 										</li>
 									))}
@@ -252,122 +243,96 @@ export function ScheduleOverview({ allDays }) {
 					</ul>
 				)}
 			</div>
-			{/* mobile */}
-			{false && (
-				<div className="">
-					<div className="flex items-center justify-between">
-						{program[slotIndex] && (
-							<p class="mr-2 ml-2 truncate  rounded-l-lg py-4 text-xs font-bold text-gray-900 dark:text-white">
-								{program[slotIndex].title}
-							</p>
-						)}
-						<div className="mx-2 flex">
-							<div className="mr-2">
-								<button
-									type="button"
-									class="inline-flex rotate-180 items-center rounded-lg border border-gray-300  py-2 px-1 text-center text-sm font-medium text-gray-400 dark:bg-gray-800"
-									onClick={() => {
-										let pre = slotIndex - 1;
-										if (program[pre]) setSlotIndex(pre);
-									}}
-								>
-									<svg
-										class="h-5 w-6"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 14 10"
-									>
-										<path
-											stroke="currentColor"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M1 5h12m0 0L9 1m4 4L9 9"
-										/>
-									</svg>
-								</button>
-							</div>
-							<div className="mr-2">
-								<button
-									type="button"
-									class=" inline-flex items-center rounded-lg border border-gray-300  py-2 px-1 text-center text-sm font-medium text-gray-400 dark:bg-gray-800"
-									onClick={() => {
-										let next = slotIndex + 1;
-										if (program[next]) setSlotIndex(next);
-									}}
-								>
-									<svg
-										class="h-5 w-6"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 14 10"
-									>
-										<path
-											stroke="currentColor"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M1 5h12m0 0L9 1m4 4L9 9"
-										/>
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="rounded-lg border border-gray-200 shadow ">
-						<div class="flow-root">
-							<ul
-								role="list"
-								class="max-w-5 divide-y divide-gray-200 dark:divide-gray-700"
-							>
-								{program[slotIndex] &&
-									renderActivities().map((activity) => (
-										<li class="p-1">
-											<ScheduleItem activity={activity} />
-										</li>
-									))}
-							</ul>
-						</div>
-					</div>
-				</div>
-			)}
 		</section>
 	);
 }
 
-export  function SLotInfo({ day }) {
+export function SLotTime({ slot }) {
+	return (
+		<div
+			className={`col-span-2 flex items-center justify-center border-r-2 border-l-2 border-b-2 border-gray-200 dark:border-gray-400 py-1 text-base font-bold`}
+		>
+			{slot.timeStart} - {slot.timeEnd}
+		</div>
+	);
+}
+
+export function SlotAllActivities({ slot }) {
+	return (
+		<div className="col-span-10">
+			{slot.location && slot.location!= "-" && (
+				<p className="border-b-2 border-r-2 bg-gray-100 border-gray-200 dark:border-gray-400 dark:bg-transparent py-1 text-center text-base font-medium">
+					{slot.location}
+				</p>
+			)}
+			<div className="grid grid-cols-12">
+				{slot.children.map((activity) => (
+					<SlotActivity activity={activity} location={slot.location} slotchildren={slot.children.length} />
+				))}
+			</div>
+		</div>
+	);
+}
+
+export function SlotActivity({ activity, location, slotchildren }) {
+	return (
+		<div
+			className={`col-span-${slotchildren > 2
+				? 4
+				: slotchildren == 1
+				? 12
+				: 6} border-r-2 border-r-2 border-gray-200 dark:border-gray-400 text-center`}
+		>
+			{ !location && 
+				<p className="border-b-2 bg-gray-100 border-gray-200 dark:border-gray-400 dark:bg-transparent py-1 text-base font-medium">
+				{activity.location}
+			</p>
+			}
+			<p className="border-b-2 py-2 border-gray-200 dark:border-gray-400 text-base font-bold ">{activity.title}</p>
+		</div>
+	);
+}
+
+export function FullDate({ text,index }) {
+	return (
+		<div id={"day-"+index} className="grid grid-cols-12 rounded-tl-2xl rounded-tr-2xl border-2 border-gray-200 dark:border-gray-400  py-3 text-center font-bold  md:text-xl ">
+					<div className="col-span-2"></div>
+					<div className="col-span-10 text-[#115D85] dark:text-[#BA0D15] ">{text}</div>
+				</div>
+	);
+}
+
+export function SLotInfo({ day }) {
 	return (
 		<ul role="list">
-							{day.map((slot) => (
-								<div>
-									<div className="hidden md:block">
-										<div className="my-3 flex w-2/4  justify-between text-lg font-bold">
-											<p>{slot.title}</p>
-											<p className="ml-2 mr-4">
-												{slot.timeStart} To {slot.timeEnd}
-											</p>
-										</div>
-									</div>
-									<div className="block md:hidden">
-									<div className="my-3 flex items-center justify-between text-sm font-bold">
-										<p>{slot.title}</p>
-										<div>
-										<p className="text-xs">{slot.timeStart}</p>
-										<p className="text-xs">{slot.timeEnd}</p>
-										</div>
-									</div>
-									</div>
-									<div className="grid grid-cols-12 gap-4">
-										{slot.children.map((activity) => (
-											<li class="col-span-12 rounded-lg border-2 border-gray-200 p-2 md:p-3 md:col-span-4">
-												<ScheduleItem activity={activity} />
-											</li>
-										))}
-									</div>
-								</div>
-							))}
-						</ul>
+			{day.map((slot) => (
+				<div>
+					<div className="hidden md:block">
+						<div className="my-3 flex w-2/4  justify-between text-lg font-bold">
+							<p>{slot.title}</p>
+							<p className="ml-2 mr-4">
+								{slot.timeStart} To {slot.timeEnd}
+							</p>
+						</div>
+					</div>
+					<div className="block md:hidden">
+						<div className="my-3 flex items-center justify-between text-sm font-bold">
+							<p>{slot.title}</p>
+							<div>
+								<p className="text-xs">{slot.timeStart}</p>
+								<p className="text-xs">{slot.timeEnd}</p>
+							</div>
+						</div>
+					</div>
+					<div className="grid grid-cols-12 gap-4">
+						{slot.children.map((activity) => (
+							<li class="col-span-12 rounded-lg border-2 border-gray-200 dark:border-gray-400 p-2 md:col-span-4 md:p-3">
+								<ScheduleItem activity={activity} />
+							</li>
+						))}
+					</div>
+				</div>
+			))}
+		</ul>
 	);
 }

@@ -1,27 +1,28 @@
 [
 	{
 		"title": "Parallel Sessions 1",
-		"timeStart":"09:30 AM",
-		"timeEnd":"10:30 AM",
+		"timeStart":"09:30 ",
+		"timeEnd":"10:30 ",
+		"location": "Medina Conventions Center",
 		"children": [
 			{
 				"title": "Sessions",
 				"location": "Medina Conventions Center",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "10:30 AM",
+				"timeSlotStart": "09:00 ",
+				"timeSlotEnd": "10:30 ",
 				"key" :"s"
 			},
 			{
 				"title": "Workshops",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "10:30 AM",
+				"timeSlotStart": "09:00 ",
+				"timeSlotEnd": "10:30 ",
 				"location": "Medina Conventions Center",
 				"key" :"w"
 			},
 			{
 				"title": "Tunisia 2056 Challenge Forum",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "10:30 AM",
+				"timeSlotStart": "09:00 ",
+				"timeSlotEnd": "10:30 ",
 				"location": "Medina Conventions Center",
 				"key" :"w"
 			}
@@ -29,27 +30,28 @@
 	},
 	{
 		"title": "Parallel Sessions 2",
-		"timeStart":"11:00 AM",
-		"timeEnd":"12:30 PM",
+		"timeStart":"11:00 ",
+		"timeEnd":"12:30 ",
+		"location": "Medina Conventions Center",
 		"children": [
 			{
 				"title": "Sessions",
 				"location": "Medina Conventions Center",
-				"timeSlotStart": "11:00 AM",
-				"timeSlotEnd": "12:30 PM",
+				"timeSlotStart": "11:00 ",
+				"timeSlotEnd": "12:30 ",
 				"key" :"s"
 			},
 			{
 				"title": "Workshops",
-				"timeSlotStart": "11:00 AM",
-				"timeSlotEnd": "12:30 PM",
+				"timeSlotStart": "11:00 ",
+				"timeSlotEnd": "12:30 ",
 				"location": "Medina Conventions Center",
 				"key" :"w"
 			},
 			{
 				"title": "Tunisia 2056 Challenge Forum",
-				"timeSlotStart": "11:00 AM",
-				"timeSlotEnd": "12:30 PM",
+				"timeSlotStart": "11:00 ",
+				"timeSlotEnd": "12:30 ",
 				"location": "Medina Conventions Center",
 				"key" :"w"
 			}
@@ -57,27 +59,28 @@
 	},
 	{
 		"title": "Parallel Sessions 3",
-		"timeStart":"14:30 PM",
-		"timeEnd":"16:00 PM",
+		"timeStart":"14:30 ",
+		"timeEnd":"16:00 ",
+		"location": "Medina Conventions Center",
 		"children": [
 			{
 				"title": "Sessions",
 				"location": "Medina Conventions Center",
-				"timeSlotStart": "14:30 PM",
-				"timeSlotEnd": "16:00 PM",
+				"timeSlotStart": "14:30 ",
+				"timeSlotEnd": "16:00 ",
 				"key" :"s"
 			},
 			{
 				"title": "Workshops",
-				"timeSlotStart": "14:30 PM",
-				"timeSlotEnd": "16:00 PM",
+				"timeSlotStart": "14:30 ",
+				"timeSlotEnd": "16:00 ",
 				"location": "Medina Conventions Center",
 				"key" :"w"
 			},
 			{
 				"title": "Tunisia 2056 Challenge Forum",
-				"timeSlotStart": "14:30 PM",
-				"timeSlotEnd": "16:00 PM",
+				"timeSlotStart": "14:30 ",
+				"timeSlotEnd": "16:00 ",
 				"location": "Medina Conventions Center",
 				"key" :"w"
 			}

@@ -1,65 +1,75 @@
 [
 	{
 		"title": "IEEE Tunisia Section Awards",
-		"timeStart":"09:30 AM",
-		"timeEnd":"10:30 AM",
+		"timeStart":"09:30 ",
+		"timeEnd":"10:30 ",
+		"location": "Hannibal Congress Room",
 		"children": [
 			{
 				"title": "IEEE Tunisia Section Awards",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "10:30 AM",
+				"timeSlotStart": "09:00 ",
+				"timeSlotEnd": "10:30 ",
 				"location": "Hannibal Congress Room"
 			}
 		]
 	},
 	{
 		"title": "Finalist Pitches ",
-		"timeStart":"09:30 AM",
-		"timeEnd":"12:00 PM",
+		"timeStart":"09:30 ",
+		"timeEnd":"12:00 ",
+		"location": "Hannibal Congress Room",
 		"children": [
 			{
 				"title": "Finalist Pitches",
 				"location": "Hannibal Congress Room",
-				"timeSlotStart": "10:30 AM",
-				"timeSlotEnd": "12:00 PM"
+				"timeSlotStart": "10:30 ",
+				"timeSlotEnd": "12:00 "
 			},
 			{
 				"title": "Q&A",
 				"location": "Hannibal Congress Room",
-				"timeSlotStart": "10:30 AM",
-				"timeSlotEnd": "12:00 PM"
+				"timeSlotStart": "10:30 ",
+				"timeSlotEnd": "12:00 "
 			},
 			{
 				"title": "Voting",
 				"location": "Hannibal Congress Room",
-				"timeSlotStart": "12:00 AM",
-				"timeSlotEnd": "12:00 PM"
+				"timeSlotStart": "12:00 ",
+				"timeSlotEnd": "12:00 "
 			}
 		]
 
 	},
 	{
 		"title": "Closing Ceremony",
-		"timeStart":"12:00 AM",
-		"timeEnd":"13:00 AM",
+		"timeStart":"12:00 ",
+		"timeEnd":"13:00 ",
 		"location": "Hannibal Congress Room",
 		"children": [
 			{
 				"title": "Winner’s Announcement Celebration",
-				"timeSlotStart": "12:00 PM",
-				"timeSlotEnd": "13:00 PM",
+				"timeSlotStart": "12:00 ",
+				"timeSlotEnd": "13:00 ",
 				"location": "Hannibal Congress Room"
 			},
 			{
 				"title": "Group Photo",
-				"timeSlotStart": "12:00 PM",
-				"timeSlotEnd": "13:00 PM",
+				"timeSlotStart": "12:00 ",
+				"timeSlotEnd": "13:00 ",
 				"location": "Hannibal Congress Room"
-			},
+			}
+		]
+	},
+	{
+		"title": "IEEE Tunisia Section Awards",
+		"timeStart":"12:00",
+		"timeEnd":"13:00",
+		"location": "-",
+		"children": [
 			{
 				"title": "Check-Out",
-				"timeSlotStart": "12:00 PM",
-				"timeSlotEnd": "13:00 PM",
+				"timeSlotStart": "09:00 ",
+				"timeSlotEnd": "10:30 ",
 				"location": "Hannibal Congress Room"
 			}
 		]
