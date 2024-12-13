@@ -210,20 +210,23 @@ export function ScheduleOverview({ allDays }) {
 				{allSlot && allDays == true && (
 					<div>
 						<div className="my-4 flex justify-center gap-2 md:my-8">
-							<div id="day-1" className="text-2xl font-bold md:text-4xl">
-								Day One
+							<div id="day-1">
+							<span className="text-2xl font-bold md:text-4xl text-[#115D85] dark:text-[#BA0D15]">Day One : </span>
+							<span className="text-lg font-bold md:text-2xl">Sunday 22 December 2024</span>
 							</div>
 						</div>
 						<SLotInfo day={day1}/>
 						<div className="my-4 flex justify-center gap-2 md:my-8">
-							<div id="day-2" className="text-2xl font-bold md:text-4xl">
-								Day Two
+							<div id="day-2" className="">
+							<span className="text-2xl font-bold md:text-4xl text-[#115D85] dark:text-[#BA0D15]">Day Two : </span>
+							<span className="text-lg font-bold md:text-2xl">Monday 23 December 2024</span>
 							</div>
 						</div>
 						<SLotInfo day={day2}/>
 						<div className="my-4 flex justify-center gap-2 md:my-8">
-							<div id="day-3" className="text-2xl font-bold md:text-4xl">
-								Day Three
+							<div id="day-3" >
+							<span className="text-2xl font-bold md:text-4xl text-[#115D85] dark:text-[#BA0D15]">Day Three : </span>
+							<span className="text-lg font-bold md:text-2xl">Tuesday 24 December 2024</span>
 							</div>
 						</div>
 						<SLotInfo day={day3}/>

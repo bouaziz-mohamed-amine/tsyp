@@ -1,138 +1,323 @@
 [
+	{
+		"slug": "speaker1",
+		"Full_Name": "Deepak Mathur",
+		"Position": "IEEE Vice President, MGA",
+		"Photo": "https://i.imgur.com/fwUdxCX.png",
+		"Bio": "Deepak Mathur is IEEE Vice President - Member Geographic Activities (MGA) and has also served in various IEEE leadership roles. Deepak was Director, IEEE Region 10 (Asia-Pacific) in 2021-2022 and Chair, IEEE India Council in 2015-2016. Deepak, a former Chief General Manager of ONGC (India’s premier Oil and Gas company engaged in exploration/exploitation of hydrocarbons), has more than 4-decades of professional experience in fields of electronics, telecommunication, IT infrastructure and has held various engineering and managerial positions during his career and worked on several projects like SCADA, on-line/real-time monitoring systems, Wi-Max based broadband wireless access system, GPS/GSM based vehicle tracking system etc. He also has experience of managing and working on Hi-Tech (Oil) Well Logging Systems which analyzes properties of subsurface to explore possibilities of hydrocarbons. Deepak holds a Bachelor of Engineering in Electronics and Communications from India’s most prestigious Indian Institute of Technology (Roorkee). Deepak also holds an MBA with Advance Management Program. In his IEEE journey, Deepak has been recipient of various IEEE recognitions including the prestigious IEEE Region 10 Outstanding Volunteer Award, IEEE MGA Achievement Award, and IEEE India Council Lifetime Achievement award. He is also a member of highly acclaimed international honor society IEEE-HKN or Eta-Kappa-Nu.",
+		"IEEE_Email ": "deepakmathur@ieee.org ",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker2",
+		"Full_Name": "Lwanga Herbert",
+		"Position": "IEEE Humanitarian Technologies Board (IEEE HTB) Chair",
+		"Photo": "https://i.imgur.com/exoX4CP.jpg",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker3",
+		"Full_Name": "Milos Manic",
+		"Position": "President of Industrial Electronics Society",
+		"Photo": "https://i.imgur.com/kQjae7a.png",
+		"Bio": "Dr. Manic is a Professor with the Computer Science Department and Director of VCU Cybersecurity Center at Virginia Commonwealth University. He completed over 50 research grants in AI/ML in cyber and energy and intelligent controls. He authored over 200 refereed articles, has given over 50 invited talks around the world, authored over 200 refereed articles in international journals, books, and conferences, holds several U.S. patents and has won 2018 R&D 100 Award for Autonomic Intelligent Cyber Sensor (AICS), one of top 100 science and technology worldwide innovations in 2018, and is recipient of the 2023 FBI DCLA Director’s Community Leadership Award for innovative research in AI & cybersecurity. He is an inductee of US National Academy of Inventors (senior class of 2023, member class of 2019), and a Fellow of Commonwealth Cyber Initiative (specialty in AI & Cybersecurity). He holds Joint Appointment with Idaho National laboratory. He is an IEEE IES President (2024-2025), after serving in multiple IES officer positions, IEEE Fellow (for contributions to machine learning based cybersecurity in critical infrastructures), recipient of IEEE IES 2019 Anthony J. Hornfeck Service Award, 2012 J. David Irwin Early Career Award, 2017 IEM Best Paper Award, associate editor of IEEE Transactions on Industrial Informatics, IEEE Open Journal of Industrial Electronics Society, and IEEE IES Senior Life AdCom member. He served as AE of Trans. on Industrial Electronics, was a founding chair of IEEE IES Technical Committee on Resilience and Security in Industry, and was a General Chair of IEEE ICIT 2023, IEEE IECON 2018 (record breaking, over 1,100 participants), IEEE HSI 2019.",
+		"IEEE_Email ": "misko@ieee.org ",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker4",
+		"Full_Name": "Abdullateef Aliyu",
+		"Position": "Vice President, IEEE R8 Student Activities ",
+		"Photo": "https://i.imgur.com/XfeuIbE.jpg",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker5",
+		"Full_Name": "Nehad El-Sherif",
+		"Position": "IAS Board Member ",
+		"Photo": "https://i.imgur.com/OVH6PnN.png",
+		"Bio": "Nehad El-Sherif, M.Sc., P.Eng., MBA, SMIEEE is the Founder and President of MNKYBR Technologies Inc., a Canadian company specialized in R&D and engineering services. El-Sherif is a Professional Electrical Engineer with experience in software & hardware design, new product development, product certification, business development, product management, sales & marketing, and electrical safety. He authored and co-authored IEEE peer-reviewed papers, technical articles, white papers and delivered technical presentations at various industry conferences. El-Sherif is a senior member of IEEE (SMIEEE), an executive board member of IEEE Industry Applications Society (IAS), and a member of IEEE Technical Activities Board (TAB) Committee on Standards (TCoS) and IEEE Standard Association Standards Board (SASB) Standards Review Committee (RevCom). He serves on NFPA Code Making Panel 2 (CMP-2) for the continued development of the National Electrical Code (NFPA 70), CSA Z462 (Workplace Electrical Safety Standard) technical committee, as well as various UL and CSA product safety certification standards technical panels. El-Sherif received several awards and recognitions including the 2024 IEEE IAS Electrical Safety Committee Excellence in Prevention through Design Award in Tucson, AZ and the First Place Prize Paper Award at the 2023 IEEE IAS Pulp and Paper Industry Conference in Spokane, WA. He earned his B.Sc. and M.Sc. in Electrical Engineering from Ain-Shams University, Cairo, Egypt and an MBA from the University of Saskatchewan, Saskatoon, Canada. El-Sherif is a sessional lecturer at the University of Saskatchewan and holds two patents.",
+		"IEEE_Email ": "nehad.e.el-sherif@ieee.org ",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker6",
+		"Full_Name": "Saptarshi Ghosh",
+		"Position": "Chair - Global SYP | IEEE Computer Society",
+		"Photo": "https://i.imgur.com/AtJ1rMx.png",
+		"Bio": "Saptarshi Ghosh is a System-On-Chip Design Engineer at Intel, who is working at the leading forefront of technology to enable and design the next generation of AI-enabled Intel Xeon® processors. His dedication and commitment to advancing computing have been recognized both at Intel as well as through the UC Berkeley College of Engineering  where he holds a Masters Degree in Electrical Engineering & Computer Sciences. He currently chairs the Students and Young Professionals Board in IEEE Computer Society",
+		"IEEE_Email ": "saptarshi.ghosh@ieee.org ",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker7",
+		"Full_Name": "Josephine Wangari Maina ",
+		"Position": "PES Chair Dedan Kimathi University of Technology ",
+		"Photo": "https://i.imgur.com/cI9eUcX.png",
+		"Bio": "Josephine Wangari Maina is a dedicated Telecommunication and Information Engineering student at Dedan Kimathi University of Technology, currently in her third year. Her academic pursuits are primarily focused on networking and the Internet of Things (IoT), with a burgeoning interest in power and energy systems. As the IEEE PES Chair at Dedan Kimathi University of Technology, she is actively involved in promoting the advancement of power and energy engineering and shaping its future.",
+		"IEEE_Email ": "josephinewangarimaina@ieee.org ",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker8",
+		"Full_Name": "AMIT KUMAR SINGh",
+		"Position": "AP-S YP Ambassador 2024",
+		"Photo": "https://i.imgur.com/fXJL919.png",
+		"Bio": "",
+		"IEEE_Email ": " ",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker9",
+		"Full_Name": "Sajith Wijesuriya",
+		"Position": "Chair, IEEE YP Climate and Sustainability Subcommittee",
+		"Photo": "https://i.imgur.com/qZzUgQI.png",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker10",
+		"Full_Name": "Sneha Hegde",
+		"Position": "Chair, DEIS WIE / Vice-Chair, DEIS YP",
+		"Photo": "https://i.imgur.com/UwXg18R.png",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker11",
+		"Full_Name": "Anis ben Arfi",
+		"Position": "MTT-S YP - vice- chair",
+		"Photo": "https://i.imgur.com/UFVFK4p.png",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker12",
+		"Full_Name": "Amara Amara",
+		"Position": "IEEE CASS Past President",
+		"Photo": "https://i.imgur.com/MFT8Pjt.png",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker13",
+		"Full_Name": "Zied Bouida",
+		"Position": "IEEE Senior Member , Ph.D, Assistant Professor",
+		"Photo": "https://i.imgur.com/ya3gsKh.png",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker14",
+		"Full_Name": "Dr. Leila Mekacher",
+		"Position": "Entrepreneur",
+		"Photo": "https://i.imgur.com/XPFd4BB.png",
+		"Bio": "Dr. Leila Mekacher is a passionate engineer, entrepreneur, Head of Digital Research and Innovation, STEM ambassador, and founder of the Technological Education Center at the SRH Vocational Training Center (Germany). She is also an adjunct lecturer at the Cooperative State University Mannheim and the University of Applied Labour Studies. Dr. Mekacher studied Electrical and Automation Engineering, earning a Ph.D. in Robotics and Software Engineering. She leverages immersive technologies (Virtual and Mixed Reality) and gamification to advance digital education, work, and inclusion. Through her companies, Innoversa gUG and Innoversa Factory GmbH, she promotes innovative education via VR escape rooms, AI-generated media, interactive 360° VR experiences, and VR simulators for training and career discovery. Additionally, she supports individuals with Autism Spectrum Disorder by involving them in research, development projects, and businesses, providing opportunities in future-oriented technologies.",
+		"IEEE_Email ": "innoversa.factory@gmail.com ",
+		"IEEE": false
+	},
+	{
+		"slug": "speaker15",
+		"Full_Name": "Fahad Korai Baloch",
+		"Position": "GSM Member- IEEE Young Professional Volunteer",
+		"Photo": "https://i.imgur.com/CN79NTO.png",
+		"Bio": "Name: Fahad Ahmed Korai , Current Location: Tampere, Finland Education: Master’s Degree: Biomedical Sciences and Engineering (Health Technology and Informatics) ",
+		"IEEE_Email ": "fahad.koraibaloch@tuni.fi",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker16",
+		"Full_Name": "Karan jhaveri",
+		"Position": "",
+		"Photo": "",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker17",
+		"Full_Name": "Tazeen Sharif",
+		"Position": "senior IEEE member and Harvard certified Innovation and",
+		"Photo": "",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"Full_Name": "Razi Miliani ",
+		"Position": "AI Observer, Healthcare expert  ",
+		"Photo": "https://i.imgur.com/hj87aqf.png",
+		"Bio": null,
+		"IEEE_Email ": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Anis kallel ",
+		"Position": "Entrepreneur, Co-Founder, CTO at Flouci  ",
+		"Photo": "https://i.imgur.com/0Usxffv.png",
+		"Bio": null,
+		"IEEE_Email ": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Rayen bouajaja ",
+		"Position": "Entrepreneur, CEO at Lyceena ",
+		"Photo": "https://i.imgur.com/vfXOMAr.png",
+		"Bio": null,
+		"IEEE_Email ": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Firas ben hassen ",
+		"Position": "Entrepreneur, Artificial Intelligence Speaker  ",
+		"Photo": "https://i.imgur.com/DNfXEre.png",
+		"Bio": null,
+		"IEEE_Email ": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "ahmed ben attia ",
+		"Position": "Digital Marketer, Founder of Ahmed Ben Attia Creative Agency ",
+		"Photo": "https://i.imgur.com/mhyjAsT.png",
+		"Bio": null,
+		"IEEE_Email ": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "mohamed hedi allouche  ",
+		"Position": "Ingénieur Formateur en changement climatique et entrepreneuriat vert ",
+		"Photo": "https://i.imgur.com/qinIZbv.png",
+		"Bio": null,
+		"IEEE_Email ": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Hana Ben Ali ",
+		"Position": "Responsable administrative et financière chez CILG- VNG international ",
+		"Photo": "https://i.imgur.com/hOCblUv.png",
+		"Bio": null,
+		"IEEE_Email ": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Fahmi bedbaies ",
+		"Position": "Responsable Entreprenariat et Innovation ",
+		"Photo": "https://i.imgur.com/XFXa4iN.png",
+		"Bio": null,
+		"IEEE_Email ": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Ahmed Ouesleti ",
+		"Position": "Business Development and Sales Leader ",
+		"Photo": "https://i.imgur.com/hPkhv52.png",
+		"Bio": null,
+		"IEEE_Email ": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Kais Jamoussi ",
+		"Position": "Maitre Assistant chez ENET'COM ",
+		"Photo": "https://i.imgur.com/ffL5Qxr.png",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Ahmed Maalel ",
+		"Position": "Associate Professor and Regional Representative for EURAXESS Africa ",
+		"Photo": "https://i.imgur.com/BPxGSH4.png",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Jasser Riahi ",
+		"Position": "Student-Researcher in Master of Public Law ",
+		"Photo": "",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Amal Jlassi ",
+		"Position": "AI and ML expert, NVIDIA instructor ",
+		"Photo": "https://i.imgur.com/hv1xNz0.png",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Imen Selmi ",
+		"Position": "Machine Learning Operations Engineer at Scissero Ltd ",
+		"Photo": "",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Maram Rouissi ",
+		"Position": "Business Developer, B2B Sales & Account Management, Project Management, Soft Skills Trainer, SDGs Advocateand, Career Consultant ",
+		"Photo": "",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Lamia Chaari ",
+		"Position": "Professor Advanced Computer Network Technologies& Researcher at SM@RTS Laboratory ",
+		"Photo": "https://i.imgur.com/798a12z.png",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Marwan Essalah",
+		"Position": "Founder at Etikks & Space Academy | UX Designer | UX Mentor at ADPList",
+		"Photo": "https://i.imgur.com/1nhr9N0.png",
+		"Bio": null,
+		"IEEE_Email": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Oussama Chelly",
+		"Position": "Expert in Artificial Intelligence",
+		"Photo": "https://i.imgur.com/2htl4Qf.png",
+		"Bio": null,
+		"IEEE_Email": null,
+		"IEEE": false
+	},
+	{
+		"Full_Name": "Fares ben souilah",
+		"Position": "Founder, Professional Coach Trainer & Consultant at Mentors Institute",
+		"Photo": "https://i.imgur.com/yhBDEjY.png",
+		"Bio": null,
+		"IEEE_Email": null,
+		"IEEE": false
+	},
     {
-        "slug": "speaker1",
-        "Full_Name": "Deepak Mathur",
-        "Position": "IEEE Vice President, MGA",
-        "Photo": "https://i.imgur.com/fwUdxCX.png",
-        "Bio": "Deepak Mathur is IEEE Vice President - Member Geographic Activities (MGA) and has also served in various IEEE leadership roles. Deepak was Director, IEEE Region 10 (Asia-Pacific) in 2021-2022 and Chair, IEEE India Council in 2015-2016. Deepak, a former Chief General Manager of ONGC (India’s premier Oil and Gas company engaged in exploration/exploitation of hydrocarbons), has more than 4-decades of professional experience in fields of electronics, telecommunication, IT infrastructure and has held various engineering and managerial positions during his career and worked on several projects like SCADA, on-line/real-time monitoring systems, Wi-Max based broadband wireless access system, GPS/GSM based vehicle tracking system etc. He also has experience of managing and working on Hi-Tech (Oil) Well Logging Systems which analyzes properties of subsurface to explore possibilities of hydrocarbons. Deepak holds a Bachelor of Engineering in Electronics and Communications from India’s most prestigious Indian Institute of Technology (Roorkee). Deepak also holds an MBA with Advance Management Program. In his IEEE journey, Deepak has been recipient of various IEEE recognitions including the prestigious IEEE Region 10 Outstanding Volunteer Award, IEEE MGA Achievement Award, and IEEE India Council Lifetime Achievement award. He is also a member of highly acclaimed international honor society IEEE-HKN or Eta-Kappa-Nu.",
-        "IEEE_Email ": "deepakmathur@ieee.org "
-    },
+		"Full_Name": "Aymen Grira ",
+		"Position": "Innovation & Incubation Manager at Westinghouse, Chair of H2 Task Force at Nucleareurope ",
+		"Photo": "",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": false
+	},
     {
-        "slug": "speaker2",
-        "Full_Name": "Lwanga Herbert",
-        "Position": "IEEE Humanitarian Technologies Board (IEEE HTB) Chair",
-        "Photo": "https://i.imgur.com/exoX4CP.jpg",
-        "Bio": "",
-        "IEEE_Email ": ""
-    },
-    {
-        "slug": "speaker3",
-        "Full_Name": "Milos Manic",
-        "Position": "President of Industrial Electronics Society",
-        "Photo": "https://i.imgur.com/kQjae7a.png",
-        "Bio": "Dr. Manic is a Professor with the Computer Science Department and Director of VCU Cybersecurity Center at Virginia Commonwealth University. He completed over 50 research grants in AI/ML in cyber and energy and intelligent controls. He authored over 200 refereed articles, has given over 50 invited talks around the world, authored over 200 refereed articles in international journals, books, and conferences, holds several U.S. patents and has won 2018 R&D 100 Award for Autonomic Intelligent Cyber Sensor (AICS), one of top 100 science and technology worldwide innovations in 2018, and is recipient of the 2023 FBI DCLA Director’s Community Leadership Award for innovative research in AI & cybersecurity. He is an inductee of US National Academy of Inventors (senior class of 2023, member class of 2019), and a Fellow of Commonwealth Cyber Initiative (specialty in AI & Cybersecurity). He holds Joint Appointment with Idaho National laboratory. He is an IEEE IES President (2024-2025), after serving in multiple IES officer positions, IEEE Fellow (for contributions to machine learning based cybersecurity in critical infrastructures), recipient of IEEE IES 2019 Anthony J. Hornfeck Service Award, 2012 J. David Irwin Early Career Award, 2017 IEM Best Paper Award, associate editor of IEEE Transactions on Industrial Informatics, IEEE Open Journal of Industrial Electronics Society, and IEEE IES Senior Life AdCom member. He served as AE of Trans. on Industrial Electronics, was a founding chair of IEEE IES Technical Committee on Resilience and Security in Industry, and was a General Chair of IEEE ICIT 2023, IEEE IECON 2018 (record breaking, over 1,100 participants), IEEE HSI 2019.",
-        "IEEE_Email ": "misko@ieee.org "
-    },
-    {
-        "slug": "speaker4",
-        "Full_Name": "Abdullateef Aliyu",
-        "Position": "Vice President, IEEE R8 Student Activities ",
-        "Photo": "https://i.imgur.com/XfeuIbE.jpg",
-        "Bio": "",
-        "IEEE_Email ": " "
-    },
-    {
-        "slug": "speaker5",
-        "Full_Name": "Nehad El-Sherif",
-        "Position": "IAS Board Member ",
-        "Photo": "https://i.imgur.com/OVH6PnN.png",
-        "Bio": "Nehad El-Sherif, M.Sc., P.Eng., MBA, SMIEEE is the Founder and President of MNKYBR Technologies Inc., a Canadian company specialized in R&D and engineering services. El-Sherif is a Professional Electrical Engineer with experience in software & hardware design, new product development, product certification, business development, product management, sales & marketing, and electrical safety. He authored and co-authored IEEE peer-reviewed papers, technical articles, white papers and delivered technical presentations at various industry conferences. El-Sherif is a senior member of IEEE (SMIEEE), an executive board member of IEEE Industry Applications Society (IAS), and a member of IEEE Technical Activities Board (TAB) Committee on Standards (TCoS) and IEEE Standard Association Standards Board (SASB) Standards Review Committee (RevCom). He serves on NFPA Code Making Panel 2 (CMP-2) for the continued development of the National Electrical Code (NFPA 70), CSA Z462 (Workplace Electrical Safety Standard) technical committee, as well as various UL and CSA product safety certification standards technical panels. El-Sherif received several awards and recognitions including the 2024 IEEE IAS Electrical Safety Committee Excellence in Prevention through Design Award in Tucson, AZ and the First Place Prize Paper Award at the 2023 IEEE IAS Pulp and Paper Industry Conference in Spokane, WA. He earned his B.Sc. and M.Sc. in Electrical Engineering from Ain-Shams University, Cairo, Egypt and an MBA from the University of Saskatchewan, Saskatoon, Canada. El-Sherif is a sessional lecturer at the University of Saskatchewan and holds two patents.",
-        "IEEE_Email ": "nehad.e.el-sherif@ieee.org "
-    },
-    {
-        "slug": "speaker6",
-        "Full_Name": "Saptarshi Ghosh",
-        "Position": "Chair - Global SYP | IEEE Computer Society",
-        "Photo": "https://i.imgur.com/AtJ1rMx.png",
-        "Bio": "Saptarshi Ghosh is a System-On-Chip Design Engineer at Intel, who is working at the leading forefront of technology to enable and design the next generation of AI-enabled Intel Xeon® processors. His dedication and commitment to advancing computing have been recognized both at Intel as well as through the UC Berkeley College of Engineering  where he holds a Masters Degree in Electrical Engineering & Computer Sciences. He currently chairs the Students and Young Professionals Board in IEEE Computer Society",
-        "IEEE_Email ": "saptarshi.ghosh@ieee.org "
-    },
-    {
-        "slug": "speaker7",
-        "Full_Name": "Josephine Wangari Maina ",
-        "Position": "PES Chair Dedan Kimathi University of Technology ",
-        "Photo": "https://i.imgur.com/cI9eUcX.png",
-        "Bio": "Josephine Wangari Maina is a dedicated Telecommunication and Information Engineering student at Dedan Kimathi University of Technology, currently in her third year. Her academic pursuits are primarily focused on networking and the Internet of Things (IoT), with a burgeoning interest in power and energy systems. As the IEEE PES Chair at Dedan Kimathi University of Technology, she is actively involved in promoting the advancement of power and energy engineering and shaping its future.",
-        "IEEE_Email ": "josephinewangarimaina@ieee.org "
-    },
-    {
-        "slug": "speaker8",
-        "Full_Name": "AMIT KUMAR SINGh",
-        "Position": "AP-S YP Ambassador 2024",
-        "Photo": "https://i.imgur.com/fXJL919.png",
-        "Bio": "",
-        "IEEE_Email ": " "
-    },
-    {
-        "slug": "speaker9",
-        "Full_Name": "Sajith Wijesuriya",
-        "Position": "Chair, IEEE YP Climate and Sustainability Subcommittee",
-        "Photo": "https://i.imgur.com/qZzUgQI.png",
-        "Bio": "",
-        "IEEE_Email ": ""
-    },
-    {
-        "slug": "speaker10",
-        "Full_Name": "Sneha Hegde",
-        "Position": "Chair, DEIS WIE / Vice-Chair, DEIS YP",
-        "Photo": "https://i.imgur.com/UwXg18R.png",
-        "Bio": "",
-        "IEEE_Email ": ""
-    },
-    {
-        "slug": "speaker11",
-        "Full_Name": "Anis ben Arfi",
-        "Position": "MTT-S YP - vice- chair",
-        "Photo": "https://i.imgur.com/UFVFK4p.png",
-        "Bio": "",
-        "IEEE_Email ": ""
-    },
-    {
-        "slug": "speaker12",
-        "Full_Name": "Amara Amara",
-        "Position": "IEEE CASS Past President",
-        "Photo": "https://i.imgur.com/MFT8Pjt.png",
-        "Bio": "",
-        "IEEE_Email ": ""
-    },
-    {
-        "slug": "speaker13",
-        "Full_Name": "Zied Bouida",
-        "Position": "IEEE Senior Member , Ph.D, Assistant Professor",
-        "Photo": "https://i.imgur.com/ya3gsKh.png",
-        "Bio": "",
-        "IEEE_Email ": ""
-    },
-    {
-        "slug": "speaker14",
-        "Full_Name": "Dr. Leila Mekacher",
-        "Position": "Entrepreneur",
-        "Photo": "https://i.imgur.com/XPFd4BB.png",
-        "Bio": "Dr. Leila Mekacher is a passionate engineer, entrepreneur, Head of Digital Research and Innovation, STEM ambassador, and founder of the Technological Education Center at the SRH Vocational Training Center (Germany). She is also an adjunct lecturer at the Cooperative State University Mannheim and the University of Applied Labour Studies. Dr. Mekacher studied Electrical and Automation Engineering, earning a Ph.D. in Robotics and Software Engineering. She leverages immersive technologies (Virtual and Mixed Reality) and gamification to advance digital education, work, and inclusion. Through her companies, Innoversa gUG and Innoversa Factory GmbH, she promotes innovative education via VR escape rooms, AI-generated media, interactive 360° VR experiences, and VR simulators for training and career discovery. Additionally, she supports individuals with Autism Spectrum Disorder by involving them in research, development projects, and businesses, providing opportunities in future-oriented technologies.",
-        "IEEE_Email ": "innoversa.factory@gmail.com "
-    },
-    {
-        "slug": "speaker15",
-        "Full_Name": "Fahad Korai Baloch",
-        "Position": "IEEE ComSoc YP volunteer",
-        "Photo": "",
-        "Bio": "",
-        "IEEE_Email ": ""
-    },
-    {
-        "slug": "speaker16",
-        "Full_Name": "Karan jhaveri",
-        "Position": "",
-        "Photo": "",
-        "Bio": "",
-        "IEEE_Email ": ""
-    },
-    {
-        "slug": "speaker17",
-        "Full_Name": "Tazeen Sharif",
-        "Position": "senior IEEE member and Harvard certified Innovation and",
-        "Photo": "",
-        "Bio": "",
-        "IEEE_Email ": ""
-    }
+		"Full_Name": "mohammad mazouzi ",
+		"Position": " ",
+		"Photo": " ",
+		"Bio": "",
+		"IEEE_Email ": "",
+		"IEEE": false
+	}
 ]
