@@ -28,31 +28,76 @@
 				"title": "Opening Words",
 				"location": "Hannibal Congress Room",
 				"timeSlotStart": "14:00 ",
-				"timeSlotEnd": "14:50 "
+				"timeSlotEnd": "14:50 ",
+				"speakers" : [
+					{
+						"id" :"#",
+						"name" : "Mohamed Ali Krichen TSYP Chair"
+					},
+					{
+						"id" :"#",
+						"name" : "Khalil Guetat IEEE ENETCOM SB CHAIR"
+					},
+					{
+						"id" :"#",
+						"name" : "Mr. Habib Kamoun Tunisia Section chair"
+					}
+				]
 			},
 			{
-				"title": "IEEE Word",
+				"title": "IEEE Word ( Panel )",
 				"timeSlotStart": "14:50 ",
 				"timeSlotEnd": "15:20 ",
-				"location": "Hannibal Congress Room"
+				"location": "Hannibal Congress Room",
+				"speakers" : [
+					{
+						"id" :"speaker1",
+						"name" : "Deepak Mathur: IEEE Vice President - MGA (India)"
+					},
+					{
+						"id" :"speaker4",
+						"name" : "Abdulatif Aliyu: Vice President, IEEE R8 Student Activities (Nigeria)"
+					},
+					{
+						"id" :"speaker3",
+						"name" : "Milos Manic - IEEE IES President (USA)"
+					}
+
+				]
 			},
 			{
-				"title": "IEEE Leaders Perceptions Panel",
-				"timeSlotStart": "15:20 ",
-				"timeSlotEnd": "15:50 ",
-				"location": "Hannibal Congress Room"
-			},
-			{
-				"title": "Presentation of Sponsors",
+				"title": "Sponsors Word",
 				"timeSlotStart": "15:50 ",
 				"timeSlotEnd": "16:20 ",
 				"location": "Hannibal Congress Room"
 			},
 			{
-				"title": "Benefits of joining IEEE units",
+				"title": "Benefits of joining IEEE UNITS",
 				"timeSlotStart": "16:20 ",
 				"timeSlotEnd": "17:05 ",
-				"location": "Hannibal Congress Room"
+				"location": "Hannibal Congress Room",
+				"speakers" : [
+					{
+						"id" :"speaker9",
+						"name" : "Sajith Wijesuriya Chair,IEEE CSYP Subcommittee"
+					},
+					{
+						"id" :"speaker2",
+						"name" : "Lwanga Herbert - IEEE HTB President (Uganda)  "
+					},
+					{
+						"id" :"speaker11",
+						"name" : "Anis ben arfi - IEEE YP MTTS Committee Chair (Canada)"
+					},
+					{
+						"id" :"speaker8",
+						"name" : "AMIT KUMAR SING - AP-S YP Ambassador 2024"
+					},
+					{
+						"id" :"speaker10",
+						"name" : "Sneha Hegde"
+					}
+				]
 			},
 			{
 				"title": "Unlocking Opportunities",
@@ -63,9 +108,22 @@
 		]
 	},
 	{
+		"title": "Coffee Break ",
+		"timeStart": "17:30 ",
+		"timeEnd": "17:45",
+		"location": "Medina Hall",
+		"children" : [
+			{
+				"title": "Coffee Break",
+				"timeSlotStart": "17:30",
+				"timeSlotEnd": "17:45",
+				"location": "Expo Hall 3"
+			}
+		]
+	},
+	{
 		"title": "Networking break and Opening of exhibition area ",
-		"location": "Expo Hall 3",
-		"timeStart":"17:30",
+		"timeStart":"17:45",
 		"timeEnd":"19:00",
 		"children": [
 			{
@@ -74,15 +132,33 @@
 				"timeSlotEnd": "19:00 ",
 				"location": "Expo Hall 3"
 			}
-			
 		]
 	},
 	{
-		"title": "Party and Social Activities",
+		"title": "Dinner",
+		"timeStart":"19:00",
+		"timeEnd":"21:00",
+		"children": [
+			{
+				"title": "Dinner",
+				"timeSlotStart": "19:00 ",
+				"timeSlotEnd": "21:00 ",
+				"location": "Restuarants"
+			}
+		]
+	},
+	{
+		"title": "Social Activities",
 		"location": "Hannibal Congress Room - Booths Hall",
 		"timeStart":"21:00",
 		"timeEnd":"00:00",
 		"children": [
+			{
+				"title": "Multicultural Ativities",
+				"timeSlotStart": "21:00 ",
+				"timeSlotEnd": "00:00 ",
+				"location": "Hannibal Congress Room - Booths Hall"
+			},
 			{
 				"title": "Party, Social Activities",
 				"timeSlotStart": "21:00 ",

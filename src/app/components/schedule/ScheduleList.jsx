@@ -85,40 +85,40 @@ export function ScheduleOverview({ allDays }) {
 				<a
 					onClick={() => scrollToElement(1)}
 					aria-current="page"
-					className="text-md hidden cursor-pointer rounded-l-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+					className="text-md hidden cursor-pointer rounded-l-lg border-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 				>
 					Sunday 22 December 2024
 				</a>
 				<a
 					onClick={() => scrollToElement(1)}
 					aria-current="page"
-					class="block flex cursor-pointer justify-center rounded-l-lg border border-gray-200 dark:border-gray-400 px-2 py-2 py-1 text-sm font-medium text-gray-900 hover:bg-gray-200 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+					class="block flex cursor-pointer justify-center rounded-l-lg border border-gray-200 px-2 py-2 py-1 text-sm font-medium text-gray-900 hover:bg-gray-200 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
 				>
 					Day One
 				</a>
 				<a
 					onClick={() => scrollToElement(2)}
-					className="text-md hidden cursor-pointer border-t-2 border-b-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+					className="text-md hidden cursor-pointer border-t-2 border-b-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 				>
 					Monday 23 December 2024
 				</a>
 				<a
 					onClick={() => scrollToElement(2)}
 					aria-current="page"
-					class="block flex cursor-pointer justify-center border-t border-b border-gray-200 dark:border-gray-400 px-2 py-2 py-1  text-sm font-medium text-gray-900 hover:bg-gray-200 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
+					class="block flex cursor-pointer justify-center border-t border-b border-gray-200 px-2 py-2 py-1 text-sm  font-medium text-gray-900 hover:bg-gray-200 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden"
 				>
 					Day Two
 				</a>
 				<a
 					onClick={() => scrollToElement(3)}
-					className="text-md hidden cursor-pointer  rounded-r-lg border-2 border-gray-200 dark:border-gray-400 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
+					className="text-md hidden cursor-pointer  rounded-r-lg border-2 border-gray-200 px-2 py-2 font-medium text-gray-900 hover:bg-gray-200 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:block"
 				>
 					Tuesday 24 December 2024
 				</a>
 				<a
 					onClick={() => scrollToElement(3)}
 					aria-current="page"
-					class="block flex cursor-pointer justify-center rounded-r-lg border border-gray-200 dark:border-gray-400 px-2 py-2 py-1 text-sm  font-medium text-gray-900 hover:bg-gray-200 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden md:px-6"
+					class="block flex cursor-pointer justify-center rounded-r-lg border border-gray-200 px-2 py-2 py-1 text-sm font-medium  text-gray-900 hover:bg-gray-200 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500 md:hidden md:px-6"
 				>
 					Day Three
 				</a>
@@ -156,35 +156,35 @@ export function ScheduleOverview({ allDays }) {
 					</a> */}
 			</div>
 			<div className="hidden md:block">
-			<div className=" my-16 ">
-				<FullDate text={"Sunday 22 December 2024"} index={1} />
-				{day1.map((slot) => (
-					<div className="grid grid-cols-12  text-gray-900 dark:text-white">
-						<SLotTime slot={slot} />
-						<SlotAllActivities slot={slot} />
-					</div>
-				))}
-			</div>
-			<div className=" my-16">
-			<FullDate text={"Monday 23 December 2024"} index={2}/>
-				{day2.map((slot, slotindex) => (
-					<div className="grid grid-cols-12  text-gray-900 dark:text-white">
-						<SLotTime slot={slot} />
+				<div className=" my-16 ">
+					<FullDate text={"Sunday 22 December 2024"} index={1} />
+					{day1.map((slot) => (
+						<div className="grid grid-cols-12  text-gray-900 dark:text-white">
+							<SLotTime slot={slot} />
+							<SlotAllActivities slot={slot} />
+						</div>
+					))}
+				</div>
+				<div className=" my-16">
+					<FullDate text={"Monday 23 December 2024"} index={2} />
+					{day2.map((slot, slotindex) => (
+						<div className="grid grid-cols-12  text-gray-900 dark:text-white">
+							<SLotTime slot={slot} />
 
-						<SlotAllActivities slot={slot} />
-					</div>
-				))}
-			</div>
-			<div className=" my-16">
-			<FullDate text={"Tuesday 24 December 2024"} index={3}/>
-				{day3.map((slot, slotindex) => (
-					<div className="grid grid-cols-12  text-gray-900 dark:text-white">
-						<SLotTime slot={slot} />
+							<SlotAllActivities slot={slot} />
+						</div>
+					))}
+				</div>
+				<div className=" my-16">
+					<FullDate text={"Tuesday 24 December 2024"} index={3} />
+					{day3.map((slot, slotindex) => (
+						<div className="grid grid-cols-12  text-gray-900 dark:text-white">
+							<SLotTime slot={slot} />
 
-						<SlotAllActivities slot={slot} />
-					</div>
-				))}
-			</div>
+							<SlotAllActivities slot={slot} />
+						</div>
+					))}
+				</div>
 			</div>
 			<div className="block md:hidden">
 				{/* card view  */}
@@ -252,7 +252,7 @@ export function ScheduleOverview({ allDays }) {
 export function SLotTime({ slot }) {
 	return (
 		<div
-			className={`col-span-2 flex items-center justify-center border-r-2 border-l-2 border-b-2 border-gray-200 dark:border-gray-400 py-1 text-base font-bold`}
+			className={`col-span-2 flex items-center justify-center border-r-2 border-l-2 border-b-2 border-gray-200 py-1 text-base font-bold dark:border-gray-400`}
 		>
 			{slot.timeStart} - {slot.timeEnd}
 		</div>
@@ -262,14 +262,18 @@ export function SLotTime({ slot }) {
 export function SlotAllActivities({ slot }) {
 	return (
 		<div className="col-span-10">
-			{slot.location && slot.location!= "-" && (
-				<p className="border-b-2 border-r-2 bg-gray-200 border-gray-200 dark:text-gray-400 dark:border-gray-400 dark:bg-transparent py-1 text-center text-base font-medium">
+			{slot.location && slot.location != "-" && (
+				<p className="border-b-2 border-r-2 border-gray-200 bg-gray-200 py-1 text-center text-base font-medium dark:border-gray-400 dark:bg-transparent dark:text-gray-400">
 					{slot.location}
 				</p>
 			)}
 			<div className="grid grid-cols-12">
 				{slot.children.map((activity) => (
-					<SlotActivity activity={activity} location={slot.location} slotchildren={slot.children.length} />
+					<SlotActivity
+						activity={activity}
+						location={slot.location}
+						slotchildren={slot.children.length}
+					/>
 				))}
 			</div>
 		</div>
@@ -279,28 +283,43 @@ export function SlotAllActivities({ slot }) {
 export function SlotActivity({ activity, location, slotchildren }) {
 	return (
 		<div
-			className={`col-span-${slotchildren > 2
-				? 4
-				: slotchildren == 1
-				? 12
-				: 6} border-r-2 border-r-2 border-gray-200 dark:border-gray-400 text-center`}
+			className={`col-span-${
+				slotchildren > 2 ? 4 : slotchildren == 1 ? 12 : 6
+			} border-r-2 border-r-2 border-b-2  border-gray-200 text-center dark:border-gray-400`}
 		>
-			{ !location && 
-				<p className="border-b-2 bg-gray-200 border-gray-200 dark:border-gray-400 dark:text-gray-400 dark:bg-transparent py-1 text-base font-medium">
-				{activity.location}
+			{!location && (
+				<p className="border-b-2 border-gray-200 bg-gray-200 py-1 text-base font-medium dark:border-gray-400 dark:bg-transparent dark:text-gray-400">
+					{activity.location}
+				</p>
+			)}
+			<div className=" py-2  dark:text-gray-300 ">
+			<p className="text-base font-semibold">
+				{activity.title}
 			</p>
+			{ activity.speakers && 
+			<div>
+				{activity.speakers.map(speaker =>(<p id={speaker.id} className="text-sm font-medium">{speaker.name}</p>))}
+			</div>
 			}
-			<p className="border-b-2 py-2 border-gray-200 dark:text-gray-300 dark:border-gray-400 text-base font-bold ">{activity.title}</p>
+			</div>
+			
+			
+			
 		</div>
 	);
 }
 
-export function FullDate({ text,index }) {
+export function FullDate({ text, index }) {
 	return (
-		<div id={"day-"+index} className="grid grid-cols-12 rounded-tl-2xl rounded-tr-2xl border-2 border-gray-200 dark:border-gray-400  py-3 text-center font-bold  md:text-xl ">
-					<div className="col-span-2"></div>
-					<div className="col-span-10 text-[#115D85] dark:text-[#BA0D15] ">{text}</div>
-				</div>
+		<div
+			id={"day-" + index}
+			className="grid grid-cols-12 rounded-tl-2xl rounded-tr-2xl border-2 border-gray-200 py-3  text-center font-bold dark:border-gray-400  md:text-xl "
+		>
+			<div className="col-span-2"></div>
+			<div className="col-span-10 text-[#115D85] dark:text-[#BA0D15] ">
+				{text}
+			</div>
+		</div>
 	);
 }
 
@@ -309,7 +328,7 @@ export function SLotInfo({ day }) {
 		<ul role="list">
 			{day.map((slot) => (
 				<div>
-					<div className="hidden md:block">
+						<div className="hidden md:block">
 						<div className="my-3 flex w-2/4  justify-between text-lg font-bold">
 							<p>{slot.title}</p>
 							<p className="ml-2 mr-4">

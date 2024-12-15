@@ -1,5 +1,18 @@
 [
 	{
+		"title": "",
+		"timeStart":"07:00",
+		"timeEnd":"09:00",
+		"children": [
+			{
+				"title": "Breakfast",
+				"timeSlotStart": "07:00 ",
+				"timeSlotEnd": "09:00 ",
+				"location": "Restuarants"
+			}
+		]
+	},
+	{
 		"title": "IEEE Tunisia Section Awards",
 		"timeStart":"09:30 ",
 		"timeEnd":"10:30 ",

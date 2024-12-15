@@ -1,5 +1,18 @@
 [
 	{
+		"title": "",
+		"timeStart":"07:00",
+		"timeEnd":"09:00",
+		"children": [
+			{
+				"title": "Breakfast",
+				"timeSlotStart": "07:00 ",
+				"timeSlotEnd": "09:00 ",
+				"location": "Restuarants"
+			}
+		]
+	},
+	{
 		"title": "Parallel Sessions 1",
 		"timeStart":"09:30 ",
 		"timeEnd":"10:30 ",
@@ -58,6 +71,19 @@
 		]
 	},
 	{
+		"title": "",
+		"timeStart":"12:30",
+		"timeEnd":"14:30",
+		"children": [
+			{
+				"title": "Lunch",
+				"timeSlotStart": "12:30 ",
+				"timeSlotEnd": "14:30 ",
+				"location": "Restuarants"
+			}
+		]
+	},
+	{
 		"title": "Parallel Sessions 3",
 		"timeStart":"14:30 ",
 		"timeEnd":"16:00 ",
@@ -83,6 +109,33 @@
 				"timeSlotEnd": "16:00 ",
 				"location": "Medina Conventions Center",
 				"key" :"w"
+			}
+		]
+	},
+	{
+		"title": "",
+		"timeStart":"19:00",
+		"timeEnd":"21:00",
+		"children": [
+			{
+				"title": "Dinner",
+				"timeSlotStart": "19:00 ",
+				"timeSlotEnd": "21:00 ",
+				"location": "Restuarants"
+			}
+		]
+	},
+	{
+		"title": "",
+		"location": "Hannibal Congress Room",
+		"timeStart":"21:00",
+		"timeEnd":"00:00",
+		"children": [
+			{
+				"title": "Awards Ceremony",
+				"timeSlotStart": "21:00 ",
+				"timeSlotEnd": "00:00 ",
+				"location": "Hannibal Congress Room"
 			}
 		]
 	}
