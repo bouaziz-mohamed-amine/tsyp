@@ -2,6 +2,7 @@ import moment from "moment";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+
 const useCountdown = (targetDate) => {
 	const countDownDate = new Date(targetDate).getTime();
 
@@ -19,83 +20,172 @@ const useCountdown = (targetDate) => {
 
 	return getReturnValues(countDown);
 };
+const useCount = (targetDate) => {
+	const countDate = new Date(targetDate).getTime();
 
+	const [count, setCount] = useState(new Date().getTime() - countDate);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCount(new Date().getTime() - countDate);
+		}, 1000);
+
+		return () => clearInterval(interval);
+	}, [countDate]);
+
+	return getReturn(count);
+};
+const getReturn = (count) => {
+	// calculate time left
+	const days = Math.floor(count / (1000 * 60 * 60 * 24));
+	const hours = Math.floor((count % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	const minutes = Math.floor((count % (1000 * 60 * 60)) / (1000 * 60));
+	const seconds = Math.floor((count % (1000 * 60)) / 1000);
+	// format numbers to add leading zero if less than 10
+	const formattedDays = days.toString().padStart(2, "0");
+	const formattedHours = hours.toString().padStart(2, "0");
+	const formattedMinutes = minutes.toString().padStart(2, "0");
+	const formattedSeconds = seconds.toString().padStart(2, "0");
+
+	return [formattedDays, formattedHours, formattedMinutes, formattedSeconds];
+};
 const getReturnValues = (countDown) => {
-    // calculate time left
-    const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
+	// calculate time left
+	const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
+	const hours = Math.floor(
+		(countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+	);
+	const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
+	const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
 
-    // format numbers to add leading zero if less than 10
-    const formattedDays = days.toString().padStart(2, '0');
-    const formattedHours = hours.toString().padStart(2, '0');
-    const formattedMinutes = minutes.toString().padStart(2, '0');
-    const formattedSeconds = seconds.toString().padStart(2, '0');
+	// format numbers to add leading zero if less than 10
+	const formattedDays = days.toString().padStart(2, "0");
+	const formattedHours = hours.toString().padStart(2, "0");
+	const formattedMinutes = minutes.toString().padStart(2, "0");
+	const formattedSeconds = seconds.toString().padStart(2, "0");
 
-    return [formattedDays, formattedHours, formattedMinutes, formattedSeconds];
+	return [formattedDays, formattedHours, formattedMinutes, formattedSeconds];
 };
 
 export function Countdown(props) {
-	const { timeTillDate, timeFormat } = props;
-	const THREE_DAYS_IN_MS = 6 * 24 * 60 * 60 * 1000;
-	const NOW_IN_MS = new Date().getTime();
-	const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
-
 	var date = new Date("12/22/2024 00:00:00"); // some mock date
 	var milliseconds = date.getTime();
+	
 	const [days, hours, minutes, seconds] = useCountdown(milliseconds);
-	const daysRadius = mapNumber(days, 365, 0, 0, 360);
-	const hoursRadius = mapNumber(hours, 24, 0, 0, 360);
-	const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
-	const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
+	var date2 = new Date("12/21/2024 00:00:00");
+	const [days2, hours2, minutes2, seconds2] = useCount(date2.getTime());
+	const [CountData, setCountData] = useState([]);
 
-	if (new Date().getTime() > milliseconds) {
-		return null;
-	}
+	
+	useEffect(() => {
+	  const getData = async () => {
+		try {
+		  const response = await fetch("/assets/count.json");
+		  const data = await response.json();
+		  setCountData(data); 
+		} catch (error) {
+		  console.error("Error fetching count data:", error);
+		}
+	  };
+  
+	  getData();
+	}, []);
+	//var date = new Date("12/12/2024 00:00:00"); // some mock date
+	//var milliseconds = date.getTime();
+	//var CurrentHour =new Date.getHours();
+	//const [days, hours, minutes, seconds] = useCountdown(milliseconds);
+	//var date2=new Date("12/12/2024 00:00:00");
+	//const [days2,hours2, minutes2, seconds2] = useCount(date2.getTime());
+
+	if (
+		new Date().getTime() > date2.getTime() &&
+		days2 != null &&
+		hours2 != null &&
+		minutes2 != null &&
+		seconds2 != null
+	  ) {
+		
+		  return (
+		
+			<div className=" justify-center *">
+        {CountData.map((item, index) => (
+          <div key={index}>
+            <h1 className="mx-2 mb-4 text-center text-2xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-4xl lg:font-extrabold lg:leading-none">
+              Our Journey Has Began
+            </h1>
+            <div className="flex items-center">
+              <h1 className="mx-2 text-center text-4xl font-bold tracking-tight text-[#115D85] dark:text-[#BA0D15] lg:text-start lg:text-6xl lg:font-extrabold lg:leading-none">
+                Day {days2}:
+              </h1>
+              <h1 className="text-center text-xl font-bold tracking-tight lg:text-start lg:text-4xl lg:font-extrabold lg:leading-none">
+                {item.title}
+              </h1>
+            </div>
+          </div>
+        ))}
+      </div>
+		  );
+		
+	  }
 
 	return (
 		<div className="  xtext-[#2d459e]">
 			{/* <h1 className="mb-4 text-center text-4xl font-bold tracking-tight lg:mb-7 lg:text-5xl lg:font-extrabold lg:leading-none">
 					Starting in:
 				</h1> */}
-			<div className=" text-center block items-center justify-center gap-4 p-4 my-8">
-				
-					{"days" && "hours"&& "minutes" &&"seconds" &&(
-						<div className="  grid grid-cols-[1fr_auto_1fr_auto]  items-center justify-center  text-2xl font-bold leading-[30px]">
-							{/* <SVGCircle radius={daysRadius} />
+			<div className=" my-8 block items-center justify-center gap-4 p-4 text-center">
+				{"days" && "hours" && "minutes" && "seconds" && (
+					<div className="  grid grid-cols-[1fr_auto_1fr_auto]  items-center justify-center  text-2xl font-bold leading-[30px]">
+						{/* <SVGCircle radius={daysRadius} />
 						{days}
 						<span className="text-xs font-bold uppercase">days</span> */}
-							<div>
-								<h1 className="  xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{days}</h1>
-							</div>
-							<div className="">
-								<h1 className=" rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Day</h1>
-							</div>
-							<div>
-								<h1 className="  xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{hours}</h1>
-							</div>
-							<div className="">
-								<h1 className=" rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Hour</h1>
-							</div>
-							<div>
-								<h1 className="  xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{minutes}</h1>
-							</div>
-							<div className="">
-								<h1 className="  rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> Minute</h1>
-							</div>
-							<div className="">
-								<h1 className="xs:text-5xl ms:text-7xl  md:text-7xl lg:text-9xl font-bold">{seconds}</h1>
-							</div>
-							<div className="">
-								<h1 className="rotate-90 text-xl text-[#115D85] dark:text-[#BA0D15] xs:text-md font-bold"> second</h1>
-							</div>
+						<div>
+							<h1 className="  font-bold md:text-7xl  lg:text-9xl xs:text-5xl ms:text-7xl">
+								{days}
+							</h1>
 						</div>
-					)}
-					
-				
-
-				
+						<div className="">
+							<h1 className=" xs:text-md rotate-90 text-xl font-bold text-[#115D85] dark:text-[#BA0D15]">
+								{" "}
+								Day
+							</h1>
+						</div>
+						<div>
+							<h1 className="  font-bold md:text-7xl  lg:text-9xl xs:text-5xl ms:text-7xl">
+								{hours}
+							</h1>
+						</div>
+						<div className="">
+							<h1 className=" xs:text-md rotate-90 text-xl font-bold text-[#115D85] dark:text-[#BA0D15]">
+								{" "}
+								Hour
+							</h1>
+						</div>
+						<div>
+							<h1 className="  font-bold md:text-7xl  lg:text-9xl xs:text-5xl ms:text-7xl">
+								{minutes}
+							</h1>
+						</div>
+						<div className="">
+							<h1 className="  xs:text-md rotate-90 text-xl font-bold text-[#115D85] dark:text-[#BA0D15]">
+								{" "}
+								Minute
+							</h1>
+						</div>
+						<div className="">
+							<h1 className="font-bold md:text-7xl  lg:text-9xl xs:text-5xl ms:text-7xl">
+								{seconds}
+							</h1>
+						</div>
+						<div className="">
+							<h1 className="xs:text-md rotate-90 text-xl font-bold text-[#115D85] dark:text-[#BA0D15]">
+								{" "}
+								second
+							</h1>
+						</div>
+					</div>
+				)}
+				{}
 			</div>
 		</div>
 	);
