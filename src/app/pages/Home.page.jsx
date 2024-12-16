@@ -76,13 +76,15 @@ export default function HomePage() {
 									</h1>
 								</div>
 							</div>
-							<div className="my-8 items-center justify-center ">
+							
+							<div className=" my-8 flex items-center  justify-center ">
 								{true && (
 									<Countdown
 										timeTillDate="12 22 2024, 12:00 pm"
 										timeFormat="MM DD YYYY, h:mm a"
 									/>
 								)}
+							
 							</div>
 						</div>
 						<div className="my-8 flex items-center justify-center text-[#115D85] dark:text-slate-200">
