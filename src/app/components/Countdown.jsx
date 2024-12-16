@@ -68,11 +68,11 @@ const getReturnValues = (countDown) => {
 };
 
 export function Countdown(props) {
-	var date = new Date("12/12/2024 00:00:00"); // some mock date
+	var date = new Date("12/22/2024 00:00:00"); // some mock date
 	var milliseconds = date.getTime();
 	
 	const [days, hours, minutes, seconds] = useCountdown(milliseconds);
-	var date2 = new Date("12/12/2024 00:00:00");
+	var date2 = new Date("12/21/2024 00:00:00");
 	const [days2, hours2, minutes2, seconds2] = useCount(date2.getTime());
 	const [CountData, setCountData] = useState([]);
 
