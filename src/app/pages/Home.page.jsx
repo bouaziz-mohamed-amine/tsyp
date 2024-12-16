@@ -248,14 +248,15 @@ export default function HomePage() {
 					<Speakers limit={5} />
 				</section>
 			</Fade>
-			<Fade triggerOnce>
-				<section className="py-8 md:py-10">
-					<PreviousEditions />
-				</section>
-			</Fade>
+			
 			<Fade triggerOnce>
 				<section className="py-8 ">
 					<Team limit={5} />
+				</section>
+			</Fade>
+			<Fade triggerOnce>
+				<section className="py-8 md:py-10">
+					<PreviousEditions />
 				</section>
 			</Fade>
 			<Fade triggerOnce>
