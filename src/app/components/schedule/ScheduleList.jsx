@@ -155,8 +155,8 @@ export function ScheduleOverview({ allDays }) {
 						)}
 					</a> */}
 			</div>
-			<div className="hidden md:block">
-				<div className=" my-16 ">
+			<div className="">
+				<div className="my-8 md:my-16 ">
 					<FullDate text={"Sunday 22 December 2024"} index={1} />
 					{day1.map((slot) => (
 						<div className="grid grid-cols-12  text-gray-900 dark:text-white">
@@ -165,7 +165,7 @@ export function ScheduleOverview({ allDays }) {
 						</div>
 					))}
 				</div>
-				<div className=" my-16">
+				<div className=" my-8 md:my-16">
 					<FullDate text={"Monday 23 December 2024"} index={2} />
 					{day2.map((slot, slotindex) => (
 						<div className="grid grid-cols-12  text-gray-900 dark:text-white">
@@ -175,7 +175,7 @@ export function ScheduleOverview({ allDays }) {
 						</div>
 					))}
 				</div>
-				<div className=" my-16">
+				<div className=" my-8 md:my-16">
 					<FullDate text={"Tuesday 24 December 2024"} index={3} />
 					{day3.map((slot, slotindex) => (
 						<div className="grid grid-cols-12  text-gray-900 dark:text-white">
@@ -186,7 +186,7 @@ export function ScheduleOverview({ allDays }) {
 					))}
 				</div>
 			</div>
-			<div className="block md:hidden">
+			<div className="hidden">
 				{/* card view  */}
 				{allSlot && allDays == true && (
 					<div>
@@ -252,9 +252,9 @@ export function ScheduleOverview({ allDays }) {
 export function SLotTime({ slot }) {
 	return (
 		<div
-			className={`col-span-2 flex items-center justify-center border-r-2 border-l-2 border-b-2 border-gray-200 py-1 text-base font-bold dark:border-gray-400`}
+			className={`col-span-2 flex items-center justify-center flex-wrap border-r-2 border-l-2 border-b-2 border-gray-200 py-1 text-sm font-bold dark:border-gray-400 md:col-span-2 md:text-base`}
 		>
-			{slot.timeStart} - {slot.timeEnd}
+			<p>{slot.timeStart}</p><p className="hidden md:block px-1">-</p><p>{slot.timeEnd}</p>
 		</div>
 	);
 }
@@ -283,7 +283,7 @@ export function SlotAllActivities({ slot }) {
 export function SlotActivity({ activity, location, slotchildren }) {
 	return (
 		<div
-			className={`col-span-${
+			className={`col-span-12 md:col-span-${
 				slotchildren > 2 ? 4 : slotchildren == 1 ? 12 : 6
 			} border-r-2 border-r-2 border-b-2  border-gray-200 text-center dark:border-gray-400`}
 		>
@@ -293,18 +293,17 @@ export function SlotActivity({ activity, location, slotchildren }) {
 				</p>
 			)}
 			<div className=" py-2  dark:text-gray-300 ">
-			<p className="text-base font-semibold">
-				{activity.title}
-			</p>
-			{ activity.speakers && 
-			<div>
-				{activity.speakers.map(speaker =>(<p id={speaker.id} className="text-sm font-medium">{speaker.name}</p>))}
+				<p className="text-base font-semibold">{activity.title}</p>
+				{activity.speakers && (
+					<div>
+						{activity.speakers.map((speaker) => (
+							<p id={speaker.id} className="text-sm font-medium">
+								{speaker.name}
+							</p>
+						))}
+					</div>
+				)}
 			</div>
-			}
-			</div>
-			
-			
-			
 		</div>
 	);
 }
@@ -328,7 +327,7 @@ export function SLotInfo({ day }) {
 		<ul role="list">
 			{day.map((slot) => (
 				<div>
-						<div className="hidden md:block">
+					<div className="hidden md:block">
 						<div className="my-3 flex w-2/4  justify-between text-lg font-bold">
 							<p>{slot.title}</p>
 							<p className="ml-2 mr-4">
@@ -347,7 +346,7 @@ export function SLotInfo({ day }) {
 					</div>
 					<div className="grid grid-cols-12 gap-4">
 						{slot.children.map((activity) => (
-							<li class="col-span-12 rounded-lg border-2 border-gray-200 dark:border-gray-400 p-2 md:col-span-4 md:p-3">
+							<li class="col-span-12 rounded-lg border-2 border-gray-200 p-2 dark:border-gray-400 md:col-span-4 md:p-3">
 								<ScheduleItem activity={activity} />
 							</li>
 						))}

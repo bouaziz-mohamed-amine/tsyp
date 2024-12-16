@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export function TNChallengePage() {
 	const [tasksData, setTasksData] = useState([]);
+	const [partners, setpartners] = useState([]);
 	const [taskSelected, settaskSelected] = useState(null);
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [mentorsdata, setmentorsdata] = useState([]);
@@ -17,6 +18,14 @@ export function TNChallengePage() {
 					settaskSelected(0);
 				})
 				.catch((err) => console.error(err));
+				fetch("/assets/tn_partners.json")
+				.then((response) => response.json())
+				.then((response) => {
+					console.log(response);
+					
+					setpartners(response);
+				})
+				.catch((err) => console.error(err));	
 		};
 		getData();
 	}, []);
@@ -141,46 +150,55 @@ export function TNChallengePage() {
 			</section>
 			<div className="col-span-12 pb-16 md:mx-auto">
 				<h1 className=" text-center text-4xl font-bold tracking-tight  lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
-					Meet Our Experts
+					Meet Our Partners
 				</h1>
 			</div>
+			<div className="">
 			<section className="py-8 md:py-10">
-				<div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-					<div className="grid gap-4">
-						<iframe
-							className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
-							src="https://www.youtube.com/embed/fGtaovfEMsk?si=qeKhTqVvShbma6Hi"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin"
-							allowfullscreen
-						></iframe>
-					</div>
-					<div className="grid gap-4">
-						<iframe
-							className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
-							src="https://www.youtube.com/embed/yQifdi5ayzk?si=U_JuQwftTdTBmR4O"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin"
-							allowfullscreen
-						></iframe>
-					</div>
-					<div className="grid gap-4">
-						<iframe
-							className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
-							src="https://www.youtube.com/embed/jYsry2bVTto?si=fwG37715PnjpIL7t"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin"
-							allowfullscreen
-						></iframe>
-					</div>
+				<div className="grid grid-cols-12 gap-4">
+				{partners.map((e) => (
+								<Link
+									to={e.webSite}
+									className="col-span-12 md:col-span-4 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500  md:px-6  md:pt-6"
+								>
+									<div className="mb-2 rounded-lg bg-gray-50 p-2 py-6">
+										<CustomImage
+											src={e.image}
+											alt=""
+											className="h-40 w-full object-contain py-6 md:h-40"
+											loading="lazy"
+										/>
+									</div>
+									<div className=" h-16  text-center text-lg font-bold text-black line-clamp-2 dark:text-gray-300 md:h-24 lg:h-16 ">
+										<div className=" flex  items-center justify-center">
+											<div>{e.name}</div>
+										</div>
+									</div>
+								</Link>
+							))}	
 				</div>
 			</section>
+			</div>
+			<div className="my-8">
+			<div className="col-span-12 pb-16 md:mx-auto">
+				<h1 className=" text-center text-4xl font-bold tracking-tight  lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
+					Mentors
+				</h1>
+			</div>
+
+				<div className="grid grid-cols-12 gap-6">
+					{mentorsdata.map((item0, index0) => (
+						<div className="col-span-12 md:col-span-3" key={index0}>
+							<CustomImage
+								className="h-full w-full rounded-2xl object-cover"
+								src={item0.url}
+								alt=""
+							/>
+						
+						</div>
+					))}
+				</div>
+			</div>
 			<div className="col-span-12 py-16 md:mx-auto">
 				<h1 className="text-center text-4xl font-bold tracking-tight lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
 					TN 2056 Tasks
@@ -294,26 +312,6 @@ export function TNChallengePage() {
 							)
 						)}
 					</div>
-				</div>
-			</div>
-			<div className="my-8">
-			<div className="col-span-12 pb-16 md:mx-auto">
-				<h1 className=" text-center text-4xl font-bold tracking-tight  lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
-					Mentors
-				</h1>
-			</div>
-
-				<div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-					{mentorsdata.map((item0, index0) => (
-						<div className="grid-cols-1" key={index0}>
-							<CustomImage
-								className="h-full w-full rounded-2xl object-cover"
-								src={item0.url}
-								alt=""
-							/>
-						
-						</div>
-					))}
 				</div>
 			</div>
 		</div>
