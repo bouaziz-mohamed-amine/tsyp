@@ -53,10 +53,10 @@ const routes = [
 			// 	title: "Speakers",
 			// 	href: "/speakers",
 			// },
-			// {
-			// 	title: "Venue",
-			// 	href: "/venue",
-			// },
+			{
+				title: "Venue",
+				href: "/venue",
+			},
 		],
 		
 	},
@@ -79,11 +79,11 @@ const routes = [
 	// 	href: "/challenges",
 	// 	mobileOnly: true,
 	// },
-	// {
-	// 	title: "Venue",
-	// 	href: "/venue",
-	// 	mobileOnly: true,
-	// },
+	{
+		title: "Venue",
+		href: "/venue",
+		mobileOnly: true,
+	},
 	// {
 	// 	title: "Partners",
 	// 	type: "group",
