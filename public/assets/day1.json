@@ -36,16 +36,24 @@
 					},
 					{
 						"id" :"#",
-						"name" : "Khalil Guetat IEEE ENETCOM SB CHAIR"
+						"name" : "Mr. Hassen mnif ( SB Counselor)"
+					},
+					{
+						"id":"#",
+						"name" : "Mr. Chokri Abdelmoula ENETCOM Director"
 					},
 					{
 						"id" :"#",
 						"name" : "Mr. Habib Kamoun Tunisia Section chair"
+					},
+					{
+						"id" :"speaker1",
+						"name" : "Deepak Mathur: IEEE Vice President - MGA (India)"
 					}
 				]
 			},
 			{
-				"title": "IEEE Word ( Panel )",
+				"title": "IEEE Insights Leadership Panel",
 				"timeSlotStart": "14:50 ",
 				"timeSlotEnd": "15:20 ",
 				"location": "Hannibal Congress Room",
@@ -55,15 +63,29 @@
 						"name" : "Deepak Mathur: IEEE Vice President - MGA (India)"
 					},
 					{
+						"id" :"#",
+						"name" : "Mr. Habib Kamoun Tunisia Section chair  (Zone Representative) (Tunisia)"
+					},
+					{
 						"id" :"speaker4",
 						"name" : "Abdulatif Aliyu: Vice President, IEEE R8 Student Activities (Nigeria)"
 					},
 					{
 						"id" :"speaker3",
 						"name" : "Milos Manic - IEEE IES President (USA)"
+					},
+					{
+						"id" :"speaker2",
+						"name" : " Lwanga Herbert IEEE Humanitarian Technologies Board (IEEE HTB) Chair (Uganda)"
 					}
 
 				]
+			},
+			{
+				"title": "Musical Break",
+				"timeSlotStart": "15:50 ",
+				"timeSlotEnd": "16:20 ",
+				"location": "Hannibal Congress Room"
 			},
 			{
 				"title": "Sponsors Word",
@@ -88,22 +110,28 @@
 					{
 						"id" :"speaker11",
 						"name" : "Anis ben arfi - IEEE YP MTTS Committee Chair (Canada)"
-					},
-					{
-						"id" :"speaker8",
-						"name" : "AMIT KUMAR SING - AP-S YP Ambassador 2024"
-					},
-					{
-						"id" :"speaker10",
-						"name" : "Sneha Hegde"
 					}
 				]
 			},
 			{
-				"title": "Unlocking Opportunities",
-				"timeSlotStart": "17:05 ",
-				"timeSlotEnd": "17:15 ",
-				"location": "Hannibal Congress Room"
+				"title": "Benefits of joining IEEE UNITS",
+				"timeSlotStart": "16:20 ",
+				"timeSlotEnd": "17:05 ",
+				"location": "Hannibal Congress Room",
+				"speakers" : [
+					{
+						"id" :"speaker6",
+						"name" : "Saptarshi Ghosh: IEEE CS SYP Committee Chair"
+					},
+					{
+						"id" :"#",
+						"name" : "Ilhem Kallel  Africa Council General Secretary2024"
+					},
+					{
+						"id" :"speaker10",
+						"name" : "Sneha Hegde: IEEE DEIS Representative"
+					}
+				]
 			}
 		]
 	},

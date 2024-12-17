@@ -1,0 +1,128 @@
+[
+    {
+        "title": "Forum TN 2056 Challenge - Welcome",
+        "timeStart":"08:30",
+		"timeEnd":"09:00",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Registration of TN2056 Challenge"
+          },
+          {
+            "title": "Exhibition Area"
+          }      
+        ]
+    },
+    {
+        "title": "Forum TN 2056 Challenge - Opening Ceremony",
+        "timeStart":"09:00",
+		"timeEnd":"10:00",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Opening Ceremony"
+          }      
+        ]
+    },
+    {
+        "title": "Forum TN 2056 Challenge - Welcome",
+        "timeStart":"10:00",
+		"timeEnd":"10:45",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Pitching Session 1"
+          }      
+        ]
+    },
+    {
+		"title": "",
+		"timeStart":"10:45",
+		"timeEnd":"11:00",
+        "location": "Hannibal Congress Room",
+		"children": [
+			{
+				"title": "Coffee Break"
+			}
+		]
+	},
+    {
+        "title": "Forum TN 2056 Challenge - Welcome",
+        "timeStart":"11:00",
+		"timeEnd":"12:00",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Discussion Panel 1 - “الشركات الناشئة في تونس: إلى أين” moderated by Mr.Jasser Riahi"
+          }      
+        ]
+    },
+    {
+        "title": "Forum TN 2056 Challenge - Welcome",
+        "timeStart":"12:00",
+		"timeEnd":"12:30",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Investors / Competitors Networking"
+          }      
+        ]
+    },
+    {
+		"title": "",
+		"timeStart":"12:30",
+		"timeEnd":"14:30",
+		"children": [
+			{
+				"title": "Lunch",
+				"timeSlotStart": "12:30 ",
+				"timeSlotEnd": "14:30 ",
+				"location": "Restuarants"
+			}
+		]
+	},
+    {
+        "title": "Forum TN 2056 Challenge - Welcome",
+        "timeStart":"14:30",
+		"timeEnd":"15:30",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Pitching Session 2"
+          }      
+        ]
+    },
+    {
+        "title": "Forum TN 2056 Challenge - Welcome",
+        "timeStart":"15:30",
+		"timeEnd":"16:30",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Discussion Panel 2"
+          }      
+        ]
+    },
+    {
+        "title": "Forum TN 2056 Challenge - Welcome",
+        "timeStart":"16:30",
+		"timeEnd":"17:30",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Pitching Session 3"
+          }      
+        ]
+    },
+    {
+		"title": "Forum TN 2056 Challenge - Closing Ceremony",
+		"timeStart":"17:30 ",
+		"timeEnd":"18:30 ",
+		"location": "Hannibal Congress Room",
+		"children": [
+			{
+				"title": "Closing Ceremony"
+			}
+		]
+	}
+]

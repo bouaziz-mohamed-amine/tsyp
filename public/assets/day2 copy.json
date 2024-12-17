@@ -1,88 +1,29 @@
 [
-	{
-		"title": "Parallel Sessions 1",
-		"time":"08 To 12",
-		"subSlot" :[
-			{"title": "Sessions",
-			"key" :"s"},
-			{"title": "Workshops",
-			"key" :"w"},
-			{"title": "TN Challenge",
-			"key" :"tn"}
-		],
-		"children": [
-			{
-				"title": "Breakout Session 1",
-				"location": "Medina Conventions Center",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "12:00 AM",
-				"key" :"s"
-			},
-			{
-				"title": "Workshops",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "12:00 AM",
-				"location": "Medina Conventions Center",
-				"key" :"w"
-			}
-		]
-	},
-	{
-		"title": "Parallel Sessions 2",
-		"time":"08 To 12",
-		"subSlot" :[
-			{"title": "Sessions",
-			"key" :"s"},
-			{"title": "Workshops",
-			"key" :"w"},
-			{"title": "TN Challenge",
-			"key" :"tn"}
-		],
-		"children": [
-			{
-				"title": "Breakout Session 2",
-				"location": "Medina Conventions Center",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "12:00 AM",
-				"key" :"s"
-
-			},
-			{
-				"title": "Workshops 2",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "12:00 AM",
-				"location": "Medina Conventions Center",
-				"key" :"w"
-			}
-		]
-	},
-	{
-		"title": "Parallel Sessions 3",
-		"time":"08 To 12",
-		"subSlot" :[
-			{"title": "Sessions",
-			"key" :"s"},
-			{"title": "Workshops",
-			"key" :"w"},
-			{"title": "TN Challenge",
-			"key" :"tn"}
-		],
-		"children": [
-			{
-				"title": "Breakout Session 2",
-				"location": "Medina Conventions Center",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "12:00 AM",
-				"key" :"s"
-
-			},
-			{
-				"title": "Workshops 2",
-				"timeSlotStart": "09:00 AM",
-				"timeSlotEnd": "12:00 AM",
-				"location": "Medina Conventions Center",
-				"key" :"w"
-			}
-		]
-	}
+    {
+        "title": "Forum TN 2056 Challenge - Welcome"
+    },
+    {
+        "title": "Forum TN 2056 Challenge - Opening Ceremony"
+    },
+    {
+        "title": "Pitching Session"
+    },
+    {
+        "title": "Discussion Panel 1 - “الشركات الناشئة في تونس: إلى أين” moderated by Mr.Jasser Riahi"
+    },
+    {
+        "title": "Investors / Competitors Networking"
+    },
+    {
+        "title": "Pitching Session 2"
+    },
+    {
+        "title": "Panel Discussion 2 - “Tunisia 2056”"
+    },
+    {
+        "title": "Pitching Session 3"
+    },
+    {
+        "title": "Forum TN 2056 Challenge - Closing Ceremony"
+    }
 ]

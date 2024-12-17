@@ -8,6 +8,20 @@ export function TNChallengePage() {
 	const [taskSelected, settaskSelected] = useState(null);
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [mentorsdata, setmentorsdata] = useState([]);
+	const [day1, setDay1] = useState([]);
+
+
+	useEffect(() => {
+		const getData = async () => {
+			await fetch("/assets/tn_program.json")
+				.then((response) => response.json())
+				.then((response) => {
+					setDay1([...response]);
+				})
+				.catch((err) => console.error(err));
+		};
+		getData();
+	}, []);
 
 	useEffect(() => {
 		const getData = async () => {
@@ -179,6 +193,22 @@ export function TNChallengePage() {
 				</div>
 			</section>
 			</div>
+			<div className="col-span-12 py-4 md:mx-auto">
+				<h1 className=" text-center text-4xl font-bold tracking-tight  lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
+					Program
+				</h1>
+			</div>
+			<div className="">
+							<div className="my-8 md:my-16 ">
+								<FullDate text={"Monday 23 December 2024"} index={1} />
+								{day1.map((slot) => (
+									<div className="grid grid-cols-12  text-gray-900 dark:text-white">
+										<SLotTime slot={slot} />
+										<SlotAllActivities slot={slot} />
+									</div>
+								))}
+							</div>
+			</div>
 			<div className="my-8">
 			<div className="col-span-12 pb-16 md:mx-auto">
 				<h1 className=" text-center text-4xl font-bold tracking-tight  lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
@@ -313,6 +343,77 @@ export function TNChallengePage() {
 						)}
 					</div>
 				</div>
+			</div>
+		</div>
+	);
+}
+export function SLotTime({ slot }) {
+	return (
+		<div
+			className={`col-span-2 flex items-center justify-center flex-wrap border-r-2 border-l-2 border-b-2 border-gray-200 py-1 text-sm font-bold dark:border-gray-400 md:col-span-2 md:text-base`}
+		>
+			<p>{slot.timeStart}</p><p className="hidden md:block px-1">-</p><p>{slot.timeEnd}</p>
+		</div>
+	);
+}
+
+export function SlotAllActivities({ slot }) {
+	return (
+		<div className="col-span-10">
+			{slot.location && slot.location != "-" && (
+				<p className="border-b-2 border-r-2 border-gray-200 bg-gray-200 py-1 text-center text-base font-medium dark:border-gray-400 dark:bg-transparent dark:text-gray-400">
+					{slot.location}
+				</p>
+			)}
+			<div className="grid grid-cols-12">
+				{slot.children.map((activity) => (
+					<SlotActivity
+						activity={activity}
+						location={slot.location}
+						slotchildren={slot.children.length}
+					/>
+				))}
+			</div>
+		</div>
+	);
+}
+export function FullDate({ text, index }) {
+	return (
+		<div
+			id={"day-" + index}
+			className="grid grid-cols-12 rounded-tl-2xl rounded-tr-2xl border-2 border-gray-200 py-3  text-center font-bold dark:border-gray-400  md:text-xl "
+		>
+			<div className="col-span-2"></div>
+			<div className="col-span-10 text-[#115D85] dark:text-[#BA0D15] ">
+				{text}
+			</div>
+		</div>
+	);
+}
+
+export function SlotActivity({ activity, location, slotchildren }) {
+	return (
+		<div
+			className={`col-span-12 md:col-span-${
+				slotchildren > 2 ? 4 : slotchildren == 1 ? 12 : 6
+			} border-r-2 border-r-2 border-b-2  border-gray-200 text-center dark:border-gray-400`}
+		>
+			{!location && (
+				<p className="border-b-2 border-gray-200 bg-gray-200 py-1 text-base font-medium dark:border-gray-400 dark:bg-transparent dark:text-gray-400">
+					{activity.location}
+				</p>
+			)}
+			<div className=" py-2 dark:text-gray-300 ">
+				<p className="text-base font-semibold">{activity.title}</p>
+				{activity.speakers && (
+					<div>
+						{activity.speakers.map((speaker) => (
+							<p id={speaker.id} className="text-sm font-medium">
+								{speaker.name}
+							</p>
+						))}
+					</div>
+				)}
 			</div>
 		</div>
 	);

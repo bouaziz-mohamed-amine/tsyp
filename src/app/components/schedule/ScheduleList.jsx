@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import ScheduleItem from "./ScheduleItem";
 
-export default function ScheduleList({ allDays }) {
+export default function ScheduleList({ allDay,speaker }) {
+	console.log(speaker);
+	
 	return (
 		<div>
 			<ScheduleOverview allDays />
@@ -292,7 +294,7 @@ export function SlotActivity({ activity, location, slotchildren }) {
 					{activity.location}
 				</p>
 			)}
-			<div className=" py-2  dark:text-gray-300 ">
+			<div className=" py-2 dark:text-gray-300 ">
 				<p className="text-base font-semibold">{activity.title}</p>
 				{activity.speakers && (
 					<div>

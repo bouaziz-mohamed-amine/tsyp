@@ -10,6 +10,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import StyledButton from "./StyledButton";
 import CustomImage from "./CustomImage";
+import ScheduleList from "./schedule/ScheduleList";
 
 export default function Speaker() {
 	const { speakerSlug } = useParams();
@@ -39,9 +40,10 @@ export default function Speaker() {
 					<span className="font-bold hover:underline">Back to Speakers</span>
 				</Link>
 			</div>
-
-			<div className="grid grid-cols-12 gap-y-8 md:gap-x-8">
-				<div className="col-span-full md:col-span-4">
+			<div className="grid grid-cols-12">
+				<div className="col-span-12 md:col-span-5 ">
+				<div className="grid grid-cols-12 gap-y-8 md:gap-x-8">
+				<div className="col-span-full md:col-span-6">
 					<CustomImage
 						src={currentSpeaker.Photo}
 						alt=""
@@ -101,6 +103,12 @@ export default function Speaker() {
 					)}
 				</div>
 			</div>
+				</div>
+				<div className="col-span-12 md:col-span-7 ">
+					<ScheduleList    speaker={speakerSlug}/>
+				</div>
+			</div>
+			
 		</div>
 	);
 }

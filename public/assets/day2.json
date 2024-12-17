@@ -14,30 +14,130 @@
 	},
 	{
 		"title": "Parallel Sessions 1",
-		"timeStart":"09:30 ",
+		"timeStart":"09:00 ",
 		"timeEnd":"10:30 ",
-		"location": "Medina Conventions Center",
 		"children": [
 			{
-				"title": "Sessions",
-				"location": "Medina Conventions Center",
-				"timeSlotStart": "09:00 ",
-				"timeSlotEnd": "10:30 ",
-				"key" :"s"
+				"title": "CS & YP Challenge",
+				"200": "Feriel Said",
+				"location": "Cesar 7 "
 			},
 			{
-				"title": "Workshops",
-				"timeSlotStart": "09:00 ",
-				"timeSlotEnd": "10:30 ",
-				"location": "Medina Conventions Center",
-				"key" :"w"
+				"title": "Cass/RFID Challenge",
+				"200": "Wassim/Mourad Loulou/ Hassen Mnif",
+				"location": "Cesar 8 "
+			},
+			{
+				"title": "IAS Technical Challenge",
+				"200": "Achref Selmi",
+				"location": "Cesar 4 "
+			},
+			{
+				"title": "PES/RAS/SIGHT Challenge",
+				"200": "Madiha Neifar/Khaled/Aouididi",
+				"location": "Cesar 6 "
+			},
+			{
+				"title": "SSCS challenge",
+				"200": "Amel Neifar",
+				"location": "Cesar 2"
+			},
+			{
+				"title": "Fundamentals Of Deep Learning 1",
+				"200": "Amal Jlassi",
+				"location": "Cesar 1 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Amal Jlassi"
+					}
+				]
+			},
+			{
+				"title": "Pathways to Effective Humanitarian Solutions",
+				"200": "Ahmed Aouididi (IEEE SIGHT Tunisia Section Chair- IEEE SAC Congress Representative- IEEE RAS Tunisia Section Treasurer)",
+				"location": "Cesar 3 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Ahmed Aouididi"
+					}
+				]
+			},
+			{
+				"title": "Building your TN2056 Project: A hands-On Guide with the Business Model Canvas",
+				"200": "Maram Rouissi : (Business Developer Manager)",
+				"location": "Hannibal 1 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Maram Rouissi"
+					}
+				]
+			},
+			{
+				"title": "the possibilities of immersive technologies AR/VR/MR",
+				"200": "Leila Mekacher: Head of Digital Research and Innovation, Founder & CEO of Innoversa Factory GmbH & Innoversa gUG, STEM Ambassador",
+				"location": "Hannibal 2 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Leila Mekacher"
+					}
+				]
+			},
+			{
+				"title": "Game Development with C# and Unity",
+				"200": " Marouen Khadhar",
+				"location": "Hannibal 3 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Marouen Khadhar"
+					}
+				]
+			},
+			{
+				"title": "From Graduate to Senior Essential Skills for AI Engineers",
+				"200": "Oussema Chelly (AI and Cloud enthusiast, entrepreneur, and former Microsoft and AWS professional. Outside of tech, I enjoy cycling, swimming, football, road trips, and baking.)",
+				"location": "Hannibal 4 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Oussema Chelly"
+					}
+				]
+			},
+			{
+				"title": "Artificial Intelligence in Cyber-Physical Systems: Friend or a Foe",
+				"200": "Milos Manic: IEEE IES President (USA)",
+				"location": "Oliver ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Milos Manic"
+					}
+				]
 			},
 			{
 				"title": "Tunisia 2056 Challenge Forum",
-				"timeSlotStart": "09:00 ",
-				"timeSlotEnd": "10:30 ",
-				"location": "Medina Conventions Center",
+				"timeSlotStart": "11:00 ",
+				"timeSlotEnd": "12:30 ",
+				"location": "Hannibal Congress Room",
 				"key" :"w"
+			}
+		]
+	},
+	{
+		"title": "",
+		"timeStart":"10:30",
+		"timeEnd":"11:00",
+		"children": [
+			{
+				"title": "Coffee Break",
+				"timeSlotStart": "19:00 ",
+				"timeSlotEnd": "21:00 ",
+				"location": "Medina Hall"
 			}
 		]
 	},
@@ -45,27 +145,115 @@
 		"title": "Parallel Sessions 2",
 		"timeStart":"11:00 ",
 		"timeEnd":"12:30 ",
-		"location": "Medina Conventions Center",
-		"children": [
+		"children":
+			[
+				{
+					"title": "AESS Challenge",
+					"200": "Abir Taberki",
+					"location": " Cesar 6 "
+				},
+				{
+					"title": "Star Program part 1",
+					"200": "Arij Souai",
+					"location": "Cesar 4 "
+				},
+				{
+					"title": "EMBS Challenge",
+					"200": "Asma Nsiri",
+					"location": "Cesar 3 "
+				},
+				{
+					"title": "IES/SMC/EDSOC Challenge",
+					"200": "Ilhem Kallel/Olfa",
+					"location": "Cesar 7"
+				},
 			{
-				"title": "Sessions",
-				"location": "Medina Conventions Center",
-				"timeSlotStart": "11:00 ",
-				"timeSlotEnd": "12:30 ",
-				"key" :"s"
+				"title": "Fundamentals Of Deep Learning 2",
+				"200": "Amal Jlassi",
+				"location": "Cesar 1 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Amal Jlassi"
+					}
+				]
 			},
 			{
-				"title": "Workshops",
-				"timeSlotStart": "11:00 ",
-				"timeSlotEnd": "12:30 ",
-				"location": "Medina Conventions Center",
-				"key" :"w"
+				"title": "Cloud Computing with AWS",
+				"200": "Alaa Bouraoui",
+				"location": "Hannibal 1 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Alaa Bouraoui"
+					}
+				]
+			},
+			{
+				"title": "How IEEE Youth can bring solutions to local and regional issues of climate impacts and sustainable developpement",
+				"200": "IEEE YOUNG PROFESSIONALS CLIMATE AND SUSTAINABILITY TASK Force",
+				"location": "Amphi Cesar "
+			},
+			{
+				"title": "Intelligent Surfaces and Antennas for 6G- Opportunities and Challenges",
+				"200": "AMIT KUMAR SING - AP-S YP Ambassador 2024",
+				"location": "Hannibal 3 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"AMIT KUMAR SING"
+					}
+				]
+			},
+			{
+				"title": "Mastering MLOps: Building Scalable and Reliable AI Sytems",
+				"200": "Oussema Chelly (AI and Cloud enthusiast, entrepreneur, and former Microsoft and AWS professional. Outside of tech, I enjoy cycling, swimming, football, road trips, and baking.)",
+				"location": "Hannibal 4 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Oussema Chelly"
+					}
+				]
+			},
+			{
+				"title": "Training on the new Units Accounting Platform ",
+				"200": "Mohamed Ali Zormati (Network & IoT Research Engineer | IEEE Volunteer)",
+				"location": "Oliver ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Mohamed Ali Zormati"
+					}
+				]
+			},
+			{
+				"title": "Big Data",
+				"200": "Mohamed Menaa IIT (Professor) ",
+				"location": "Cesar 8 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Mohamed Menaa"
+					}
+				]
+			},
+			{
+				"title": "CIS TN Benefits & the Future of Generative AI",
+				"200": "Wajih Letaief & Boudour Ammar ",
+				"location": "Hannibal 2",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"ajih Letaief & Boudour Ammar"
+					}
+				]
 			},
 			{
 				"title": "Tunisia 2056 Challenge Forum",
 				"timeSlotStart": "11:00 ",
 				"timeSlotEnd": "12:30 ",
-				"location": "Medina Conventions Center",
+				"location": "Hannibal Congress Room",
 				"key" :"w"
 			}
 		]
@@ -87,28 +275,285 @@
 		"title": "Parallel Sessions 3",
 		"timeStart":"14:30 ",
 		"timeEnd":"16:00 ",
-		"location": "Medina Conventions Center",
 		"children": [
+				{
+					"title": "CIS ZEN Challenge",
+					"200": "Boudour/Wajih",
+					"location": "Cesar 8 "
+				},
+				{
+					"title": "Star Program part 2",
+					"200": "Arij Souai",
+					"location": "Cesar 4"
+				},
 			{
-				"title": "Sessions",
-				"location": "Medina Conventions Center",
-				"timeSlotStart": "14:30 ",
-				"timeSlotEnd": "16:00 ",
-				"key" :"s"
+				"title": "Fundamentals Of Deep Learning 3 ",
+				"200": "Amal Jlassi ",
+				"location": "Cesar 1 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Amal Jlassi"
+					}
+				]
 			},
 			{
-				"title": "Workshops",
-				"timeSlotStart": "14:30 ",
-				"timeSlotEnd": "16:00 ",
-				"location": "Medina Conventions Center",
-				"key" :"w"
+				"title": "The AI Playbook – Essential Skills and Tools for Every Engineer  ",
+				"200": "Imen Selmi (Machine Learning Operations Engineer at Scissero Ltd) ",
+				"location": "Cesar 2 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Imen Selmi"
+					}
+				]
+			},
+			{
+				"title": "The Future of Transportation with Electrification and AI, Workshop Powered by Wie R8 ",
+				"200": "Ala Chalghaf (WIE Committee Member at IEEE Region 8, Student Representative at IEEE Industrial Electronics Society) +       Baya Bouchaala (Ex-officio corresponding member, at IEEE WIE Region 😎",
+				"location": "Cesar 3 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Ala Chalghaf & Baya Bouchaala"
+					}
+				]
+			},
+			{
+				"title": "Introduction to quotes and standards ",
+				"200": "Nehad Sherif (IEEE IAS executive member) ",
+				"location": "Cesar 6 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Nehad Sherif"
+					}
+				]
+			},
+			{
+				"title": "Computer Society plenary Session: Product Management and Leadership ",
+				"200": "Saptarshi Gosh + Karan jhaveri ",
+				"location": "Amphi Cesar ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Saptarshi Gosh & Karan jhaveri"
+					}
+				]
+			},
+			{
+				"title": "Advanced Technologies toward Terrestrial and Non Terrestrial Vehicular Networks",
+				"200": "(itts & smcs )Lamia CHAARI FOURATI,, Professor at Computer Science and Multimedia Higher Institute (ISIMS),SFAX University, TUNISIA.Researcher, at Digital Research Center of Sfax (CRNS), Laboratory of Signals,systeMs, aRtificial Intelligence, neTworkS (SM@RTS), Sfax University;TUNISIA.",
+				"location": "Hannibal 1 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Lamia CHAARI FOURATI"
+					}
+				]
+			},
+			{
+				"title": "From research to production: Machine learning pipeline for accounting platform case study ",
+				"200": "Aziz Amari, Units Accounting Platform ML Team Leader. ",
+				"location": "Hannibal 2 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Aziz Amari"
+					}
+				]
+			},
+			{
+				"title": "UI/UX Design",
+				"200": "Marwan Essalah Founder at Etikks & Space Academy | UX Designer",
+				"location": "Hannibal 3 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Marwan Essalah"
+					}
+				]
+			},
+			{
+				"title": "The Future of Wireless Communications Under the 2056 Vision ",
+				"200": "Zied Bouida (a Senior Member of the IEEE and former Cisco Chair Technical Manager and Senior Research Associate at the Internet of Things Lab at Carleton University, Ottawa, ON, Canada)",
+				"location": "Hannibal 4 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Zied Bouida"
+					}
+				]
+			},
+			{
+				"title": "Zied Bouida",
+				"200": "Mohamed Neji (IEEE Tunisia Section Student Activities Committee Chair) & Sac Team",
+				"location": "Oliver ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Mohamed Neji"
+					}
+				]
+			},
+			{
+				"title": "YP Workshop",
+				"200": "Deepak",
+				"location": "Cesar 7",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Deepak"
+					}
+				]
 			},
 			{
 				"title": "Tunisia 2056 Challenge Forum",
-				"timeSlotStart": "14:30 ",
-				"timeSlotEnd": "16:00 ",
-				"location": "Medina Conventions Center",
+				"timeSlotStart": "11:00 ",
+				"timeSlotEnd": "12:30 ",
+				"location": "Hannibal Congress Room",
 				"key" :"w"
+			}
+		]
+	},
+	{
+		"title": "",
+		"timeStart":"16:00",
+		"timeEnd":"16:30",
+		"children": [
+			{
+				"title": "Coffee Break",
+				"timeSlotStart": "19:00 ",
+				"timeSlotEnd": "21:00 ",
+				"location": "Medina Hall"
+			}
+		]
+	},
+	{
+		"title": "Parallel Sessions 4",
+		"timeStart":"16:30",
+		"timeEnd":"18:00",
+		"children": [
+
+			{
+				"title": "Digital Marketing (ISB) ",
+				"200": "isb ",
+				"location": "Cesar 2 "
+			},
+			{
+				"title": "Fundamentals Of Deep Learning 4 ",
+				"200": "Amal Jlassi ",
+				"location": "Cesar 1",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Amal Jlassi"
+					}
+				]
+			},
+			{
+				"title": "From Concept to Commerce: Navigating the Entrepreneurial Journey ",
+				"200": "Tazeen Sharif(senior IEEE member and Harvard certified Innovation Entrepreneurship Specialist/Director in Dubai's tourism sector)\"",
+				"location": "Cesar 3 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Tazeen Sharif"
+					}
+				]
+			},
+			{
+				"title": "Design Thinking  ",
+				"200": "Karan (Systems Engineer at Enphase Energy)  ",
+				"location": "Cesar 4 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Karan"
+					}
+				]
+			},
+			{
+				"title": "Introduction to quotes and standards ",
+				"200": "Nehad Sherif (IEEE IAS executive member) ",
+				"location": "Cesar 6 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Nehad Sherif"
+					}
+				]
+			},
+			{
+				"title": "Microsoft 365 for Units ",
+				"200": "Mohamed Ali Zormati (Network & IoT Research Engineer | IEEE Volunteer) ",
+				"location": "Cesar 7 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Mohamed Ali Zormati"
+					}
+				]
+			},
+			{
+				"title": "GPC ",
+				"200": "Soulaymen Kammoun ",
+				"location": "Cesar 8 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Soulaymen Kammoun"
+					}
+				]
+			},
+			{
+				"title": "IIT ROUND TABLES ",
+				"200": "IIT  ",
+				"location": "Cesar "
+			},
+			{
+				"title": "How to find a topic for my thesis + How to be IEEE senior member elevation campaign  ",
+				"200": "Zied Bouida then online with Dhanu Pattanashetti ",
+				"location": "Hannibal 3 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Zied Bouida & Dhanu Pattanashetti"
+					}
+				]
+			},
+			{
+				"title": "DevOps Essentials ",
+				"200": "Oussama Aroua and Mohamed Salah Naija  ",
+				"location": "Hannibal 4 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Oussama Aroua & Mohamed Salah Naija"
+					}
+				]
+			},
+			{
+				"title": "Soft Skills Workshop ",
+				"200": "Fares ben Souilah ",
+				"location": "Oliver ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Fares ben Souilah"
+					}
+				]
+			},
+			{
+				"title": "Project Management",
+				"200": "Abdullateef Aliyu",
+				"location": "Hannibal 1",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Abdullateef Aliyu"
+					}
+				]
 			}
 		]
 	},
