@@ -248,11 +248,11 @@ export default function HomePage() {
 					<Speakers limit={5} />
 				</section>
 			</Fade>
-			{/* <Fade triggerOnce>
+			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<PreviousEditions />
 				</section>
-			</Fade> */}
+			</Fade>
 			<Fade triggerOnce>
 				<section className="py-8 ">
 					<Team limit={5} />
@@ -591,7 +591,7 @@ function PreviousEditions() {
 					</div>
 					<div className="transition hover:scale-105">
 						<a
-							href={"https://past-tsyp.ieee.tn/2022/"}
+							href={""}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -607,7 +607,7 @@ function PreviousEditions() {
 					</div>
 					<div className="transition hover:scale-105">
 						<a
-							href={"https://past-tsyp.ieee.tn/2021/index.html"}
+							href={""}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -623,7 +623,7 @@ function PreviousEditions() {
 					</div>
 					<div className="transition hover:scale-105">
 						<a
-							href={"https://past-tsyp.ieee.tn/2020/index.html"}
+							href={""}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -640,7 +640,7 @@ function PreviousEditions() {
 
 					<div className="transition hover:scale-105">
 						<a
-							href={"https://past-tsyp.ieee.tn/2019/index.html"}
+							href={""}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -656,7 +656,7 @@ function PreviousEditions() {
 					</div>
 					<div className="transition hover:scale-105">
 						<a
-							href={"https://past-tsyp.ieee.tn/2018/index.html"}
+							href={""}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -672,7 +672,7 @@ function PreviousEditions() {
 					</div>
 					<div className="transition hover:scale-105">
 						<a
-							href={"https://past-tsyp.ieee.tn/2017/index.html"}
+							href={""}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -688,7 +688,7 @@ function PreviousEditions() {
 					</div>
 					<div className="transition hover:scale-105">
 						<a
-							href={"https://past-tsyp.ieee.tn/2016/index.html"}
+							href={""}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -704,7 +704,7 @@ function PreviousEditions() {
 					</div>
 					<div className="transition hover:scale-105">
 						<a
-							href={"https://past-tsyp.ieee.tn/2015/index.html"}
+							href={""}
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -720,7 +720,7 @@ function PreviousEditions() {
 					</div>
 					<div className="transition hover:scale-105">
 						<a
-							href={"https://past-tsyp.ieee.tn/2014/index.html"}
+							href={""}
 							target="_blank"
 							rel="noreferrer"
 						>
