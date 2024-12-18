@@ -360,9 +360,9 @@ export function SLotTime({ slot }) {
 export function SlotAllActivities({ slot }) {
 	return (
 		<div className="col-span-10">
-			{slot.location && slot.location != "-" && (
+			{slot.title && slot.title != "-" && (
 				<p className="border-b-2 border-r-2 border-gray-200 bg-gray-200 py-1 text-center text-base font-medium dark:border-gray-400 dark:bg-transparent dark:text-gray-400">
-					{slot.location}
+					{slot.title}
 				</p>
 			)}
 			<div className="grid grid-cols-12">
