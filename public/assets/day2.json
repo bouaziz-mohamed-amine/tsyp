@@ -8,7 +8,7 @@
 				"title": "Breakfast",
 				"timeSlotStart": "07:00 ",
 				"timeSlotEnd": "09:00 ",
-				"location": "Restuarants"
+				"location": "Restaurants"
 			}
 		]
 	},
@@ -267,7 +267,7 @@
 				"title": "Lunch",
 				"timeSlotStart": "12:30 ",
 				"timeSlotEnd": "14:30 ",
-				"location": "Restuarants"
+				"location": "Restaurants"
 			}
 		]
 	},
@@ -566,7 +566,7 @@
 				"title": "Dinner",
 				"timeSlotStart": "19:00 ",
 				"timeSlotEnd": "21:00 ",
-				"location": "Restuarants"
+				"location": "Restaurants"
 			}
 		]
 	},
