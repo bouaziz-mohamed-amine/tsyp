@@ -1,0 +1,155 @@
+[
+    {
+        "title": "Forum TN 2056 Welcome and Registration",
+        "timeStart":"08:30",
+		    "timeEnd":"09:00",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Registration of TN2056 Challenge"
+          },
+          {
+            "title": "Exhibition Area"
+          }      
+        ]
+    },
+    {
+        "title": "Opening Ceremony",
+        "timeStart":"09:00",
+		    "timeEnd":"09:45",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Opening Remarks"
+          },
+          {
+            "title": "Keynote Speech by Mr. Anis Kallel"
+          }    
+        ]
+    },
+    {
+        "title": "Pitching Session 1",
+        "timeStart":"09:45",
+		    "timeEnd":"10:30",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Sector: Cultural and Creative Industries (CCI)"
+          },
+          {
+            "title": "Teams from the CCI sector will present their pitches."
+          } ,
+          {
+            "title": "Juries: Hana Ben Ali, Fahmi Bedbabis, Kais Jammoussi, Mohamed Mazouzi, Ahmed Maalel, Mohamed Abdelnatheur, Razi Milani, Ahmed Ben Attia"
+          }     
+        ]
+    },
+    {
+		"title": "Coffee Break",
+		"timeStart":"10:30",
+		"timeEnd":"11:00",
+        "location": "Hannibal Congress Room",
+		"children": [
+		]
+	},
+    {
+        "title": "Panel Discussion 1",
+        "timeStart":"11:00",
+		"timeEnd":"12:15",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Discussion Panel 1 - “الشركات الناشئة في تونس: إلى أين” moderated by Mr.Jasser Riahi"
+          },
+          {
+            "title":"Panelists: Anis Kallel, Rayen Bouajaja, Hedi Tmar, Lotfi Guebsi"
+          }    
+        ]
+    },
+    {
+        "title": "Investors and Competitors Networking",
+        "timeStart":"12:15",
+		    "timeEnd":"12:30",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Product Demo Stands"
+          }   
+        ]
+    },
+    {
+		"title": "",
+		"timeStart":"13:00",
+		"timeEnd":"14:30",
+		"children": [
+			{
+				"title": "Lunch",
+				"timeSlotStart": "13:00 ",
+				"timeSlotEnd": "14:30 ",
+				"location": "Restaurants"
+			}
+		]
+	},
+    {
+        "title": "Pitching Session 2",
+        "timeStart":"14:30",
+		    "timeEnd":"15:30",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Sector: HealthTech"
+          },
+          {
+            "title": "Finalist teams  from the HealthTech sector will present their pitches."
+          },
+          {
+            "title": "Juries: Hana Ben Ali, Fahmi Bedbabis, Kais Jammoussi, Mohamed Mazouzi, Ahmed Maalel, Mohamed Abdelnatheur, Razi Milani"
+          }       
+        ]
+    },
+    {
+        "title": "Panel Discussion 2",
+        "timeStart":"15:30",
+		    "timeEnd":"16:45",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Moderator: Mr. Jasser Riahi"
+          },
+          {
+            "title": "Panelists: Razi Milani, Firas Ben Hassan, Leila Mekacher, Ahmed Ouselati"
+          }       
+        ]
+    },
+    {
+        "title": "Pitching Session 3",
+        "timeStart":"16:45",
+		"timeEnd":"18:15",
+        "location": "Hannibal Congress Room",
+        "children": [
+          {
+            "title": "Sector: AgriTech"
+          },
+          {
+            "title": "Finalist teams from the Agritech sector will present their pitches."
+          } ,
+          {
+            "title": "Juries: Hana Ben Ali, Fahmi Bedbabis, Kais Jammoussi, Mohamed Mazouzi, Ahmed Maalel, Mohamed Abdelnatheur, Mohamed Hedi Allouch"
+          }
+        ]
+    },
+    {
+		"title": "Closing Ceremony",
+		"timeStart":"18:15 ",
+		"timeEnd":"18:30 ",
+		"location": "Hannibal Congress Room",
+		"children": [
+			{
+				"title": "Closing Remarks"
+			},
+      {
+				"title": "Product Demo Stands"
+			}
+		]
+	}
+]

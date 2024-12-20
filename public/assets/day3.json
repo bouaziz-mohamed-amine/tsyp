@@ -8,27 +8,55 @@
 				"title": "Breakfast",
 				"timeSlotStart": "07:00 ",
 				"timeSlotEnd": "09:00 ",
-				"location": "Restuarants"
+				"location": "Restaurants"
 			}
 		]
 	},
 	{
 		"title": "IEEE Tunisia Section Awards",
-		"timeStart":"09:30 ",
-		"timeEnd":"10:30 ",
+		"timeStart":"09:00 ",
+		"timeEnd":"10:00 ",
 		"location": "Hannibal Congress Room",
 		"children": [
 			{
-				"title": "IEEE Tunisia Section Awards",
+				"title": "Awards Ceremony",
+				"timeSlotStart": "09:00 ",
+				"timeSlotEnd": "10:30 ",
+				"location": "Hannibal Congress Room",
+				"speakers" : [
+					{
+						"id" :"#",
+						"name" : "Section Awards - Ilhem Kallel"
+					},
+					{
+						"id" :"#",
+						"name" : "Counselors recognition"
+					}
+				]
+			},
+			{
+				"title": "Sponsors closing word",
 				"timeSlotStart": "09:00 ",
 				"timeSlotEnd": "10:30 ",
 				"location": "Hannibal Congress Room"
+			},
+			{
+				"title": "Keynote Session",
+				"timeSlotStart": "09:00 ",
+				"timeSlotEnd": "10:30 ",
+				"location": "Hannibal Congress Room",
+				"speakers" : [
+					{
+						"id" :"#",
+						"name" : "Unlocking Opportunities: Internships, Research & Careers in the Middle East - Tazeen Jameel Sharif "
+					}
+				]
 			}
 		]
 	},
 	{
 		"title": "Finalist Pitches ",
-		"timeStart":"09:30 ",
+		"timeStart":"10:00 ",
 		"timeEnd":"12:00 ",
 		"location": "Hannibal Congress Room",
 		"children": [

@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 export default function SchedulePage() {
 	return (
 		<>
-			<ScheduleList  allDays={true} />
+			<ScheduleList/>
 
 			{/* <Fade triggerOnce>
 				<section className="grid items-center justify-center gap-16 py-8 md:grid-cols-12 md:py-16">
