@@ -84,19 +84,21 @@ function ExpoDetails({ data }) {
 					<div className="flex justify-between">
 						<div className="text-2xl font-bold">{data.name}</div>
 					</div>
-					{data.slug === "GPC" && <div className=" mx-auto  my-4 w-full  ">
-						<iframe
-						className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96 "
-						    width="560"
-							height="315"
-							src="https://www.youtube.com/embed/trcKs5YXHq4?si=MgTtCke0LO3odErv"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin"
-							allowfullscreen
-						></iframe>
-					</div>}
+					{data.slug === "GPC" && (
+						<div className=" mx-auto  my-4 w-full  ">
+							<iframe
+								className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96"
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/trcKs5YXHq4?si=MgTtCke0LO3odErv&autoplay=1"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div>
+					)}
 				</div>
 
 				<div>
@@ -104,7 +106,6 @@ function ExpoDetails({ data }) {
 						dangerouslySetInnerHTML={{ __html: data.description }}
 						className=""
 					></p>
-					
 				</div>
 
 				{data.website && (
