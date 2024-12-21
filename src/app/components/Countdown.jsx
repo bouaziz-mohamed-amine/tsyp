@@ -37,7 +37,7 @@ const useCount = (targetDate) => {
 };
 const getReturn = (count) => {
 	// calculate time left
-	const days = Math.floor(count / (1000 * 60 * 60 * 24));
+	const days = Math.floor(count / (1000 * 60 * 60 * 24))+1;
 	const hours = Math.floor((count % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	const minutes = Math.floor((count % (1000 * 60 * 60)) / (1000 * 60));
 	const seconds = Math.floor((count % (1000 * 60)) / 1000);
