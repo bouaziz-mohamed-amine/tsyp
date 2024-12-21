@@ -18,31 +18,6 @@
 		"timeEnd":"10:30 ",
 		"children": [
 			{
-				"title": "CS & YP Challenge",
-				"200": "Feriel Said",
-				"location": "Cesar 7 "
-			},
-			{
-				"title": "Cass/RFID Challenge",
-				"200": "Wassim/Mourad Loulou/ Hassen Mnif",
-				"location": "Cesar 8 "
-			},
-			{
-				"title": "IAS Technical Challenge",
-				"200": "Achref Selmi",
-				"location": "Cesar 4 "
-			},
-			{
-				"title": "PES/RAS/SIGHT Challenge",
-				"200": "Madiha Neifar/Khaled/Aouididi",
-				"location": "Cesar 6 "
-			},
-			{
-				"title": "SSCS challenge",
-				"200": "Amel Neifar",
-				"location": "Cesar 2"
-			},
-			{
 				"title": "Fundamentals Of Deep Learning 1",
 				"200": "Amal Jlassi",
 				"location": "Cesar 1 ",
@@ -53,6 +28,7 @@
 					}
 				]
 			},
+			
 			{
 				"title": "Pathways to Effective Humanitarian Solutions",
 				"200": "Ahmed Aouididi (IEEE SIGHT Tunisia Section Chair- IEEE SAC Congress Representative- IEEE RAS Tunisia Section Treasurer)",
@@ -107,8 +83,7 @@
 						"name":"Oussema Chelly"
 					}
 				]
-			},
-			{
+			},{
 				"title": "Artificial Intelligence in Cyber-Physical Systems: Friend or a Foe",
 				"200": "Milos Manic: IEEE IES President (USA)",
 				"location": "Oliver ",
@@ -120,6 +95,34 @@
 				]
 			},
 			{
+				"title": "How IEEE Youth can bring solutions to local and regional issues of climate impacts and sustainable developpement",
+				"200": "IEEE YOUNG PROFESSIONALS CLIMATE AND SUSTAINABILITY TASK Force",
+				"location": "Amphi Cesar "
+			},
+			{
+				"title": "CS & YP Challenge",
+				"200": "Feriel Said",
+				"location": "Cesar 7 "
+			},
+			{
+				"title": "Cass/RFID Challenge",
+				"200": "Wassim/Mourad Loulou/ Hassen Mnif",
+				"location": "Cesar 8 "
+			},{
+				"title": "IAS Technical Challenge",
+				"200": "Achref Selmi",
+				"location": "Cesar 4 "
+			},
+			{
+				"title": "PES/RAS/SIGHT Challenge",
+				"200": "Madiha Neifar/Khaled/Aouididi",
+				"location": "Cesar 6 "
+			},
+			{
+				"title": "SSCS challenge",
+				"200": "Amel Neifar",
+				"location": "Cesar 2"
+			},{
 				"title": "Tunisia 2056 Challenge Forum",
 				"timeSlotStart": "11:00 ",
 				"timeSlotEnd": "12:30 ",
@@ -148,6 +151,88 @@
 		"children":
 			[
 				{
+					"title": "Fundamentals Of Deep Learning 2",
+					"200": "Amal Jlassi",
+					"location": "Cesar 1 ",
+					"speakers" : [
+						{
+							"id":"#",
+							"name":"Amal Jlassi"
+						}
+					]
+				},
+				{
+					"title": "Cloud Computing with AWS",
+					"200": "Alaa Bouraoui",
+					"location": "Hannibal 1 ",
+					"speakers" : [
+						{
+							"id":"#",
+							"name":"Alaa Bouraoui"
+						}
+					]
+				},
+				{
+					"title": "How IEEE Youth can bring solutions to local and regional issues of climate impacts and sustainable developpement",
+					"200": "IEEE YOUNG PROFESSIONALS CLIMATE AND SUSTAINABILITY TASK Force",
+					"location": "Amphi Cesar "
+				},
+				{
+					"title": "Mastering MLOps: Building Scalable and Reliable AI Sytems",
+					"200": "Oussema Chelly (AI and Cloud enthusiast, entrepreneur, and former Microsoft and AWS professional. Outside of tech, I enjoy cycling, swimming, football, road trips, and baking.)",
+					"location": "Hannibal 4 ",
+					"speakers" : [
+						{
+							"id":"#",
+							"name":"Oussema Chelly"
+						}
+					]
+				},
+				{
+					"title": "Training on the new Units Accounting Platform ",
+					"200": "Mohamed Ali Zormati (Network & IoT Research Engineer | IEEE Volunteer)",
+					"location": "Oliver ",
+					"speakers" : [
+						{
+							"id":"#",
+							"name":"Mohamed Ali Zormati"
+						}
+					]
+				},
+				{
+					"title": "Big Data",
+					"200": "Mohamed Menaa IIT (Professor) ",
+					"location": "Cesar 8 ",
+					"speakers" : [
+						{
+							"id":"#",
+							"name":"Mohamed Menaa"
+						}
+					]
+				},
+				{
+					"title": "Intelligent Surfaces and Antennas for 6G- Opportunities and Challenges",
+					"200": "AMIT KUMAR SING - AP-S YP Ambassador 2024",
+					"location": "Hannibal 3 ",
+					"speakers" : [
+						{
+							"id":"#",
+							"name":"AMIT KUMAR SING"
+						}
+					]
+				},
+				{
+					"title": "CIS TN Benefits & the Future of Generative AI",
+					"200": "Wajih Letaief & Boudour Ammar ",
+					"location": "Hannibal 2",
+					"speakers" : [
+						{
+							"id":"#",
+							"name":"ajih Letaief & Boudour Ammar"
+						}
+					]
+				},
+				{
 					"title": "AESS Challenge",
 					"200": "Abir Taberki",
 					"location": " Cesar 6 "
@@ -167,88 +252,14 @@
 					"200": "Ilhem Kallel/Olfa",
 					"location": "Cesar 7"
 				},
-			{
-				"title": "Fundamentals Of Deep Learning 2",
-				"200": "Amal Jlassi",
-				"location": "Cesar 1 ",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"Amal Jlassi"
-					}
-				]
-			},
-			{
-				"title": "Cloud Computing with AWS",
-				"200": "Alaa Bouraoui",
-				"location": "Hannibal 1 ",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"Alaa Bouraoui"
-					}
-				]
-			},
-			{
-				"title": "How IEEE Youth can bring solutions to local and regional issues of climate impacts and sustainable developpement",
-				"200": "IEEE YOUNG PROFESSIONALS CLIMATE AND SUSTAINABILITY TASK Force",
-				"location": "Amphi Cesar "
-			},
-			{
-				"title": "Intelligent Surfaces and Antennas for 6G- Opportunities and Challenges",
-				"200": "AMIT KUMAR SING - AP-S YP Ambassador 2024",
-				"location": "Hannibal 3 ",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"AMIT KUMAR SING"
-					}
-				]
-			},
-			{
-				"title": "Mastering MLOps: Building Scalable and Reliable AI Sytems",
-				"200": "Oussema Chelly (AI and Cloud enthusiast, entrepreneur, and former Microsoft and AWS professional. Outside of tech, I enjoy cycling, swimming, football, road trips, and baking.)",
-				"location": "Hannibal 4 ",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"Oussema Chelly"
-					}
-				]
-			},
-			{
-				"title": "Training on the new Units Accounting Platform ",
-				"200": "Mohamed Ali Zormati (Network & IoT Research Engineer | IEEE Volunteer)",
-				"location": "Oliver ",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"Mohamed Ali Zormati"
-					}
-				]
-			},
-			{
-				"title": "Big Data",
-				"200": "Mohamed Menaa IIT (Professor) ",
-				"location": "Cesar 8 ",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"Mohamed Menaa"
-					}
-				]
-			},
-			{
-				"title": "CIS TN Benefits & the Future of Generative AI",
-				"200": "Wajih Letaief & Boudour Ammar ",
-				"location": "Hannibal 2",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"ajih Letaief & Boudour Ammar"
-					}
-				]
-			},
+			
+			
+			
+		
+			
+		
+			
+			
 			{
 				"title": "Tunisia 2056 Challenge Forum",
 				"timeSlotStart": "11:00 ",
@@ -276,16 +287,6 @@
 		"timeStart":"14:30 ",
 		"timeEnd":"16:00 ",
 		"children": [
-				{
-					"title": "CIS ZEN Challenge",
-					"200": "Boudour/Wajih",
-					"location": "Cesar 8 "
-				},
-				{
-					"title": "Star Program part 2",
-					"200": "Arij Souai",
-					"location": "Cesar 4"
-				},
 			{
 				"title": "Fundamentals Of Deep Learning 3 ",
 				"200": "Amal Jlassi ",
@@ -331,17 +332,6 @@
 				]
 			},
 			{
-				"title": "Computer Society plenary Session: Product Management and Leadership ",
-				"200": "Saptarshi Gosh + Karan jhaveri ",
-				"location": "Amphi Cesar ",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"Saptarshi Gosh & Karan jhaveri"
-					}
-				]
-			},
-			{
 				"title": "Advanced Technologies toward Terrestrial and Non Terrestrial Vehicular Networks",
 				"200": "(itts & smcs )Lamia CHAARI FOURATI,, Professor at Computer Science and Multimedia Higher Institute (ISIMS),SFAX University, TUNISIA.Researcher, at Digital Research Center of Sfax (CRNS), Laboratory of Signals,systeMs, aRtificial Intelligence, neTworkS (SM@RTS), Sfax University;TUNISIA.",
 				"location": "Hannibal 1 ",
@@ -349,17 +339,6 @@
 					{
 						"id":"#",
 						"name":"Lamia CHAARI FOURATI"
-					}
-				]
-			},
-			{
-				"title": "From research to production: Machine learning pipeline for accounting platform case study ",
-				"200": "Aziz Amari, Units Accounting Platform ML Team Leader. ",
-				"location": "Hannibal 2 ",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"Aziz Amari"
 					}
 				]
 			},
@@ -407,6 +386,48 @@
 					}
 				]
 			},
+				{
+					"title": "CIS ZEN Challenge",
+					"200": "Boudour/Wajih",
+					"location": "Cesar 8 "
+				},
+				{
+					"title": "Star Program part 2",
+					"200": "Arij Souai",
+					"location": "Cesar 4"
+				},
+				
+			
+		
+			
+			
+			{
+				"title": "Computer Society plenary Session: Product Management and Leadership ",
+				"200": "Saptarshi Gosh + Karan jhaveri ",
+				"location": "Amphi Cesar ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Saptarshi Gosh & Karan jhaveri"
+					}
+				]
+			},
+			
+			{
+				"title": "From research to production: Machine learning pipeline for accounting platform case study ",
+				"200": "Aziz Amari, Units Accounting Platform ML Team Leader. ",
+				"location": "Hannibal 2 ",
+				"speakers" : [
+					{
+						"id":"#",
+						"name":"Aziz Amari"
+					}
+				]
+			},
+			
+			
+			
+			
 			{
 				"title": "Tunisia 2056 Challenge Forum",
 				"timeSlotStart": "11:00 ",
@@ -434,12 +455,6 @@
 		"timeStart":"16:30",
 		"timeEnd":"18:00",
 		"children": [
-
-			{
-				"title": "Digital Marketing (ISB) ",
-				"200": "isb ",
-				"location": "Cesar 2 "
-			},
 			{
 				"title": "Fundamentals Of Deep Learning 4 ",
 				"200": "Amal Jlassi ",
@@ -484,6 +499,7 @@
 					}
 				]
 			},
+			
 			{
 				"title": "Microsoft 365 for Units ",
 				"200": "Mohamed Ali Zormati (Network & IoT Research Engineer | IEEE Volunteer) ",
@@ -545,15 +561,9 @@
 				]
 			},
 			{
-				"title": "Project Management",
-				"200": "Abdullateef Aliyu",
-				"location": "Hannibal 1",
-				"speakers" : [
-					{
-						"id":"#",
-						"name":"Abdullateef Aliyu"
-					}
-				]
+				"title": "Digital Marketing (ISB) ",
+				"200": "isb ",
+				"location": "Cesar 2 "
 			}
 		]
 	},
@@ -581,6 +591,19 @@
 				"timeSlotStart": "21:00 ",
 				"timeSlotEnd": "00:00 ",
 				"location": "Hannibal Congress Room"
+			}
+		]
+	},{
+		"title": "",
+		"location": "",
+		"timeStart":"00:00",
+		"timeEnd":"01:00",
+		"children": [
+			{
+				"title": "Social Activities",
+				"timeSlotStart": "00:00 ",
+				"timeSlotEnd": "01:00 ",
+				"location": ""
 			}
 		]
 	}

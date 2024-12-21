@@ -9,7 +9,7 @@ import tn_flag from "../../assets/Flag_of_Tunisia.svg";
 import CustomImage from "./CustomImage";
 import ExpoDetailsResources from "./ExpoDetailsResources";
 import StyledButton from "./StyledButton";
-import enetcom from "../../assets/images/logosb10final.png"
+import enetcom from "../../assets/images/logosb10final.png";
 export default function ExpoItemDetails() {
 	const { companySlug } = useParams();
 
@@ -51,13 +51,19 @@ export default function ExpoItemDetails() {
 }
 
 function ExpoDetails({ data }) {
+	console.log(data.slug);
+
 	if (!data) return null;
 
 	return (
 		<div className="grid grid-cols-12 gap-y-8 md:gap-x-8">
 			<div className="relative col-span-full md:col-span-5">
 				<CustomImage
-					src={  data.name== "IEEE ENET'COM SB"? enetcom  : data.logo.url || data.logo}
+					src={
+						data.name == "IEEE ENET'COM SB"
+							? enetcom
+							: data.logo.url || data.logo
+					}
 					alt=""
 					className="mx-auto aspect-video h-48 rounded-lg bg-gray-50 object-contain p-6"
 				/>
@@ -78,6 +84,19 @@ function ExpoDetails({ data }) {
 					<div className="flex justify-between">
 						<div className="text-2xl font-bold">{data.name}</div>
 					</div>
+					{data.slug === "GPC" && <div className=" mx-auto  my-4 w-full  ">
+						<iframe
+						className="mx-auto h-56 w-full rounded-2xl shadow-lg sm:h-96 "
+						    width="560"
+							height="315"
+							src="https://www.youtube.com/embed/trcKs5YXHq4?si=MgTtCke0LO3odErv"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen
+						></iframe>
+					</div>}
 				</div>
 
 				<div>
@@ -85,6 +104,7 @@ function ExpoDetails({ data }) {
 						dangerouslySetInnerHTML={{ __html: data.description }}
 						className=""
 					></p>
+					
 				</div>
 
 				{data.website && (

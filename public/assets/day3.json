@@ -2,12 +2,12 @@
 	{
 		"title": "",
 		"timeStart":"07:00",
-		"timeEnd":"09:00",
+		"timeEnd":"08:30",
 		"children": [
 			{
 				"title": "Breakfast",
 				"timeSlotStart": "07:00 ",
-				"timeSlotEnd": "09:00 ",
+				"timeSlotEnd": "08:30 ",
 				"location": "Restaurants"
 			}
 		]
@@ -57,7 +57,7 @@
 	{
 		"title": "Finalist Pitches ",
 		"timeStart":"10:00 ",
-		"timeEnd":"12:00 ",
+		"timeEnd":"11:00 ",
 		"location": "Hannibal Congress Room",
 		"children": [
 			{
@@ -83,8 +83,8 @@
 	},
 	{
 		"title": "Closing Ceremony",
-		"timeStart":"12:00 ",
-		"timeEnd":"13:00 ",
+		"timeStart":"11:00 ",
+		"timeEnd":"12:00 ",
 		"location": "Hannibal Congress Room",
 		"children": [
 			{
@@ -94,7 +94,7 @@
 				"location": "Hannibal Congress Room"
 			},
 			{
-				"title": "Group Photo",
+				"title": " Closing Ceremony",
 				"timeSlotStart": "12:00 ",
 				"timeSlotEnd": "13:00 ",
 				"location": "Hannibal Congress Room"
