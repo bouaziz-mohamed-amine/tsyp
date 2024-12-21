@@ -489,8 +489,8 @@
 				]
 			},
 			{
-				"title": "Introduction to quotes and standards ",
-				"200": "Nehad Sherif (IEEE IAS executive member) ",
+				"title": "Introduction to codes and standards ",
+				"200": "Nehad El-Sherif (IEEE IAS executive member) ",
 				"location": "Cesar 6 ",
 				"speakers" : [
 					{
@@ -564,6 +564,12 @@
 				"title": "Digital Marketing (ISB) ",
 				"200": "isb ",
 				"location": "Cesar 2 "
+			},{
+				"title": "Tunisia 2056 Challenge Forum",
+				"timeSlotStart": "11:00 ",
+				"timeSlotEnd": "12:30 ",
+				"location": "Hannibal Congress Room",
+				"key" :"w"
 			}
 		]
 	},
