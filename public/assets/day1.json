@@ -20,8 +20,8 @@
 	},
 	{
 		"title": "Opening Ceremony",
-		"timeStart":"14:00",
-		"timeEnd":"17:30",
+		"timeStart":"13:30",
+		"timeEnd":"17:40",
 		"location": "Hannibal Congress Room",
 		"children": [
 			{
@@ -52,27 +52,24 @@
 					},
 					{
 						"id" :"speaker1",
-						"name" : "Deepak Mathur: IEEE Vice President - MGA (India)"
+						"name" : " Mr. Ahmed Aouididi IEEE SAC Congress Cordinator "
 					}
 				]
 			},
 			{
 				"title": "IEEE Insights Leadership Panel",
-				"timeSlotStart": "14:50 ",
-				"timeSlotEnd": "15:20 ",
+				"timeSlotStart": "13:10 ",
+				"timeSlotEnd": "15:30 ",
 				"location": "Hannibal Congress Room",
 				"speakers" : [
 					{
 						"id" :"speaker1",
-						"name" : "Deepak Mathur: IEEE Vice President - MGA (India)"
+						"name" : "Mr. Amara Amara - IEEE CASS Past President"
 					},
+					
 					{
-						"id" :"#",
-						"name" : "Mr. Habib Kamoun Tunisia Section chair  (Zone Representative) (Tunisia)"
-					},
-					{
-						"id" :"speaker4",
-						"name" : "Abdulatif Aliyu: Vice President, IEEE R8 Student Activities (Nigeria)"
+						"id" :"speaker2",
+						"name" : "Abdulatif Aliyu - Vice President, IEEE R8 Student Activities (Nigeria)"
 					},
 					{
 						"id" :"speaker3",
@@ -80,7 +77,7 @@
 					},
 					{
 						"id" :"speaker2",
-						"name" : " Lwanga Herbert IEEE Humanitarian Technologies Board (IEEE HTB) Chair (Uganda)"
+						"name" : "Mr. Nehad El-Sherif"
 					}
 
 				]
@@ -98,42 +95,73 @@
 				"location": "Hannibal Congress Room"
 			},
 			{
-				"title": "Benefits of joining IEEE UNITS",
-				"timeSlotStart": "16:20 ",
-				"timeSlotEnd": "17:05 ",
+				"title": "Partners Presentation",
+				"timeSlotStart": "15:41",
+				"timeSlotEnd": "16:36",
 				"location": "Hannibal Congress Room",
-				"speakers" : [
+				"speakers": [
 					{
-						"id" :"speaker9",
-						"name" : "Sajith Wijesuriya Chair,IEEE CSYP Subcommittee"
+						"id": "speaker1",
+						"name": "Mr. Cristof Ahmad - North American Private University"
 					},
 					{
-						"id" :"speaker2",
-						"name" : "Lwanga Herbert - IEEE HTB President (Uganda)  "
+						"id": "speaker2",
+						"name": "Mr. Heni Mounir - Orange Digital Center"
 					},
 					{
-						"id" :"speaker11",
-						"name" : "Anis ben arfi - IEEE YP MTTS Committee Chair (Canada)"
+						"id": "speaker3",
+						"name": "Mr. Ilyes Bouza - ZEN"
+					},
+					{
+						"id": "speaker4",
+						"name": "Mr. Mahdi Ben Hamada - GPC Word"
+					},
+					{
+						"id": "speaker5",
+						"name": "Mr. Ahmed Nattai - The Bridge Word"
+					},
+					{
+						"id": "speaker6",
+						"name": "Mr. Tarak Grami - DataDolt"
+					},
+					{
+						"id": "speaker7",
+						"name": "Mr. Fakhri Bouzdrada & Mr. Hatem Ben Ali - Ninety"
+					},
+					{
+						"id": "speaker8",
+						"name": "Mr. Montassar Sellami - Codequest"
 					}
 				]
 			},
+			
 			{
 				"title": "Benefits of joining IEEE UNITS",
-				"timeSlotStart": "16:20 ",
-				"timeSlotEnd": "17:05 ",
+				"timeSlotStart": "16:36 ",
+				"timeSlotEnd": "17:40",
 				"location": "Hannibal Congress Room",
 				"speakers" : [
 					{
 						"id" :"speaker6",
-						"name" : "Saptarshi Ghosh: IEEE CS SYP Committee Chair"
+						"name" : "Mr.lawanga Herbert - IEEE HTB President"
 					},
 					{
 						"id" :"#",
-						"name" : "Ilhem Kallel  Africa Council General Secretary2024"
+						"name" : "Ms.Ilhem Kallel- Africa Council General Secretary2024"
 					},
 					{
 						"id" :"speaker10",
-						"name" : "Sneha Hegde: IEEE DEIS Representative"
+						"name" : "Ms.Sneha Hegde- IEEE DEIS Representative"
+					},
+					{
+						"id" :"speaker10",
+						"name" : "Mr.Saptarti Ghosh - IEEE CS SYP Committe Chair"
+					},{
+						"id" :"speaker11",
+						"name" : "Mr.Anis ben arfi - IEEE YP MTTS Committee Chair (Canada)"
+					},{
+						"id" :"speaker9",
+						"name" : "Mr.Sajith Wijesuriya - IEEE CSYP Subcommittee Chair"
 					}
 				]
 			}
@@ -141,8 +169,8 @@
 	},
 	{
 		"title": "Coffee Break ",
-		"timeStart": "17:30 ",
-		"timeEnd": "17:45",
+		"timeStart": "17:40 ",
+		"timeEnd": "19:00",
 		"location": "Medina Hall",
 		"children" : [
 			{
@@ -152,20 +180,21 @@
 				"location": "Expo Hall 3"
 			}
 		]
-	},
-	{
-		"title": "Networking break and Opening of exhibition area ",
-		"timeStart":"17:45",
-		"timeEnd":"19:00",
+	},{
+		"title": "All About IEEE HUmanitarian Technoogies ,SIGHT,and Tech4Good ",
+		"timeStart":"18:00",
+		"timeEnd":"19:30",
 		"children": [
 			{
-				"title": "Networking break and Opening of exhibition area ",
-				"timeSlotStart": "17:30 ",
-				"timeSlotEnd": "19:00 ",
-				"location": "Expo Hall 3"
+				"title": "All About IEEE HUmanitarian Technoogies ,SIGHT,and Tech4Good ",
+				"timeSlotStart": "18:00 ",
+				"timeSlotEnd": "17:30 ",
+				"location": "Amphi Cesar"
 			}
 		]
 	},
+	
+	
 	{
 		"title": "Dinner",
 		"timeStart":"19:00",
@@ -180,28 +209,16 @@
 		]
 	},
 	{
-		"title": "Social Activities",
+		"title": "TSYP Evening",
 		"location": "Hannibal Congress Room - Booths Hall",
 		"timeStart":"21:00",
-		"timeEnd":"00:00",
+		"timeEnd":"23:00",
 		"children": [
 			{
-				"title": "Multicultural Ativities",
-				"timeSlotStart": "21:00 ",
-				"timeSlotEnd": "00:00 ",
-				"location": "Hannibal Congress Room - Booths Hall"
-			},
-			{
-				"title": "Party, Social Activities",
-				"timeSlotStart": "21:00 ",
-				"timeSlotEnd": "00:00 ",
-				"location": "Hannibal Congress Room - Booths Hall"
-			},
-			{
-				"title": "Surprise Challenge Announcement",
-				"timeSlotStart": "22:00 ",
-				"timeSlotEnd": "00:00 ",
-				"location": "Hannibal Congress Room - Booths Hall"
+				"title": "TSYP Evening",
+		"location": "Hannibal Congress Room - Booths Hall",
+		"timeStart":"21:00",
+		"timeEnd":"23:00"
 			}
 		]
 	}
