@@ -111,10 +111,10 @@ export function Countdown(props) {
         {CountData.map((item, index) => (
           <div key={index}>
             <h1 className="mx-2 mb-4 text-center text-2xl font-bold tracking-tight lg:mb-4 lg:text-start lg:text-4xl lg:font-extrabold lg:leading-none">
-              Our Journey Our journey is done
+              Our Journey is done
             </h1>
-            <div className="flex items-center">
-              <h1 className="mx-2 text-center text-4xl font-bold tracking-tight text-[#115D85] dark:text-[#BA0D15] lg:text-start lg:text-3xl lg:font-extrabold lg:leading-none">
+            <div className="md:flex items-center">
+              <h1 className="mx-2 text-center text-xl font-bold tracking-tight text-[#115D85] dark:text-[#BA0D15] lg:text-start lg:text-3xl lg:font-extrabold lg:leading-none">
 			  Congratulations to
               </h1>
               <h1 className="text-center text-xl font-bold tracking-tight lg:text-start lg:text-3xl lg:font-extrabold lg:leading-none">

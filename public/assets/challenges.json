@@ -6,7 +6,8 @@
 		"slug": "IEEE PES Tunisia Section Chapter & IEEE RAS Tunisia Section Chapter & IEEE SIGHT Tunisia Section Affinity Group",
 		"logo": { "url": "https://i.imgur.com/gTYQOo6.png" },
 		"link": "https://drive.google.com/file/d/1I5P547iSV_foQOUf2PR4Zc6Axn7pbftm/view?usp=sharing",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners":["ENICARTHAGE","EPS","ENIS"]
 	},
 	{
 		"enabled": true,
@@ -15,7 +16,10 @@
 		"slug": "IEEE AESS Tunisia Section Chapter",
 		"logo": { "url": "https://i.imgur.com/HKC2x90.png" },
 		"link": "https://drive.google.com/file/d/1_FCYJ4iUeCgMqsLqbAN0lmlQQi8SNN3M/view?usp=sharing",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners" : [
+			"INSAT","EPS"," ENIT"
+		]
 	},
 	{
 		"enabled": true,
@@ -24,7 +28,10 @@
 		"slug": "IEEE IES Tunisia Section Chapter & IEEE SMCS Tunisia Section Chapter & IEEE EdSoc Tunisia Section Chapter",
 		"logo": { "url": "https://i.imgur.com/oa2gFZH.png" },
 		"link": "https://drive.google.com/file/d/1LIi6lWvOjZ_yyR7ddra2APrF3eA_QtFg/view?usp=sharing",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners" : [
+			"INSAT","ENIS","EPS"
+		]
 	}, {
 		"enabled": true,
 		"name": "ICs for climate change sustainability",
@@ -32,7 +39,10 @@
 		"slug": "IEEE SSCS Tunisia Section Chapter",
 		"logo": { "url": "https://i.imgur.com/XAwAcsv.png" },
 		"link": "https://drive.google.com/file/d/1F5M9tiKRMAVuYBsctaN4ckvIUO871js7/view",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners" : [
+			"ENICARTHAGE","SMU","ISSATM"
+		]
 	},{
 		"enabled": true,
 		"name": "AI for Mental Health Advancement",
@@ -40,7 +50,10 @@
 		"slug": "IEEE EMBS Tunisia Section Chapter",
 		"logo": { "url": "https://i.imgur.com/HNN7h4A.png" },
 		"link": "https://drive.google.com/file/d/1_qqCFMrJU4aLVk02YetuBjDb8dimoTZR/view",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners" : [
+			"INSAT","EPS","ENSI"
+		]
 	},{
 		"enabled": true,
 		"name": "SMARTSHIELD",
@@ -48,7 +61,10 @@
 		"slug": "IEEE CS Tunisia Section Chapter & IEEE Tunisia YP Affinity Group",
 		"logo": { "url": "https://i.imgur.com/HoMUtlc.png" },
 		"link": "https://drive.google.com/file/d/1gwu9B0oDr6PWOe-fU5CjTKxhD8BDjPhM/view",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners" : [
+			"ISET Djerba","INSAT"," ESPRIT"
+		]
 	},{
 		"enabled": true,
 		"name": "WIE STAR PROGRAM",
@@ -56,7 +72,10 @@
 		"slug": "IEEE WIE Tunisia Section Affinity Group",
 		"logo": { "url": "https://i.imgur.com/tk5Fn8A.png" },
 		"link": "https://drive.google.com/file/d/1C6hf6eCxgyjof_8S9YwYHh0uKQmosNFk/view",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners" : [
+			"SUPCOM","ENIT","ENIS"
+		]
 	},
 	{
 		"enabled": true,
@@ -65,7 +84,10 @@
 		"slug": "IEEE IAS Tunisia Section Chapter",
 		"logo": { "url": "https://i.imgur.com/mdV4jVh.png" },
 		"link": "https://drive.google.com/file/d/12Vc7n04nVxixna2_QPQ5HE5c22uj3BdA/view?usp=sharing",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners" : [
+			"ENIS","SUPCOM","ENETCOM"
+		]
 	},
 	{
 		"enabled": true,
@@ -74,7 +96,10 @@
 		"slug": "IEEE CASS Tunisia Section Chapter & IEEE CRFID Tunisia Section Chapter",
 		"logo": { "url": "https://i.imgur.com/irf2zTE.png" },
 		"link": "https://drive.google.com/file/d/1SCmDEi62jGriL0ZeEfG4HZk2J5H9UeYD/view?usp=sharing",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners" : [
+			"FSS","SUPCOM","ENIS"
+		]
 	},{
 		"enabled": true,
 		"name": "ZEN Virtual Dressing",
@@ -82,10 +107,14 @@
 		"slug": "ZEN & IEEE CIS Tunisia Chapter",
 		"logo": { "url": "https://i.imgur.com/r6hixKM.png" },
 		"link": "https://drive.google.com/file/d/1Q7RaS2P5ACn4kOK3IHURLVLBt1x9V3v6/view",
-		"winnerImg": ""
+		"winnerImg": "",
+		"winners" : [
+			"ESPRIT","FSS","SUP'COM"
+		]
 	},
 	{
 		"enabled": true,
+		"award" :false,
 		"name": "IEEE Tunisia Section Student Activities Committee Challenge",
 		"description": "IEEE EMBS Tunisia Section Chapter",
 		"slug": "2024 IEEE Tunisian Student and Young Professional (TSYP) Congress SAC Challenge",

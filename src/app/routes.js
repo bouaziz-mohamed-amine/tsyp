@@ -60,10 +60,10 @@ const routes = [
 		],
 		
 	},
-	// {
-	// 	title: "Awards",
-	// 	href: "/awards",
-	// },
+	{
+		title: "Awards",
+		href: "/awards",
+	},
 	// {
 	// 	title: "Schedule",
 	// 	href: "/schedule",
@@ -117,10 +117,10 @@ const routes = [
 		title: "Partners",
 		href: "/partners-sponsors",
 	},
-	{
-		title: "Call For Sponsors",
-		href: "/sponsor-us",
-	},
+	// {
+	// 	title: "Call For Sponsors",
+	// 	href: "/sponsor-us",
+	// },
 	{
 		title: "About us",
 		href: "/about-us",
@@ -130,10 +130,10 @@ const routes = [
 	// 	href: "/reveal",
 	// 	external: true,
 	// },
-	{
-		title: "Contact us",
-		href: "/contact",
-	},
+	// {
+	// 	title: "Contact us",
+	// 	href: "/contact",
+	// },
 	// {
 	// 	title: "Event Feedback",
 	// 	href: "/event-feedback",
