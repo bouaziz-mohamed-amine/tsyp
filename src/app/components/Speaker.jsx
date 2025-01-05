@@ -41,7 +41,7 @@ export default function Speaker() {
 				</Link>
 			</div>
 			<div className="grid grid-cols-12">
-				<div className="col-span-12 md:col-span-5 ">
+				<div className="col-span-12 md:col-span-12 ">
 				<div className="grid grid-cols-12 gap-y-8 md:gap-x-8">
 				<div className="col-span-full md:col-span-6">
 					<CustomImage
@@ -103,9 +103,6 @@ export default function Speaker() {
 					)}
 				</div>
 			</div>
-				</div>
-				<div className="col-span-12 md:col-span-7 ">
-					<ScheduleList    speaker={speakerSlug}/>
 				</div>
 			</div>
 			

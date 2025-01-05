@@ -1,14 +1,5 @@
 [
 	{
-		"slug": "speaker1",
-		"Full_Name": "Deepak Mathur",
-		"Position": "IEEE Vice President, MGA",
-		"Photo": "https://i.imgur.com/fwUdxCX.png",
-		"Bio": "Deepak Mathur is IEEE Vice President - Member Geographic Activities (MGA) and has also served in various IEEE leadership roles. Deepak was Director, IEEE Region 10 (Asia-Pacific) in 2021-2022 and Chair, IEEE India Council in 2015-2016. Deepak, a former Chief General Manager of ONGC (India’s premier Oil and Gas company engaged in exploration/exploitation of hydrocarbons), has more than 4-decades of professional experience in fields of electronics, telecommunication, IT infrastructure and has held various engineering and managerial positions during his career and worked on several projects like SCADA, on-line/real-time monitoring systems, Wi-Max based broadband wireless access system, GPS/GSM based vehicle tracking system etc. He also has experience of managing and working on Hi-Tech (Oil) Well Logging Systems which analyzes properties of subsurface to explore possibilities of hydrocarbons. Deepak holds a Bachelor of Engineering in Electronics and Communications from India’s most prestigious Indian Institute of Technology (Roorkee). Deepak also holds an MBA with Advance Management Program. In his IEEE journey, Deepak has been recipient of various IEEE recognitions including the prestigious IEEE Region 10 Outstanding Volunteer Award, IEEE MGA Achievement Award, and IEEE India Council Lifetime Achievement award. He is also a member of highly acclaimed international honor society IEEE-HKN or Eta-Kappa-Nu.",
-		"IEEE_Email ": "deepakmathur@ieee.org ",
-		"IEEE": true
-	},
-	{
 		"slug": "speaker2",
 		"Full_Name": "Lwanga Herbert",
 		"Position": "IEEE Humanitarian Technologies Board (IEEE HTB) Chair",
@@ -105,6 +96,24 @@
 		"Photo": "https://i.imgur.com/MFT8Pjt.png",
 		"Bio": "",
 		"IEEE_Email ": "",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker100",
+		"Full_Name": "Boudour Ammar",
+		"Position": "CIS Chapter Chair",
+		"Photo": "https://i.imgur.com/KQZ1Cro.png",
+		"Bio": "Boudour Ammar (IEEE senior member) received a PhD in Computer Science in 2014 and Habilitation to Direct Research (HDR) in 2023 from the National Engineering School of Sfax (ENIS) with the Research Group on Intelligent Machines (REGIM), University of Sfax. She is currently the IEEE CIS Tunisa Chapter and an A. professor with the Department of Computer Engineering and Applied Mathematics at National Engineering School of Sfax (ENIS). She is certified on Nvidia GAI and deep learning and AI instructor in Huawei since 2019. In recent years, Dr. Boudour published many highly cited research papers in IEEE Transaction of neural Networks and Learning systems, IEEE Transactions on Affective Computing, Neural Processing Letters, Applied Soft Computing, Neurocomputing, Cybernetics & systems and cognitive computation journals.  She also published papers in conferences such as International Joint Conference on Neural Networks (IJCNN), International Conference on Neural Information Processing, IEEE International Conference on Systems, Man, and Cybernetics… Her research interests include iBrain (Machine learning, Brain Computing Interaction, Recurrent neural Network), i-health (Autonomous Robots, Intelligent Control, medical applications, EEG and ECG signals) and smart energy. She has been trusted with different duties: a technical chair, a Technical Program Chair member, and a reviewer for many leading international scientific committee conferences and journals.  She participated in the organization of many IEEE events, conferences, schools and workshops. ",
+		"IEEE_Email ": "Boudour Ammar",
+		"IEEE": true
+	},
+	{
+		"slug": "speaker101",
+		"Full_Name": "Wajih LETAIEF",
+		"Position": "CIS Tunisia Section : Event Officer",
+		"Photo": "https://i.imgur.com/3A8m6dT.png",
+		"Bio": "Experienced leader with strong business and technical skills that enable me to effectively manage cross-functional teams. A multi-skilled solutions architect (logical and physical) with good all-round ability to juggle multiple projects and meet deadlines whilst at the same time comprehending complex and interdependent business processes. Very capable with an ability to identify and then deal with a client’s needs by translating them into appropriate technical solutions. Experienced in providing motivation, guidance and an up to date consultancy service to both colleagues and clients. As an open source consultant and volunteer, offering outstanding presentation, training sessions, communication and cross-cultural team management skills. High-energy, results-oriented leader with an entrepreneurial attitude.",
+		"IEEE_Email ": "wajih@ieee.org",
 		"IEEE": true
 	},
 	{
